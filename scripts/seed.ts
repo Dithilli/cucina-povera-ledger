@@ -72,6 +72,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Olive oil, a pot of beans, foraged greens, lemon — the fasting table of the Aegean, cheap and sun-bright.",
   },
+  levantine: {
+    slug: "sufra",
+    name: "Sufra",
+    tagline:
+      "Olive oil, lentils, chickpeas, and bread — the Levantine table where a few cheap plates make a feast.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */

@@ -134,6 +134,35 @@ export * from "./recipes/bakaliaros-skordalia";
 export * from "./recipes/psarosoupa";
 export * from "./recipes/sardeles-sto-fourno";
 
+// ── Challenge #5 — Levant ──
+export * from "./recipes/pot-of-lentils";
+export * from "./recipes/tahini-sauce";
+export * from "./recipes/toum";
+export * from "./recipes/mujaddara";
+export * from "./recipes/mujaddara-hamra";
+export * from "./recipes/shorbat-adas";
+export * from "./recipes/ful-medames";
+export * from "./recipes/hummus";
+export * from "./recipes/msabbaha";
+export * from "./recipes/balila";
+export * from "./recipes/burghul-bi-banadoura";
+export * from "./recipes/freekeh-bil-hummus";
+export * from "./recipes/bulgur-pilaf";
+export * from "./recipes/warak-enab";
+export * from "./recipes/mahshi-koosa";
+export * from "./recipes/sheikh-el-mahshi";
+export * from "./recipes/bamia";
+export * from "./recipes/loubia-bzeit";
+export * from "./recipes/fasolia-yakhni";
+export * from "./recipes/batata-harra";
+export * from "./recipes/tabbouleh";
+export * from "./recipes/fattoush";
+export * from "./recipes/falafel";
+export * from "./recipes/moutabal";
+export * from "./recipes/labneh";
+export * from "./recipes/fatteh";
+export * from "./recipes/salatet-banadoura";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -141,7 +170,9 @@ export * from "./docs/manifesto";
 export * from "./docs/culture-mexico";
 export * from "./docs/culture-italy";
 export * from "./docs/culture-ethiopia";
+export * from "./docs/culture-levant";
 export * from "./docs/culture-greece";
+export * from "./docs/culture-levant";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -150,6 +181,7 @@ export * from "./weeks/mx-week-1-masa";
 export * from "./weeks/mexican-themes";
 export * from "./weeks/ethiopian-weeks";
 export * from "./weeks/greek-weeks";
+export * from "./weeks/levantine-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -279,6 +311,35 @@ import { bakaliarosSkordalia } from "./recipes/bakaliaros-skordalia";
 import { psarosoupa } from "./recipes/psarosoupa";
 import { sardelesStoFourno } from "./recipes/sardeles-sto-fourno";
 
+// Challenge #5 — Levant
+import { potOfLentils } from "./recipes/pot-of-lentils";
+import { tahiniSauce } from "./recipes/tahini-sauce";
+import { toum } from "./recipes/toum";
+import { mujaddara } from "./recipes/mujaddara";
+import { mujaddaraHamra } from "./recipes/mujaddara-hamra";
+import { shorbatAdas } from "./recipes/shorbat-adas";
+import { fulMedames } from "./recipes/ful-medames";
+import { hummus } from "./recipes/hummus";
+import { msabbaha } from "./recipes/msabbaha";
+import { balila } from "./recipes/balila";
+import { burghulBiBanadoura } from "./recipes/burghul-bi-banadoura";
+import { freekehBilHummus } from "./recipes/freekeh-bil-hummus";
+import { bulgurPilaf } from "./recipes/bulgur-pilaf";
+import { warakEnab } from "./recipes/warak-enab";
+import { mahshiKoosa } from "./recipes/mahshi-koosa";
+import { sheikhElMahshi } from "./recipes/sheikh-el-mahshi";
+import { bamia } from "./recipes/bamia";
+import { loubiaBzeit } from "./recipes/loubia-bzeit";
+import { fasoliaYakhni } from "./recipes/fasolia-yakhni";
+import { batataHarra } from "./recipes/batata-harra";
+import { tabbouleh } from "./recipes/tabbouleh";
+import { fattoush } from "./recipes/fattoush";
+import { falafel } from "./recipes/falafel";
+import { moutabal } from "./recipes/moutabal";
+import { labneh } from "./recipes/labneh";
+import { fatteh } from "./recipes/fatteh";
+import { salatetBanadoura } from "./recipes/salatet-banadoura";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
@@ -286,6 +347,7 @@ import { cultureMexico } from "./docs/culture-mexico";
 import { cultureItaly } from "./docs/culture-italy";
 import { cultureEthiopia } from "./docs/culture-ethiopia";
 import { cultureGreece } from "./docs/culture-greece";
+import { cultureLevant } from "./docs/culture-levant";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -299,6 +361,7 @@ import {
 import { mexicanWeeks } from "./weeks/mexican-themes";
 import { ethiopianWeeks } from "./weeks/ethiopian-weeks";
 import { greekWeeks } from "./weeks/greek-weeks";
+import { levantineWeeks } from "./weeks/levantine-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -427,6 +490,34 @@ export const recipes: Recipe[] = [
   bakaliarosSkordalia,
   psarosoupa,
   sardelesStoFourno,
+  // Challenge #5 — Levant
+  potOfLentils,
+  tahiniSauce,
+  toum,
+  mujaddara,
+  mujaddaraHamra,
+  shorbatAdas,
+  fulMedames,
+  hummus,
+  msabbaha,
+  balila,
+  burghulBiBanadoura,
+  freekehBilHummus,
+  bulgurPilaf,
+  warakEnab,
+  mahshiKoosa,
+  sheikhElMahshi,
+  bamia,
+  loubiaBzeit,
+  fasoliaYakhni,
+  batataHarra,
+  tabbouleh,
+  fattoush,
+  falafel,
+  moutabal,
+  labneh,
+  fatteh,
+  salatetBanadoura,
 ];
 
 export const docs: ContentDoc[] = [
@@ -437,6 +528,7 @@ export const docs: ContentDoc[] = [
   cultureItaly,
   cultureEthiopia,
   cultureGreece,
+  cultureLevant,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -455,6 +547,8 @@ export const weekThemes: WeekTheme[] = [
   ...ethiopianWeeks,
   // Challenge #4 — Greece
   ...greekWeeks,
+  // Challenge #5 — Levant
+  ...levantineWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -469,4 +563,5 @@ export const weeks: WeekPlan[] = [
   ...mexicanWeeks,
   ...ethiopianWeeks,
   ...greekWeeks,
+  ...levantineWeeks,
 ];
