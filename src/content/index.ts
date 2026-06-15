@@ -194,6 +194,35 @@ export * from "./recipes/shahi-paneer";
 export * from "./recipes/tahari";
 export * from "./recipes/veg-pulao";
 
+// ── american-south ──
+export * from "./recipes/butter-beans";
+export * from "./recipes/candied-yams";
+export * from "./recipes/chicken-and-dumplings";
+export * from "./recipes/chicken-andouille-gumbo";
+export * from "./recipes/collard-greens";
+export * from "./recipes/cornbread-dressing";
+export * from "./recipes/cornbread";
+export * from "./recipes/dirty-rice";
+export * from "./recipes/fried-catfish";
+export * from "./recipes/fried-chicken";
+export * from "./recipes/fried-green-tomatoes";
+export * from "./recipes/gumbo-zherbes";
+export * from "./recipes/hoppin-john";
+export * from "./recipes/hush-puppies";
+export * from "./recipes/jambalaya";
+export * from "./recipes/maque-choux";
+export * from "./recipes/okra-gumbo";
+export * from "./recipes/pot-of-red-beans";
+export * from "./recipes/red-beans-and-rice";
+export * from "./recipes/red-rice";
+export * from "./recipes/salmon-croquettes";
+export * from "./recipes/shrimp-etouffee";
+export * from "./recipes/smothered-chicken";
+export * from "./recipes/smothered-okra";
+export * from "./recipes/smothered-pork-chops";
+export * from "./recipes/the-trinity";
+export * from "./recipes/white-rice";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -205,6 +234,7 @@ export * from "./docs/culture-levant";
 export * from "./docs/culture-greece";
 export * from "./docs/culture-levant";
 export * from "./docs/culture-north-indian";
+export * from "./docs/culture-american-south";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -215,6 +245,7 @@ export * from "./weeks/ethiopian-weeks";
 export * from "./weeks/greek-weeks";
 export * from "./weeks/levantine-weeks";
 export * from "./weeks/north-indian-weeks";
+export * from "./weeks/american-south-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -402,6 +433,34 @@ import { sarsonKaSaag } from "./recipes/sarson-ka-saag";
 import { shahiPaneer } from "./recipes/shahi-paneer";
 import { tahari } from "./recipes/tahari";
 import { vegPulao } from "./recipes/veg-pulao";
+// american-south
+import { butterBeans } from "./recipes/butter-beans";
+import { candiedYams } from "./recipes/candied-yams";
+import { chickenAndDumplings } from "./recipes/chicken-and-dumplings";
+import { chickenAndouilleGumbo } from "./recipes/chicken-andouille-gumbo";
+import { collardGreens } from "./recipes/collard-greens";
+import { cornbreadDressing } from "./recipes/cornbread-dressing";
+import { cornbread } from "./recipes/cornbread";
+import { dirtyRice } from "./recipes/dirty-rice";
+import { friedCatfish } from "./recipes/fried-catfish";
+import { friedChicken } from "./recipes/fried-chicken";
+import { friedGreenTomatoes } from "./recipes/fried-green-tomatoes";
+import { gumboZherbes } from "./recipes/gumbo-zherbes";
+import { hoppinJohn } from "./recipes/hoppin-john";
+import { hushPuppies } from "./recipes/hush-puppies";
+import { jambalaya } from "./recipes/jambalaya";
+import { maqueChoux } from "./recipes/maque-choux";
+import { okraGumbo } from "./recipes/okra-gumbo";
+import { potOfRedBeans } from "./recipes/pot-of-red-beans";
+import { redBeansAndRice } from "./recipes/red-beans-and-rice";
+import { redRice } from "./recipes/red-rice";
+import { salmonCroquettes } from "./recipes/salmon-croquettes";
+import { shrimpEtouffee } from "./recipes/shrimp-etouffee";
+import { smotheredChicken } from "./recipes/smothered-chicken";
+import { smotheredOkra } from "./recipes/smothered-okra";
+import { smotheredPorkChops } from "./recipes/smothered-pork-chops";
+import { theTrinity } from "./recipes/the-trinity";
+import { whiteRice } from "./recipes/white-rice";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -412,6 +471,7 @@ import { cultureEthiopia } from "./docs/culture-ethiopia";
 import { cultureGreece } from "./docs/culture-greece";
 import { cultureLevant } from "./docs/culture-levant";
 import { cultureNorthIndian } from "./docs/culture-north-indian";
+import { cultureAmericanSouth } from "./docs/culture-american-south";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -427,6 +487,7 @@ import { ethiopianWeeks } from "./weeks/ethiopian-weeks";
 import { greekWeeks } from "./weeks/greek-weeks";
 import { levantineWeeks } from "./weeks/levantine-weeks";
 import { northIndianWeeks } from "./weeks/north-indian-weeks";
+import { americanSouthWeeks } from "./weeks/american-south-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -613,6 +674,34 @@ export const recipes: Recipe[] = [
   shahiPaneer,
   tahari,
   vegPulao,
+  // american-south
+  butterBeans,
+  candiedYams,
+  chickenAndDumplings,
+  chickenAndouilleGumbo,
+  collardGreens,
+  cornbreadDressing,
+  cornbread,
+  dirtyRice,
+  friedCatfish,
+  friedChicken,
+  friedGreenTomatoes,
+  gumboZherbes,
+  hoppinJohn,
+  hushPuppies,
+  jambalaya,
+  maqueChoux,
+  okraGumbo,
+  potOfRedBeans,
+  redBeansAndRice,
+  redRice,
+  salmonCroquettes,
+  shrimpEtouffee,
+  smotheredChicken,
+  smotheredOkra,
+  smotheredPorkChops,
+  theTrinity,
+  whiteRice,
 ];
 
 export const docs: ContentDoc[] = [
@@ -625,6 +714,7 @@ export const docs: ContentDoc[] = [
   cultureGreece,
   cultureLevant,
   cultureNorthIndian,
+  cultureAmericanSouth,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -647,6 +737,8 @@ export const weekThemes: WeekTheme[] = [
   ...levantineWeeks,
   // north-indian
   ...northIndianWeeks,
+  // american-south
+  ...americanSouthWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -663,4 +755,5 @@ export const weeks: WeekPlan[] = [
   ...greekWeeks,
   ...levantineWeeks,
   ...northIndianWeeks,
+  ...americanSouthWeeks,
 ];

@@ -84,6 +84,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Lentils, rice, and roti under a spoon of ghee — vegetarian home cooking that feeds a family for pennies.",
   },
+  "american-south": {
+    slug: "soul-creole",
+    name: "Soul & Creole",
+    tagline:
+      "Rice, beans, greens, and cornbread under a smoked-pork bone — making do, made magnificent.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
