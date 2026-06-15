@@ -327,31 +327,59 @@ function WeekCard({
 
   return (
     <article className={`week-card ${open ? "open" : ""}`}>
-      <button className="week-card-head" onClick={toggle}>
-        <span className="week-num">{week.number}</span>
-        <span className="week-card-title">
-          {week.title}
-          {week.bonus && <span className="badge">bonus</span>}
-        </span>
-      </button>
-      {week.context && <p className="week-context">{week.context}</p>}
-      <p className="week-desc">{week.description}</p>
-      {week.dishes.length > 0 && (
-        <ul className="dishes">
-          {week.dishes.map((d, i) => (
-            <li key={i}>{d}</li>
-          ))}
-        </ul>
-      )}
-      <div className="week-foot">
-        {week.proteinNote && (
-          <span className="thread">
-            <i>Protein:</i> {week.proteinNote}
+      <div
+        className="week-card-summary"
+        role="button"
+        tabIndex={0}
+        aria-expanded={open}
+        onClick={toggle}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        }}
+      >
+        <div className="week-card-head">
+          <span className="week-num">{week.number}</span>
+          <span className="week-card-title">
+            {week.title}
+            {week.bonus && <span className="badge">bonus</span>}
           </span>
+          <svg
+            className="week-chevron"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+        {week.context && <p className="week-context">{week.context}</p>}
+        <p className="week-desc">{week.description}</p>
+        {week.dishes.length > 0 && (
+          <ul className="dishes">
+            {week.dishes.map((d, i) => (
+              <li key={i}>{d}</li>
+            ))}
+          </ul>
         )}
-        <span className="thread">
-          <i>Precious thread:</i> {week.preciousThread}
-        </span>
+        <div className="week-foot">
+          {week.proteinNote && (
+            <span className="thread">
+              <i>Protein:</i> {week.proteinNote}
+            </span>
+          )}
+          <span className="thread">
+            <i>Precious thread:</i> {week.preciousThread}
+          </span>
+        </div>
       </div>
 
       {open && (

@@ -291,9 +291,14 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .week-cards { display: grid; gap: 12px; }
 .week-card { border: 1px solid var(--rule); background: var(--paper); padding: 14px 16px; }
 .week-card.open { border-color: var(--ink); }
+.week-card-summary { cursor: pointer; outline: none; }
+.week-card-summary:hover .week-card-title { color: var(--rosso); }
+.week-card-summary:focus-visible { outline: 2px solid var(--rosso); outline-offset: 4px; }
+.week-chevron { margin-left: auto; flex: none; color: var(--ink-soft); transition: transform .15s ease; }
+.week-card-summary:hover .week-chevron { color: var(--rosso); }
+.week-card.open .week-chevron { transform: rotate(180deg); color: var(--rosso); }
 .week-card-head {
   display: flex; align-items: center; gap: 12px; width: 100%;
-  background: none; border: none; cursor: pointer; text-align: left; padding: 0;
 }
 .week-num {
   flex: none; width: 26px; height: 26px; display: grid; place-items: center;
