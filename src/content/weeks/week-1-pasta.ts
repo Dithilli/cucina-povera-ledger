@@ -57,7 +57,7 @@ export const week1Pasta: WeekPlan = {
     {
       day: "Thu",
       dinner:
-        "spaghetti aglio e olio with anchovy, broccoli rabe, white beans",
+        "spaghetti-aglio-olio with anchovy, broccoli rabe, white beans",
       estCalories: 720,
       estProtein: 24,
     },

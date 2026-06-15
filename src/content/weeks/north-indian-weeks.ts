@@ -408,7 +408,7 @@ export const niWeek5Kadhi: WeekPlan = {
     },
     {
       day: "Mon",
-      dinner: "kadhi-chawal with a side of mixed-veg-pakora",
+      dinner: "kadhi-pakora with rice (kadhi-chawal) and a side of mixed-veg-pakora",
       estCalories: 650,
       estProtein: 17,
     },
@@ -432,7 +432,7 @@ export const niWeek5Kadhi: WeekPlan = {
     },
     {
       day: "Fri",
-      dinner: "kadhi-chawal with a green-chile tadka",
+      dinner: "kadhi-pakora with rice (kadhi-chawal) and a green-chile tadka",
       estCalories: 640,
       estProtein: 17,
     },

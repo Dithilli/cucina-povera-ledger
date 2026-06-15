@@ -150,10 +150,10 @@ export const irWeek3Ash: WeekPlan = {
   days: [
     { day: "Sun", isCookDay: true, dinner: "ash-reshteh with kashk, fried mint, and onion", estCalories: 680, estProtein: 24 },
     { day: "Mon", dinner: "ash-reshteh, the pot thickened overnight, with bread", estCalories: 690, estProtein: 25 },
-    { day: "Tue", dinner: "ash-e-jo (barley soup) with a dried lime", estCalories: 650, estProtein: 20 },
-    { day: "Wed", dinner: "ash-e-anar (pomegranate soup), sweet-sour", estCalories: 660, estProtein: 22 },
+    { day: "Tue", dinner: "ash-jo (barley soup) with a dried lime", estCalories: 650, estProtein: 20 },
+    { day: "Wed", dinner: "ash-anar (pomegranate soup), sweet-sour", estCalories: 660, estProtein: 22 },
     { day: "Thu", dinner: "ash-reshteh again, finished with extra kashk", estCalories: 690, estProtein: 25 },
-    { day: "Fri", dinner: "ash-e-jo with rice and the last of the herbs", estCalories: 640, estProtein: 19 },
+    { day: "Fri", dinner: "ash-jo with rice and the last of the herbs", estCalories: 640, estProtein: 19 },
     { day: "Sat", dinner: "one great pot of mixed ash from every leftover bean and green — nothing wasted", estCalories: 670, estProtein: 23 },
   ],
   shopping: [

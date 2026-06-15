@@ -519,7 +519,7 @@ export const grWeek6Avgolemono: WeekPlan = {
     },
     {
       day: "Fri",
-      dinner: "a meatless avgolemono — rice and greens under egg-lemon, with bread",
+      dinner: "a meatless soupa-avgolemono — rice and greens under egg-lemon, with bread",
       estCalories: 620,
       estProtein: 22,
     },

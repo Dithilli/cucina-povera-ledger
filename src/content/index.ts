@@ -501,6 +501,16 @@ export * from "./recipes/gefilte-fish";
 export * from "./recipes/roast-chicken-with-schmaltz";
 export * from "./recipes/kreplach";
 
+// ── Gap-fill recipes: dishes named in week menus that had no recipe ──
+export * from "./recipes/crawfish-etouffee";
+export * from "./recipes/adobo-flakes";
+export * from "./recipes/freekeh-bil-laban";
+export * from "./recipes/tahu-isi";
+export * from "./recipes/sayur-bayam";
+export * from "./recipes/tempe-balado";
+export * from "./recipes/tahu-balado";
+export * from "./recipes/lotek";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -1027,6 +1037,16 @@ import { chickenSoupWithKneydlach } from "./recipes/chicken-soup-with-kneydlach"
 import { gefilteFish } from "./recipes/gefilte-fish";
 import { roastChickenWithSchmaltz } from "./recipes/roast-chicken-with-schmaltz";
 import { kreplach } from "./recipes/kreplach";
+
+// Gap-fill recipes (dishes named in week menus that had no recipe)
+import { crawfishEtouffee } from "./recipes/crawfish-etouffee";
+import { adoboFlakes } from "./recipes/adobo-flakes";
+import { freekehBilLaban } from "./recipes/freekeh-bil-laban";
+import { tahuIsi } from "./recipes/tahu-isi";
+import { sayurBayam } from "./recipes/sayur-bayam";
+import { tempeBalado } from "./recipes/tempe-balado";
+import { tahuBalado } from "./recipes/tahu-balado";
+import { lotek } from "./recipes/lotek";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -1555,6 +1575,15 @@ export const recipes: Recipe[] = [
   gefilteFish,
   roastChickenWithSchmaltz,
   kreplach,
+  // Gap-fill recipes (dishes named in week menus that had no recipe)
+  crawfishEtouffee,
+  adoboFlakes,
+  freekehBilLaban,
+  tahuIsi,
+  sayurBayam,
+  tempeBalado,
+  tahuBalado,
+  lotek,
 ];
 
 export const docs: ContentDoc[] = [
