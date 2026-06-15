@@ -334,6 +334,7 @@ function WeekCard({
           {week.bonus && <span className="badge">bonus</span>}
         </span>
       </button>
+      {week.context && <p className="week-context">{week.context}</p>}
       <p className="week-desc">{week.description}</p>
       {week.dishes.length > 0 && (
         <ul className="dishes">

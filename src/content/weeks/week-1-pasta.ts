@@ -8,6 +8,8 @@ export const week1Pasta: WeekPlan = {
   title: "Week 1 — Pasta",
   description:
     "The opening week, and the hard protein puzzle: pasta itself gives you almost none, so you engineer the 100g floor in through eggs, legumes, anchovy, tuna, and ricotta. That tension is the whole game, and it shows up on the scoreboard — pasta week posts a higher cost-per-100g-protein than bean week will.",
+  context:
+    `The Southern heartbeat. For the poor of Naples and the Mezzogiorno, dried pasta was the great equalizer — shelf-stable, filling, and able to carry a "sauce" made from almost nothing: garlic and oil (aglio e olio), a crushed tomato, chickpeas and their broth (pasta e ceci), toasted breadcrumbs standing in for cheese (la mollica, "the poor man's parmesan"). The art is in the sugo and the salted water. This week sets the pattern for everything that follows: a cheap starch made glorious by technique, not money.`,
   dishes: [
     "Spaghetti con la mollica (anchovy, garlic, chili, toasted crumbs)",
     "Pasta e ceci and pasta e fagioli",

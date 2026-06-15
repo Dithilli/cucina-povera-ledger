@@ -263,6 +263,7 @@ export type Database = {
         Row: {
           bonus: boolean
           challenge_id: string
+          context: string | null
           created_at: string
           cuisine: string
           days: Json | null
@@ -283,6 +284,7 @@ export type Database = {
         Insert: {
           bonus?: boolean
           challenge_id: string
+          context?: string | null
           created_at?: string
           cuisine: string
           days?: Json | null
@@ -303,6 +305,7 @@ export type Database = {
         Update: {
           bonus?: boolean
           challenge_id?: string
+          context?: string | null
           created_at?: string
           cuisine?: string
           days?: Json | null

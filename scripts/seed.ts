@@ -74,6 +74,7 @@ function weekRow(challengeId: string, t: WeekTheme) {
     theme: t.theme,
     title: t.title,
     description: t.description,
+    context: t.context ?? null,
     dishes: t.dishes,
     protein_note: t.proteinNote ?? null,
     precious_thread: t.preciousThread,

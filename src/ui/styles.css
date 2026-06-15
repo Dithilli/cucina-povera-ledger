@@ -249,6 +249,23 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .ch-dials b { color: var(--ink); font-weight: 600; }
 .ch-dials .dot { margin: 0 8px; color: var(--rule); }
 
+/* about / landing */
+.about-prose { font-size: 14px; line-height: 1.65; color: var(--ink); margin: 0 0 12px; max-width: 56ch; }
+.about-prose:last-child { margin-bottom: 0; }
+.about-prose b { font-weight: 600; }
+.about-steps { display: grid; gap: 12px; }
+@media (min-width: 620px) { .about-steps { grid-template-columns: 1fr 1fr; } }
+.about-step {
+  text-align: left; display: grid; gap: 8px; padding: 16px;
+  background: var(--paper); border: 1px solid var(--rule); cursor: pointer;
+  transition: border-color .15s, transform .15s;
+}
+.about-step:hover { border-color: var(--ink); transform: translateY(-1px); }
+.about-step-k { font-family: var(--display); font-weight: 600; font-size: 16px; color: var(--ink); }
+.about-step-d { font-size: 12.5px; line-height: 1.55; color: var(--ink-soft); }
+.about-step-go { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; color: var(--rosso); }
+.about-final { display: grid; gap: 14px; justify-items: start; border-bottom: none; }
+
 .ch-block { padding: 18px 0; border-bottom: 1px dashed var(--rule); }
 .ch-block > h2 {
   font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0 0 14px;
@@ -290,6 +307,10 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .badge {
   font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase;
   color: var(--oliva); border: 1px solid var(--oliva); padding: 1px 5px; border-radius: 2px;
+}
+.week-context {
+  font-family: var(--display); font-size: 14px; line-height: 1.6; color: var(--ink);
+  margin: 12px 0; padding-left: 12px; border-left: 2px solid var(--rosso);
 }
 .week-desc { font-size: 13.5px; line-height: 1.55; color: var(--ink-soft); margin: 10px 0; }
 .dishes { margin: 8px 0; padding-left: 18px; }

@@ -73,6 +73,7 @@ function toWeekTheme(r: WeekRow): WeekTheme {
     theme: r.theme,
     title: r.title,
     description: r.description,
+    context: r.context ?? undefined,
     dishes: r.dishes ?? [],
     proteinNote: r.protein_note ?? undefined,
     preciousThread: r.precious_thread,

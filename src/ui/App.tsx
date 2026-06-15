@@ -24,6 +24,7 @@ import type { WeekTheme } from "../content/types";
 import { money, moneyOrDash, formatDate, todayISO } from "./format";
 import { WeekChart } from "./components/WeekChart";
 import { Challenge } from "./Challenge";
+import { About } from "./About";
 import * as cloud from "../storage/supabaseStore";
 import { useSession } from "./useSession";
 import { supabase } from "../lib/supabase";
@@ -35,7 +36,7 @@ import { Gear, Check, Trash, Pencil, Flame, Plus, Close } from "./icons";
 // hardcoded. Later this becomes a route/selection.
 const CHALLENGE_SLUG = "cucina-povera";
 
-type View = "ledger" | "challenge";
+type View = "about" | "ledger" | "challenge";
 
 const blankForm = () => ({
   date: todayISO(),
@@ -49,7 +50,7 @@ const blankForm = () => ({
 export default function App() {
   const [ledger, setLedger] = useState<Ledger>(defaultLedger());
   const [loaded, setLoaded] = useState(false);
-  const [view, setView] = useState<View>("ledger");
+  const [view, setView] = useState<View>("about");
   const [weeks, setWeeks] = useState<WeekTheme[]>([]);
   const [showSettings, setShowSettings] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -185,6 +186,12 @@ export default function App() {
 
         <nav className="tabs">
           <button
+            className={`tab ${view === "about" ? "on" : ""}`}
+            onClick={() => setView("about")}
+          >
+            What this is
+          </button>
+          <button
             className={`tab ${view === "ledger" ? "on" : ""}`}
             onClick={() => setView("ledger")}
           >
@@ -197,6 +204,14 @@ export default function App() {
             The challenge
           </button>
         </nav>
+
+        {view === "about" && (
+          <About
+            slug={CHALLENGE_SLUG}
+            onStartLedger={() => setView("ledger")}
+            onBrowseChallenge={() => setView("challenge")}
+          />
+        )}
 
         {view === "challenge" && <Challenge slug={CHALLENGE_SLUG} />}
 

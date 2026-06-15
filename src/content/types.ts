@@ -98,6 +98,8 @@ export interface WeekTheme {
   title: string;
   /** The prose describing the week's palette and its place in the arc. */
   description: string;
+  /** Cultural context: why this culture cooked this way, for this week's theme. */
+  context?: string;
   /** Candidate dishes for the week (free text; some map to library recipes). */
   dishes: string[];
   /** Where the protein floor comes from this week. */
