@@ -631,6 +631,36 @@ export * from "./recipes/nokoss-sn";
 export * from "./recipes/riz-brise-base";
 export * from "./recipes/kaani";
 
+// ── east-african ──
+export * from "./recipes/ugali";
+export * from "./recipes/sukuma-wiki";
+export * from "./recipes/nyama-na-ugali";
+export * from "./recipes/kuku-wa-kupaka";
+export * from "./recipes/pilau-ea";
+export * from "./recipes/biryani-ea";
+export * from "./recipes/wali-wa-nazi";
+export * from "./recipes/nyama-choma";
+export * from "./recipes/mishkaki";
+export * from "./recipes/mbuzi-wa-kupaka";
+export * from "./recipes/kuku-kienyeji";
+export * from "./recipes/beef-stew-ea";
+export * from "./recipes/matumbo";
+export * from "./recipes/mchuzi-wa-nyama";
+export * from "./recipes/maharagwe-ya-nazi";
+export * from "./recipes/ndengu";
+export * from "./recipes/githeri";
+export * from "./recipes/mboga-za-majani";
+export * from "./recipes/samaki-wa-kupaka";
+export * from "./recipes/fish-curry-ea";
+export * from "./recipes/dagaa";
+export * from "./recipes/sambusa-ea";
+export * from "./recipes/mandazi";
+export * from "./recipes/chips-mayai";
+export * from "./recipes/vitumbua";
+export * from "./recipes/ugali-base";
+export * from "./recipes/kachumbari";
+export * from "./recipes/pilau-masala";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -656,6 +686,7 @@ export * from "./docs/culture-andean";
 export * from "./docs/culture-brazilian";
 export * from "./docs/culture-puerto-rican";
 export * from "./docs/culture-senegalese";
+export * from "./docs/culture-east-african";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -680,6 +711,7 @@ export * from "./weeks/andean-weeks";
 export * from "./weeks/brazilian-weeks";
 export * from "./weeks/puerto-rican-weeks";
 export * from "./weeks/senegalese-weeks";
+export * from "./weeks/east-african-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1199,6 +1231,7 @@ import { cultureAndean } from "./docs/culture-andean";
 import { cultureBrazilian } from "./docs/culture-brazilian";
 import { culturePuertoRican } from "./docs/culture-puerto-rican";
 import { cultureSenegalese } from "./docs/culture-senegalese";
+import { cultureEastAfrican } from "./docs/culture-east-african";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1228,6 +1261,7 @@ import { andeanWeeks } from "./weeks/andean-weeks";
 import { brazilianWeeks } from "./weeks/brazilian-weeks";
 import { puertoRicanWeeks } from "./weeks/puerto-rican-weeks";
 import { senegaleseWeeks } from "./weeks/senegalese-weeks";
+import { eastAfricanWeeks } from "./weeks/east-african-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1344,6 +1378,35 @@ import { nemSenegalais } from "./recipes/nem-senegalais";
 import { nokossSn } from "./recipes/nokoss-sn";
 import { rizBriseBase } from "./recipes/riz-brise-base";
 import { kaani } from "./recipes/kaani";
+
+import { ugali } from "./recipes/ugali";
+import { sukumaWiki } from "./recipes/sukuma-wiki";
+import { nyamaNaUgali } from "./recipes/nyama-na-ugali";
+import { kukuWaKupaka } from "./recipes/kuku-wa-kupaka";
+import { pilauEa } from "./recipes/pilau-ea";
+import { biryaniEa } from "./recipes/biryani-ea";
+import { waliWaNazi } from "./recipes/wali-wa-nazi";
+import { nyamaChoma } from "./recipes/nyama-choma";
+import { mishkaki } from "./recipes/mishkaki";
+import { mbuziWaKupaka } from "./recipes/mbuzi-wa-kupaka";
+import { kukuKienyeji } from "./recipes/kuku-kienyeji";
+import { beefStewEa } from "./recipes/beef-stew-ea";
+import { matumbo } from "./recipes/matumbo";
+import { mchuziWaNyama } from "./recipes/mchuzi-wa-nyama";
+import { maharagweYaNazi } from "./recipes/maharagwe-ya-nazi";
+import { ndengu } from "./recipes/ndengu";
+import { githeri } from "./recipes/githeri";
+import { mbogaZaMajani } from "./recipes/mboga-za-majani";
+import { samakiWaKupaka } from "./recipes/samaki-wa-kupaka";
+import { fishCurryEa } from "./recipes/fish-curry-ea";
+import { dagaa } from "./recipes/dagaa";
+import { sambusaEa } from "./recipes/sambusa-ea";
+import { mandazi } from "./recipes/mandazi";
+import { chipsMayai } from "./recipes/chips-mayai";
+import { vitumbua } from "./recipes/vitumbua";
+import { ugaliBase } from "./recipes/ugali-base";
+import { kachumbari } from "./recipes/kachumbari";
+import { pilauMasala } from "./recipes/pilau-masala";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1943,6 +2006,35 @@ export const recipes: Recipe[] = [
   nokossSn,
   rizBriseBase,
   kaani,
+  // east-african
+  ugali,
+  sukumaWiki,
+  nyamaNaUgali,
+  kukuWaKupaka,
+  pilauEa,
+  biryaniEa,
+  waliWaNazi,
+  nyamaChoma,
+  mishkaki,
+  mbuziWaKupaka,
+  kukuKienyeji,
+  beefStewEa,
+  matumbo,
+  mchuziWaNyama,
+  maharagweYaNazi,
+  ndengu,
+  githeri,
+  mbogaZaMajani,
+  samakiWaKupaka,
+  fishCurryEa,
+  dagaa,
+  sambusaEa,
+  mandazi,
+  chipsMayai,
+  vitumbua,
+  ugaliBase,
+  kachumbari,
+  pilauMasala,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -1978,6 +2070,7 @@ export const docs: ContentDoc[] = [
   cultureBrazilian,
   culturePuertoRican,
   cultureSenegalese,
+  cultureEastAfrican,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2028,6 +2121,8 @@ export const weekThemes: WeekTheme[] = [
   ...puertoRicanWeeks,
   // senegalese
   ...senegaleseWeeks,
+  // east-african
+  ...eastAfricanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2058,4 +2153,5 @@ export const weeks: WeekPlan[] = [
   ...brazilianWeeks,
   ...puertoRicanWeeks,
   ...senegaleseWeeks,
+  ...eastAfricanWeeks,
 ];
