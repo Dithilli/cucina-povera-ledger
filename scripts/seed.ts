@@ -186,6 +186,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "A pot of soup beans, a skillet of cornbread, a little sidemeat to season the lot, and the garden put up for winter — mountain thrift that makes do and wastes nothing.",
   },
+  "cantonese": {
+    slug: "faahn-sung",
+    name: "Faahn Sung",
+    tagline:
+      "A pot of steamed rice and the dishes that go with it — a scrap of meat for a wok of greens, a master stock kept for years, and congee for the scraps. Nothing wasted.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
