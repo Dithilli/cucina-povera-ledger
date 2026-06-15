@@ -19,7 +19,7 @@ import {
   clearWorkingCopy,
   hasWorkingCopy,
 } from "../storage/browserStore";
-import { listWeeks } from "../data/content";
+import { listWeeks, listChallenges, type Challenge as ChallengeMeta } from "../data/content";
 import type { WeekTheme } from "../content/types";
 import { money, moneyOrDash, formatDate, todayISO } from "./format";
 import { WeekChart } from "./components/WeekChart";
@@ -31,14 +31,15 @@ import { supabase } from "../lib/supabase";
 import type { User } from "@supabase/supabase-js";
 import { Gear, Check, Trash, Pencil, Flame, Plus, Close } from "./icons";
 
-// The active challenge. The app is generic over challenges; for now it serves
-// one at a time. Content (weeks/recipes/docs) is read from the DB by slug — not
-// hardcoded. Until there's a proper in-UI challenge switcher, the slug can be
-// overridden with a `?challenge=` URL param (e.g. ?challenge=cocina-del-maiz),
-// which makes the existing week dropdown list that challenge's weeks — handy for
-// testing a second cuisine. Later this becomes a route/selection.
-const CHALLENGE_SLUG =
-  new URLSearchParams(window.location.search).get("challenge") || "cucina-povera";
+// The active challenge. The app is generic over challenges; content (weeks/
+// recipes/docs) is read from the DB by slug — never hardcoded. The masthead
+// picker switches it; the choice persists (localStorage) and is mirrored into a
+// `?challenge=` URL param so a link to a specific challenge is shareable.
+const DEFAULT_CHALLENGE = "cucina-povera";
+function initialChallenge(): string {
+  const fromUrl = new URLSearchParams(window.location.search).get("challenge");
+  return fromUrl || localStorage.getItem("cucina.challenge") || DEFAULT_CHALLENGE;
+}
 
 type View = "about" | "ledger" | "challenge";
 
@@ -60,14 +61,35 @@ export default function App() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState(blankForm());
   const [localCopy, setLocalCopy] = useState(false);
+  const [challengeSlug, setChallengeSlug] = useState(initialChallenge);
+  const [challenges, setChallenges] = useState<ChallengeMeta[]>([]);
   const { user } = useSession();
 
-  // Week options come from the DB, not a hardcoded preset list.
+  // The available challenges (for the picker).
   useEffect(() => {
-    listWeeks(CHALLENGE_SLUG)
+    listChallenges()
+      .then(setChallenges)
+      .catch(() => setChallenges([]));
+  }, []);
+
+  // Week options come from the active challenge in the DB, not a preset list.
+  useEffect(() => {
+    listWeeks(challengeSlug)
       .then(setWeeks)
       .catch(() => setWeeks([]));
-  }, []);
+  }, [challengeSlug]);
+
+  const changeChallenge = (slug: string) => {
+    setChallengeSlug(slug);
+    try {
+      localStorage.setItem("cucina.challenge", slug);
+    } catch {
+      /* ignore */
+    }
+    const u = new URL(window.location.href);
+    u.searchParams.set("challenge", slug);
+    window.history.replaceState({}, "", u);
+  };
 
   // The ledger loads (and reloads) for the current identity: from the cloud when
   // signed in, from the local working copy when anonymous.
@@ -172,7 +194,24 @@ export default function App() {
         <header className="masthead">
           <div>
             <div className="eyebrow">Il libretto · the account book</div>
-            <h1>Cucina Povera Challenge</h1>
+            <h1>
+              {challenges.find((c) => c.slug === challengeSlug)?.name ??
+                "Cucina Povera Challenge"}
+            </h1>
+            {challenges.length > 1 && (
+              <select
+                className="challenge-picker"
+                value={challengeSlug}
+                onChange={(e) => changeChallenge(e.target.value)}
+                aria-label="Switch challenge"
+              >
+                {challenges.map((c) => (
+                  <option key={c.slug} value={c.slug}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
           <div className="toolbtns">
             <AuthBar user={user} />
@@ -211,13 +250,14 @@ export default function App() {
 
         {view === "about" && (
           <About
-            slug={CHALLENGE_SLUG}
+            key={challengeSlug}
+            slug={challengeSlug}
             onStartLedger={() => setView("ledger")}
             onBrowseChallenge={() => setView("challenge")}
           />
         )}
 
-        {view === "challenge" && <Challenge slug={CHALLENGE_SLUG} />}
+        {view === "challenge" && <Challenge key={challengeSlug} slug={challengeSlug} />}
 
         {view === "ledger" && (
           <>

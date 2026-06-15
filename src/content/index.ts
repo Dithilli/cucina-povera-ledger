@@ -73,6 +73,7 @@ export * from "./docs/budget";
 export * from "./docs/challenge";
 export * from "./docs/manifesto";
 export * from "./docs/culture-mexico";
+export * from "./docs/culture-italy";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -146,6 +147,7 @@ import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
 import { cultureMexico } from "./docs/culture-mexico";
+import { cultureItaly } from "./docs/culture-italy";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -228,6 +230,7 @@ export const docs: ContentDoc[] = [
   challenge,
   manifesto,
   cultureMexico,
+  cultureItaly,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is

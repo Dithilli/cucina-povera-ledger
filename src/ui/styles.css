@@ -50,6 +50,12 @@ body {
   font-family: var(--display); font-weight: 600; font-size: 30px;
   line-height: 1; margin: 0; letter-spacing: -.01em;
 }
+.challenge-picker {
+  margin-top: 9px; font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
+  color: var(--rosso); background: transparent; border: none;
+  border-bottom: 1px solid var(--rule); padding: 2px 16px 3px 0; cursor: pointer;
+}
+.challenge-picker:hover { border-bottom-color: var(--rosso); }
 .toolbtns { display: flex; gap: 10px; align-items: center; }
 .authbar { display: flex; align-items: center; gap: 8px; }
 .auth-email { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
@@ -326,6 +332,12 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 
 .week-plan { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--rule); display: grid; gap: 14px; }
 .week-plan h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--rosso); margin: 0 0 6px; }
+.plan-engine {
+  background: rgba(110, 122, 63, .09); border: 1px solid var(--oliva);
+  padding: 12px 14px;
+}
+.plan-engine h4 { color: var(--oliva); }
+.engine-lead { font-size: 12.5px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 8px; }
 .plan-engine ul { margin: 0; padding-left: 18px; }
 .plan-engine li { font-size: 13px; line-height: 1.6; }
 .plan-day { display: grid; grid-template-columns: 42px 1fr auto; gap: 10px; align-items: baseline; padding: 4px 0; border-bottom: 1px dotted var(--rule); }

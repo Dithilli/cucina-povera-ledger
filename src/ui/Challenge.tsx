@@ -393,7 +393,11 @@ function WeekCard({
           {plan && (
             <>
               <div className="plan-engine">
-                <h4>The Sunday engine</h4>
+                <h4>Cook ahead — the Sunday engine</h4>
+                <p className="engine-lead">
+                  Batch-cook these once at the start of the week; they carry every dinner that
+                  follows (bean liquid becomes sauce, stale bread becomes crumbs — nothing wasted).
+                </p>
                 <ul>
                   {plan.engine.map((e, i) => (
                     <li key={i}>{e}</li>
