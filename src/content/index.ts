@@ -721,6 +721,36 @@ export * from "./recipes/kiszona-kapusta";
 export * from "./recipes/smalec";
 export * from "./recipes/ogorki-kiszone";
 
+// ── irish ──
+export * from "./recipes/colcannon";
+export * from "./recipes/champ";
+export * from "./recipes/boxty";
+export * from "./recipes/potato-cakes";
+export * from "./recipes/irish-stew";
+export * from "./recipes/dublin-coddle";
+export * from "./recipes/beef-stew-ie";
+export * from "./recipes/bacon-and-cabbage";
+export * from "./recipes/ham-hock-colcannon";
+export * from "./recipes/coddle-collar";
+export * from "./recipes/brotchan-roy";
+export * from "./recipes/leek-potato-soup-ie";
+export * from "./recipes/vegetable-soup-ie";
+export * from "./recipes/cabbage-bacon-broth";
+export * from "./recipes/fish-chowder-ie";
+export * from "./recipes/dublin-bay-mussels";
+export * from "./recipes/fried-herring-oats";
+export * from "./recipes/mackerel-gooseberry";
+export * from "./recipes/savory-oat-pudding";
+export * from "./recipes/barley-mutton-broth";
+export * from "./recipes/pease-pudding-ie";
+export * from "./recipes/full-irish-fry";
+export * from "./recipes/white-pudding-hash";
+export * from "./recipes/boxty-feast";
+export * from "./recipes/barmbrack";
+export * from "./recipes/soda-bread-ie";
+export * from "./recipes/boxty-base";
+export * from "./recipes/irish-oatmeal-base";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -749,6 +779,7 @@ export * from "./docs/culture-senegalese";
 export * from "./docs/culture-east-african";
 export * from "./docs/culture-moroccan";
 export * from "./docs/culture-polish";
+export * from "./docs/culture-irish";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -776,6 +807,7 @@ export * from "./weeks/senegalese-weeks";
 export * from "./weeks/east-african-weeks";
 export * from "./weeks/moroccan-weeks";
 export * from "./weeks/polish-weeks";
+export * from "./weeks/irish-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1298,6 +1330,7 @@ import { cultureSenegalese } from "./docs/culture-senegalese";
 import { cultureEastAfrican } from "./docs/culture-east-african";
 import { cultureMoroccan } from "./docs/culture-moroccan";
 import { culturePolish } from "./docs/culture-polish";
+import { cultureIrish } from "./docs/culture-irish";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1330,6 +1363,7 @@ import { senegaleseWeeks } from "./weeks/senegalese-weeks";
 import { eastAfricanWeeks } from "./weeks/east-african-weeks";
 import { moroccanWeeks } from "./weeks/moroccan-weeks";
 import { polishWeeks } from "./weeks/polish-weeks";
+import { irishWeeks } from "./weeks/irish-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1533,6 +1567,35 @@ import { ziemniakiOkraszone } from "./recipes/ziemniaki-okraszone";
 import { kiszonaKapusta } from "./recipes/kiszona-kapusta";
 import { smalec } from "./recipes/smalec";
 import { ogorkiKiszone } from "./recipes/ogorki-kiszone";
+
+import { colcannon } from "./recipes/colcannon";
+import { champ } from "./recipes/champ";
+import { boxty } from "./recipes/boxty";
+import { potatoCakes } from "./recipes/potato-cakes";
+import { irishStew } from "./recipes/irish-stew";
+import { dublinCoddle } from "./recipes/dublin-coddle";
+import { beefStewIe } from "./recipes/beef-stew-ie";
+import { baconAndCabbage } from "./recipes/bacon-and-cabbage";
+import { hamHockColcannon } from "./recipes/ham-hock-colcannon";
+import { coddleCollar } from "./recipes/coddle-collar";
+import { brotchanRoy } from "./recipes/brotchan-roy";
+import { leekPotatoSoupIe } from "./recipes/leek-potato-soup-ie";
+import { vegetableSoupIe } from "./recipes/vegetable-soup-ie";
+import { cabbageBaconBroth } from "./recipes/cabbage-bacon-broth";
+import { fishChowderIe } from "./recipes/fish-chowder-ie";
+import { dublinBayMussels } from "./recipes/dublin-bay-mussels";
+import { friedHerringOats } from "./recipes/fried-herring-oats";
+import { mackerelGooseberry } from "./recipes/mackerel-gooseberry";
+import { savoryOatPudding } from "./recipes/savory-oat-pudding";
+import { barleyMuttonBroth } from "./recipes/barley-mutton-broth";
+import { peasePuddingIe } from "./recipes/pease-pudding-ie";
+import { fullIrishFry } from "./recipes/full-irish-fry";
+import { whitePuddingHash } from "./recipes/white-pudding-hash";
+import { boxtyFeast } from "./recipes/boxty-feast";
+import { barmbrack } from "./recipes/barmbrack";
+import { sodaBreadIe } from "./recipes/soda-bread-ie";
+import { boxtyBase } from "./recipes/boxty-base";
+import { irishOatmealBase } from "./recipes/irish-oatmeal-base";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2219,6 +2282,35 @@ export const recipes: Recipe[] = [
   kiszonaKapusta,
   smalec,
   ogorkiKiszone,
+  // irish
+  colcannon,
+  champ,
+  boxty,
+  potatoCakes,
+  irishStew,
+  dublinCoddle,
+  beefStewIe,
+  baconAndCabbage,
+  hamHockColcannon,
+  coddleCollar,
+  brotchanRoy,
+  leekPotatoSoupIe,
+  vegetableSoupIe,
+  cabbageBaconBroth,
+  fishChowderIe,
+  dublinBayMussels,
+  friedHerringOats,
+  mackerelGooseberry,
+  savoryOatPudding,
+  barleyMuttonBroth,
+  peasePuddingIe,
+  fullIrishFry,
+  whitePuddingHash,
+  boxtyFeast,
+  barmbrack,
+  sodaBreadIe,
+  boxtyBase,
+  irishOatmealBase,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2257,6 +2349,7 @@ export const docs: ContentDoc[] = [
   cultureEastAfrican,
   cultureMoroccan,
   culturePolish,
+  cultureIrish,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2313,6 +2406,8 @@ export const weekThemes: WeekTheme[] = [
   ...moroccanWeeks,
   // polish
   ...polishWeeks,
+  // irish
+  ...irishWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2346,4 +2441,5 @@ export const weeks: WeekPlan[] = [
   ...eastAfricanWeeks,
   ...moroccanWeeks,
   ...polishWeeks,
+  ...irishWeeks,
 ];
