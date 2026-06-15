@@ -336,6 +336,34 @@ export * from "./recipes/thit-xao-rau";
 export * from "./recipes/trung-chien";
 export * from "./recipes/trung-chung";
 
+// ── persian ──
+export * from "./recipes/abgoosht";
+export * from "./recipes/adas-polo";
+export * from "./recipes/adasi";
+export * from "./recipes/ash-anar";
+export * from "./recipes/ash-jo";
+export * from "./recipes/ash-reshteh";
+export * from "./recipes/baghali-polo";
+export * from "./recipes/barbari-bread";
+export * from "./recipes/borani-bademjan";
+export * from "./recipes/chelo";
+export * from "./recipes/dami-gojeh";
+export * from "./recipes/estamboli-polo";
+export * from "./recipes/gheymeh";
+export * from "./recipes/ghormeh-sabzi";
+export * from "./recipes/kashk-e-bademjan";
+export * from "./recipes/khoresh-bademjan";
+export * from "./recipes/khoresh-karafs";
+export * from "./recipes/kuku-bademjan";
+export * from "./recipes/kuku-sabzi";
+export * from "./recipes/kuku-sibzamini";
+export * from "./recipes/loobia-polo";
+export * from "./recipes/mast-o-khiar";
+export * from "./recipes/mirza-ghasemi";
+export * from "./recipes/sabzi-polo";
+export * from "./recipes/tahchin";
+export * from "./recipes/torshi";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -352,6 +380,7 @@ export * from "./docs/culture-indonesian";
 export * from "./docs/culture-west-african";
 export * from "./docs/culture-filipino";
 export * from "./docs/culture-vietnamese";
+export * from "./docs/culture-persian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -367,6 +396,7 @@ export * from "./weeks/indonesian-weeks";
 export * from "./weeks/west-african-weeks";
 export * from "./weeks/filipino-weeks";
 export * from "./weeks/vietnamese-weeks";
+export * from "./weeks/persian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -691,6 +721,33 @@ import { thitKho } from "./recipes/thit-kho";
 import { thitXaoRau } from "./recipes/thit-xao-rau";
 import { trungChien } from "./recipes/trung-chien";
 import { trungChung } from "./recipes/trung-chung";
+// persian
+import { abgoosht } from "./recipes/abgoosht";
+import { adasPolo } from "./recipes/adas-polo";
+import { adasi } from "./recipes/adasi";
+import { ashAnar } from "./recipes/ash-anar";
+import { ashJo } from "./recipes/ash-jo";
+import { ashReshteh } from "./recipes/ash-reshteh";
+import { baghaliPolo } from "./recipes/baghali-polo";
+import { barbariBread } from "./recipes/barbari-bread";
+import { boraniBademjan } from "./recipes/borani-bademjan";
+import { chelo } from "./recipes/chelo";
+import { damiGojeh } from "./recipes/dami-gojeh";
+import { estamboliPolo } from "./recipes/estamboli-polo";
+import { gheymeh } from "./recipes/gheymeh";
+import { ghormehSabzi } from "./recipes/ghormeh-sabzi";
+import { kashkEBademjan } from "./recipes/kashk-e-bademjan";
+import { khoreshBademjan } from "./recipes/khoresh-bademjan";
+import { khoreshKarafs } from "./recipes/khoresh-karafs";
+import { kukuBademjan } from "./recipes/kuku-bademjan";
+import { kukuSabzi } from "./recipes/kuku-sabzi";
+import { kukuSibzamini } from "./recipes/kuku-sibzamini";
+import { loobiaPolo } from "./recipes/loobia-polo";
+import { mastOKhiar } from "./recipes/mast-o-khiar";
+import { mirzaGhasemi } from "./recipes/mirza-ghasemi";
+import { sabziPolo } from "./recipes/sabzi-polo";
+import { tahchin } from "./recipes/tahchin";
+import { torshi } from "./recipes/torshi";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -706,6 +763,7 @@ import { cultureIndonesian } from "./docs/culture-indonesian";
 import { cultureWestAfrican } from "./docs/culture-west-african";
 import { cultureFilipino } from "./docs/culture-filipino";
 import { cultureVietnamese } from "./docs/culture-vietnamese";
+import { culturePersian } from "./docs/culture-persian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -726,6 +784,7 @@ import { indonesianWeeks } from "./weeks/indonesian-weeks";
 import { westAfricanWeeks } from "./weeks/west-african-weeks";
 import { filipinoWeeks } from "./weeks/filipino-weeks";
 import { vietnameseWeeks } from "./weeks/vietnamese-weeks";
+import { persianWeeks } from "./weeks/persian-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1049,6 +1108,33 @@ export const recipes: Recipe[] = [
   thitXaoRau,
   trungChien,
   trungChung,
+  // persian
+  abgoosht,
+  adasPolo,
+  adasi,
+  ashAnar,
+  ashJo,
+  ashReshteh,
+  baghaliPolo,
+  barbariBread,
+  boraniBademjan,
+  chelo,
+  damiGojeh,
+  estamboliPolo,
+  gheymeh,
+  ghormehSabzi,
+  kashkEBademjan,
+  khoreshBademjan,
+  khoreshKarafs,
+  kukuBademjan,
+  kukuSabzi,
+  kukuSibzamini,
+  loobiaPolo,
+  mastOKhiar,
+  mirzaGhasemi,
+  sabziPolo,
+  tahchin,
+  torshi,
 ];
 
 export const docs: ContentDoc[] = [
@@ -1066,6 +1152,7 @@ export const docs: ContentDoc[] = [
   cultureWestAfrican,
   cultureFilipino,
   cultureVietnamese,
+  culturePersian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1098,6 +1185,8 @@ export const weekThemes: WeekTheme[] = [
   ...filipinoWeeks,
   // vietnamese
   ...vietnameseWeeks,
+  // persian
+  ...persianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1119,4 +1208,5 @@ export const weeks: WeekPlan[] = [
   ...westAfricanWeeks,
   ...filipinoWeeks,
   ...vietnameseWeeks,
+  ...persianWeeks,
 ];
