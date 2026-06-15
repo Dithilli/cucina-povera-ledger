@@ -421,6 +421,35 @@ export * from "./recipes/ssamjang";
 export * from "./recipes/sundubu-jjigae";
 export * from "./recipes/tteokguk";
 
+// ── japanese ──
+export * from "./recipes/agedashi-dofu";
+export * from "./recipes/butadon";
+export * from "./recipes/chawanmushi";
+export * from "./recipes/dashi";
+export * from "./recipes/gohan";
+export * from "./recipes/gomadare";
+export * from "./recipes/hijiki-no-nimono";
+export * from "./recipes/hiyayakko";
+export * from "./recipes/kabocha-no-nimono";
+export * from "./recipes/kayaku-gohan";
+export * from "./recipes/kiriboshi-daikon";
+export * from "./recipes/mabo-dofu";
+export * from "./recipes/misoshiru";
+export * from "./recipes/nasu-dengaku";
+export * from "./recipes/nikujaga";
+export * from "./recipes/nukazuke";
+export * from "./recipes/ochazuke";
+export * from "./recipes/ojiya";
+export * from "./recipes/omurice";
+export * from "./recipes/oyakodon";
+export * from "./recipes/saba-misoni";
+export * from "./recipes/takikomi-gohan";
+export * from "./recipes/tamago-don";
+export * from "./recipes/tamagoyaki";
+export * from "./recipes/unohana";
+export * from "./recipes/yosenabe";
+export * from "./recipes/zosui";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -440,6 +469,7 @@ export * from "./docs/culture-vietnamese";
 export * from "./docs/culture-persian";
 export * from "./docs/culture-portuguese";
 export * from "./docs/culture-korean";
+export * from "./docs/culture-japanese";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -458,6 +488,7 @@ export * from "./weeks/vietnamese-weeks";
 export * from "./weeks/persian-weeks";
 export * from "./weeks/portuguese-weeks";
 export * from "./weeks/korean-weeks";
+export * from "./weeks/japanese-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -864,6 +895,34 @@ import { sigeumchiNamul } from "./recipes/sigeumchi-namul";
 import { ssamjang } from "./recipes/ssamjang";
 import { sundubuJjigae } from "./recipes/sundubu-jjigae";
 import { tteokguk } from "./recipes/tteokguk";
+// japanese
+import { agedashiDofu } from "./recipes/agedashi-dofu";
+import { butadon } from "./recipes/butadon";
+import { chawanmushi } from "./recipes/chawanmushi";
+import { dashi } from "./recipes/dashi";
+import { gohan } from "./recipes/gohan";
+import { gomadare } from "./recipes/gomadare";
+import { hijikiNoNimono } from "./recipes/hijiki-no-nimono";
+import { hiyayakko } from "./recipes/hiyayakko";
+import { kabochaNoNimono } from "./recipes/kabocha-no-nimono";
+import { kayakuGohan } from "./recipes/kayaku-gohan";
+import { kiriboshiDaikon } from "./recipes/kiriboshi-daikon";
+import { maboDofu } from "./recipes/mabo-dofu";
+import { misoshiru } from "./recipes/misoshiru";
+import { nasuDengaku } from "./recipes/nasu-dengaku";
+import { nikujaga } from "./recipes/nikujaga";
+import { nukazuke } from "./recipes/nukazuke";
+import { ochazuke } from "./recipes/ochazuke";
+import { ojiya } from "./recipes/ojiya";
+import { omurice } from "./recipes/omurice";
+import { oyakodon } from "./recipes/oyakodon";
+import { sabaMisoni } from "./recipes/saba-misoni";
+import { takikomiGohan } from "./recipes/takikomi-gohan";
+import { tamagoDon } from "./recipes/tamago-don";
+import { tamagoyaki } from "./recipes/tamagoyaki";
+import { unohana } from "./recipes/unohana";
+import { yosenabe } from "./recipes/yosenabe";
+import { zosui } from "./recipes/zosui";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -882,6 +941,7 @@ import { cultureVietnamese } from "./docs/culture-vietnamese";
 import { culturePersian } from "./docs/culture-persian";
 import { culturePortuguese } from "./docs/culture-portuguese";
 import { cultureKorean } from "./docs/culture-korean";
+import { cultureJapanese } from "./docs/culture-japanese";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -905,6 +965,7 @@ import { vietnameseWeeks } from "./weeks/vietnamese-weeks";
 import { persianWeeks } from "./weeks/persian-weeks";
 import { portugueseWeeks } from "./weeks/portuguese-weeks";
 import { koreanWeeks } from "./weeks/korean-weeks";
+import { japaneseWeeks } from "./weeks/japanese-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1310,6 +1371,34 @@ export const recipes: Recipe[] = [
   ssamjang,
   sundubuJjigae,
   tteokguk,
+  // japanese
+  agedashiDofu,
+  butadon,
+  chawanmushi,
+  dashi,
+  gohan,
+  gomadare,
+  hijikiNoNimono,
+  hiyayakko,
+  kabochaNoNimono,
+  kayakuGohan,
+  kiriboshiDaikon,
+  maboDofu,
+  misoshiru,
+  nasuDengaku,
+  nikujaga,
+  nukazuke,
+  ochazuke,
+  ojiya,
+  omurice,
+  oyakodon,
+  sabaMisoni,
+  takikomiGohan,
+  tamagoDon,
+  tamagoyaki,
+  unohana,
+  yosenabe,
+  zosui,
 ];
 
 export const docs: ContentDoc[] = [
@@ -1330,6 +1419,7 @@ export const docs: ContentDoc[] = [
   culturePersian,
   culturePortuguese,
   cultureKorean,
+  cultureJapanese,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1368,6 +1458,8 @@ export const weekThemes: WeekTheme[] = [
   ...portugueseWeeks,
   // korean
   ...koreanWeeks,
+  // japanese
+  ...japaneseWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1392,4 +1484,5 @@ export const weeks: WeekPlan[] = [
   ...persianWeeks,
   ...portugueseWeeks,
   ...koreanWeeks,
+  ...japaneseWeeks,
 ];
