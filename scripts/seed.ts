@@ -114,6 +114,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, fish sauce, and a caramel braise — eat less meat, more rice, and waste nothing.",
   },
+  "persian": {
+    slug: "chelo-khoresh",
+    name: "Chelo & Khoresh",
+    tagline:
+      "Rice, herbs, and legumes under dried lime — a little meat stretched across many bowls, the burnt crust the prize.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
