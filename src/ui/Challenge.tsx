@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { WeekTheme, WeekPlan, Recipe, ContentDoc } from "../content/types";
 import {
   listWeeks,
@@ -9,11 +9,12 @@ import {
   type Challenge as ChallengeMeta,
 } from "../data/content";
 import { money } from "./format";
+import { Close } from "./icons";
 
 /**
  * The challenge browser — reads everything live from Supabase via the data layer.
  * Challenge-agnostic: give it a challenge slug and it renders that challenge's
- * weeks, recipes, and prose.
+ * weeks, recipes, and prose. Dishes drill down into the full recipe.
  */
 export function Challenge({ slug }: { slug: string }) {
   const [meta, setMeta] = useState<ChallengeMeta | null>(null);
@@ -22,6 +23,7 @@ export function Challenge({ slug }: { slug: string }) {
   const [docs, setDocs] = useState<ContentDoc[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [openSlug, setOpenSlug] = useState<string | null>(null);
 
   useEffect(() => {
     let alive = true;
@@ -44,26 +46,37 @@ export function Challenge({ slug }: { slug: string }) {
     };
   }, [slug]);
 
+  const bySlug = useMemo(() => {
+    const m = new Map<string, Recipe>();
+    for (const r of recipes) m.set(r.slug, r);
+    return m;
+  }, [recipes]);
+
+  const openRecipe = bySlug.get(openSlug ?? "") ?? null;
+
   if (!loaded) return <div className="loading">Loading the challenge…</div>;
-  if (error)
-    return (
-      <div className="empty">
-        Couldn’t reach the challenge: {error}
-      </div>
-    );
+  if (error) return <div className="empty">Couldn’t reach the challenge: {error}</div>;
 
   return (
     <div className="challenge-view">
       {meta && (
         <section className="ch-intro">
-          <div className="eyebrow">{recipes.length} dishes · {weeks.length} weeks</div>
+          <div className="eyebrow">
+            {recipes.length} dishes · {weeks.length} weeks
+          </div>
           {meta.tagline && <p className="ch-tagline">{meta.tagline}</p>}
           <div className="ch-dials">
-            <span><b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/day</span>
+            <span>
+              <b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/day
+            </span>
             <span className="dot">·</span>
-            <span><b>{meta.defaultProteinFloor}g</b> protein floor</span>
+            <span>
+              <b>{meta.defaultProteinFloor}g</b> protein floor
+            </span>
             <span className="dot">·</span>
-            <span><b>{money(meta.defaultWeeklyBudget)}</b>/week</span>
+            <span>
+              <b>{money(meta.defaultWeeklyBudget)}</b>/week
+            </span>
           </div>
         </section>
       )}
@@ -72,7 +85,13 @@ export function Challenge({ slug }: { slug: string }) {
         <h2>The themed weeks</h2>
         <div className="week-cards">
           {weeks.map((w) => (
-            <WeekCard key={w.slug} challengeSlug={slug} week={w} />
+            <WeekCard
+              key={w.slug}
+              challengeSlug={slug}
+              week={w}
+              recipesBySlug={bySlug}
+              onOpenRecipe={setOpenSlug}
+            />
           ))}
         </div>
       </section>
@@ -81,7 +100,13 @@ export function Challenge({ slug }: { slug: string }) {
         <h2>The dishes</h2>
         <div className="recipe-list">
           {recipes.map((r) => (
-            <RecipeItem key={r.slug} recipe={r} />
+            <button key={r.slug} className="recipe-row" onClick={() => setOpenSlug(r.slug)}>
+              <span className="recipe-title">{r.title}</span>
+              <span className="recipe-macros">
+                {r.perServing.calories} kcal · {r.perServing.protein}g
+                {r.estCostPerServing != null && <> · {money(r.estCostPerServing)}/serving</>}
+              </span>
+            </button>
           ))}
         </div>
       </section>
@@ -96,11 +121,23 @@ export function Challenge({ slug }: { slug: string }) {
           </div>
         </section>
       )}
+
+      {openRecipe && <RecipeModal recipe={openRecipe} onClose={() => setOpenSlug(null)} />}
     </div>
   );
 }
 
-function WeekCard({ challengeSlug, week }: { challengeSlug: string; week: WeekTheme }) {
+function WeekCard({
+  challengeSlug,
+  week,
+  recipesBySlug,
+  onOpenRecipe,
+}: {
+  challengeSlug: string;
+  week: WeekTheme;
+  recipesBySlug: Map<string, Recipe>;
+  onOpenRecipe: (slug: string) => void;
+}) {
   const [open, setOpen] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [planLoaded, setPlanLoaded] = useState(false);
@@ -165,11 +202,11 @@ function WeekCard({ challengeSlug, week }: { challengeSlug: string; week: WeekTh
                 </ul>
               </div>
               <div className="plan-days">
-                <h4>The week</h4>
+                <h4>The week · dinners</h4>
                 {plan.days.map((d) => (
                   <div className="plan-day" key={d.day}>
                     <span className="pd-day">{d.day}</span>
-                    <span className="pd-dinner">{d.dinner}</span>
+                    <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
                     <span className="pd-num">
                       {d.estCalories} kcal · {d.estProtein}g
                     </span>
@@ -178,9 +215,7 @@ function WeekCard({ challengeSlug, week }: { challengeSlug: string; week: WeekTh
               </div>
               {(plan.firstShopTotal != null || plan.steadyStateWeekly != null) && (
                 <div className="plan-cost">
-                  {plan.firstShopTotal != null && (
-                    <span>First shop {money(plan.firstShopTotal)}</span>
-                  )}
+                  {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
                   {plan.steadyStateWeekly != null && (
                     <span>Steady state {money(plan.steadyStateWeekly)}/wk</span>
                   )}
@@ -194,20 +229,50 @@ function WeekCard({ challengeSlug, week }: { challengeSlug: string; week: WeekTh
   );
 }
 
-function RecipeItem({ recipe }: { recipe: Recipe }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <article className={`recipe-item ${open ? "open" : ""}`}>
-      <button className="recipe-head" onClick={() => setOpen((v) => !v)}>
-        <span className="recipe-title">{recipe.title}</span>
-        <span className="recipe-macros">
-          {recipe.perServing.calories} kcal · {recipe.perServing.protein}g
-          {recipe.estCostPerServing != null && (
-            <> · {money(recipe.estCostPerServing)}/serving</>
-          )}
-        </span>
+/** A dinner cell: a clickable link into the recipe when the value is a known
+ *  recipe slug, otherwise plain prose (e.g. dishes not yet in the library). */
+function DinnerCell({
+  dinner,
+  recipesBySlug,
+  onOpen,
+}: {
+  dinner: string;
+  recipesBySlug: Map<string, Recipe>;
+  onOpen: (slug: string) => void;
+}) {
+  const recipe = recipesBySlug.get(dinner);
+  if (recipe) {
+    return (
+      <button className="pd-dinner recipe-link" onClick={() => onOpen(recipe.slug)}>
+        {recipe.title}
       </button>
-      {open && (
+    );
+  }
+  return <span className="pd-dinner">{dinner}</span>;
+}
+
+function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal" role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose} aria-label="Close">
+          <Close size={16} />
+        </button>
+        <div className="modal-head">
+          <h3>{recipe.title}</h3>
+          <span className="recipe-macros">
+            Serves {recipe.servings} · {recipe.perServing.calories} kcal · {recipe.perServing.protein}g
+            {recipe.estCostPerServing != null && <> · {money(recipe.estCostPerServing)}/serving</>}
+          </span>
+        </div>
         <div className="recipe-body">
           <p className="recipe-blurb">{recipe.blurb}</p>
           <div className="recipe-cols">
@@ -235,9 +300,14 @@ function RecipeItem({ recipe }: { recipe: Recipe }) {
               <i>The modern move —</i> {recipe.modernMove}
             </p>
           )}
+          {recipe.notes && (
+            <p className="modern-move">
+              <i>Notes —</i> {recipe.notes}
+            </p>
+          )}
         </div>
-      )}
-    </article>
+      </div>
+    </div>
   );
 }
 

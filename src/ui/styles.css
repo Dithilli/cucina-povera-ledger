@@ -320,8 +320,46 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .doc-kind { font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--oliva); }
 .doc-body { font-size: 13.5px; line-height: 1.62; color: var(--ink); white-space: pre-wrap; padding: 4px 2px 18px; }
 
+/* clickable recipe row (the dishes list) */
+.recipe-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  width: 100%; background: none; border: none; border-bottom: 1px solid var(--rule);
+  cursor: pointer; text-align: left; padding: 12px 2px; color: var(--ink);
+}
+.recipe-row:hover { background: var(--paper); }
+.recipe-row:hover .recipe-title { color: var(--rosso); }
+
+/* dinner-as-recipe link in a week plan */
+.recipe-link {
+  background: none; border: none; padding: 0; cursor: pointer;
+  font: inherit; color: var(--rosso); text-align: left;
+  text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px;
+}
+.recipe-link:hover { text-decoration-style: solid; }
+
+/* recipe modal */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(43, 39, 34, 0.55);
+  display: grid; place-items: start center; overflow-y: auto;
+  padding: 40px 14px; z-index: 50;
+}
+.modal {
+  position: relative; width: 100%; max-width: 620px; background: var(--paper-2);
+  border: 1px solid var(--ink); box-shadow: 8px 8px 0 rgba(43, 39, 34, 0.25);
+  padding: 26px 26px 24px;
+}
+.modal-close {
+  position: absolute; top: 12px; right: 12px;
+  background: none; border: 1px solid var(--ink); color: var(--ink);
+  width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer;
+}
+.modal-close:hover { background: var(--ink); color: var(--paper); }
+.modal-head { margin: 0 30px 16px 0; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+.modal-head h3 { font-family: var(--display); font-weight: 600; font-size: 23px; margin: 0 0 6px; }
+
 @media (max-width: 640px) {
   .challenge-view { padding: 8px 14px; }
   .recipe-cols { grid-template-columns: 1fr; gap: 12px; }
   .recipe-macros { font-size: 10px; }
+  .modal { padding: 22px 16px 18px; }
 }
