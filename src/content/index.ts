@@ -47,14 +47,28 @@ export * from "./recipes/minestrone";
 export * from "./recipes/scarola-e-fagioli";
 export * from "./recipes/peperonata";
 
+// ── Challenge #2 — Mexico (La Cocina del Maíz) ──
+export * from "./recipes/corn-tortillas";
+export * from "./recipes/chilaquiles-rojos";
+export * from "./recipes/quesadillas-de-maiz";
+export * from "./recipes/frijoles-de-la-olla";
+export * from "./recipes/frijoles-refritos";
+export * from "./recipes/frijoles-charros";
+export * from "./recipes/salsa-roja-asada";
+export * from "./recipes/salsa-verde";
+export * from "./recipes/huevos-a-la-mexicana";
+export * from "./recipes/huevos-rancheros";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
 export * from "./docs/manifesto";
+export * from "./docs/culture-mexico";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
 export * from "./weeks/themes";
+export * from "./weeks/mexican-themes";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -97,9 +111,22 @@ import { minestrone } from "./recipes/minestrone";
 import { scarolaEFagioli } from "./recipes/scarola-e-fagioli";
 import { peperonata } from "./recipes/peperonata";
 
+// Challenge #2 — Mexico
+import { cornTortillas } from "./recipes/corn-tortillas";
+import { chilaquilesRojos } from "./recipes/chilaquiles-rojos";
+import { quesadillasDeMaiz } from "./recipes/quesadillas-de-maiz";
+import { frijolesDeLaOlla } from "./recipes/frijoles-de-la-olla";
+import { frijolesRefritos } from "./recipes/frijoles-refritos";
+import { frijolesCharros } from "./recipes/frijoles-charros";
+import { salsaRojaAsada } from "./recipes/salsa-roja-asada";
+import { salsaVerde } from "./recipes/salsa-verde";
+import { huevosALaMexicana } from "./recipes/huevos-a-la-mexicana";
+import { huevosRancheros } from "./recipes/huevos-rancheros";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
+import { cultureMexico } from "./docs/culture-mexico";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -110,9 +137,10 @@ import {
   bonusSicilian,
   bonusGarden,
 } from "./weeks/themes";
+import { mexicanWeeks } from "./weeks/mexican-themes";
 
-// The challenge recipe pool — humble cucina povera dishes the menu generator
-// may draw from.
+// The challenge recipe pool — dishes the menu generator may draw from, tagged
+// by cuisine (Italian cucina povera + Mexican cocina del maíz).
 export const recipes: Recipe[] = [
   frittataDiPasta,
   pastaAlPomodoroETonno,
@@ -154,12 +182,24 @@ export const recipes: Recipe[] = [
   minestrone,
   scarolaEFagioli,
   peperonata,
+  // Challenge #2 — Mexico (La Cocina del Maíz)
+  cornTortillas,
+  chilaquilesRojos,
+  quesadillasDeMaiz,
+  frijolesDeLaOlla,
+  frijolesRefritos,
+  frijolesCharros,
+  salsaRojaAsada,
+  salsaVerde,
+  huevosALaMexicana,
+  huevosRancheros,
 ];
 
 export const docs: ContentDoc[] = [
   budget,
   challenge,
   manifesto,
+  cultureMexico,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -172,6 +212,8 @@ export const weekThemes: WeekTheme[] = [
   week5Polenta,
   bonusSicilian,
   bonusGarden,
+  // Challenge #2 — Mexico
+  ...mexicanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
