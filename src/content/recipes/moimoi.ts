@@ -53,4 +53,11 @@ export const moimoi: Recipe = {
     "bean-pudding",
     "nigerian",
   ],
+  sources: [
+    {
+      title: "Lola Osinkolu — Chef Lola's Kitchen",
+      url: "https://cheflolaskitchen.com/make-moin-moin-moi-moi/",
+      note: "Skinning the soaked beans and the blend-and-steam method for a smooth, set bean pudding.",
+    },
+  ],
 };

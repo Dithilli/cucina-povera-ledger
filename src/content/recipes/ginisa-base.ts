@@ -30,4 +30,8 @@ export const ginisaBase: Recipe = {
     "The everyday workhorse base for monggo, ginisang sayote, ginisang munggo, and countless tinola-adjacent dishes. Some cooks bloom a little ginger alongside the garlic for fish and chicken.",
   zeroWasteHero: true,
   tags: ["base", "aromatics", "ginisa", "sofrito", "garlic", "make-ahead", "vegan"],
+  sources: [
+    { title: "Liza Agbanlog — Salu Salo Recipes (\"How to Make Ginisang Gulay\")", note: "Ginisa as the garlic–onion–tomato aromatic base of Filipino home cooking" },
+    { title: "Reynaldo G. Alejandro — The Philippine Cookbook", note: "Guisá / gisa flavoring base of onions, garlic, and tomatoes" },
+  ],
 };

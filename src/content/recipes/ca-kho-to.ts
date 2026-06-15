@@ -37,4 +37,16 @@ export const caKhoTo: Recipe = {
     "The clay pot holds and radiates heat for a gentle, even braise, but any small heavy pot works. Mackerel and catfish are the traditional, cheapest choices and stand up to the long cook; delicate fillets fall apart.",
   zeroWasteHero: false,
   tags: ["dinner", "fish", "kho", "caramel-braise", "clay-pot", "frugal", "one-pot"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Braised & Caramelized Catfish (Ca Kho To)",
+      url: "https://vickypham.com/blog/vietnamese-caramelized-catfish-ca-kho-to/",
+      note: "Catfish braised in caramel and fish sauce, reduced to a clinging glaze in a clay pot",
+    },
+    {
+      title: "RunAwayRice — Braised Fish in Clay Pot (Ca Kho To)",
+      url: "https://runawayrice.com/main-dishes/braised-fish-in-clay-pot-ca-kho-to/",
+      note: "Marinating, then the long hard braise that softens the bones",
+    },
+  ],
 };

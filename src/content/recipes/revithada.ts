@@ -40,4 +40,11 @@ export const revithada: Recipe = {
     "Traditionally carried to the village baker's cooling wood oven on Saturday night and eaten after church. The lemon at the end is non-negotiable.",
   zeroWasteHero: true,
   tags: ["legumes", "chickpeas", "baked", "revithada", "sifnos", "one-pot"],
+  sources: [
+    {
+      title: "The Hungry Bites — Greek Baked Chickpeas (Revithada)",
+      url: "https://www.thehungrybites.com/greek-traditional-baked-chickpeas-revithada/",
+      note: "Confirms the Sifnos method — chickpeas slow-baked with onion, olive oil, and water.",
+    },
+  ],
 };

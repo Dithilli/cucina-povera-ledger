@@ -64,4 +64,16 @@ export const bibimbap: Recipe = {
   notes:
     "Endlessly flexible: any leftover seasoned vegetable becomes a namul here, which is why bibimbap is the classic way to clear the week's banchan into one dinner.",
   tags: ["rice", "namul", "egg", "gochujang", "rice-bowl"],
+  sources: [
+    {
+      title: "Maangchi — Bibimbap (Mixed rice with vegetables)",
+      url: "https://www.maangchi.com/recipe/bibimbap",
+      note: "Separately seasoned namul arranged over rice with gochujang and egg",
+    },
+    {
+      title: "My Korean Kitchen — Bibimbap (Sue Pressey)",
+      url: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/",
+      note: "Component vegetables and gochujang mixing sauce",
+    },
+  ],
 };

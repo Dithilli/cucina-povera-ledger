@@ -64,4 +64,16 @@ export const banhCanh: Recipe = {
   modernMove:
     "Cooking the tapioca-rice noodles directly in the broth lets them thicken it from within — no roux, no cream, just starch doing the work, so a thrifty bone broth turns silky and substantial on its own.",
   tags: ["noodles", "tapioca", "soup", "pork", "broth", "one-pot"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Thick Noodle Soup (Banh Canh)",
+      url: "https://vickypham.com/blog/vietnamese-thick-noodle-soup-banh-canh/",
+      note: "Pork-bone broth and tapioca-rice noodles that thicken the soup",
+    },
+    {
+      title: "Vicky Pham — Banh Canh Noodles from Scratch",
+      url: "https://vickypham.com/blog/vietnamese-banh-canh-noodles-from-scratch-cach-lam-soi-banh-canh/",
+      note: "Scalding the tapioca-rice dough with boiling water for the chewy noodles",
+    },
+  ],
 };

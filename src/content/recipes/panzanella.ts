@@ -56,4 +56,11 @@ export const panzanella: Recipe = {
     "Salt the tomatoes first and let the bread soak in their juices, not water — every bite tastes of concentrated tomato instead of wet crumb.",
   zeroWasteHero: true,
   tags: ["bread", "tomato", "salad", "zero-waste", "summer", "no-cook"],
+  sources: [
+    {
+      title: "Panzanella — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Panzanella",
+      note: "Tuscan/Umbrian summer salad of soaked stale bread, tomatoes, and onion",
+    },
+  ],
 };

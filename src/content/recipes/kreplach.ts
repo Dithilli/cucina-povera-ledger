@@ -32,4 +32,15 @@ export const kreplach: Recipe = {
     "Meat and schmaltz make these fleishig — serve in chicken soup, never with dairy. Kreplach are pure thrift logic: nothing of the Sabbath meat is wasted, it's reincarnated inside a dumpling. Traditionally served three times a year — before Yom Kippur, at Hoshana Rabbah, and at Purim — where the hidden meat inside the dough carries its own symbolism.",
   zeroWasteHero: true,
   tags: ["dumpling", "meat", "kreplach", "shabbos", "fleishig"],
+  sources: [
+    {
+      title: "Wikipedia — Kreplach",
+      url: "https://en.wikipedia.org/wiki/Kreplach",
+      note: "Filled dumplings served in chicken soup; the three traditional serving occasions.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Kreplach as the thrifty afterlife of Sabbath meat and its holiday symbolism.",
+    },
+  ],
 };

@@ -31,4 +31,11 @@ export const ssamjang: Recipe = {
     "Keeps two weeks covered in the fridge; the flavor settles and deepens after a day. Add a spoon of finely chopped onion or a few drops of plum syrup if you like it sweeter. Fully vegan as written.",
   zeroWasteHero: false,
   tags: ["side", "base", "condiment", "doenjang", "gochujang", "fermented", "make-ahead", "vegan"],
+  sources: [
+    {
+      title: "Maangchi — Ssamjang (Korean spicy dipping sauce)",
+      url: "https://www.maangchi.com/recipe/ssamjang",
+      note: "Blending doenjang and gochujang with garlic, sesame oil, and a little sugar",
+    },
+  ],
 };

@@ -37,4 +37,7 @@ export const arrozDeTomate: Recipe = {
   notes:
     "Serve immediately in deep bowls — soupy rice keeps cooking and tightens fast, so it is a make-and-eat dish, not a leftover one. A fried egg or a little grilled fish on top turns it into a full plate.",
   tags: ["tomato", "rice", "soupy", "refogado", "one-pot"],
+  sources: [
+    { title: "Tia Maria — Arroz de Tomate (Portuguese Tomato Flavored Rice)", url: "https://tiamariasblog.com/arroz-de-tomate-tomato-flavored-rice/", note: "tomato refogado loosened into a soupy malandrinho rice" },
+  ],
 };

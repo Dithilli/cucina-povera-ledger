@@ -30,4 +30,8 @@ export const tsebhiShiro: Recipe = {
   notes:
     "Shiro is the great shared everyday dish — order it in Asmara or Addis and you get the same bowl. The clay-pot service is the tell of an Eritrean kitchen.",
   tags: ["shiro", "chickpea", "eritrean", "wot", "dinner"],
+  sources: [
+    { title: "Culinary Creations — Eritrean Shiro (Tsebhi Shiro)", url: "https://culinarycreationss.com/recipe/eritrean-shiro-recipe-vegan-gluten-free", note: "Eritrean shiro from ground chickpea/broad-bean flour — the same everyday stew across the border." },
+    { title: "196 flavors — Shiro Wot", url: "https://www.196flavors.com/shiro-wot/", note: "The shiro technique, including the thick clay-pot tegabino style served bubbling." },
+  ],
 };

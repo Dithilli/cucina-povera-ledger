@@ -41,4 +41,8 @@ export const sinigangNaIsda: Recipe = {
   notes:
     "Built for the cheapest fish at the market — whole bangus, tilapia, or the fish heads and collars others leave behind, which give the most flavor for the least money.",
   tags: ["soup", "fish", "tamarind", "sour", "whole-fish", "one-pot"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Sinigang na Isda sa Kamias)", url: "https://panlasangpinoy.com/sinigang-na-isda-sa-kamias/", note: "Whole cheap fish poached in a clean sour broth with no sautéing" },
+    { title: "Panlasang Pinoy — Fish Sinigang", url: "https://panlasangpinoy.com/fish-sinigang/", note: "Bare-poach technique for clear broth and intact fish" },
+  ],
 };

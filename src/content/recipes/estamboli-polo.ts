@@ -42,4 +42,7 @@ export const estamboliPolo: Recipe = {
   modernMove:
     "Browning the potatoes before they steam means each cube holds its shape and adds a fried, almost-roasted note instead of dissolving into the rice.",
   tags: ["rice", "polo", "potato", "tomato", "tahdig", "one-pot", "vegan"],
+  sources: [
+    { title: "My Persian Kitchen — Estamboli (Eslamboli) Polow", url: "http://www.mypersiankitchen.com/eslamboli-polow-persian-tomato-rice/", note: "Persian tomato-and-potato rice parboiled, layered, and steamed with tahdig" },
+  ],
 };

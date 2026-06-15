@@ -36,4 +36,16 @@ export const kimchi: Recipe = {
     "Leave out the fish sauce and salted shrimp and add a spoon of miso or extra salt for a fully vegan kimchi. Always serve with a clean utensil and keep the surface under the brine so it sours rather than spoils. Don't throw out the brine — it's flavor for stews and noodle soups.",
   zeroWasteHero: false,
   tags: ["base", "side", "fermented", "kimchi", "cabbage", "make-ahead", "banchan"],
+  sources: [
+    {
+      title: "Maangchi — Easy kimchi (Mak-kimchi)",
+      url: "https://www.maangchi.com/recipe/easy-kimchi",
+      note: "Salting cut napa cabbage, the gochugaru-garlic-ginger-fish sauce paste, and room-temp fermentation",
+    },
+    {
+      title: "Korean Bapsang (Hyosun Ro) — Easy Kimchi (Mak Kimchi)",
+      url: "https://www.koreanbapsang.com/mak-kimchi-simple-kimchi/",
+      note: "Salting/brining the cabbage and the seasoning paste with radish and scallion",
+    },
+  ],
 };

@@ -65,4 +65,16 @@ export const tteokguk: Recipe = {
   modernMove:
     "Soaking the rice cakes first and only adding them once the broth is at a rolling simmer keeps them tender-chewy instead of pasty — and frying the yolk and white into separate ribbons (jidan) gives the plain white soup its festive gold-and-white finish for the cost of one egg.",
   tags: ["soup", "guk", "rice-cake", "tteok", "anchovy-kelp-stock", "new-year"],
+  sources: [
+    {
+      title: "Maangchi — Rice cake soup (Tteokguk)",
+      url: "https://www.maangchi.com/recipe/tteokguk",
+      note: "Soaking the tteok, building a clear broth, and the egg-ribbon (jidan) garnish",
+    },
+    {
+      title: "Wikipedia — Tteokguk",
+      url: "https://en.wikipedia.org/wiki/Tteokguk",
+      note: "The Korean New Year (Seollal) tradition behind the rice-cake soup",
+    },
+  ],
 };

@@ -30,4 +30,15 @@ export const roastChickenWithSchmaltz: Recipe = {
   notes:
     "Schmaltz and chicken make this fleishig — no butter, no dairy at the table. The thrift is in the afterlife: the rendered pan fat is poured off as next week's schmaltz, and the stripped carcass becomes the foundation of the chicken soup. One bird does the work of three.",
   tags: ["chicken", "roast", "shabbos", "fleishig"],
+  sources: [
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "The Ashkenazi Shabbat roast chicken and rendering its fat back into schmaltz.",
+    },
+    {
+      title: "Wikipedia — Schmaltz",
+      url: "https://en.wikipedia.org/wiki/Schmaltz",
+      note: "Rendered chicken fat saved from the roasting bird as the kitchen's cooking fat.",
+    },
+  ],
 };

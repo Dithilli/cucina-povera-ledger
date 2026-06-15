@@ -29,4 +29,11 @@ export const roti: Recipe = {
   notes:
     "Atta is hard durum-style wheat ground with the bran in, so a roti is genuinely whole-grain and cheap. No yeast, no oven, no oil needed — the most frugal bread in the book.",
   tags: ["base", "roti", "flatbread", "whole-wheat", "bread"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/rotis-made-from-whole-wheat-flour/",
+      note: "Whole-wheat roti / chapati / phulka — dough, rolling, and the steam puff on a hot tawa",
+    },
+  ],
 };

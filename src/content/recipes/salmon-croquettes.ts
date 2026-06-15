@@ -34,4 +34,11 @@ export const salmonCroquettes: Recipe = {
     "Mashing the canned bones and skin straight into the mix is the frugal move and the nutritious one — nothing in the can is wasted, and the skin's fat keeps the patties moist.",
   zeroWasteHero: true,
   tags: ["fish", "salmon", "canned", "croquettes", "cornmeal", "fried", "pantry"],
+  sources: [
+    {
+      title: "Grandbaby Cakes — Salmon Croquettes",
+      url: "https://grandbaby-cakes.com/salmon-croquettes/",
+      note: "Soul-food classic binding canned pink salmon with egg and cornmeal, fried into patties.",
+    },
+  ],
 };

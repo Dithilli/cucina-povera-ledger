@@ -41,4 +41,11 @@ export const labneh: Recipe = {
   notes:
     "Rolled into balls and submerged in olive oil, labneh keeps for weeks in the fridge — a make-ahead base for the week.",
   tags: ["yogurt", "labneh", "dairy", "base", "make-ahead", "no-cook"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/homemade-yogurt-straining-for-laban-labne-and-labne-preserved-in-oil/",
+      note: "Straining salted yogurt in cloth to labneh, with longer hangs for firmer texture and balls preserved in oil.",
+    },
+  ],
 };

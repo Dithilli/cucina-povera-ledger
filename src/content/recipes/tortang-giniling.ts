@@ -30,4 +30,8 @@ export const tortangGiniling: Recipe = {
   modernMove:
     "Cooking the giniling down with potato until almost dry before it meets the egg means the omelette sets firm and sliceable instead of weeping — half a pound of meat plus potato and eggs becomes a full sit-down dinner for four.",
   tags: ["egg", "ground-meat", "potato", "tortang", "ginisa", "rice"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/tortang-giniling-omelet-recipe/", note: "Cooking the giniling and potato down before folding into beaten egg" },
+    { title: "Curious Cuisiniere — Tortang Giniling", url: "https://www.curiouscuisiniere.com/tortang-giniling/", note: "Ground meat omelette stretched with potato, served with banana ketchup" },
+  ],
 };

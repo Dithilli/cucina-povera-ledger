@@ -34,4 +34,16 @@ export const bunDauMamTom: Recipe = {
     "Mắm tôm is intense — start with less, and offer plain nước chấm alongside for anyone new to it. The fried tofu reheats well in a dry pan.",
   zeroWasteHero: true,
   tags: ["tofu", "vermicelli", "herbs", "fermented", "hanoi", "vegetarian-leaning", "street-food"],
+  sources: [
+    {
+      title: "Helen's Recipes — Bún Đậu Mắm Tôm",
+      url: "https://helenrecipes.com/recipe-55-bun-dau-mam-tom-fermented-shrimp-paste-with-fried-tofu-and-rice-vermicelli/",
+      note: "Fried tofu, room-temperature vermicelli, and the whipped mắm tôm dip",
+    },
+    {
+      title: "Wikipedia — Bún đậu mắm tôm",
+      url: "https://en.wikipedia.org/wiki/B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m",
+      note: "Background: Hanoi street platter built on fermented shrimp paste",
+    },
+  ],
 };

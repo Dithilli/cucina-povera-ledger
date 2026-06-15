@@ -28,4 +28,8 @@ export const daboKolo: Recipe = {
   notes:
     "The original shelf-stable travel snack of the highlands — a fistful of flour and spice that lasts the journey. A festive cousin of the everyday injera-and-wot table.",
   tags: ["snack", "barley", "wheat", "fried", "shelf-stable"],
+  sources: [
+    { title: "Dabo Kolo — Wikipedia", url: "https://en.wikipedia.org/wiki/Dabo_kolo", note: "The spiced fried dough finger-food snack of the highlands." },
+    { title: "Dabo Kolo (Ethiopian Spiced Bread Snacks) — Wikibooks Cookbook", url: "https://en.wikibooks.org/wiki/Cookbook:Dabo_Kolo_(Ethiopian_Spiced_Bread_Snacks)", note: "Method for the tiny spiced dough nuggets fried until hard and crunchy." },
+  ],
 };

@@ -27,4 +27,11 @@ export const frijolesDeLaOlla: Recipe = {
     "Hold the salt until the beans are tender, then season the broth aggressively — the bean liquor (the 'caldo de frijol') is a stock in its own right for soups and rice.",
   notes: "Eat with tortillas for the complete-protein pairing. Day-two beans become refritos; the broth becomes soup.",
   tags: ["beans", "legumes", "base", "protein", "one-pot"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Frijoles de la Olla",
+      url: "https://www.mexicoinmykitchen.com/mexican-beans-recipe/",
+      note: "Pot beans with onion and epazote; salting only once tender.",
+    },
+  ],
 };

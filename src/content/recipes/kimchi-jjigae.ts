@@ -37,4 +37,11 @@ export const kimchiJjigae: Recipe = {
     "The whole point is using kimchi too sour to enjoy raw — the sourer the better here. No pork? Canned tuna (drained, stirred in near the end) or a few dried anchovies in the broth make a leaner version. A splash of the kimchi brine is free seasoning; never waste it.",
   zeroWasteHero: true,
   tags: ["dinner", "stew", "jjigae", "kimchi", "pork", "tofu", "fermented", "make-ahead"],
+  sources: [
+    {
+      title: "Korean Bapsang (Hyosun Ro) — Kimchi Jjigae (Kimchi Stew)",
+      url: "https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/",
+      note: "Cooking sour kimchi with pork before adding liquid; using kimchi juice in the broth",
+    },
+  ],
 };

@@ -32,4 +32,16 @@ export const comTam: Recipe = {
   modernMove:
     "Broken grains aren't a downgrade — they drink up scallion oil and nước chấm where whole rice would shed it, so the cheap rice becomes the soul of the plate.",
   tags: ["broken-rice", "grilled-pork", "lemongrass", "nuoc-cham", "saigon"],
+  sources: [
+    {
+      title: "Hungry Huy — Vietnamese Pork Chop (Sườn Nướng)",
+      url: "https://www.hungryhuy.com/vietnamese-pork-chops/",
+      note: "Lemongrass-sugar-fish-sauce marinade and the hard grill that lacquers the chop",
+    },
+    {
+      title: "Wikipedia — Cơm tấm",
+      url: "https://en.wikipedia.org/wiki/C%C6%A1m_t%E1%BA%A5m",
+      note: "Background: broken rice born from fractured grains, now Saigon's signature plate",
+    },
+  ],
 };

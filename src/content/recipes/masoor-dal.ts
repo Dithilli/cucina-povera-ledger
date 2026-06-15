@@ -32,4 +32,11 @@ export const masoorDal: Recipe = {
   notes:
     "The single cheapest and fastest dal: red lentils are among the least expensive proteins on the shelf and cook in the time it takes to make rice. A genuine complete dinner for around fifty cents a serving.",
   tags: ["dinner", "dal", "masoor-dal", "red-lentils", "bhuna", "legumes"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/masoor-dal-recipe/",
+      note: "Red lentils cooked soft with no soak and seasoned through a bhuna masala",
+    },
+  ],
 };

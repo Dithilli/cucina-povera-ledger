@@ -27,4 +27,16 @@ export const comTrang: Recipe = {
   notes:
     "Day-old cold rice is the start of cơm chiên (fried rice) — keep leftovers spread out and chilled fast so they fry up loose. A rice cooker does steps 2 to 4 hands-off and is the everyday Vietnamese tool.",
   tags: ["base", "side", "rice", "jasmine", "staple", "vegan", "quick"],
+  sources: [
+    {
+      title: "Andrea Nguyen — Perfect Jasmine Rice, the 10-10-10 Method (Viet World Kitchen)",
+      url: "https://www.vietworldkitchen.com/blog/2026/04/perfect-jasmine-rice-the-10-10-10-method.html",
+      note: "Rinsing to clear starch, the boil-then-low-simmer, and the covered rest off heat",
+    },
+    {
+      title: "Hungry Huy — How to Cook Perfect, Fluffy Jasmine Rice",
+      url: "https://www.hungryhuy.com/how-to-cook-jasmine-rice/",
+      note: "Stovetop jasmine-rice water ratio and steaming method",
+    },
+  ],
 };

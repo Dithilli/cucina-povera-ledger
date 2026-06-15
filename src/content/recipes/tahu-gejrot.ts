@@ -36,4 +36,8 @@ export const tahuGejrot: Recipe = {
   modernMove:
     "The sauce stays thin and is added at the last second — the tofu floats in it rather than being glazed, so each bite is half crunch, half sour-sweet broth.",
   tags: ["tofu", "fried", "tamarind", "sambal", "cirebon", "street-food"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/tahu-gejrot-cirebon-fried-tofu-in-chili-soy-sauce.html", note: "Cirebon fried tofu in a thin sweet-sour palm-sugar chili sauce" },
+    { title: "Wikipedia — Tahu gejrot", url: "https://en.wikipedia.org/wiki/Tahu_gejrot", note: "Cirebon origin and thin palm-sugar/sweet-soy dressing with pounded garlic, shallot, chili" },
+  ],
 };

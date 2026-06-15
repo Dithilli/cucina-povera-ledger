@@ -30,4 +30,8 @@ export const bozenaShiro: Recipe = {
   notes:
     "Bozena shiro is how the everyday shiro becomes a feast — the meat ration stretches across the whole dish rather than landing on one plate.",
   tags: ["shiro", "chickpea", "meat", "dinner", "feast"],
+  sources: [
+    { title: "The Food Dictator — The Hirshon Ethiopian Shiro Wot", url: "https://www.thefooddictator.com/hirshon-ethiopian-shiro-wot-%E1%88%BD%E1%88%AE-%E1%8B%88%E1%8C%A5/", note: "Names the meat variation explicitly as bozena shiro — chickpea-flour stew studded with sautéed meat." },
+    { title: "Kittee Berns — Teff Love: Adventures in Vegan Ethiopian Cooking", note: "Cookbook covering shiro and its bozena variant." },
+  ],
 };

@@ -32,4 +32,8 @@ export const nasiUduk: Recipe = {
   modernMove:
     "Cooking the rice in coconut milk cut with water — then finishing by steam, not boil — keeps the grains separate and fragrant instead of sticky, the line between nasi uduk and coconut porridge.",
   tags: ["coconut-rice", "betawi", "lemongrass", "pandan", "base", "egg"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/nasi-uduk-betawi-jakarta-fragrant-coconut-rice.html", note: "Betawi coconut rice steamed with lemongrass, pandan, and galangal" },
+    { title: "Wikipedia — Nasi uduk", url: "https://en.wikipedia.org/wiki/Nasi_uduk", note: "Betawi origin and coconut-milk steamed rice definition" },
+  ],
 };

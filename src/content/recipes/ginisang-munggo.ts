@@ -37,4 +37,8 @@ export const ginisangMunggo: Recipe = {
   notes:
     "A Friday-night staple across the islands — almost free, and the malunggay turns a bean pot into a near-complete meal.",
   tags: ["legumes", "mung-beans", "ginisa", "malunggay", "one-pot", "frugal"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/ginisang-munggo-sauteed-mung-beans/", note: "Mung beans simmered soft over the ginisa base, finished with malunggay" },
+    { title: "Panlasang Pinoy — Ginisang Monggo with Dilis", url: "https://panlasangpinoy.com/ginisang-monggo-with-dilis/", note: "Cooking the beans down mushy and seasoning with patis" },
+  ],
 };

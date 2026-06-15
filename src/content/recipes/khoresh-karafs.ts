@@ -32,4 +32,16 @@ export const khoreshKarafs: Recipe = {
   notes:
     "A frugal, vegetable-forward khoresh: half a pound of meat carries a whole bunch of celery and a pile of herbs. Drop the meat for a vegetarian version with extra herbs and a squeeze more lime.",
   tags: ["dinner", "stew", "celery", "herbs", "dried-lime", "khoresh"],
+  sources: [
+    {
+      title: "Omid Roustaei — The Caspian Chef",
+      url: "https://thecaspianchef.com/2019/05/celery-and-beef-stew/",
+      note: "Supports sautéing the celery separately, frying the herbs, and the dried-lime tang.",
+    },
+    {
+      title: "Khoresh karafs — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Khoresh_karafs",
+      note: "Confirms the dish as a celery-forward Persian stew served over rice.",
+    },
+  ],
 };

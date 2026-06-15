@@ -30,4 +30,8 @@ export const tsebhiBirsen: Recipe = {
   notes:
     "Eritrean and Ethiopian Orthodox families share the fasting calendar and the legume table; 'tsebhi' simply means stew. The same flatbread (injera/taita) sits under both.",
   tags: ["wot", "lentils", "eritrean", "berbere", "dinner"],
+  sources: [
+    { title: "Urban Farmie — Misir Wot (Ethiopian and Eritrean Red Lentil Stew)", url: "https://urbanfarmie.com/misir-wot/", note: "Explicitly the shared Ethiopian and Eritrean berbere red-lentil stew — the same pot as tsebhi birsen." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/", note: "The berbere red-lentil stew technique that tsebhi birsen shares." },
+  ],
 };

@@ -35,4 +35,16 @@ export const banhXeo: Recipe = {
   notes:
     "Crepes are best straight from the pan; cook to order while everyone wraps. Leftover batter keeps a day in the fridge.",
   tags: ["crepe", "rice-flour", "turmeric", "bean-sprouts", "pork", "shrimp", "herbs", "wrap"],
+  sources: [
+    {
+      title: "Andrea Nguyen — Vietnamese Food Any Day (via The Washington Post)",
+      url: "https://www.washingtonpost.com/recipes/sizzling-rice-crepes/",
+      note: "Thin turmeric rice-flour batter and the pork/shrimp/bean-sprout fold",
+    },
+    {
+      title: "Wikipedia — Bánh xèo",
+      url: "https://en.wikipedia.org/wiki/B%C3%A1nh_x%C3%A8o",
+      note: "Background: the dish is named for the sizzling sound and eaten wrapped in greens",
+    },
+  ],
 };

@@ -41,4 +41,11 @@ export const herbFrittata: Recipe = {
     "Keep most of the herbs raw and folded in at the end so they stay bright green and aromatic instead of cooking to khaki.",
   zeroWasteHero: true,
   tags: ["eggs", "herbs", "greens", "one-pan", "quick", "protein-forward"],
+  sources: [
+    {
+      title: "Frittata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Frittata",
+      note: "Egg-based Italian dish enriched with herbs and greens",
+    },
+  ],
 };

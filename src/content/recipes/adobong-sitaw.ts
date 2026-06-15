@@ -36,4 +36,8 @@ export const adobongSitaw: Recipe = {
     "Works the same way with kalabasa (squash), eggplant, or kangkong stems. Skip the pork entirely and brown extra garlic for a vegan adobong gulay.",
   zeroWasteHero: false,
   tags: ["dinner", "vegetables", "string-beans", "adobo", "vinegar-braise", "frugal-meat", "one-pot"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/adobong-sitaw-with-pork/", note: "String beans and a little pork in adobo sauce" },
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/adobong-sitaw-string-bean-recipe/", note: "Braising the beans bright-green, not olive-drab" },
+  ],
 };

@@ -32,4 +32,11 @@ export const kayakuGohan: Recipe = {
   modernMove:
     "Light usukuchi soy keeps the rice pale and lets the burdock's earthiness and the dashi come forward — Osaka thrift was about stretching a little rice with whatever roots were cheap.",
   tags: ["rice", "burdock", "konnyaku", "dashi", "mixed-rice", "kansai"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Takikomi Gohan",
+      url: "https://www.justonecookbook.com/takikomi-gohan/",
+      note: "Seasoned-dashi mixed rice with gobo, carrot, konnyaku, and aburaage; notes the Kansai 'Kayaku Gohan' name.",
+    },
+  ],
 };

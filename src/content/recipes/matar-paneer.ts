@@ -33,4 +33,11 @@ export const matarPaneer: Recipe = {
   modernMove:
     "Soaking the fried paneer in warm water before it goes in keeps it pillowy instead of rubbery — and frying it first lets a small amount read as the luxury across the whole pot.",
   tags: ["paneer", "peas", "tomato-gravy", "vegetarian", "north-indian"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/matar-paneer/",
+      note: "Peas and paneer in a spiced onion-tomato gravy; soaking fried paneer to keep it soft",
+    },
+  ],
 };

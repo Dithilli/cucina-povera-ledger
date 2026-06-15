@@ -47,4 +47,11 @@ export const salatetBanadoura: Recipe = {
   notes:
     "Make it a dinner by adding chickpeas or crumbled labneh; serve the leftover juices as a chilled drink-and-mop with bread.",
   tags: ["tomato", "cucumber", "sumac", "salad", "no-cook", "summer"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/tomato-and-onion-salad/",
+      note: "Levantine sumac tomato-and-onion salad — confirms sumac and lemon as the defining acid.",
+    },
+  ],
 };

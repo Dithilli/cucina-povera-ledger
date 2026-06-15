@@ -64,4 +64,10 @@ export const sopaDeFeijao: Recipe = {
   notes:
     "Built around a pot of dried beans cooked from scratch, the cheapest protein on the table. Their cooking liquid is the broth — never poured away.",
   tags: ["soup", "beans", "cabbage", "potato", "legumes", "one-pot"],
+  sources: [
+    {
+      title: "Maria Lawton — Sopa de Feijão (Portuguese Bean Soup), The Epoch Times",
+      note: "Confirms the technique of puréeing part of the beans and leaving the rest whole for a creamy body without cream.",
+    },
+  ],
 };

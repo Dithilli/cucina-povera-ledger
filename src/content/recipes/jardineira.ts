@@ -48,4 +48,11 @@ export const jardineira: Recipe = {
   notes:
     "Endlessly forgiving: whatever vegetables are tired in the drawer go in. Leftovers thicken overnight into an even better second-day stew.",
   tags: ["stew", "beef", "vegetables", "peas", "carrots", "refogado", "braise"],
+  sources: [
+    {
+      title: "Food From Portugal — Jardineira (Portuguese Beef Stew)",
+      url: "https://www.foodfromportugal.com/recipes/meat-jardineira/",
+      note: "Supports the 'gardener's stew' frame — beef braised in a tomato-wine base with potatoes, carrots, green beans, and peas.",
+    },
+  ],
 };

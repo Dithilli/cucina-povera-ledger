@@ -28,4 +28,7 @@ export const kategna: Recipe = {
   notes:
     "A classic use for the offcut edges of injera, or a quick snack while the wots cook. Same two staples — niter kibbeh and berbere — that power every stew on the arc.",
   tags: ["injera", "snack", "zero-waste", "berbere", "niter-kibbeh"],
+  sources: [
+    { title: "Balè Moya — Kategna, The Toasty Ethiopian Delight", url: "https://thebalemoya.com/blogs/recipies/kategna-the-toasty-ethiopian-delight", note: "Toasted injera smeared with niter kibbeh and dusted with berbere — the two-staple snack." },
+  ],
 };

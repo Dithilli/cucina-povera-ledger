@@ -37,4 +37,11 @@ export const favasGuisadas: Recipe = {
   modernMove:
     "Pulling out half the chouriço early keeps two textures — sausage that has melted into the sauce and slices that stay snappy on top.",
   tags: ["legumes", "fava-beans", "chouriço", "pork", "stew", "spring"],
+  sources: [
+    {
+      title: "Tia Maria's Blog — Fava Bean and Chouriço Stew (Favas Guisadas com Chouriço)",
+      url: "https://tiamariasblog.com/favas/",
+      note: "Confirms the chouriço-and-onion refogado base and the fava-bean stewing method, with an egg-finished variation.",
+    },
+  ],
 };

@@ -37,4 +37,8 @@ export const arrozCaldo: Recipe = {
     "The zero-waste hero of the set: backs, wings, and the picked-over carcass all give their flavor and meat to the pot, and stale rice or a heel of leftover roast chicken disappear right into it.",
   zeroWasteHero: true,
   tags: ["porridge", "rice", "chicken", "ginger", "congee", "one-pot", "zero-waste"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/chicken-arroz-caldo-recipe-glutinous-rice-porridge/", note: "Glutinous-rice porridge with ginger, crisp garlic, and egg topping" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/arroz-caldo/", note: "Simmering rice down into a thick congee finished with calamansi" },
+  ],
 };

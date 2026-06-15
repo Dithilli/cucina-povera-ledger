@@ -26,4 +26,16 @@ export const nopalesConHuevo: Recipe = {
   modernMove:
     "Cook the nopales dry first — driving off their moisture before the eggs go in keeps the scramble from going watery and concentrates their green, lemony flavor.",
   tags: ["nopales", "eggs", "verduras", "milpa", "breakfast"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Easy Nopales and Eggs",
+      url: "https://www.mexicoinmykitchen.com/easy-nopales-and-eggs-recipe/",
+      note: "Cooking nopales down before folding into eggs with onion and chile.",
+    },
+    {
+      title: "Maricruz Avalos — Nopales con Huevo",
+      url: "https://www.maricruzavalos.com/nopales-con-huevo/",
+      note: "Drying out the cactus first to avoid a watery scramble.",
+    },
+  ],
 };

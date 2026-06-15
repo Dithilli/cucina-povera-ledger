@@ -29,4 +29,14 @@ export const bakedEggsWithOnions: Recipe = {
   notes:
     "Pareve as written (oil), so it sits beside either a meat or a dairy table. The onions can be melted down a day ahead — they only get better — turning a 40-minute dish into a 12-minute supper. A close cousin of North African shakshuka, minus the tomato.",
   tags: ["egg", "onion", "baked", "pareve"],
+  sources: [
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Ashkenazi eggs cooked with sweet melted onions as a frugal pareve supper.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "The onion-and-egg tradition of the Eastern European Jewish kitchen.",
+    },
+  ],
 };

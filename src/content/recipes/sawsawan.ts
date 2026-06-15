@@ -30,4 +30,8 @@ export const sawsawan: Recipe = {
   notes:
     "Endlessly variable: toyomansi (soy + calamansi) for fried fish, spiced vinegar (sukang sawsawan) for lechon and chicharrón, or pure cane vinegar with garlic for grilled meat. Make a jar of garlic-chili vinegar and it keeps for weeks.",
   tags: ["side", "base", "condiment", "vinegar", "calamansi", "dipping-sauce", "no-cook", "vegan"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Filipino Vinegar Dipping Sauce)", url: "https://panlasangpinoy.com/filipino-vinegar-dipping-sauce/", note: "Vinegar-garlic-chili dipping sauce for fried and grilled ulam" },
+    { title: "Wikipedia — Philippine condiments (sawsawan)", url: "https://en.wikipedia.org/wiki/Philippine_condiments", note: "Sawsawan family: toyomansi, spiced vinegar, and the table-seasoning custom" },
+  ],
 };

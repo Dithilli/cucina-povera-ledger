@@ -31,4 +31,8 @@ export const niterKibbeh: Recipe = {
   notes:
     "A fasting-friendly version swaps the butter for oil infused with the same aromatics ('ye-tsom niter'), keeping the dish vegan for Orthodox fast days.",
   tags: ["base", "niter-kibbeh", "spiced-butter", "fat", "pantry"],
+  sources: [
+    { title: "Niter Kibbeh — Wikipedia", url: "https://en.wikipedia.org/wiki/Niter_kibbeh", note: "Seasoned clarified butter for Ethiopian and Eritrean cooking, spiced with aromatics and strained." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/niter-kibbeh-ethiopian-spiced-clarified-butter/", note: "Full recipe simmering butter with garlic, ginger, and traditional spices until the solids brown." },
+  ],
 };

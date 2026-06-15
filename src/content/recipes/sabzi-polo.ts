@@ -59,4 +59,11 @@ export const sabziPolo: Recipe = {
   modernMove:
     "Drying the herbs before folding them in keeps the polo light and fluffy instead of steamed-spinach heavy, so each grain stays separate and bright green.",
   tags: ["rice", "polo", "tahdig", "herbs", "fish", "nowruz"],
+  sources: [
+    {
+      title: "The Caspian Chef (Omid Roustaei) — Sabzi Polo ba Mahi",
+      url: "https://thecaspianchef.com/2021/02/sabzi-polo-ba-mahi-herbed-rice-pilaf-with-fish/",
+      note: "Herbed rice with saffron tahdig served with fish — and the Nowruz-eve tradition.",
+    },
+  ],
 };

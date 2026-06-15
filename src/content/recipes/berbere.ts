@@ -33,4 +33,8 @@ export const berbere: Recipe = {
   notes:
     "The one pantry investment that powers the entire challenge: misir wot, shiro, zigni, doro wot all start here. A little goes a long way.",
   tags: ["base", "berbere", "spice-blend", "chiles", "pantry"],
+  sources: [
+    { title: "Berbere — Wikipedia", url: "https://en.wikipedia.org/wiki/Berbere", note: "The chile-and-spice blend's composition and central role in Ethiopian and Eritrean cooking." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/berbere-ethiopian-spice-blend/", note: "Full toast-and-grind recipe for the blend from whole spices and dried chiles." },
+  ],
 };

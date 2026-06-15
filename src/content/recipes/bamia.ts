@@ -39,4 +39,16 @@ export const bamia: Recipe = {
   notes:
     "Salting the okra or leaving the pods whole and undisturbed keeps them firm. Frozen whole okra works straight from the bag.",
   tags: ["okra", "tomato", "yakhni", "rice", "vegetarian"],
+  sources: [
+    {
+      title: "Maureen Abood — Okra Stew (Lebanese Bamia)",
+      url: "https://maureenabood.com/okra-stew/",
+      note: "Authentic Lebanese bamia method — okra cooked in a warm-spiced garlicky tomato broth over rice.",
+    },
+    {
+      title: "Plant Based Folk — Bamia (Okra Stew Without Meat)",
+      url: "https://plantbasedfolk.com/bamia-okra-stew/",
+      note: "Supports the meatless version and the late garlic-coriander taqliya that keeps the okra from turning slimy.",
+    },
+  ],
 };

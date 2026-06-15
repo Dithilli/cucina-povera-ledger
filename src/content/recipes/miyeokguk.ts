@@ -50,4 +50,11 @@ export const miyeokguk: Recipe = {
   modernMove:
     "Frying the seaweed and beef in sesame oil before the stock goes in is the whole secret — it deepens a near-free dried vegetable into a rich, glossy soup, and an anchovy-kelp dashi keeps it light enough to drink bowl after bowl.",
   tags: ["soup", "guk", "seaweed", "anchovy-kelp-stock", "beef", "weeknight"],
+  sources: [
+    {
+      title: "Maangchi — Seaweed soup with beef (Miyeokguk)",
+      url: "https://www.maangchi.com/recipe/miyeokguk",
+      note: "Soaking dried miyeok and frying it with beef and sesame oil before simmering",
+    },
+  ],
 };

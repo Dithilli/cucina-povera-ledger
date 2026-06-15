@@ -30,4 +30,15 @@ export const maridesTiganites: Recipe = {
     "Marides (picarel) and smelt are among the cheapest fish at any Greek market precisely because they're small and whole — and they deliver a full serving of oily-fish protein.",
   zeroWasteHero: true,
   tags: ["fish", "fried", "small-fish", "marides", "smelt", "whole-fish"],
+  sources: [
+    {
+      title: "Greek Tastes — Deep-Fried Whitebait (Marides Tiganites)",
+      url: "https://www.greektastes.com/deep-fried-whitebait-marides-tiganites/",
+      note: "Confirms small whole fish floured and fried, eaten whole with lemon.",
+    },
+    {
+      title: "Aglaia Kremezi — The Foods of Greece",
+      note: "Fried whitebait as a classic seaside meze.",
+    },
+  ],
 };

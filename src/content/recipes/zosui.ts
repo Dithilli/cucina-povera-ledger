@@ -32,4 +32,11 @@ export const zosui: Recipe = {
     "Zosui is the broader, anytime cousin of ojiya: it doesn't need a hot-pot to exist, only leftover rice and a pot of dashi, so it's the catch-all for cold rice and the last of any vegetable. Bulk it with more tofu and egg for protein; thin it for a sickbed; load it with greens for an everyday dinner. Nothing is wasted and nothing is bought new.",
   zeroWasteHero: true,
   tags: ["rice", "soup", "dashi", "leftovers", "tofu", "egg", "zero-waste"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Zosui (Japanese Rice Soup)",
+      url: "https://www.justonecookbook.com/zosui-japanese-rice-soup/",
+      note: "Rinsing cooked rice before it hits seasoned dashi so the grains stay distinct, with egg folded off the heat.",
+    },
+  ],
 };

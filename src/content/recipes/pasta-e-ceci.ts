@@ -44,4 +44,11 @@ export const pastaECeci: Recipe = {
   modernMove:
     "Puréeing part of the chickpeas and cooking the pasta in the bean brodo emulsifies the whole dish — restaurant gloss from peasant ingredients.",
   tags: ["legumes", "chickpeas", "pasta", "pangrattato", "one-pot"],
+  sources: [
+    {
+      title: "Pasta e ceci — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_e_ceci",
+      note: "Central/southern Italian pasta-and-chickpea dish; the bean-purée version",
+    },
+  ],
 };

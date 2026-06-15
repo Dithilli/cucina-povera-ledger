@@ -56,4 +56,11 @@ export const cozidoAPortuguesa: Recipe = {
     "Zero-waste by design: every leftover scrap of meat and vegetable becomes next-day sopa do dia or a quick fritter, and the broth never gets poured away.",
   zeroWasteHero: true,
   tags: ["boiled-dinner", "pork", "sausage", "beans", "cabbage", "broth-rice", "one-pot"],
+  sources: [
+    {
+      title: "Cozido à portuguesa — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Cozido_%C3%A0_portuguesa",
+      note: "National boiled dinner of cheap cuts and smoked sausage with cabbage, potatoes, carrots, turnip, and beans, served with broth-cooked rice.",
+    },
+  ],
 };

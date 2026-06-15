@@ -42,4 +42,11 @@ export const nurungji: Recipe = {
     "Born of the cast-iron gamasot, where rice always left a toasted crust behind; nothing in the pot was ever wasted. Today you can make it on purpose from leftover rice that's gone hard, reviving it into either a cracker or a bowl of soup.",
   zeroWasteHero: true,
   tags: ["rice", "scorched-rice", "porridge", "leftovers", "thrift", "vegan"],
+  sources: [
+    {
+      title: "Maangchi — Rice, scorched rice, & scorched rice tea (Bap, nurungji, & sungnyung)",
+      url: "https://www.maangchi.com/recipe/rice",
+      note: "Deliberately forming the scorched-rice crust and simmering it into porridge",
+    },
+  ],
 };

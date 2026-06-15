@@ -28,4 +28,11 @@ export const whiteRice: Recipe = {
   notes:
     "Leftover rice fries up beautifully and is the base for next-day calas or rice cakes; keep it spread out and chilled fast.",
   tags: ["base", "side", "rice", "lowcountry", "quick"],
+  sources: [
+    {
+      title: "America's Test Kitchen — Perfect White Rice",
+      url: "https://www.americastestkitchen.com/recipes/6905-perfect-white-rice",
+      note: "Rinse to clear, 2 cups rice to 3 cups water, low covered simmer then a covered rest for fluffy-separate grains.",
+    },
+  ],
 };

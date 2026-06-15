@@ -52,4 +52,11 @@ export const gamjaJorim: Recipe = {
   modernMove:
     "Brown the potatoes before they ever see liquid — that fond is what gives a no-meat braise its savory depth, so the soy glaze tastes cooked rather than just salty.",
   tags: ["banchan", "potatoes", "jorim", "braise", "vegan", "make-ahead"],
+  sources: [
+    {
+      title: "Maangchi — Spicy braised potatoes (Maeun-gamja-jorim)",
+      url: "https://www.maangchi.com/recipe/maeun-gamja-jorim",
+      note: "Braising cubed potatoes in soy and sugar down to a glossy glaze",
+    },
+  ],
 };

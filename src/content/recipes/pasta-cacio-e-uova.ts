@@ -50,4 +50,11 @@ export const pastaCacioEUova: Recipe = {
   modernMove:
     "Temper off the heat with pasta water so the eggs emulsify into sauce instead of setting — the whole trick is in the temperature.",
   tags: ["pasta", "eggs", "pecorino", "cheese", "fast"],
+  sources: [
+    {
+      title: "La Cucina Italiana — Cacio e uova, the Neapolitan ancestor of carbonara",
+      url: "https://www.lacucinaitaliana.com/italian-food/italian-dishes/carbonara-origins-and-anecdotes-of-the-beloved-italian-pasta-dish",
+      note: "Neapolitan egg-and-cheese pasta (documented by Cavalcanti, 1839) without guanciale",
+    },
+  ],
 };

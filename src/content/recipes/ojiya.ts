@@ -31,4 +31,11 @@ export const ojiya: Recipe = {
     "Ojiya is mottainai made dinner: zero new broth, leftover rice, and the dregs of last night's pot become a complete, comforting meal. It's also the classic convalescent food — gentle, warm, restorative. Distinct from zosui mainly in lineage: ojiya is specifically the nabe-night finale.",
   zeroWasteHero: true,
   tags: ["rice", "porridge", "nabe", "leftovers", "egg", "zero-waste"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Zosui (Japanese Rice Soup)",
+      url: "https://www.justonecookbook.com/zosui-japanese-rice-soup/",
+      note: "Covers the ojiya/zosui distinction — leftover rice simmered in dashi (here, the nabe broth) with egg.",
+    },
+  ],
 };

@@ -38,4 +38,11 @@ export const jaquinzinhos: Recipe = {
   notes:
     "The frying oil, once strained, keeps for the next fish fry — another frugal carry-over.",
   tags: ["fish", "fried", "whole-fish", "horse-mackerel", "zero-waste", "frugal"],
+  sources: [
+    {
+      title: "Food From Portugal — Fried Horse Mackerel",
+      url: "https://www.foodfromportugal.com/recipes/fried-horse-mackerel-tomato-rice/",
+      note: "Confirms the flour-dredge-and-fry method for small whole horse mackerel (carapau / jaquinzinhos).",
+    },
+  ],
 };

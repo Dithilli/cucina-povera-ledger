@@ -33,4 +33,11 @@ export const dalTadka: Recipe = {
   notes:
     "Hing (asafoetida) stands in for a long onion fry and makes the lentils easier to digest — a classic frugal flavor shortcut. A cup of dry dal feeds four for well under a dollar a head.",
   tags: ["dinner", "dal", "toor-dal", "lentils", "tadka", "legumes"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/restaurant-style-dal-tadka/",
+      note: "Toor dal finished with a fresh ghee tadka of cumin, garlic and dried chiles",
+    },
+  ],
 };

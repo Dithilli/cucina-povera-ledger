@@ -32,4 +32,11 @@ export const moongDal: Recipe = {
   notes:
     "The lightest and most digestible dal, traditionally cooked for the unwell and for babies — proof that frugal and gentle aren't opposites. The lemon at the end brightens the whole bowl.",
   tags: ["dinner", "dal", "moong-dal", "lentils", "tadka", "legumes"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/moong-dal-tadka/",
+      note: "Yellow moong dal cooked soft and finished with a cumin-and-chile tadka",
+    },
+  ],
 };

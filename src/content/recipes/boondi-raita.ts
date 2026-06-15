@@ -36,4 +36,11 @@ export const boondiRaita: Recipe = {
   modernMove:
     "Toasting and grinding the cumin yourself, plus a pinch of black salt, gives raita its smoky-sulfurous lift — the difference between an afterthought and the thing that makes a fiery dinner edible.",
   tags: ["yogurt", "raita", "boondi", "cooling", "side"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/boondi-raita/",
+      note: "Soaking the boondi to soften; roasted cumin and chaat-style spicing for the yogurt",
+    },
+  ],
 };

@@ -56,4 +56,16 @@ export const chaoGa: Recipe = {
     "One poach does triple duty — the bird gives meat, the carcass simmered back in gives the broth its body, and day-old rice melts into it for free, so a single chicken feeds the table twice over with almost nothing thrown away.",
   zeroWasteHero: true,
   tags: ["rice", "porridge", "congee", "chicken", "one-pot", "leftover-rice"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Chicken Porridge (Chao Ga)",
+      url: "https://vickypham.com/blog/vietnamese-chicken-porridge-chao-ga/",
+      note: "Poaching the bird for broth, then cooking rice down into a silky congee",
+    },
+    {
+      title: "RunAwayRice — Chicken Congee / Rice Porridge (Chao Ga)",
+      url: "https://runawayrice.com/noodles-rice/chicken-congee-rice-porridge-chao-ga/",
+      note: "Toppings of shredded chicken, fried shallots, scallion, and white pepper",
+    },
+  ],
 };

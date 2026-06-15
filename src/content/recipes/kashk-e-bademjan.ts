@@ -51,4 +51,16 @@ export const kashkEBademjan: Recipe = {
   notes:
     "Kashk is the soul of the dish; if unavailable, thick strained yogurt with a pinch of salt is the standard substitute. Walnuts and golden onions are what make it 'dressed.'",
   tags: ["eggplant", "kashk", "whey", "dip", "vegetarian"],
+  sources: [
+    {
+      title: "Kashk-e bademjan — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Kashk-e_bademjan",
+      note: "Confirms the dish: fried/roasted eggplant with kashk, fried onions, garlic, mint and walnut garnish.",
+    },
+    {
+      title: "Shadi Hasanzadenemati — Unicorns in the Kitchen",
+      url: "https://www.unicornsinthekitchen.com/kashke-bademjan-persian-eggplant-dip/",
+      note: "Method for the eggplant, caramelized onions, garlic and kashk finish.",
+    },
+  ],
 };

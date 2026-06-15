@@ -26,4 +26,11 @@ export const tomatoSugo: Recipe = {
   modernMove:
     "Low and slow is the whole trick — a hard boil scorches and sours it. Drop a Parmesan rind in while it simmers for savory depth, and finish with a thread of raw oil.",
   tags: ["base", "tomato", "sauce", "make-ahead"],
+  sources: [
+    {
+      title: "Pasta al pomodoro — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_al_pomodoro",
+      note: "The basic Italian tomato sauce of oil, onion, garlic, tomato, and basil",
+    },
+  ],
 };

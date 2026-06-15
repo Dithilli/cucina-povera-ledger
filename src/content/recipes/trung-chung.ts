@@ -32,4 +32,16 @@ export const trungChung: Recipe = {
   modernMove:
     "Loosening the eggs with water and steaming low and slow turns five eggs and a handful of pork into a silky custard that feeds four — gentle heat is the technique that stretches the protein.",
   tags: ["egg", "steamed", "custard", "pork", "glass-noodles"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Steamed Pork and Egg Meatloaf (Chả Trứng Hấp)",
+      url: "https://vickypham.com/blog/steamed-egg-meatloaf/",
+      note: "Pork, glass noodles, and wood-ear bound in egg, steamed and glazed with yolk",
+    },
+    {
+      title: "RunAwayRice — Egg Meatloaf (Cha Trung)",
+      url: "https://runawayrice.com/main-dishes/easy-bake-method-egg-meatloaf/",
+      note: "Loosening the eggs and gentle low heat for a smooth custard",
+    },
+  ],
 };

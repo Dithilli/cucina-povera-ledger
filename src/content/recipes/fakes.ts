@@ -42,4 +42,16 @@ export const fakes: Recipe = {
   notes:
     "A Lenten and weeknight staple eaten with bread, olives, and a wedge of feta. Thickens as it sits; loosen leftovers with water.",
   tags: ["legumes", "lentils", "soup", "fakes", "fasting", "one-pot"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Lentil Soup (Fakes Soupa)",
+      url: "https://www.mygreekdish.com/recipe/lentil-soup-fakes-soupa/",
+      note: "Confirms brown lentils with bay, garlic, olive oil, and a finishing splash of red-wine vinegar.",
+    },
+    {
+      title: "Diane Kochilas — Greek Lentil Soup / Fakés",
+      url: "https://www.dianekochilas.com/greek-lentil-soup-fakes/",
+      note: "Traditional Lenten preparation; lentils coated in oil with onion, garlic, and bay.",
+    },
+  ],
 };

@@ -39,4 +39,8 @@ export const lontongSayur: Recipe = {
   notes:
     "No lontong? Press firm cooked rice into a tight block, chill, and slice — it holds in the broth like the real rice cake.",
   tags: ["coconut-curry", "rice-cake", "lontong", "santan", "vegetables", "tofu"],
+  sources: [
+    { title: "Marvellina — What To Cook Today", url: "https://whattocooktoday.com/lontong-sayur.html", note: "rice cakes with coconut-milk vegetable curry assembly" },
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/lodeh-terong-dan-tahu-eggplant-and-tofu-in-coconut-milk.html", note: "spiced coconut-milk vegetable stew that forms the sayur component" },
+  ],
 };

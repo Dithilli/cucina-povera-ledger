@@ -37,4 +37,11 @@ export const bamies: Recipe = {
   notes:
     "A classic August ladero, made when okra is cheap and abundant. Protein on the plate is modest by design; the feta and bread round out the meal. Frozen okra works off-season — skip the soak and add it straight to the sauce.",
   tags: ["ladera", "bamies", "okra", "vegetable", "olive-oil", "summer", "vegetarian"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Okra Stew with Tomatoes (Bamies Laderes)",
+      url: "https://www.mygreekdish.com/recipe/greek-okra-stew-recipe-with-tomatoes-bamies-laderes/",
+      note: "Confirms okra stewed in an aromatic tomato-and-olive-oil sauce, served with feta and oregano.",
+    },
+  ],
 };

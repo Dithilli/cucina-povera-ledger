@@ -47,4 +47,11 @@ export const loobiaPolo: Recipe = {
   modernMove:
     "Frying the tomato paste before the fresh tomato deepens it to a brick-red, almost meaty base — the trick that lets a vegetarian polo taste like it had stew in it.",
   tags: ["rice", "polo", "tahdig", "green-beans", "tomato", "vegetables"],
+  sources: [
+    {
+      title: "Persian Mama — Loobia Polo ba Havij (Green Bean & Carrot Rice)",
+      url: "https://persianmama.com/green-bean-carrot-stew-on-rice-lubia-polo-ba-havij/",
+      note: "Layered green-bean-and-tomato polo with tahdig — the dish's structure and spicing.",
+    },
+  ],
 };

@@ -50,4 +50,11 @@ export const zuppaDiLegumi: Recipe = {
   modernMove:
     "Blend just part of the pot back in — half the soup stays brothy and whole, half turns creamy, so it reads as composed rather than mushy.",
   tags: ["legumes", "soup", "one-pot", "protein-forward", "frugal"],
+  sources: [
+    {
+      title: "List of Italian soups — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/List_of_Italian_soups",
+      note: "Mixed-legume soups in the Italian frugal soup tradition",
+    },
+  ],
 };

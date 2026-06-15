@@ -34,4 +34,11 @@ export const cornbread: Recipe = {
     "Southern cornbread is savory and crumbly, not cakey-sweet. Leftovers crumble into pot-likker, get split and griddled with butter, or go into next day's dressing.",
   zeroWasteHero: true,
   tags: ["base", "side", "cornbread", "cast-iron", "cornmeal", "quick-bread"],
+  sources: [
+    {
+      title: "Sheri Castle — King Arthur Baking: Skillet Cornbread",
+      url: "https://www.kingarthurbaking.com/recipes/skillet-cornbread-recipe",
+      note: "Sugar-free, mostly-cornmeal Southern cornbread baked in a fat-slicked hot cast-iron skillet with buttermilk.",
+    },
+  ],
 };

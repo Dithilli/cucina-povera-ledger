@@ -58,4 +58,11 @@ export const collardGreens: Recipe = {
     "A smoked turkey wing gives nearly all the flavor of a ham hock for less money and less fat. The pot likker keeps and reheats beautifully — it's the soul of the leftovers.",
   zeroWasteHero: true,
   tags: ["greens", "collards", "smoked-pork", "pot-likker", "cornbread", "low-and-slow"],
+  sources: [
+    {
+      title: "Collard (plant) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Collard_(plant)",
+      note: "Documents the Southern preparation with smoked meats, the pot liquor, and cornbread used to sop it up.",
+    },
+  ],
 };

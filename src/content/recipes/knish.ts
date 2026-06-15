@@ -32,4 +32,15 @@ export const knish: Recipe = {
   notes:
     "Kept pareve with oil throughout, so it rides a meat or a dairy meal alike. A pan of these is the perfect home for yesterday's leftover mashed potato — thrift folded inside thrift.",
   tags: ["potato", "pastry", "knish", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Knish",
+      url: "https://en.wikipedia.org/wiki/Knish",
+      note: "Dough-wrapped filled pastry of Ashkenazi Jewish cuisine; potato-and-onion filling.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Potato knish dough and the Lower East Side pushcart tradition.",
+    },
+  ],
 };

@@ -33,4 +33,8 @@ export const daingNaBangus: Recipe = {
   modernMove:
     "The vinegar–garlic–pepper marinade does double duty — it lightly cures and preserves the fish (the original point of 'daing') while seasoning it through, so a thorough pat-dry and hot fry give you crackling skin without any breading.",
   tags: ["fish", "milkfish", "bangus", "marinated", "fried", "vinegar"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/daing-na-bangus-fried-milkfish-marinated-in-vinegar/", note: "Vinegar–garlic–pepper marinade overnight, then fried crisp" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/daing-na-bangus/", note: "Butterflied milkfish marinated and pan-fried for crackling skin" },
+  ],
 };

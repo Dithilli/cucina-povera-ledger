@@ -40,4 +40,8 @@ export const tumisKangkung: Recipe = {
   modernMove:
     "Splitting stems from leaves and cooking over violent heat for under two minutes keeps the stems crisp and the leaves green — the wok's roar (wok hei) is the seasoning.",
   tags: ["greens", "stir-fry", "kangkung", "sambal", "fast", "side"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/kangkung-tumis-terasi.html", note: "water spinach stir-fried hard with garlic, chili, and toasted terasi" },
+    { title: "Wikipedia — Stir-fried water spinach", url: "https://en.wikipedia.org/wiki/Stir-fried_water_spinach", note: "Indonesian tumis kangkung / kangkung terasi with shrimp paste" },
+  ],
 };

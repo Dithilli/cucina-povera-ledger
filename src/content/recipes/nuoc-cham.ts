@@ -29,4 +29,16 @@ export const nuocCham: Recipe = {
   notes:
     "For a thicker dressing over rice noodles (bún), cut the water back and add a spoon of pickled carrot. Keeps several days refrigerated, though the raw garlic sharpens over time.",
   tags: ["base", "side", "condiment", "fish-sauce", "dipping-sauce", "no-cook"],
+  sources: [
+    {
+      title: "Andrea Nguyen — Basic Vietnamese Dipping Sauce (Nuoc Cham), Viet World Kitchen",
+      url: "https://www.vietworldkitchen.com/blog/2008/11/basic-vietnamese-dipping-sauce-nuoc-cham.html",
+      note: "Balancing fish sauce, lime, sugar, and water to taste with garlic and chili",
+    },
+    {
+      title: "Hungry Huy — Vietnamese Dipping Fish Sauce (Nước Chấm)",
+      url: "https://www.hungryhuy.com/vietnamese-dipping-fish-sauce-recipe-nuoc-cham-nuoc-mam-cham/",
+      note: "Dissolving sugar in warm water first; floating the minced garlic and chili",
+    },
+  ],
 };

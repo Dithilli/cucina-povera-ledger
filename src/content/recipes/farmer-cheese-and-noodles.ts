@@ -28,4 +28,15 @@ export const farmerCheeseAndNoodles: Recipe = {
   notes:
     "About as milchig as cooking gets — noodles, cheese, butter, pepper, and nothing else. No meat, no schmaltz; this is a dairy meal in its purest, most frugal form, the kind eaten on a weeknight or a meatless day.",
   tags: ["noodles", "cheese", "dairy", "milchig"],
+  sources: [
+    {
+      title: "Wikipedia — Lokshen mit kaese",
+      url: "https://en.wikipedia.org/wiki/Lokshen_mit_kaese",
+      note: "Ashkenazi egg noodles with cottage or farmer cheese; savory black-pepper version.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Noodles and pot cheese as a quick milchig staple across Eastern European Jewry.",
+    },
+  ],
 };

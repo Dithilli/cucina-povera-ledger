@@ -25,4 +25,11 @@ export const cornTortillas: Recipe = {
     "Heat is everything — a properly hot dry comal makes the tortilla puff into two layers (the sign of a cooked, pliable tortilla). Get the hydration right and they stay soft, not brittle.",
   notes: "Day-old tortillas are not waste — they become chilaquiles, migas, sopa de tortilla, or totopos.",
   tags: ["masa", "corn", "base", "tortilla", "nixtamal"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Corn Tortillas from Scratch",
+      url: "https://www.mexicoinmykitchen.com/corn-tortillas-from-scratch/",
+      note: "Masa-harina hydration, dough consistency, and comal puffing.",
+    },
+  ],
 };

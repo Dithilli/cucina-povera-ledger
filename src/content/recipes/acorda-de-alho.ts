@@ -54,4 +54,7 @@ export const acordaDeAlho: Recipe = {
     "The frugal heart of Portuguese cooking: garlic, oil, water, and bread that would otherwise be thrown away. Pennyroyal (poejo) is traditional; coriander is the everyday stand-in.",
   zeroWasteHero: true,
   tags: ["bread", "garlic", "egg", "porridge", "soup", "stale-bread"],
+  sources: [
+    { title: "196 flavors — Açorda", url: "https://www.196flavors.com/portugal-acorda/", note: "açorda as cozinha pobre: bread, garlic, olive oil, water, egg" },
+  ],
 };

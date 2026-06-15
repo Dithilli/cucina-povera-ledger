@@ -30,4 +30,11 @@ export const jeeraRice: Recipe = {
   notes:
     "A pot of jeera rice carries a humble dal into a real dinner. Day-old jeera rice fries up beautifully with leftover vegetables — don't waste it.",
   tags: ["base", "side", "rice", "basmati", "cumin", "tadka"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/jeera-rice-recipe-cumin-rice/",
+      note: "Blooming cumin in ghee before the rice; rinse-and-rest for separate grains",
+    },
+  ],
 };

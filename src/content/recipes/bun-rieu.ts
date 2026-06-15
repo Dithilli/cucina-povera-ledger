@@ -64,4 +64,16 @@ export const bunRieu: Recipe = {
   modernMove:
     "A few spoons of jarred crab paste whisked into pork and egg fakes the labor of hand-pounding live paddy crabs — you get the signature floating riêu and that ferrous, briny depth for a fraction of the cost and effort.",
   tags: ["noodles", "vermicelli", "soup", "tomato", "crab", "pork"],
+  sources: [
+    {
+      title: "Hungry Huy — Bún Riêu (Crab, Pork & Tomato Noodle Soup)",
+      url: "https://www.hungryhuy.com/bun-rieu-recipe/",
+      note: "Tomato-and-crab-paste broth with the egg-bound crab/pork riêu",
+    },
+    {
+      title: "Vicky Pham — Vietnamese Crab and Tomato Noodle Soup (Bun Rieu)",
+      url: "https://vickypham.com/blog/vietnamese-crab-noodle-soup-bun-rieu/",
+      note: "Using jarred crab paste with pork and egg to fake the hand-pounded riêu",
+    },
+  ],
 };

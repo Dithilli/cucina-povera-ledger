@@ -34,4 +34,11 @@ export const nigerianStew: Recipe = {
   notes:
     "The classic Nigerian batch stew: a pot stretches across several dinners and only deepens by day three. Fish makes it cheaper than chicken; either way the pepper base is doing most of the work.",
   tags: ["pepper-stew", "obe-ata", "palm-oil", "chicken", "fish", "rice", "batch"],
+  sources: [
+    {
+      title: "Flo Madubike — All Nigerian Recipes (Pepper Stew, Obe Ata Din Din)",
+      url: "https://www.allnigerianrecipes.com/stews/pepper-stew/",
+      note: "Blended tatashe-tomato-pepper base reduced then fried until the oil splits — the obe ata foundation of the red stew.",
+    },
+  ],
 };

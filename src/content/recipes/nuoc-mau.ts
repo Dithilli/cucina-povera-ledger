@@ -27,4 +27,16 @@ export const nuocMau: Recipe = {
     "Palm sugar gives a rounder, more traditional flavor; white sugar is fine and cheaper. Keep a jar on hand and any kho comes together fast. If it ever sets too hard in the jar, a splash of hot water loosens it.",
   zeroWasteHero: true,
   tags: ["base", "caramel", "nuoc-mau", "make-ahead", "pantry", "vegan"],
+  sources: [
+    {
+      title: "Hungry Huy — Vietnamese Caramel Sauce (Nước Màu)",
+      url: "https://www.hungryhuy.com/how-to-make-nuoc-mau-caramel/",
+      note: "Cooking sugar past amber to a near-burnt, bittersweet syrup, then stopping with water",
+    },
+    {
+      title: "Andrea Nguyen — Caramel Sauce (Viet World Kitchen)",
+      url: "https://www.vietworldkitchen.com/blog/2007/10/caramel-sauce.html",
+      note: "The dark, slightly bitter caramel that colors and deepens every kho",
+    },
+  ],
 };

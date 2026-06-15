@@ -31,4 +31,11 @@ export const paneerBhurji: Recipe = {
   modernMove:
     "Grate the paneer rather than cube it so every strand catches masala, and pull it off the heat fast — overcooked scrambled paneer goes tight and dry.",
   tags: ["paneer", "scramble", "quick", "vegetarian", "north-indian"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/paneer-bhurji-recipe/",
+      note: "Crumbled paneer scrambled with an onion-tomato masala, pulled off the heat fast",
+    },
+  ],
 };

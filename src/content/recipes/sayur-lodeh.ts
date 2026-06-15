@@ -41,4 +41,7 @@ export const sayurLodeh: Recipe = {
   modernMove:
     "Frying the spice paste until the oil splits, then keeping the coconut milk at a bare simmer, gives a silky unbroken broth instead of a greasy curdled one.",
   tags: ["coconut-milk", "vegetables", "tofu", "javanese", "stew", "clean-out-fridge"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/lodeh-terong-dan-tahu-eggplant-and-tofu-in-coconut-milk.html", note: "Javanese vegetable stew in spiced coconut milk, with the spice-paste fry step" },
+  ],
 };

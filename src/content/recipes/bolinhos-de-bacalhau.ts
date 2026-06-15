@@ -33,4 +33,11 @@ export const bolinhosDeBacalhau: Recipe = {
   notes:
     "Bolinhos (called pastéis in the south) are made wherever there are cod scraps and a few potatoes — the most frugal way to turn the last of the bacalhau into a proper meal.",
   tags: ["fish", "salt-cod", "bacalhau", "potato", "fritters", "fried", "zero-waste", "dinner"],
+  sources: [
+    {
+      title: "David Leite — Leite's Culinaria (Pastéis de Bacalhau)",
+      url: "https://leitesculinaria.com/7586/recipes-portuguese-salt-cod-fritters.html",
+      note: "Salt cod and riced potato bound with egg, onion, and parsley, shaped into quenelles and fried.",
+    },
+  ],
 };

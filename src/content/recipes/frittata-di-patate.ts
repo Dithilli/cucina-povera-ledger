@@ -41,4 +41,11 @@ export const frittataDiPatate: Recipe = {
     "Stew the potatoes soft in oil first, almost confit, so the finished frittata is creamy inside rather than dry — the potatoes carry the texture.",
   zeroWasteHero: true,
   tags: ["eggs", "potato", "one-pan", "protein-forward", "leftovers"],
+  sources: [
+    {
+      title: "Frittata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Frittata",
+      note: "Egg-based Italian dish enriched with vegetables such as potato and onion",
+    },
+  ],
 };

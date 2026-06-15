@@ -57,4 +57,11 @@ export const lightSoup: Recipe = {
   modernMove:
     "Charring then sieving the tomato-pepper base gives a smoky depth and a glass-clear, fat-free broth — flavor from roasting and gelatin instead of oil or thickener.",
   tags: ["light-soup", "ghanaian", "broth", "tomato", "clear-soup", "one-pot"],
+  sources: [
+    {
+      title: "Light soup — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Light_soup",
+      note: "Ghanaian nkrakra / aponkye nkrakra — a thin, oil-free tomato-pepper broth of the Akan, served with fufu or banku.",
+    },
+  ],
 };

@@ -56,4 +56,11 @@ export const uovaInPurgatorio: Recipe = {
   modernMove:
     "Long-cook the sugo first so it's glossy and sweet before the eggs go in — the sauce, not the egg, is the star.",
   tags: ["eggs", "tomato", "one-pot", "protein-forward", "shakshuka"],
+  sources: [
+    {
+      title: "Shakshouka — Wikipedia (Uova in purgatorio)",
+      url: "https://en.wikipedia.org/wiki/Shakshouka",
+      note: "Italian eggs-in-purgatory: eggs poached in tomato sauce with garlic and herbs",
+    },
+  ],
 };

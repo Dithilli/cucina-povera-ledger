@@ -58,4 +58,11 @@ export const dubuJorim: Recipe = {
   modernMove:
     "Crisp the tofu hard first and add the sauce around the edges, basting rather than drowning — you keep a seared crust under a braised glaze, two textures from one cheap block.",
   tags: ["banchan", "tofu", "jorim", "gochugaru", "vegan", "make-ahead"],
+  sources: [
+    {
+      title: "Maangchi — Spicy braised tofu (Dubu-jorim)",
+      url: "https://www.maangchi.com/recipe/dubu-jorim",
+      note: "Pan-frying the tofu slabs then braising in a spicy soy-garlic sauce",
+    },
+  ],
 };

@@ -41,4 +41,11 @@ export const nikujaga: Recipe = {
   notes:
     "An otoshibuta (drop-lid) keeps the gentle vegetables submerged and basted without stirring them to mush; a parchment round with a hole cut in the center does the job.",
   tags: ["dinner", "beef", "nimono", "simmered", "potato", "dashi", "comfort"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Nikujaga (Japanese Meat and Potato Stew)",
+      url: "https://www.justonecookbook.com/nikujaga/",
+      note: "Thin beef with potato, onion, and carrot simmered in dashi-soy-mirin under an otoshibuta.",
+    },
+  ],
 };

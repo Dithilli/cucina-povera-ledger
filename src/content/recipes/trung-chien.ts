@@ -28,4 +28,11 @@ export const trungChien: Recipe = {
     "Seasoning the raw eggs with fish sauce instead of salt means the sugars in it caramelize in the hot oil, giving the crisp brown frill its savory depth — the whole dish from one bottle.",
   zeroWasteHero: true,
   tags: ["egg", "fish-sauce", "fast", "rice", "two-ingredient"],
+  sources: [
+    {
+      title: "Vicky Pham — Easy Vietnamese Eggs with Green Onions (Trung Chien)",
+      url: "https://vickypham.com/blog/easy-vietnamese-scrambled-eggs/",
+      note: "Seasoning the eggs with fish sauce, pepper, and scallion before frying",
+    },
+  ],
 };

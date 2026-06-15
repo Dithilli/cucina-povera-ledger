@@ -45,4 +45,11 @@ export const fettunta: Recipe = {
   notes:
     "The base for crostini and cannellini su fettunta; also the bread to serve alongside any of the week's soups.",
   tags: ["bread", "garlic", "olive-oil", "quick", "side"],
+  sources: [
+    {
+      title: "Bruschetta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Bruschetta",
+      note: "Fettunta is the Tuscan name for grilled bread rubbed with garlic and oil",
+    },
+  ],
 };

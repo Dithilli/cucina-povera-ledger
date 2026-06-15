@@ -33,4 +33,15 @@ export const cheeseBlintzes: Recipe = {
   notes:
     "Thoroughly milchig: butter in the batter, butter in the pan, cheese in the middle, sour cream on top — this is a dairy supper, served far from any meat. Farmer cheese is the authentic filling; drained cottage cheese stands in if you can't find it.",
   tags: ["blintz", "cheese", "dairy", "milchig", "shavuot"],
+  sources: [
+    {
+      title: "Wikipedia — Blintz",
+      url: "https://en.wikipedia.org/wiki/Blintz",
+      note: "Rolled, filled Ashkenazi pancake; cheese filling, sautéing, and sour-cream service.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Cheese blintz technique and its place on the dairy / Shavuot table.",
+    },
+  ],
 };

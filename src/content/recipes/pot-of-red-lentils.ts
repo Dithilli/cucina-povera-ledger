@@ -26,4 +26,8 @@ export const potOfRedLentils: Recipe = {
   notes:
     "Red lentils give roughly 18g protein per cooked cup — the everyday protein of the Ethiopian/Eritrean table. The same pot becomes fiery misir wot or gentle, turmeric-soft misir alicha.",
   tags: ["base", "legumes", "lentils", "misir", "make-ahead"],
+  sources: [
+    { title: "Urban Farmie — Misir Wot (Ethiopian Red Lentil Stew)", url: "https://urbanfarmie.com/misir-wot/", note: "Describes simmering rinsed split red lentils until soft — the plain misir base this dish prepares." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/", note: "Cooking split red lentils down to a soft base before seasoning into a wot." },
+  ],
 };

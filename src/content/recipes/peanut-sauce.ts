@@ -34,4 +34,7 @@ export const peanutSauce: Recipe = {
     "Ladle warm over blanched cabbage, long beans, bean sprouts, boiled potato, and tempe for gado-gado, or serve as a dip for satay. Keeps a week refrigerated; it sets solid cold, so revive with hot water.",
   zeroWasteHero: true,
   tags: ["base", "side", "peanut", "sauce", "protein", "make-ahead"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/sambal-kacang-peanut-chili-sauce.html", note: "fried peanuts ground with chili and garlic, loosened to a sauce" },
+  ],
 };

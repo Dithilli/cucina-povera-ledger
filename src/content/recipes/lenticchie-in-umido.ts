@@ -44,4 +44,11 @@ export const lenticchieInUmido: Recipe = {
   modernMove:
     "Cook the tomato paste until it caramelizes and toast the lentils briefly in the soffritto before adding water — that fond is the difference between flat and deep.",
   tags: ["legumes", "lentils", "stew", "protein-forward", "one-pot"],
+  sources: [
+    {
+      title: "Lentil — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Lentil",
+      note: "Lentils braised with soffritto as a frugal Italian protein stew",
+    },
+  ],
 };

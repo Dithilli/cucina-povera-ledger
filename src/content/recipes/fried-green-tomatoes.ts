@@ -43,4 +43,11 @@ export const friedGreenTomatoes: Recipe = {
   notes:
     "The dish is the South's answer to a glut of tomatoes that won't ripen before frost. A drizzle of hot honey or a spoon of remoulade turns it into a plate.",
   tags: ["tomatoes", "cornmeal", "fried", "buttermilk", "frugal"],
+  sources: [
+    {
+      title: "Southern Plate — Fried Green Tomatoes",
+      url: "https://www.southernplate.com/fried-green-tomatoes/",
+      note: "Classic Southern method: firm unripe tomatoes dredged in a cornmeal-and-flour crust with a buttermilk wash.",
+    },
+  ],
 };

@@ -32,4 +32,11 @@ export const bacalhauABras: Recipe = {
   notes:
     "Named for a Bairro Alto tavern keeper. Half a pound of cod and a few potatoes stretch into a generous dinner for four — frugality made famous.",
   tags: ["fish", "salt-cod", "bacalhau", "potato", "egg", "dinner"],
+  sources: [
+    {
+      title: "David Leite — Leite's Culinaria",
+      url: "https://leitesculinaria.com/7642/recipes-portuguese-eggs-salt-cod-potatoes-bacalhau-bras.html",
+      note: "Classic Bairro Alto method — shredded salt cod, straw-cut potatoes, and eggs bound off the heat into a soft scramble.",
+    },
+  ],
 };

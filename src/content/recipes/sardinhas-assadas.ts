@@ -35,4 +35,11 @@ export const sardinhasAssadas: Recipe = {
   modernMove:
     "Using the broa as the plate — the bread under the fish is the point, turning the drippings that would be lost into the best mouthful on the board.",
   tags: ["fish", "sardines", "grilled", "broa", "peppers", "summer"],
+  sources: [
+    {
+      title: "196 flavors — Sardinhas Assadas",
+      url: "https://www.196flavors.com/portugal-sardinhas-assadas/",
+      note: "Confirms whole sardines heavily salted an hour ahead and char-grilled, the classic Portuguese summer festa dish.",
+    },
+  ],
 };

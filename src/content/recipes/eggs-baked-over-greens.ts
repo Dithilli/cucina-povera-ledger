@@ -40,4 +40,11 @@ export const eggsBakedOverGreens: Recipe = {
   modernMove:
     "Drive off the greens' water before the eggs go in, and pull the dish while the yolks are still soft — bake for the egg, not the greens.",
   tags: ["eggs", "greens", "baked", "one-pan", "protein-forward"],
+  sources: [
+    {
+      title: "Shakshouka — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Shakshouka",
+      note: "Italian tradition of eggs baked into a vegetable base, here a green base",
+    },
+  ],
 };

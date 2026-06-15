@@ -53,4 +53,11 @@ export const pajeon: Recipe = {
   modernMove:
     "Laying the scallions in first and pouring only enough batter to glue them — rather than stirring everything into a thick pour — keeps the pancake mostly vegetable, and the cold batter plus a slug of oil down the sides shallow-fries the base into a genuinely crackly sheet.",
   tags: ["jeon", "pancake", "scallion", "pan-fried", "vegetarian", "weeknight"],
+  sources: [
+    {
+      title: "Maangchi — Pajeon (Green onion pancake)",
+      url: "https://www.maangchi.com/recipe/pajeon",
+      note: "Laying whole scallions in the pan and binding with a thin batter for a crisp base",
+    },
+  ],
 };

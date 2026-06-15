@@ -34,4 +34,8 @@ export const adobongBaboy: Recipe = {
     "Like all adobo it keeps for days and deepens overnight. For adobong puti (white adobo), leave out the soy and lean fully on vinegar, salt, and garlic — the older, pre-soy version.",
   zeroWasteHero: false,
   tags: ["dinner", "pork", "adobo", "vinegar-braise", "make-ahead", "one-pot"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/", note: "Pork adobo: soy-vinegar braise, simmer 40–60 min until tender" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/pork-adobo/", note: "Marinade-as-braise method and rendering pork fat" },
+  ],
 };

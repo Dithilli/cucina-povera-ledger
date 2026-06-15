@@ -31,4 +31,11 @@ export const friedChicken: Recipe = {
   modernMove:
     "The cover-then-uncover skillet method cooks bone-in pieces through in shallow oil — no deep fryer, far less oil — while the buttermilk brine makes the cheapest legs and thighs taste like a fryer's prize.",
   tags: ["chicken", "fried", "cast-iron", "buttermilk", "skillet"],
+  sources: [
+    {
+      title: "Southern Cast Iron — Master Class: Classic Fried Chicken",
+      url: "https://southerncastiron.com/master-class-classic-fried-chicken/",
+      note: "Buttermilk brine and a cast-iron skillet fry, frying dark and white meat separately — the method this recipe uses.",
+    },
+  ],
 };

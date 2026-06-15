@@ -40,4 +40,16 @@ export const mavromatikaSpanaki: Recipe = {
   notes:
     "A classic Greek fasting (nistisimo) dinner; black-eyed peas are the one Greek legume that needs no overnight soak, so it comes together on a weeknight.",
   tags: ["legumes", "black-eyed-peas", "greens", "spinach", "lemon", "vegan"],
+  sources: [
+    {
+      title: "Olive Tomato (Elena Paravantes) — Greek Black-Eyed Peas and Spinach",
+      url: "https://www.olivetomato.com/greek-black-eyed-peas-spinach-recipe/",
+      note: "Confirms black-eyed peas stewed with spinach, olive oil, and lemon.",
+    },
+    {
+      title: "Diane Kochilas — Black-Eyed Peas with Greens (Mavromatika me Maratho)",
+      url: "https://www.dianekochilas.com/black-eyed-peas-with-greens-and-fennel-mavromatika-me-maratho/",
+      note: "Traditional pairing of black-eyed peas with leafy greens.",
+    },
+  ],
 };

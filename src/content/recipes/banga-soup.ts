@@ -34,4 +34,11 @@ export const bangaSoup: Recipe = {
     "The Delta uses the whole palm fruit: the pressed pulp becomes the soup, nothing of the harvest wasted. A little dried fish and crayfish carry the protein cheaply.",
   zeroWasteHero: false,
   tags: ["palm-fruit", "banga", "soup", "crayfish", "delta", "swallow"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — Banga Soup (Ofe Akwu)",
+      url: "https://www.allnigerianrecipes.com/soups/banga-soup/",
+      note: "Niger-Delta palm-fruit soup: extracting the concentrate and cooking it down with dried fish and banga spices.",
+    },
+  ],
 };

@@ -46,4 +46,11 @@ export const smotheredChicken: Recipe = {
   modernMove:
     "Cooking the roux in the rendered browning fat before the onions go in means the gravy is built from the chicken's own fond — so even watery cheap thighs braise into something rich and restaurant-deep.",
   tags: ["chicken", "braise", "smothered", "roux", "gravy", "rice", "one-pan"],
+  sources: [
+    {
+      title: "Jocelyn Delk Adams — Grandbaby Cakes",
+      url: "https://grandbaby-cakes.com/southern-smothered-chicken/",
+      note: "Pan-browned chicken braised in a from-scratch roux-and-onion brown gravy.",
+    },
+  ],
 };

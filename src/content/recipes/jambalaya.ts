@@ -62,4 +62,11 @@ export const jambalaya: Recipe = {
   modernMove:
     "Cooking the rice directly in the tomato-trinity stock — not boiling it separately — is what makes one sausage and one chicken thigh taste like a feast: every grain carries the meat's smoke.",
   tags: ["rice", "one-pot", "sausage", "trinity", "creole", "stretch-meat"],
+  sources: [
+    {
+      title: "Chef John Folse — Jambalaya (via Rouses Markets)",
+      url: "https://www.rouses.com/cooking/recipes/chef-john-folses-jambalaya/",
+      note: "Authoritative Louisiana one-pot Creole jambalaya — rice cooked in trinity stock with sausage and chicken, plus the jambon/yaya etymology.",
+    },
+  ],
 };

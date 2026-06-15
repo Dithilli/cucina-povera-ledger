@@ -45,4 +45,11 @@ export const grilledPolentaGreens: Recipe = {
     "Let the cut polenta dry uncovered in the fridge before grilling so it forms a real crust — the crisp-soft contrast is what turns a leftover into a dish.",
   zeroWasteHero: true,
   tags: ["polenta", "greens", "grilled", "leftovers", "zero-waste"],
+  sources: [
+    {
+      title: "Polenta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Polenta",
+      note: "Set polenta cooled into a loaf then grilled or fried — the leftover technique",
+    },
+  ],
 };

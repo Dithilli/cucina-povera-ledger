@@ -44,4 +44,11 @@ export const prasorizo: Recipe = {
   notes:
     "A frugal lenten winter dish from when leeks are abundant and cheap; the white-and-green (no tomato) version is the most traditional.",
   tags: ["leeks", "rice", "dill", "lemon", "winter"],
+  sources: [
+    {
+      title: "Olive Tomato (Elena Paravantes) — Greek Leeks and Rice (Prasorizo)",
+      url: "https://www.olivetomato.com/greek-leeks-rice-prasorizo/",
+      note: "Confirms leeks softened in olive oil with rice, dill, and lemon.",
+    },
+  ],
 };

@@ -40,4 +40,11 @@ export const spanakorizo: Recipe = {
   notes:
     "A lenten one-pot from the spring greens season. Equally good warm or at room temperature the next day.",
   tags: ["spinach", "rice", "dill", "lemon", "one-pot"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Spinach and Rice (Spanakorizo)",
+      url: "https://www.mygreekdish.com/recipe/greek-spinach-rice-recipe-spanakorizo/",
+      note: "Confirms spinach and rice simmered together with dill and finished with lemon.",
+    },
+  ],
 };

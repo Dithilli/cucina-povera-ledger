@@ -26,4 +26,11 @@ export const esquites: Recipe = {
     "Get real color on the kernels — the toasting (almost a dry sear) is what turns plain corn into something with smoke and depth before the creamy, tangy dressing goes on.",
   notes: "A perfect home for corn cut off cobs you'd otherwise discard.",
   tags: ["maíz", "corn", "side", "street-food", "zero-waste"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Esquites",
+      url: "https://www.mexicoinmykitchen.com/esquites-recipe-mexican-street-food/",
+      note: "Central-Mexico method: corn cooked with epazote, dressed with crema, cheese, lime, chile.",
+    },
+  ],
 };

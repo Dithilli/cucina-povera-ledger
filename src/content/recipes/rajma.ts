@@ -34,4 +34,16 @@ export const rajma: Recipe = {
   modernMove:
     "Mashing a ladleful of the cooked beans back into the gravy emulsifies the broth into something silky — the same trick that makes pasta e ceci creamy, no cream needed.",
   tags: ["legumes", "kidney-beans", "curry", "punjabi", "one-pot"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/rajma-masala-recipe-restaurant-style/",
+      note: "Punjabi rajma — slow-browned onions and a bhuna tomato masala over soft kidney beans",
+    },
+    {
+      title: "Rajma — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Rajma",
+      note: "Background on the Punjabi kidney-bean curry served with rice (rajma chawal)",
+    },
+  ],
 };

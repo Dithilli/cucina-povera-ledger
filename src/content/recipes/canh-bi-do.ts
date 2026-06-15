@@ -32,4 +32,11 @@ export const canhBiDo: Recipe = {
   modernMove:
     "Let a few chunks of squash collapse into the broth so it bodies up on its own — the soup thickens without any starch, and its natural sweetness is what makes it the perfect foil to a salty main.",
   tags: ["soup", "canh", "squash", "kabocha", "rice", "comfort"],
+  sources: [
+    {
+      title: "Vicky Pham — Kabocha Pumpkin Soup with Ground Pork (Canh Bi Do Nau Thit Bam)",
+      url: "https://vickypham.com/blog/vietnamese-kabocha-pumpkin-soup-with-ground-pork/",
+      note: "Kabocha simmered soft in a light ground-pork broth as a side to rice",
+    },
+  ],
 };

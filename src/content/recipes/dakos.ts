@@ -48,4 +48,15 @@ export const dakos: Recipe = {
     "Born to rescue paximadia, the twice-baked barley rusks shepherds carried because they never spoiled. The whole dish exists to revive something that would otherwise be inedibly hard — the purest cucina-povera move there is.",
   zeroWasteHero: true,
   tags: ["bread", "rusk", "paximadi", "tomato", "feta", "salad", "no-cook"],
+  sources: [
+    {
+      title: "My Greek Dish — Traditional Cretan Ntakos / Dakos",
+      url: "https://www.mygreekdish.com/recipe/ntakos-rusks-with-tomatoes-and-feta-cheese/",
+      note: "Confirms barley rusks moistened with water and oil, topped with grated tomato and crumbled feta/myzithra.",
+    },
+    {
+      title: "Diane Kochilas — The Glorious Foods of Greece",
+      note: "Cretan dakos as a traditional barley-rusk meze.",
+    },
+  ],
 };

@@ -57,4 +57,11 @@ export const pastaConLeSarde: Recipe = {
   modernMove:
     "Cook the pasta in the fennel blanching water so the fennel perfume is in the noodle itself, and use pangrattato as the crunchy, savory 'cheese' the dish was built without.",
   tags: ["sicilian", "sardines", "pasta", "fennel", "pangrattato", "fish"],
+  sources: [
+    {
+      title: "Pasta con le sarde — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_con_le_sarde",
+      note: "Palermo's sardine pasta with wild fennel, raisins, pine nuts, breadcrumbs",
+    },
+  ],
 };

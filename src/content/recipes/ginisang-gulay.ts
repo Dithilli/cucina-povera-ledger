@@ -37,4 +37,8 @@ export const ginisangGulay: Recipe = {
   modernMove:
     "Cooking the vegetables in stages on a real tomato ginisa — and steam-sautéing under a lid instead of boiling — keeps each one crisp and distinct instead of collapsing into one soft mass.",
   tags: ["vegetables", "ginisa", "gulay", "frugal", "rice", "everyday"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/ginisang-gulay/", note: "Mixed vegetables sautéed over a garlic–onion–tomato ginisa" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/ginisang-gulay/", note: "Adding vegetables by cooking time so each stays crisp-tender" },
+  ],
 };

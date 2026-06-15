@@ -27,4 +27,11 @@ export const salsaRojaAsada: Recipe = {
     "Toast the chiles to the edge of smoking and char the tomatoes hard — the controlled burn is the flavor. A molcajete gives a rustic, clinging texture a blender can't.",
   notes: "Base for chilaquiles, enchiladas, huevos rancheros. Salsa is itself an anti-waste tool — it makes any leftover delicious again.",
   tags: ["salsa", "chiles", "condiment", "side", "zero-waste"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Red Molcajete Salsa (Salsa de Molcajete)",
+      url: "https://www.mexicoinmykitchen.com/red-salsa-en-molcajete/",
+      note: "Charring tomatoes, garlic, and onion with toasted dried chile, ground in a molcajete.",
+    },
+  ],
 };

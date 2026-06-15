@@ -36,4 +36,16 @@ export const sundubuJjigae: Recipe = {
     "Endlessly adaptable to whatever's around: a few clams, a handful of mushrooms, leftover kimchi, or a little pork all slot in. Serve it screaming hot in a clay ttukbaegi if you have one — it keeps cooking at the table. Skip the egg and use doenjang for a vegan pot.",
   zeroWasteHero: false,
   tags: ["dinner", "stew", "jjigae", "tofu", "silken-tofu", "spicy", "egg"],
+  sources: [
+    {
+      title: "Maangchi — Sundubu-jjigae (Spicy soft tofu stew)",
+      url: "https://www.maangchi.com/recipe/sundubu-jjigae",
+      note: "Blooming gochugaru in oil, breaking silken tofu into soft curds, and cracking in an egg",
+    },
+    {
+      title: "Korean Bapsang (Hyosun Ro) — Sundubu Jjigae (Soft Tofu Stew)",
+      url: "https://www.koreanbapsang.com/kimchi-soondubu-jjigae-soft-tofu-stew-kimchi/",
+      note: "Chili-oil base with anchovy stock and an egg poached on top",
+    },
+  ],
 };

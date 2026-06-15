@@ -32,4 +32,16 @@ export const dauHuSotCa: Recipe = {
   modernMove:
     "Frying the tofu first builds a skin that grips the tomato sauce instead of weeping water into it — the difference between a watery braise and a clinging, savory glaze.",
   tags: ["tofu", "tomato", "vegetarian-option", "rice", "everyday"],
+  sources: [
+    {
+      title: "The Viet Vegan — Vegan Vietnamese Fried Tofu with Tomatoes (Đậu hũ sốt cà)",
+      url: "https://thevietvegan.com/vegan-vietnamese-fried-tofu-tomatoes-dau-hu-sot-ca/",
+      note: "Frying the tofu first, then a fresh-tomato sauce — soy in place of fish sauce",
+    },
+    {
+      title: "Hungry Huy — Vietnamese Tofu with Tomato Sauce (Đậu Sốt Cà Chua)",
+      url: "https://www.hungryhuy.com/how-to-make-dau-sot-ca-vietnamese-tofu-with-tomato-sauce/",
+      note: "Tomato-scallion sauce seasoned with fish sauce and sugar over rice",
+    },
+  ],
 };

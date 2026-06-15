@@ -25,4 +25,7 @@ export const kanin: Recipe = {
   notes:
     "Cook extra on purpose: cold, dried-out day-old kanin is the only correct base for sinangag (garlic fried rice). Spread leftovers thin and chill them fast so they dry out a touch.",
   tags: ["base", "side", "rice", "staple", "quick"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (\"How to Cook Rice\")", url: "https://panlasangpinoy.com/how-to-cook-rice/", note: "Rinsing off surface starch, the knuckle water gauge, and the covered off-heat rest" },
+  ],
 };

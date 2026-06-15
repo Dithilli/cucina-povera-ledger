@@ -50,4 +50,11 @@ export const okraGumbo: Recipe = {
   modernMove:
     "Okra is the thickener AND the vegetable, so you skip the long roux entirely — patiently 'smother' the slices first to cook out the slime, and the pot bodies itself, seafood optional.",
   tags: ["gumbo", "okra", "holy-trinity", "shrimp", "tomato", "vegetarian-option", "no-roux", "creole", "rice"],
+  sources: [
+    {
+      title: "Rouses Markets — Okra & Tomato Gumbo",
+      url: "https://www.rouses.com/cooking/recipes/okra-tomato-gumbo/",
+      note: "Creole gumbo that uses okra and tomato as the thickener instead of a roux.",
+    },
+  ],
 };

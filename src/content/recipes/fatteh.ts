@@ -63,4 +63,11 @@ export const fatteh: Recipe = {
     "Spoon a little of the hot chickpea cooking liquid over the toasted pita first — it half-softens the bread so each bite is part crunch, part custard, the way the dish is meant to land.",
   zeroWasteHero: true,
   tags: ["chickpeas", "pita", "bread", "yogurt", "zero-waste", "legumes"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/lebanese-fattah-chickpeas-pita-chips-and-labneh-with-garnishes/",
+      note: "Layered toasted pita chips, garlicky yogurt, warm chickpeas, and butter-fried pine nuts.",
+    },
+  ],
 };

@@ -38,4 +38,11 @@ export const arakasLatheros: Recipe = {
   notes:
     "A spring ladero. With the potatoes and peas it carries a bit more protein than most ladera, but the feta alongside is still what rounds out the meal. Lovely warm or at room temperature.",
   tags: ["ladera", "arakas", "peas", "potato", "dill", "olive-oil", "spring", "vegetarian"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Peas and Potato Stew (Arakas Laderos)",
+      url: "https://www.mygreekdish.com/recipe/greek-peas-and-potato-stew-with-tomatoes-recipe-arakas-laderos-kokkinistos/",
+      note: "Confirms the ladera method — peas and potatoes braised in olive oil with dill, served at room temperature with feta and bread.",
+    },
+  ],
 };

@@ -70,4 +70,16 @@ export const kukuBademjan: Recipe = {
   modernMove:
     "Frying the smoked eggplant down until it's almost a paste before it meets the egg means every bite carries that fire-roasted depth — the egg is just scaffolding for two cheap eggplants doing the work.",
   tags: ["kuku", "frittata", "eggs", "eggplant", "smoky", "meatless"],
+  sources: [
+    {
+      title: "Homa — Persian Mama",
+      url: "https://persianmama.com/kuku-bademjan-eggplant-frittata/",
+      note: "Supports the eggplant-and-egg kuku method with onion, turmeric and a flip mid-cook.",
+    },
+    {
+      title: "Omid Roustaei — The Caspian Chef",
+      url: "https://thecaspianchef.com/2019/05/eggplant-kuku-with-barberries/",
+      note: "Confirms frying the eggplant down to a paste before binding with egg.",
+    },
+  ],
 };

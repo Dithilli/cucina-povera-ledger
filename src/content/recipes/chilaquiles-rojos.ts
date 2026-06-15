@@ -28,4 +28,16 @@ export const chilaquilesRojos: Recipe = {
     "Time the toss: chilaquiles want the chips coated and barely softened, not stewed. Pull them while there's still texture, then the runny egg yolk becomes the sauce's second emulsion.",
   zeroWasteHero: true,
   tags: ["zero-waste", "tortilla", "eggs", "salsa", "breakfast"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, How to Cook Mexican Chilaquiles",
+      url: "https://www.mexicoinmykitchen.com/how-to-cook-mexican-chilaquiles/",
+      note: "Frying stale tortillas and folding them through red salsa just to soften.",
+    },
+    {
+      title: "Chilaquiles — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Chilaquiles",
+      note: "Origins as a leftover-tortilla dish and standard garnishes.",
+    },
+  ],
 };

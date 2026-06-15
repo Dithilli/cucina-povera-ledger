@@ -34,4 +34,15 @@ export const lokshenKugel: Recipe = {
   notes:
     "This is the milchig (dairy) kugel — cheese, eggs, butter, sour cream, no meat anywhere near it. A pareve version made with oil and no cheese (just noodles, eggs, sugar, and raisins) exists precisely so kugel can ride alongside a meat meal; build that one when the table is fleishig.",
   tags: ["noodles", "kugel", "dairy", "milchig"],
+  sources: [
+    {
+      title: "Wikipedia — Kugel",
+      url: "https://en.wikipedia.org/wiki/Kugel",
+      note: "Baked egg-noodle (lokshen) casserole; sweet dairy version with cheese and raisins.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Sweet milchig noodle kugel and the prized crisp top edges.",
+    },
+  ],
 };

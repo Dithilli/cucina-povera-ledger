@@ -46,4 +46,11 @@ export const pappaAlPomodoro: Recipe = {
     "Beat in cold raw olive oil off the heat — it emulsifies into the warm bread and gives a velvety, almost creamy finish from a four-ingredient soup.",
   zeroWasteHero: true,
   tags: ["bread", "tomato", "soup", "zero-waste", "summer"],
+  sources: [
+    {
+      title: "Pappa al pomodoro — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pappa_al_pomodoro",
+      note: "Thick Tuscan bread-and-tomato soup with olive oil, garlic, and basil",
+    },
+  ],
 };

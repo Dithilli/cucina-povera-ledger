@@ -26,4 +26,16 @@ export const ghee: Recipe = {
     "One pound of butter makes a jar that powers weeks of cooking by the spoonful. The leftover browned solids strained out are delicious stirred into rice or onto toast — don't bin them.",
   zeroWasteHero: true,
   tags: ["base", "ghee", "fat", "pantry", "clarified-butter"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/ghee/",
+      note: "Simmering butter until the milk solids brown and the fat turns clear and nutty",
+    },
+    {
+      title: "Ghee — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Ghee",
+      note: "Background on ghee as clarified butter and its shelf stability",
+    },
+  ],
 };

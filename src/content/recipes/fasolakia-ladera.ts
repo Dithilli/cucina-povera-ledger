@@ -39,4 +39,11 @@ export const fasolakiaLadera: Recipe = {
     "A ladero: vegetables cooked 'with oil' as the main event. Modest protein on the plate is authentic — the feta and bread carry it. Even better the next day cold.",
   zeroWasteHero: true,
   tags: ["ladera", "green-beans", "vegetable", "olive-oil", "summer", "vegetarian"],
+  sources: [
+    {
+      title: "Olive Tomato (Elena Paravantes) — Authentic Greek Green Beans (Fasolakia Lathera)",
+      url: "https://www.olivetomato.com/greek-style-green-beans-fasolakia-lathera/",
+      note: "Confirms green beans braised in olive oil and tomato — the classic lathera technique.",
+    },
+  ],
 };

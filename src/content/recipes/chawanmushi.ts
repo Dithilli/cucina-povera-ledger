@@ -29,4 +29,11 @@ export const chawanmushi: Recipe = {
   modernMove:
     "Keeping the steam gentle and the dashi-to-egg ratio high is the whole trick — it sets the custard to a barely-there silk instead of a sponge, the texture that defines the dish.",
   tags: ["eggs", "custard", "steamed", "dashi", "mushrooms"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Chawanmushi (Savory Steamed Egg Custard)",
+      url: "https://www.justonecookbook.com/chawanmushi-savory-steamed-egg-custard/",
+      note: "Dashi-to-egg ratio, straining, and gentle low steam for a silky set.",
+    },
+  ],
 };

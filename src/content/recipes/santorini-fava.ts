@@ -38,4 +38,11 @@ export const santoriniFava: Recipe = {
     "True Santorini fava is PDO yellow split peas, but any yellow split pea makes the same comforting purée. Leftovers set firm and are good fried in a pan the next day.",
   zeroWasteHero: true,
   tags: ["legumes", "split-peas", "fava", "purée", "santorini", "meze"],
+  sources: [
+    {
+      title: "My Greek Dish — Authentic Greek Fava (Yellow Split-Pea Purée)",
+      url: "https://www.mygreekdish.com/recipe/authentic-greek-fava-recipe-yellow-split-peas-puree/",
+      note: "Confirms yellow split peas simmered soft and puréed with onion and olive oil.",
+    },
+  ],
 };

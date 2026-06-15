@@ -31,4 +31,8 @@ export const timatimFitfit: Recipe = {
   notes:
     "The simplest fitfit of all — no cooking, just a bright raw salad and yesterday's injera. The same idea works with leftover shiro or misir folded in.",
   tags: ["fitfit", "tomato", "zero-waste", "no-cook", "lunch"],
+  sources: [
+    { title: "Hannah Kaminsky — Bittersweet Blog", url: "https://bittersweetblog.com/2025/11/28/timatim-fitfit/", note: "Torn injera tossed with a fresh tomato salad and berbere dressing — the no-cook fitfit." },
+    { title: "Fit-fit — Wikipedia", url: "https://en.wikipedia.org/wiki/Fit-fit", note: "The fitfit naming convention and the broader injera-salvage technique." },
+  ],
 };

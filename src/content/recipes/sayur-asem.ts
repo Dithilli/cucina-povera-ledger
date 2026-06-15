@@ -48,4 +48,8 @@ export const sayurAsem: Recipe = {
   notes:
     "Built to absorb leftovers and trim: corn cobs, bean ends, cabbage cores and stems, leftover peanuts. Almost nothing edible from prep needs to be thrown away.",
   tags: ["tamarind", "soup", "vegetables", "zero-waste", "sundanese", "scraps"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/sayur-asem.html", note: "Sundanese vegetables in a sour tamarind broth, tamarind added late" },
+    { title: "Marvellina — What To Cook Today", url: "https://whattocooktoday.com/sayur-asem.html", note: "tamarind vegetable soup method and vegetable mix" },
+  ],
 };

@@ -33,4 +33,15 @@ export const tzimmes: Recipe = {
   notes:
     "Pareve, so it's at home beside the brisket at Rosh Hashanah or on its own at a meatless meal — the honey and the upward slump of the carrots are the whole point: a sweet dish for a sweet new year.",
   tags: ["carrot", "sweet", "pareve", "rosh-hashanah"],
+  sources: [
+    {
+      title: "Wikipedia — Tzimmes",
+      url: "https://en.wikipedia.org/wiki/Tzimmes",
+      note: "Sweet carrot-and-dried-fruit stew; the Rosh Hashanah symbolism of a sweet year.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Carrot tzimmes with honey and prunes and the reduced, clinging glaze.",
+    },
+  ],
 };

@@ -41,4 +41,8 @@ export const chopsuey: Recipe = {
   notes:
     "Endlessly elastic: whatever is cheapest and freshest at the palengke goes in. A handful of liver or shrimp seasons the whole pan.",
   tags: ["vegetables", "stir-fry", "ginisa", "filipino-chinese", "frugal"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/super-tasty-chop-suey/", note: "Adding vegetables hardest-first and binding with a cornstarch slurry" },
+    { title: "Panlasang Pinoy — Chop Suey", url: "https://panlasangpinoy.com/chop-suey/", note: "Filipino-Chinese sautéed vegetable medley over the ginisa base" },
+  ],
 };

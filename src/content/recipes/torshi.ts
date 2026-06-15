@@ -34,4 +34,11 @@ export const torshi: Recipe = {
     "A frugal way to bank the end of the vegetable box: odd bits of cauliflower, carrot, and celery that would otherwise wilt become a months-long condiment.",
   zeroWasteHero: true,
   tags: ["side", "base", "pickle", "vinegar", "preserve", "vegan", "zero-waste"],
+  sources: [
+    {
+      title: "Torshi (Persian mixed vegetable pickle) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Torshi",
+      note: "Confirms torshi as a vinegar-cured mixed-vegetable pickle served beside rich dishes.",
+    },
+  ],
 };

@@ -30,4 +30,8 @@ export const kikAlicha: Recipe = {
   notes:
     "Yellow split peas bring about 16g protein per cooked cup. Kik alicha is the classic 'rest' dish next to a spicy misir or shiro on the platter.",
   tags: ["alicha", "split-peas", "kik", "dinner", "mild"],
+  sources: [
+    { title: "196 flavors — Kik Alicha", url: "https://www.196flavors.com/kik-alicha/", note: "Mild yellow split peas with turmeric and niter kibbeh, explicitly made without berbere." },
+    { title: "Urban Farmie — Kik Alicha (Ethiopian Split Pea Stew)", url: "https://urbanfarmie.com/kik-alicha/", note: "Turmeric- and ginger-forward yellow split pea stew, the gentle counterweight to the wots." },
+  ],
 };

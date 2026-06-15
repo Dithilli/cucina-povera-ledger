@@ -34,4 +34,16 @@ export const chole: Recipe = {
   modernMove:
     "Cooking the chickpeas with a tea bag — an old dhaba trick — tints and tans them dark without a drop of extra fat or color powder, just tannin doing the work.",
   tags: ["legumes", "chickpeas", "curry", "punjabi", "amchur"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/punjabi-chole-chickpeas-in-a-spicy-gravy/",
+      note: "Punjabi chole — cooking the chickpeas with tea for the dark color, amchur for tang",
+    },
+    {
+      title: "Chana masala — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Chana_masala",
+      note: "Background on the Punjabi chickpea curry (chole / chana masala)",
+    },
+  ],
 };

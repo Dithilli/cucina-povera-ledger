@@ -30,4 +30,7 @@ export const hilbet: Recipe = {
   notes:
     "A distinctly Eritrean dish that shows the Red-Sea accent on the shared legume table — fenugreek leans the cuisine toward the Arabian peninsula across the water.",
   tags: ["eritrean", "fava", "fenugreek", "puree", "side"],
+  sources: [
+    { title: "Hilbet — Wikipedia", url: "https://en.wikipedia.org/wiki/Hilbet", note: "The Tigrinya vegan paste of fava beans and fenugreek whipped to a cream and served with injera." },
+  ],
 };

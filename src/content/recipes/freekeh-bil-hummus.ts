@@ -39,4 +39,11 @@ export const freekehBilHummus: Recipe = {
   notes:
     "If you only have whole freekeh, soak it 30 minutes and add 10 minutes to the simmer.",
   tags: ["freekeh", "chickpeas", "smoky", "vegan-option", "grains"],
+  sources: [
+    {
+      title: "Freekeh — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Freekeh",
+      note: "Confirms freekeh as fire-roasted young green wheat with a smoky flavour, served in the Levant with chickpeas.",
+    },
+  ],
 };

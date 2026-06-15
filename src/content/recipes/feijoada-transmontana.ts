@@ -41,4 +41,11 @@ export const feijoadaTransmontana: Recipe = {
   modernMove:
     "Boiling the salted scraps first and reserving that smoky broth lets you build the whole stew on rendered pig flavour — a few ounces of bone and skin season six bowls.",
   tags: ["legumes", "white-beans", "pork", "chouriço", "stew", "one-pot"],
+  sources: [
+    {
+      title: "196 flavors — Feijoada à Transmontana (Traditional Portuguese Recipe)",
+      url: "https://www.196flavors.com/feijoada-a-transmontana/",
+      note: "Supports the Trás-os-Montes mountain feijoada as the original frugal version built on beans and smoked pig parts.",
+    },
+  ],
 };

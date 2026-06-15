@@ -31,4 +31,11 @@ export const takikomiGohan: Recipe = {
   modernMove:
     "Seasoning the cooking water with dashi-soy-mirin means every grain is flavored from the inside — the vegetables and their juices steam into the rice instead of sitting on top of it.",
   tags: ["rice", "mushrooms", "dashi", "one-pot", "mixed-rice"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Takikomi Gohan (Japanese Mixed Rice)",
+      url: "https://www.justonecookbook.com/takikomi-gohan/",
+      note: "Cooking rice in seasoned dashi with toppings scattered on top, never stirred before cooking.",
+    },
+  ],
 };

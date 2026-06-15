@@ -28,4 +28,11 @@ export const rajasConCrema: Recipe = {
     "Char the poblanos hard and steam-peel them — the roasting is the flavor. Add the crema off a hard boil so it stays silky and doesn't split.",
   notes: "The week's precious thread (crema + cheese) shows how a little dairy transforms cheap chiles and corn.",
   tags: ["verduras", "poblano", "crema", "rajas", "side"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Rajas con Crema",
+      url: "https://www.mexicoinmykitchen.com/poblano-pepper-strips-with-cream/",
+      note: "Roasted poblano strips with onion, optional corn, and crema warmed (not boiled).",
+    },
+  ],
 };

@@ -36,4 +36,8 @@ export const nilaga: Recipe = {
   notes:
     "Built around the cheapest, hardest-working cut of beef or a few pork hocks; the bones give a gelatin-rich broth that no quick cut can.",
   tags: ["soup", "beef", "boiled", "corn", "cabbage", "one-pot"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/nilagang-baka/", note: "Clear boiled-beef soup, skimming the scum and adding vegetables by cooking time" },
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/nilagang-baka-recipe/", note: "Long simmer of a tough cut with corn, potato, and cabbage" },
+  ],
 };

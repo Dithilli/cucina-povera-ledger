@@ -52,4 +52,10 @@ export const adasi: Recipe = {
   notes:
     "A breakfast dish in Iran (sold from morning haleem-and-adasi stalls), it crosses over to dinner perfectly. A squeeze of lemon at the end if you skip the dried lime.",
   tags: ["lentils", "legumes", "stew", "breakfast-for-dinner", "one-pot"],
+  sources: [
+    {
+      title: "Najmieh Batmanglij — Food of Life: Ancient Persian and Modern Iranian Cooking",
+      note: "Documents adasi as a soft brown-lentil pottage eaten as an Iranian breakfast, the frugal dish reframed here for dinner.",
+    },
+  ],
 };

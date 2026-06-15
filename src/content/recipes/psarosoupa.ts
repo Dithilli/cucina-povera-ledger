@@ -37,4 +37,11 @@ export const psarosoupa: Recipe = {
     "Built on the cheapest whole fish at the market — often the ugly, bony ones nobody fillets — which make the best, most gelatinous broth.",
   zeroWasteHero: true,
   tags: ["soup", "fish", "whole-fish", "potato", "avgolemono", "one-pot"],
+  sources: [
+    {
+      title: "Diane Kochilas — Psarosoupa (Fish Soup with Avgolemono)",
+      url: "https://www.dianekochilas.com/psarosoupa-fish-soup-with-avgolemono/",
+      note: "Confirms whole fish simmered with vegetables and finished with an egg-lemon sauce.",
+    },
+  ],
 };

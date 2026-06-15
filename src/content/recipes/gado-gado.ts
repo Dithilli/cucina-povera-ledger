@@ -41,4 +41,7 @@ export const gadoGado: Recipe = {
   modernMove:
     "Frying the peanut-garlic-chili paste before letting it down with water blooms the aromatics — the sauce tastes cooked and deep, not like raw blended peanut butter.",
   tags: ["peanut-sauce", "tofu", "tempe", "salad", "vegetables", "egg"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/gado-gado-indonesian-salad-with-peanut-sauce.html", note: "composed-salad assembly and tamarind–palm-sugar peanut sauce" },
+  ],
 };

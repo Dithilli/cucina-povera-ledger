@@ -31,4 +31,11 @@ export const jeeraAloo: Recipe = {
   modernMove:
     "Boiling the potatoes first, then dressing them in a fresh-bloomed cumin tadka, keeps the spices bright and the cumin aromatic instead of stewed — the tadka is built in seconds, at the end.",
   tags: ["sabzi", "potato", "cumin", "tadka", "quick", "side"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/jeera-aloo-recipe-jeera-aloo/",
+      note: "Boiled potatoes dressed in a fresh-bloomed cumin tadka with turmeric and chili",
+    },
+  ],
 };

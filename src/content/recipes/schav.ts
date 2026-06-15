@@ -32,4 +32,15 @@ export const schav: Recipe = {
   notes:
     "Milchig: sour cream and egg, no meat. Sorrel is fiercely tart on its own — the dairy and a pinch of sugar are there to round it, not erase it; schav should still bite. After a winter of cabbage and root cellar, that first sour-green spoonful is the taste of the year turning.",
   tags: ["sorrel", "cold", "soup", "dairy", "milchig"],
+  sources: [
+    {
+      title: "Wikipedia — Schav",
+      url: "https://en.wikipedia.org/wiki/Schav",
+      note: "Cold Ashkenazi sorrel soup (green borscht); the Yiddish name and dairy service.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Sorrel soup as the first sour-green dish of spring, finished with egg and sour cream.",
+    },
+  ],
 };

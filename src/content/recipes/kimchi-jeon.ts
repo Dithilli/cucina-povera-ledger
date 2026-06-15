@@ -58,4 +58,11 @@ export const kimchiJeon: Recipe = {
   modernMove:
     "The two frugal moves are using the sourest, most over-ripe kimchi (its acidity is a feature here, not a flaw) and pouring in the brine you'd otherwise throw away as the seasoning — then keeping the batter thin and the oil hot so it shallow-fries into lace instead of steaming into a thick cake.",
   tags: ["jeon", "pancake", "kimchi", "zero-waste", "pan-fried", "weeknight"],
+  sources: [
+    {
+      title: "Maangchi — Kimchi pancake (Kimchijeon)",
+      url: "https://www.maangchi.com/recipe/kimchijeon",
+      note: "Using sour kimchi plus its brine in a thin batter, fried crisp in a well-oiled pan",
+    },
+  ],
 };

@@ -46,4 +46,11 @@ export const hiyayakko: Recipe = {
   modernMove:
     "Treat the cold block as a blank canvas and lean on contrast — grated ginger, a bristle of bonito, the snap of raw scallion against soft curd. The technique is restraint: nothing is cooked, so freshness and temperature do all the work.",
   tags: ["tofu", "soybean", "no-cook", "chilled", "five-minute"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Japanese Cold Tofu (Hiyayakko)",
+      url: "https://www.justonecookbook.com/japanese-tofu-cold-tofu-hiyayakko/",
+      note: "Chilled silken tofu draining and the classic ginger, scallion, and bonito toppings.",
+    },
+  ],
 };

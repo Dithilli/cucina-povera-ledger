@@ -58,4 +58,11 @@ export const shrimpEtouffee: Recipe = {
   modernMove:
     "Building a quick stock from the shrimp shells before they hit the gravy doubles the seafood flavour for free — the étouffée tastes generous even though the shrimp are rationed.",
   tags: ["shrimp", "smothered", "roux", "trinity", "gravy", "rice", "creole", "etouffee"],
+  sources: [
+    {
+      title: "George Graham — Acadiana Table",
+      url: "https://acadianatable.com/2026/04/13/crawfish-etouffee/",
+      note: "Cajun étouffée technique — roux, trinity, and a shrimp stock made from dried shrimp or shells.",
+    },
+  ],
 };

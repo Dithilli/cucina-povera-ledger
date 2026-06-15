@@ -32,4 +32,11 @@ export const cornbreadDressing: Recipe = {
   notes:
     "A natural sequel to a cornbread night and a pot of chicken broth: yesterday's bread plus the strained broth from the dumplings become tonight's dinner.",
   tags: ["cornbread", "dressing", "stuffing", "leftovers", "baked", "side", "stale-bread"],
+  sources: [
+    {
+      title: "Spicy Southern Kitchen — Southern Cornbread Dressing",
+      url: "https://spicysouthernkitchen.com/southern-cornbread-dressing/",
+      note: "Supports day-old crumbled cornbread plus biscuits/bread, sage, onion, celery, and chicken broth baked into dressing.",
+    },
+  ],
 };

@@ -26,4 +26,11 @@ export const frijolesRefritos: Recipe = {
     "'Refrito' means well-fried, not fried-again — push them further than feels necessary so the starch caramelizes and the purée gets a faint toasted depth.",
   zeroWasteHero: true,
   tags: ["beans", "zero-waste", "base", "refried", "leftovers"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Refried Beans (Frijoles Refritos)",
+      url: "https://www.mexicoinmykitchen.com/refried-beans-frijoles-refritos/",
+      note: "Day-old beans fried and mashed in lard to a glossy purée.",
+    },
+  ],
 };

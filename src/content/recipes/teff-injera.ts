@@ -32,4 +32,8 @@ export const teffInjera: Recipe = {
   notes:
     "Day-old injera is never waste — torn and revived in berbere and niter kibbeh it becomes fitfit/firfir. A 100% teff batter is gluten-free; many home cooks cut it with a little wheat or barley flour for easier handling.",
   tags: ["base", "teff", "injera", "fermented", "flatbread"],
+  sources: [
+    { title: "Injera — Wikipedia", url: "https://en.wikipedia.org/wiki/Injera", note: "The sour fermented teff flatbread, the ersho starter, the mitad griddle, and its role as plate and utensil." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/authentic-injera-ethiopian-flatbread/", note: "Traditional 100% teff, multi-day wild-fermentation method." },
+  ],
 };

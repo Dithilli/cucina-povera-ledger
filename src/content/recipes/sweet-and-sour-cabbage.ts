@@ -32,4 +32,14 @@ export const sweetAndSourCabbage: Recipe = {
   notes:
     "Pareve as written, so it sits comfortably at any table — meat, dairy, or neither. Over kasha or potato it's a full meatless dinner; alongside a roast it's the bright, tart counterpoint to the fat.",
   tags: ["cabbage", "sweet-sour", "pareve"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Sweet-and-sour braised cabbage in the Ashkenazi repertoire; raisins and vinegar balance.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Slow-braised sweet-sour cabbage as a frugal everyday dish over potato or kasha.",
+    },
+  ],
 };

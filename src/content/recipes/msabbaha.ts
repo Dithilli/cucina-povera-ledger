@@ -33,4 +33,11 @@ export const msabbaha: Recipe = {
     "Holding back a third of the whole chickpeas and only crushing the rest gives you two textures in one bowl — a creamy base and warm whole beans — with far more lemon and cumin than smooth hummus carries.",
   notes: "Msabbaha means 'swimming' — the chickpeas should look like they're floating in the sauce, not bound tight.",
   tags: ["legumes", "chickpeas", "tahini", "lemon", "cumin"],
+  sources: [
+    {
+      title: "Vidar Bergum — vidarbergum.com",
+      url: "https://vidarbergum.com/recipe/msabbaha-warm-chickpeas-tahini-sauce/",
+      note: "Warm whole chickpeas in a loose tahini-lemon sauce, lightly mashed not blended — supports the two-texture method.",
+    },
+  ],
 };

@@ -50,4 +50,11 @@ export const polentaMushroomRagu: Recipe = {
   modernMove:
     "Use the strained porcini soaking liquid as the braising base — it carries an intense, almost meaty depth that makes the ragù taste long-cooked in minutes.",
   tags: ["polenta", "mushroom", "ragu", "vegetarian", "umami"],
+  sources: [
+    {
+      title: "Polenta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Polenta",
+      note: "Northern Italian cornmeal staple served soft under a sauce or ragù",
+    },
+  ],
 };

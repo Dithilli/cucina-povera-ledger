@@ -42,4 +42,8 @@ export const sinigangNaBaboy: Recipe = {
   notes:
     "Sinigang is endlessly frugal — the souring agent and the rotating cast of cheap vegetables stay constant while the protein flexes to whatever is cheapest.",
   tags: ["soup", "pork", "tamarind", "sour", "vegetables", "one-pot"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/pork-sinigang-na-baboy-recipe/", note: "Skimming the pork broth and souring it with tamarind to mouth-puckering" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/sinigang-na-baboy/", note: "Adding the rotating cast of vegetables in stages by cooking time" },
+  ],
 };

@@ -35,4 +35,11 @@ export const bhindiMasala: Recipe = {
   modernMove:
     "Frying the okra separately and dry first drives off the mucilage before any moisture from onion or tomato can hit it — that single step is what makes bhindi crisp instead of gummy.",
   tags: ["sabzi", "okra", "bhindi", "dry-curry", "amchoor"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/bhindi-masala/",
+      note: "Frying the okra separately and dry first to drive off the mucilage; amchur for tang",
+    },
+  ],
 };

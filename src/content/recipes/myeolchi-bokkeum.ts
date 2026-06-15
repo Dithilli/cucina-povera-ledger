@@ -50,4 +50,11 @@ export const myeolchiBokkeum: Recipe = {
     "The no-oil dry-toast first, then a separate fast caramel: it keeps the anchovies shatter-crisp instead of chewy, the difference between a great banchan and a sticky one.",
   zeroWasteHero: true,
   tags: ["banchan", "anchovies", "bokkeum", "sweet-soy", "make-ahead"],
+  sources: [
+    {
+      title: "Maangchi — Stir-fried dried anchovies (Myeolchi-bokkeum)",
+      url: "https://www.maangchi.com/recipe/myeolchi-bokkeum",
+      note: "Toasting the dried anchovies then glazing them in a sweet-soy syrup",
+    },
+  ],
 };

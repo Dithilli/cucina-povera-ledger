@@ -41,4 +41,11 @@ export const lahanodolmades: Recipe = {
   notes:
     "A winter dish made when cabbage is cheap; the mince is small — the rice and avgolemono carry it. Skip the meat and it becomes a lenten lahanodolmades.",
   tags: ["cabbage", "rice", "avgolemono", "lemon", "winter"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Stuffed Cabbage Rolls in Lemon Sauce (Lahanodolmades)",
+      url: "https://www.mygreekdish.com/recipe/stuffed-cabbage-rolls-lahanodomades/",
+      note: "Confirms cabbage rolled around a rice-and-mince filling and finished with egg-lemon sauce.",
+    },
+  ],
 };

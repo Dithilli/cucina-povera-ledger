@@ -36,4 +36,11 @@ export const batataHarra: Recipe = {
   notes:
     "Stretches into a full dinner with bread, labneh, or a fried egg on top; as a side it lifts any of the bean yakhni.",
   tags: ["potatoes", "garlic", "chili", "coriander", "taqliya", "vegan"],
+  sources: [
+    {
+      title: "Maureen Abood — Batata Harra (Lebanese Spicy Potatoes)",
+      url: "https://maureenabood.com/batata-harra/",
+      note: "Authentic Lebanese batata harra — crisp potatoes tossed with garlic, chili, and fresh coriander.",
+    },
+  ],
 };

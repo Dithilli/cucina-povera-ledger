@@ -62,4 +62,11 @@ export const pastaAllaNorma: Recipe = {
   modernMove:
     "Frying the eggplant properly (not steaming it) gives silky interiors and a roasted depth that a quick sauté never reaches — worth the oil.",
   tags: ["eggplant", "tomato", "pasta", "sicilian", "vegetarian"],
+  sources: [
+    {
+      title: "Pasta alla Norma — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_alla_Norma",
+      note: "Catania dish of pasta, fried eggplant, tomato, basil, and ricotta salata",
+    },
+  ],
 };

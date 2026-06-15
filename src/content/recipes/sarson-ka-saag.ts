@@ -30,4 +30,16 @@ export const sarsonKaSaag: Recipe = {
   modernMove:
     "Cornmeal does the thickening that cream would elsewhere — it bulks the greens into a spoonable saag and quietly ties it to the makki di roti served alongside, one grain doing double duty.",
   tags: ["greens", "mustard-greens", "saag", "punjabi", "winter"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/sarson-ka-saag/",
+      note: "Punjabi mustard greens slow-stewed with spinach, thickened with cornmeal, finished with tadka",
+    },
+    {
+      title: "Sarson da saag — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Sarson_da_saag",
+      note: "Background on the Punjabi mustard-greens dish eaten with makki di roti",
+    },
+  ],
 };

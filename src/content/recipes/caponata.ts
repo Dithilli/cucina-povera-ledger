@@ -52,4 +52,11 @@ export const caponata: Recipe = {
     "Fry the eggplant separately and add it back at the end so it stays distinct and silky rather than dissolving — and serve it cool, when the agrodolce has fully come together.",
   notes: "Best made a day ahead; keeps well and improves.",
   tags: ["sicilian", "eggplant", "agrodolce", "vegetable", "make-ahead", "side"],
+  sources: [
+    {
+      title: "Caponata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Caponata",
+      note: "Sicilian fried-eggplant dish with celery, olives, capers in agrodolce",
+    },
+  ],
 };

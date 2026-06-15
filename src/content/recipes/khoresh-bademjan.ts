@@ -33,4 +33,11 @@ export const khoreshBademjan: Recipe = {
   notes:
     "Vegetarian if you drop the meat and lean on more eggplant and a handful of yellow split peas. Often crowned with sliced tomato or a fried egg.",
   tags: ["dinner", "stew", "eggplant", "tomato", "saffron", "khoresh"],
+  sources: [
+    {
+      title: "Homa — Persian Mama",
+      url: "https://persianmama.com/khoresh-bademjan-persian-eggplant-stew-with-beef/",
+      note: "Supports salting and frying the eggplant, the saffron-tomato braise, and the sour finish.",
+    },
+  ],
 };

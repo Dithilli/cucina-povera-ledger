@@ -30,4 +30,16 @@ export const theTrinity: Recipe = {
     "Where French cooking uses carrots, Louisiana swaps in green bell pepper, which suits the warm climate and gives Creole and Cajun cooking its signature backbone.",
   zeroWasteHero: true,
   tags: ["base", "aromatics", "trinity", "creole", "cajun", "make-ahead", "vegan"],
+  sources: [
+    {
+      title: "V. Todd Miller — LSU AgCenter: A brief history of the Cajun holy trinity",
+      url: "https://www.lsuagcenter.com/articles/page1621432197656",
+      note: "Onion/celery/bell pepper as Louisiana's mirepoix; bell pepper swapped for carrot; name popularized by Paul Prudhomme.",
+    },
+    {
+      title: "Holy trinity (cooking) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Holy_trinity_(cooking)",
+      note: "Two-to-one onion ratio, garlic as the optional 'pope,' and the trinity's role across gumbo, étouffée, and jambalaya.",
+    },
+  ],
 };

@@ -27,4 +27,11 @@ export const huevosALaMexicana: Recipe = {
   modernMove:
     "Cook the vegetables down to concentrate them before the eggs go in, and take the eggs off the heat a beat early — carryover finishes them soft instead of dry.",
   tags: ["eggs", "breakfast", "protein", "quick", "tomato"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Huevos a la Mexicana",
+      url: "https://www.mexicoinmykitchen.com/mexican-style-scrambled-eggs/",
+      note: "Eggs scrambled with tomato, white onion, and serrano — the three flag colors.",
+    },
+  ],
 };

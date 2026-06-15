@@ -36,4 +36,7 @@ export const arrozDeGrelos: Recipe = {
   notes:
     "A frugal Minho staple from the season when turnip tops are everywhere. Broccoli rabe, kale, or beet tops all stand in. Good with a fried egg or a few flakes of salt cod on top.",
   tags: ["greens", "grelos", "rice", "garlic", "one-pot"],
+  sources: [
+    { title: "196 flavors — Arroz de Grelos", url: "https://www.196flavors.com/portugal-arroz-de-grelos/", note: "northern Portugal/Galician turnip-greens rice with garlic and olive oil" },
+  ],
 };

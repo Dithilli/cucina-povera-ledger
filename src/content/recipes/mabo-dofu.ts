@@ -61,4 +61,11 @@ export const maboDofu: Recipe = {
   modernMove:
     "Pre-soaking the tofu in warm salted water firms it just enough to survive the sauce, while blooming doubanjiang and miso in the rendered pork fat builds a deep savory base from a small amount of meat — the tofu is the protein, the pork is the seasoning.",
   tags: ["tofu", "soybean", "pork", "doubanjiang", "miso", "rice"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Mapo Tofu (Mabo Dofu)",
+      url: "https://www.justonecookbook.com/mapo-tofu/",
+      note: "Japanese reading — miso-rounded doubanjiang sauce, a little pork, and a cornstarch thickening.",
+    },
+  ],
 };

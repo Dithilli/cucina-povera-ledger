@@ -40,4 +40,11 @@ export const fulMedames: Recipe = {
     "Canned ful works in a pinch: simmer with its liquid, then crush and dress the same way. The dried-bean version is cheaper and far better.",
   zeroWasteHero: true,
   tags: ["legumes", "fava", "tahini-free", "one-pot", "breakfast-for-dinner"],
+  sources: [
+    {
+      title: "Ful medames — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Ful_medames",
+      note: "Cooked fava beans dressed with olive oil, lemon, garlic, and cumin — the dish's history and regional variations.",
+    },
+  ],
 };

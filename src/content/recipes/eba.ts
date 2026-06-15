@@ -25,4 +25,16 @@ export const eba: Recipe = {
   notes:
     "Yellow garri is fried in palm oil and tastes richer; white is plainer. Either way it's a swallow, not a dish to eat alone — it lives to carry sauce.",
   tags: ["base", "swallow", "garri", "cassava", "gluten-free", "quick"],
+  sources: [
+    {
+      title: "Chef Lola's Kitchen — How to Make Eba",
+      url: "https://cheflolaskitchen.com/how-to-make-eba/",
+      note: "Mixing garri with boiling water into a smooth swallow — hot water swells the granules; cold water makes it gummy.",
+    },
+    {
+      title: "Eba — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Eba",
+      note: "Eba as a West African (Nigeria, Togo, Benin) garri/cassava swallow.",
+    },
+  ],
 };

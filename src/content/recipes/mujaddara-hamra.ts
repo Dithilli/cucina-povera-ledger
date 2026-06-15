@@ -31,4 +31,11 @@ export const mujaddaraHamra: Recipe = {
     "A staple of Palestinian and southern Lebanese kitchens. Coarse bulgur is essential for the chewy texture; fine bulgur turns to mush.",
   zeroWasteHero: true,
   tags: ["dinner", "legumes", "lentils", "bulgur", "onions", "palestinian", "one-pot", "vegan"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/mujadara-hamra/",
+      note: "Southern Lebanese mujadara hamra — confirms 'hamra' (red) from onions fried near-burnt, with coarse bulgur.",
+    },
+  ],
 };

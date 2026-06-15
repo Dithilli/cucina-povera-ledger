@@ -30,4 +30,7 @@ export const ful: Recipe = {
   notes:
     "Ful is the great shared breakfast across the Horn of Africa, the Red Sea, and the Middle East — proof the same cheap legume feeds a whole region.",
   tags: ["fava", "ful", "breakfast", "legumes", "protein"],
+  sources: [
+    { title: "Ful Medames — Wikipedia", url: "https://en.wikipedia.org/wiki/Ful_medames", note: "Stewed fava beans eaten as a breakfast staple across the Horn of Africa, the Red Sea, and the Middle East." },
+  ],
 };

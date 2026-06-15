@@ -42,4 +42,8 @@ export const tinola: Recipe = {
   notes:
     "Green papaya is the traditional vegetable; chayote is the cheap, year-round stand-in. One bird, plenty of water, and a few cents of greens feed the table.",
   tags: ["soup", "chicken", "ginger", "papaya", "chayote", "greens", "one-pot"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Tinolang Manok)", url: "https://panlasangpinoy.com/classic-tinolang-manok-recipe/", note: "Blooming ginger and aromatics before the water for a clear, fragrant broth" },
+    { title: "Bebs — Foxy Folksy", url: "https://www.foxyfolksy.com/chicken-tinola/", note: "Green papaya or chayote and leafy greens added at the end" },
+  ],
 };

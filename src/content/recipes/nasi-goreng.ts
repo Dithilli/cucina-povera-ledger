@@ -35,4 +35,8 @@ export const nasiGoreng: Recipe = {
     "Cold, dried-out rice plus a screaming-hot pan gives the toasted, separate-grain texture (wok hei) that defines real nasi goreng — fresh rice can never get there.",
   zeroWasteHero: true,
   tags: ["fried-rice", "leftover-rice", "kecap-manis", "egg", "one-pan", "zero-waste"],
+  sources: [
+    { title: "Wikipedia — Nasi goreng", url: "https://en.wikipedia.org/wiki/Nasi_goreng", note: "national-dish status, day-old rice, and kecap manis seasoning" },
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/nasi-goreng-ijo-teri-anchovies-and-green-chilies-fried-rice.html", note: "chili-shallot paste fried-rice technique and egg topping" },
+  ],
 };

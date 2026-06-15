@@ -27,4 +27,11 @@ export const quesadillasDeMaiz: Recipe = {
     "Cook the masa shell first on a drier, slightly lower heat so it sets and chars lightly before the cheese fully melts — you get a cooked corn shell, not a greasy raw-dough fold.",
   notes: "The cheese is the week's precious thread; a little goes far when the masa carries the plate.",
   tags: ["masa", "cheese", "quesadilla", "comal", "lunch"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Corn Dough Quesadillas",
+      url: "https://www.mexicoinmykitchen.com/corn-dough-quesadillas/",
+      note: "Fresh-masa quesadillas with Oaxaca cheese cooked on the comal, not deep-fried.",
+    },
+  ],
 };

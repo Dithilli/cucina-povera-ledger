@@ -33,4 +33,15 @@ export const coldBeetBorscht: Recipe = {
   notes:
     "Squarely milchig — built on sour cream and eggs, never meat. The contrast of cold soup and one hot potato is traditional and worth honoring; serve it as the centerpiece of a summer dairy meal.",
   tags: ["beet", "cold", "soup", "dairy", "milchig"],
+  sources: [
+    {
+      title: "Wikipedia — Borscht",
+      url: "https://en.wikipedia.org/wiki/Borscht",
+      note: "Cold beet borscht as a summer dairy variant, served chilled with sour cream and egg.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Chilled (milchig) beet soup with sour cream, cucumber, and chopped egg.",
+    },
+  ],
 };

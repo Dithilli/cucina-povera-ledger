@@ -35,4 +35,16 @@ export const nemRan: Recipe = {
   notes:
     "Roll tight and fry at a steady medium so they cook through without burning. Fried rolls freeze well raw — fry from frozen.",
   tags: ["fried", "spring-rolls", "pork", "glass-noodles", "wood-ear", "northern", "wrap"],
+  sources: [
+    {
+      title: "Helen's Recipes — Vietnamese Fried Spring Rolls (Chả Giò / Nem Rán)",
+      url: "https://helenrecipes.com/recipe-vietnamese-fried-spring-roll-cha-gionem-ran/",
+      note: "Pork filling bound with wood-ear and glass noodles, rolled and fried crisp",
+    },
+    {
+      title: "RunAwayRice — Egg Rolls (Cha Gio / Nem Ran)",
+      url: "https://runawayrice.com/appetizers/everyones-favorite-egg-rolls/",
+      note: "Loose filling, rolling tight, and frying at steady heat for the shatter",
+    },
+  ],
 };

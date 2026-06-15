@@ -27,4 +27,11 @@ export const bap: Recipe = {
     "Scale freely; the knuckle trick works at any volume in a wide pot. The toasty browned layer stuck to the bottom (nurungji) is a prize, not a mistake — pour hot water over it for an instant porridge. Leftover cold bap is the only correct rice for fried rice and the bones of bokkeumbap.",
   zeroWasteHero: false,
   tags: ["base", "side", "rice", "staple", "vegan", "gluten-free"],
+  sources: [
+    {
+      title: "Maangchi — Rice, scorched rice, & scorched rice tea (Bap, nurungji, & sungnyung)",
+      url: "https://www.maangchi.com/recipe/rice",
+      note: "Stovetop short-grain rice: rinse to clear, soak, hard boil then low steam, off-heat rest",
+    },
+  ],
 };

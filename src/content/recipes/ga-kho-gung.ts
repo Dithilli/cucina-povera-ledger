@@ -38,4 +38,16 @@ export const gaKhoGung: Recipe = {
     "Cutting the chicken through the bone (a cleaver helps) gives more surface for the caramel and a richer sauce, the frugal Vietnamese way; boneless thighs work and cook faster but braise less deeply. Ginger is warming and is why this kho is a cold-weather favorite.",
   zeroWasteHero: false,
   tags: ["dinner", "chicken", "ginger", "kho", "caramel-braise", "frugal", "one-pot"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Ginger Chicken (Ga Kho Gung)",
+      url: "https://vickypham.com/blog/vietnamese-ginger-chicken-ga-kho-gung/",
+      note: "Bone-in chicken braised and caramelized with lots of ginger in a fish-sauce sauce",
+    },
+    {
+      title: "A Peachy Plate — Ga Kho Gung (Vietnamese Ginger Chicken)",
+      url: "https://apeachyplate.com/ga-kho-gung/",
+      note: "Reducing the caramel braise to a sticky ginger glaze",
+    },
+  ],
 };

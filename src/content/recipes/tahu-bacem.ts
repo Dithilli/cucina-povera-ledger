@@ -42,4 +42,7 @@ export const tahuBacem: Recipe = {
   modernMove:
     "Braising the tofu to dryness before frying seasons it all the way through — frying first would only coat it. The reduced glaze becomes the crust.",
   tags: ["tofu", "braised", "kecap-manis", "javanese", "make-ahead"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/tahu-tempeh-bacem.html", note: "Central Javanese tofu braised in palm sugar, tamarind, and spices, then fried" },
+  ],
 };

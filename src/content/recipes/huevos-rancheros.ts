@@ -27,4 +27,16 @@ export const huevosRancheros: Recipe = {
   modernMove:
     "Keep the salsa hot and the yolk runny — the plate is built so the broken yolk and the salsa emulsify together as you eat, the way the chilaquiles trick works.",
   tags: ["eggs", "breakfast", "salsa", "beans", "tortilla"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Mexican Breakfast & Brunch Recipes",
+      url: "https://www.mexicoinmykitchen.com/breakfast/",
+      note: "Fried eggs over salsa-flooded tortillas in the rancher-breakfast tradition.",
+    },
+    {
+      title: "Huevos rancheros — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Huevos_rancheros",
+      note: "Origin as sunny-side eggs in red chile sauce; the 'cowboy eggs' name.",
+    },
+  ],
 };

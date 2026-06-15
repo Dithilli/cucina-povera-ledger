@@ -32,4 +32,11 @@ export const rauMuongXaoToi: Recipe = {
   modernMove:
     "Cook it hot, fast, and dry — high heat and a wok that's barely crowded gives you blistered, glossy greens instead of a steamed gray pile. Holding back a little raw garlic for the end keeps the aroma sharp.",
   tags: ["stir-fry", "xao", "water-spinach", "garlic", "greens", "rice", "side"],
+  sources: [
+    {
+      title: "Vicky Pham — Simple Water Spinach and Garlic Stir Fry (Rau Muong Xao Toi)",
+      url: "https://vickypham.com/blog/simple-water-spinach-stir-fry/",
+      note: "Fast high-heat stir-fry of water spinach with lots of garlic",
+    },
+  ],
 };

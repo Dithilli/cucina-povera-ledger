@@ -48,4 +48,11 @@ export const tabbouleh: Recipe = {
   notes:
     "Scoop with lettuce leaves or fresh cabbage for a no-bread, all-green dinner plate.",
   tags: ["parsley", "bulgur", "herbs", "salad", "no-cook", "summer"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/lebanese-tabbouleh-salad-recipe/",
+      note: "Confirms the herb-forward Lebanese ratio — parsley leads with only a small amount of fine bulgur.",
+    },
+  ],
 };

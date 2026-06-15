@@ -36,4 +36,11 @@ export const burghulBiBanadoura: Recipe = {
     "Grating the tomatoes (skins left behind in your palm) gives a smooth, fast sauce with no peeling and no waste — the bulgur cooks straight in it like a pilaf risotto.",
   zeroWasteHero: true,
   tags: ["bulgur", "tomato", "one-pot", "vegan", "grains"],
+  sources: [
+    {
+      title: "Plant Based Folk — Bulgur Pilav (Burghul bi Banadoura)",
+      url: "https://plantbasedfolk.com/bulgur-pilav/",
+      note: "A family burghul bi banadoura — coarse bulgur cooked in a fresh tomato base with onion, garlic, and cumin.",
+    },
+  ],
 };

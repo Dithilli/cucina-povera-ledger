@@ -58,4 +58,16 @@ export const caldoVerde: Recipe = {
   notes:
     "The classic frugal trade: potatoes and greens do the feeding, a sliver of sausage does the flavouring. Serve with broa (corn bread) to mop the bowl.",
   tags: ["soup", "potato", "kale", "greens", "chourico", "national-dish"],
+  sources: [
+    {
+      title: "Tia Maria — Tia Maria's Blog",
+      url: "https://tiamariasblog.com/portuguese-caldo-verde-green-soup/",
+      note: "Minho-style caldo verde — potato-and-onion purée base with hair-thin couve and chouriço coins.",
+    },
+    {
+      title: "David Leite — Leite's Culinaria",
+      url: "https://leitesculinaria.com/7580/recipes-portuguese-kale-soup-caldo-verde.html",
+      note: "Confirms the crushed-potato velvety base finished with finely shredded greens and a sliver of chouriço.",
+    },
+  ],
 };

@@ -32,4 +32,15 @@ export const challah: Recipe = {
   notes:
     "Kept pareve with oil instead of butter, so it sits on a meat table without trouble. Never let it go to waste: stale challah is the whole reason for sweet kugel and the best French toast there is — the loaf earns its keep twice.",
   tags: ["base", "bread", "pareve", "shabbos"],
+  sources: [
+    {
+      title: "Wikipedia — Challah",
+      url: "https://en.wikipedia.org/wiki/Challah",
+      note: "Braided egg-enriched Sabbath bread; symbolism of the two loaves and ceremonial use.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Classic Ashkenazi challah technique, braiding, and the egg-wash gloss.",
+    },
+  ],
 };

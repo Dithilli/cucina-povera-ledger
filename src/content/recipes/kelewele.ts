@@ -32,4 +32,16 @@ export const kelewele: Recipe = {
   notes:
     "A Ghanaian night-market staple. Pairing it with roasted groundnuts adds the protein that turns a snack into a frugal dinner.",
   tags: ["plantain", "fried", "ginger", "chilli", "ghanaian", "groundnut", "side"],
+  sources: [
+    {
+      title: "Kelewele — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Kelewele",
+      note: "Ghanaian spiced fried plantain seasoned with ginger, cayenne and salt; an Accra street food served with peanuts.",
+    },
+    {
+      title: "Ghanaian Kelewele Recipe — GhanaianRecipes.com",
+      url: "https://www.ghanaianrecipes.com/ghanaian-kelewele-recipe/",
+      note: "Choosing ripe (yellow, black-spotted) plantains and the wet-spice marinade before frying.",
+    },
+  ],
 };

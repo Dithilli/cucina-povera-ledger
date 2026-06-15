@@ -30,4 +30,11 @@ export const palakSaag: Recipe = {
   modernMove:
     "Blanching and coarsely mashing rather than blending keeps the spinach bright green and gives the saag body and bite instead of a flat, dull-green purée.",
   tags: ["greens", "spinach", "saag", "everyday", "vegetarian"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/palak-saag-punjabi-palak-saag/",
+      note: "Spinach saag stewed soft and coarsely mashed, lifted with a garlic-cumin tadka",
+    },
+  ],
 };

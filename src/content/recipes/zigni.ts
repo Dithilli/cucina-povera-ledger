@@ -30,4 +30,7 @@ export const zigni: Recipe = {
   notes:
     "Zigni (Eritrean) and key wot/sega wot (Ethiopian) are the same idea — the celebratory red meat stew that arrives when the fasting calendar relents.",
   tags: ["zigni", "beef", "feast", "berbere", "dinner"],
+  sources: [
+    { title: "196 flavors — Zigni", url: "https://www.196flavors.com/eritrea-zigni/", note: "The main Eritrean feast dish: beef stewed in tomato and berbere, served over injera." },
+  ],
 };

@@ -30,4 +30,7 @@ export const arrozBranco: Recipe = {
   notes:
     "The default Portuguese side. Carolino rice drinks up sauce; this is the bed for bacalhau, bean stews, and any refogado-based dish.",
   tags: ["rice", "base", "side", "olive-oil", "arroz"],
+  sources: [
+    { title: "Tia Maria — Portuguese Rice (Arroz à Portuguesa)", url: "https://tiamariasblog.com/classic-portuguese-rice/", note: "rice started in olive oil with onion and garlic before the water goes in" },
+  ],
 };

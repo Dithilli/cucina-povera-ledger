@@ -30,4 +30,8 @@ export const garlicRiceSinangag: Recipe = {
   notes:
     "The backbone of silog plates: sinangag + itlog (fried egg) + a cured meat like tapa (tapsilog), longganisa (longsilog), or tuyo. On its own it rescues any amount of leftover rice.",
   tags: ["fried-rice", "leftover-rice", "garlic", "silog", "one-pan", "zero-waste", "base", "side"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/sinangag-recipe/", note: "Cold day-old rice fried in garlic oil; the base of every silog" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/sinangag/", note: "Frying garlic to crisp it, then tossing the rice in the garlic oil" },
+  ],
 };

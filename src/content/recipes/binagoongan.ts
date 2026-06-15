@@ -32,4 +32,8 @@ export const binagoongan: Recipe = {
   modernMove:
     "Frying the bagoong in the pork's rendered fat before any liquid hits the pan is the whole dish — it caramelizes the shrimp paste so it reads as savory depth instead of raw funk, and a pinch of sugar against the ferment is what makes it crave-able.",
   tags: ["bagoong", "fermented", "pork", "eggplant", "rice"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/binagoongan-baboy/", note: "Frying the shrimp paste early so the pork absorbs its umami" },
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/binagoongang-baboy-recipe-pork-in-shrimp-paste/", note: "Pork belly stewed in tomatoes, bagoong, and chilies; a pinch of sugar to balance" },
+  ],
 };

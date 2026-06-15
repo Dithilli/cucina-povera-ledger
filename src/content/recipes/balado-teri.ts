@@ -52,4 +52,7 @@ export const baladoTeri: Recipe = {
   modernMove:
     "Frying the anchovies and peanuts completely dry, then glazing off the heat, makes a condiment that stays crisp for days — turning a near-free pantry fish into a week's worth of protein topping.",
   tags: ["anchovy", "teri", "peanuts", "sambal", "kecap-manis", "make-ahead"],
+  sources: [
+    { title: "Much Butter — Much Butter", url: "https://muchbutter.com/peanut-anchovy-sambal/", note: "frying anchovies and peanuts crisp, then tossing in a chili sambal glaze" },
+  ],
 };

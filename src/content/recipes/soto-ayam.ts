@@ -46,4 +46,8 @@ export const sotoAyam: Recipe = {
     "Returning the stripped carcass to the pot after pulling the meat is the stretch: one bird yields both the protein for six bowls and a broth with real backbone, so a cheap chicken eats like a feast.",
   zeroWasteHero: true,
   tags: ["chicken", "soup", "turmeric", "broth", "javanese", "stretch-the-bird"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/soto-ayam-lamongan.html", note: "turmeric chicken soup with spice paste, vermicelli, and bean sprouts" },
+    { title: "Wikipedia — Soto ayam", url: "https://en.wikipedia.org/wiki/Soto_ayam", note: "turmeric chicken soup served over rice and vermicelli" },
+  ],
 };

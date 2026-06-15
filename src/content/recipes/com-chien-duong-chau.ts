@@ -32,4 +32,16 @@ export const comChienDuongChau: Recipe = {
     "There's no fixed recipe — the dish is a frame for leftovers. Cold dried rice plus a screaming pan gives the toasted, separate-grain bite, and the fish sauce is the one stroke that makes it read Vietnamese rather than Cantonese.",
   zeroWasteHero: true,
   tags: ["fried-rice", "leftover-rice", "zero-waste", "egg", "one-pan"],
+  sources: [
+    {
+      title: "Vicky Pham — Fried Rice with Chinese Sausage (Com Chien Lap Xuong)",
+      url: "https://vickypham.com/blog/fluffy-fragrant-fried-rice/",
+      note: "Cold day-old rice, scrambled egg, and scraps of meat seasoned with fish and soy",
+    },
+    {
+      title: "Wikipedia — Yangzhou fried rice",
+      url: "https://en.wikipedia.org/wiki/Yangzhou_fried_rice",
+      note: "Background: the Yangzhou-style combination fried rice this dish adapts",
+    },
+  ],
 };

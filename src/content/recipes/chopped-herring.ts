@@ -34,4 +34,15 @@ export const choppedHerring: Recipe = {
     "Pareve: no dairy, no meat, so it sits at any table. The soaking water from salt herring is the only thing thrown away — everything else, down to the heels of stale challah, goes into the bowl.",
   zeroWasteHero: true,
   tags: ["herring", "fish", "pareve", "spread"],
+  sources: [
+    {
+      title: "Wikipedia — Forshmak",
+      url: "https://en.wikipedia.org/wiki/Forshmak",
+      note: "Chopped salted herring appetizer with egg, onion, apple, and soaked bread or matzo.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Ashkenazi chopped herring (gehakte hering) bound with soaked challah, served on rye.",
+    },
+  ],
 };

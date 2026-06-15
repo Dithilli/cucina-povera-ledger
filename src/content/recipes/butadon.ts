@@ -39,4 +39,11 @@ export const butadon: Recipe = {
   notes:
     "Freeze the pork 20 minutes before slicing, or buy pre-sliced shabu-shabu pork, to get the paper-thin cut that makes this stretch.",
   tags: ["dinner", "pork", "donburi", "rice-bowl", "onion", "dashi"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Butadon (Pork Donburi)",
+      url: "https://www.justonecookbook.com/butadon-pork-donburi/",
+      note: "Thin-sliced pork and onion glazed in sweet-savory soy tare over rice.",
+    },
+  ],
 };

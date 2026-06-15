@@ -33,4 +33,11 @@ export const bulgurPilaf: Recipe = {
   modernMove:
     "Caramelizing the onions hard and reserving half as a topping gives the dish two registers of sweetness — one cooked into the grain, one crisp and dark on top.",
   tags: ["bulgur", "vermicelli", "pilaf", "vegan-option", "grains"],
+  sources: [
+    {
+      title: "Plant Based Folk — Bulgur with Vermicelli (Burghul bil Shaariyeh)",
+      url: "https://plantbasedfolk.com/bulgur-with-vermicelli-burghul-bil-shaariyeh/",
+      note: "Confirms the classic coarse-bulgur-and-toasted-vermicelli pilaf method with caramelized onion.",
+    },
+  ],
 };

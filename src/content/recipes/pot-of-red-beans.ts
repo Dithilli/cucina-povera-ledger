@@ -36,4 +36,11 @@ export const potOfRedBeans: Recipe = {
     "The smoked seasoning meat is the soul of the pot; a ham hock, smoked turkey wing, or the traditional pickled pork all work. Vegetarians can lean on smoked paprika and a splash of liquid smoke.",
   zeroWasteHero: true,
   tags: ["base", "legumes", "red-beans", "smoked-pork", "make-ahead", "creole"],
+  sources: [
+    {
+      title: "NewOrleans.com — Red Beans and Rice",
+      url: "https://www.neworleans.com/restaurants/traditional-new-orleans-foods/red-beans-and-rice/",
+      note: "Supports the Monday red-bean pot and seasoning-meat options (ham hock, pickled pork, sausage).",
+    },
+  ],
 };

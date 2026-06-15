@@ -48,4 +48,11 @@ export const hijikiNoNimono: Recipe = {
   notes:
     "A classic make-ahead: it keeps 4 to 5 days refrigerated, freezes well in single portions, and is a staple bento filler — so one pot covers several dinners or sides.",
   tags: ["dinner", "side", "nimono", "simmered", "hijiki", "seaweed", "soybeans", "tofu", "make-ahead", "meatless"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Hijiki no Nimono (Hijiki Seaweed Salad)",
+      url: "https://www.justonecookbook.com/hijiki-salad/",
+      note: "Rehydrating hijiki and simmering with carrot, aburaage, and beans until nearly dry.",
+    },
+  ],
 };

@@ -49,4 +49,11 @@ export const kiriboshiDaikon: Recipe = {
   notes:
     "Sun-drying both preserves the daikon for months and concentrates its sugars, so this is pantry-shelf cooking. Keeps 4 to 5 days refrigerated and freezes well; a standard bento and side dish.",
   tags: ["dinner", "side", "nimono", "simmered", "daikon", "dried-vegetable", "tofu", "dashi", "make-ahead", "meatless"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Simmered Kiriboshi Daikon",
+      url: "https://www.justonecookbook.com/simmered-kiriboshi-daikon/",
+      note: "Soaking dried daikon strips and simmering with carrot and aburaage in seasoned broth.",
+    },
+  ],
 };

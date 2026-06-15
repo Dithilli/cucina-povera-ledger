@@ -35,4 +35,8 @@ export const adobongManok: Recipe = {
     "Adobo keeps and improves — the acid and salt mean it sits happily for days and tastes better on day two. Stretches a modest amount of chicken across several rice-heavy meals.",
   zeroWasteHero: false,
   tags: ["dinner", "chicken", "adobo", "vinegar-braise", "make-ahead", "one-pot"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/chicken-adobo/", note: "Chicken adobo braised in vinegar, soy, and garlic" },
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/easy-chicken-adobo-recipe-knr-cc/", note: "Boiling the vinegar before stirring to mellow the acid" },
+  ],
 };
