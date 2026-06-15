@@ -308,6 +308,34 @@ export * from "./recipes/tinola";
 export * from "./recipes/tortang-giniling";
 export * from "./recipes/tortang-talong";
 
+// ── vietnamese ──
+export * from "./recipes/banh-canh";
+export * from "./recipes/banh-xeo";
+export * from "./recipes/bun-dau-mam-tom";
+export * from "./recipes/bun-rieu";
+export * from "./recipes/ca-kho-to";
+export * from "./recipes/canh-bi-do";
+export * from "./recipes/canh-chua";
+export * from "./recipes/canh-rau-muong";
+export * from "./recipes/chao-ga";
+export * from "./recipes/com-chien-duong-chau";
+export * from "./recipes/com-tam";
+export * from "./recipes/com-trang";
+export * from "./recipes/dau-hu-sot-ca";
+export * from "./recipes/dau-hu-xao";
+export * from "./recipes/do-chua";
+export * from "./recipes/ga-kho-gung";
+export * from "./recipes/goi-cuon";
+export * from "./recipes/nem-ran";
+export * from "./recipes/nuoc-cham";
+export * from "./recipes/nuoc-mau";
+export * from "./recipes/rau-muong-xao-toi";
+export * from "./recipes/suon-nuong";
+export * from "./recipes/thit-kho";
+export * from "./recipes/thit-xao-rau";
+export * from "./recipes/trung-chien";
+export * from "./recipes/trung-chung";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -323,6 +351,7 @@ export * from "./docs/culture-american-south";
 export * from "./docs/culture-indonesian";
 export * from "./docs/culture-west-african";
 export * from "./docs/culture-filipino";
+export * from "./docs/culture-vietnamese";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -337,6 +366,7 @@ export * from "./weeks/american-south-weeks";
 export * from "./weeks/indonesian-weeks";
 export * from "./weeks/west-african-weeks";
 export * from "./weeks/filipino-weeks";
+export * from "./weeks/vietnamese-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -634,6 +664,33 @@ import { sinigangNaIsda } from "./recipes/sinigang-na-isda";
 import { tinola } from "./recipes/tinola";
 import { tortangGiniling } from "./recipes/tortang-giniling";
 import { tortangTalong } from "./recipes/tortang-talong";
+// vietnamese
+import { banhCanh } from "./recipes/banh-canh";
+import { banhXeo } from "./recipes/banh-xeo";
+import { bunDauMamTom } from "./recipes/bun-dau-mam-tom";
+import { bunRieu } from "./recipes/bun-rieu";
+import { caKhoTo } from "./recipes/ca-kho-to";
+import { canhBiDo } from "./recipes/canh-bi-do";
+import { canhChua } from "./recipes/canh-chua";
+import { canhRauMuong } from "./recipes/canh-rau-muong";
+import { chaoGa } from "./recipes/chao-ga";
+import { comChienDuongChau } from "./recipes/com-chien-duong-chau";
+import { comTam } from "./recipes/com-tam";
+import { comTrang } from "./recipes/com-trang";
+import { dauHuSotCa } from "./recipes/dau-hu-sot-ca";
+import { dauHuXao } from "./recipes/dau-hu-xao";
+import { doChua } from "./recipes/do-chua";
+import { gaKhoGung } from "./recipes/ga-kho-gung";
+import { goiCuon } from "./recipes/goi-cuon";
+import { nemRan } from "./recipes/nem-ran";
+import { nuocCham } from "./recipes/nuoc-cham";
+import { nuocMau } from "./recipes/nuoc-mau";
+import { rauMuongXaoToi } from "./recipes/rau-muong-xao-toi";
+import { suonNuong } from "./recipes/suon-nuong";
+import { thitKho } from "./recipes/thit-kho";
+import { thitXaoRau } from "./recipes/thit-xao-rau";
+import { trungChien } from "./recipes/trung-chien";
+import { trungChung } from "./recipes/trung-chung";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -648,6 +705,7 @@ import { cultureAmericanSouth } from "./docs/culture-american-south";
 import { cultureIndonesian } from "./docs/culture-indonesian";
 import { cultureWestAfrican } from "./docs/culture-west-african";
 import { cultureFilipino } from "./docs/culture-filipino";
+import { cultureVietnamese } from "./docs/culture-vietnamese";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -667,6 +725,7 @@ import { americanSouthWeeks } from "./weeks/american-south-weeks";
 import { indonesianWeeks } from "./weeks/indonesian-weeks";
 import { westAfricanWeeks } from "./weeks/west-african-weeks";
 import { filipinoWeeks } from "./weeks/filipino-weeks";
+import { vietnameseWeeks } from "./weeks/vietnamese-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -963,6 +1022,33 @@ export const recipes: Recipe[] = [
   tinola,
   tortangGiniling,
   tortangTalong,
+  // vietnamese
+  banhCanh,
+  banhXeo,
+  bunDauMamTom,
+  bunRieu,
+  caKhoTo,
+  canhBiDo,
+  canhChua,
+  canhRauMuong,
+  chaoGa,
+  comChienDuongChau,
+  comTam,
+  comTrang,
+  dauHuSotCa,
+  dauHuXao,
+  doChua,
+  gaKhoGung,
+  goiCuon,
+  nemRan,
+  nuocCham,
+  nuocMau,
+  rauMuongXaoToi,
+  suonNuong,
+  thitKho,
+  thitXaoRau,
+  trungChien,
+  trungChung,
 ];
 
 export const docs: ContentDoc[] = [
@@ -979,6 +1065,7 @@ export const docs: ContentDoc[] = [
   cultureIndonesian,
   cultureWestAfrican,
   cultureFilipino,
+  cultureVietnamese,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1009,6 +1096,8 @@ export const weekThemes: WeekTheme[] = [
   ...westAfricanWeeks,
   // filipino
   ...filipinoWeeks,
+  // vietnamese
+  ...vietnameseWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1029,4 +1118,5 @@ export const weeks: WeekPlan[] = [
   ...indonesianWeeks,
   ...westAfricanWeeks,
   ...filipinoWeeks,
+  ...vietnameseWeeks,
 ];

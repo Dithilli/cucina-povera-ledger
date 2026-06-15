@@ -108,6 +108,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, vinegar, and a little fish — home cooking that turned no refrigeration into flavor, wasting nothing.",
   },
+  "vietnamese": {
+    slug: "com-nha",
+    name: "Cơm Nhà",
+    tagline:
+      "Rice, fish sauce, and a caramel braise — eat less meat, more rice, and waste nothing.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
