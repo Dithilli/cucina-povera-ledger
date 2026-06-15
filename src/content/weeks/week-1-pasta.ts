@@ -23,10 +23,10 @@ export const week1Pasta: WeekPlan = {
   bonus: false,
   preciousThread: "The anchovy tin. Use it like seasoning, not a topping.",
   engine: [
-    "A pot of chickpeas",
-    "A pot of cannellini",
-    "A deep tomato sugo",
-    "A jar of lemon pangrattato (toasted seasoned breadcrumbs)",
+    "pot-of-chickpeas",
+    "pot-of-cannellini",
+    "tomato-sugo",
+    "lemon-pangrattato",
   ],
   days: [
     {

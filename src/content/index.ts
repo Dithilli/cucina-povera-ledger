@@ -46,6 +46,11 @@ export * from "./recipes/cicoria";
 export * from "./recipes/minestrone";
 export * from "./recipes/scarola-e-fagioli";
 export * from "./recipes/peperonata";
+// Bases — components the weeks build on (with full instructions)
+export * from "./recipes/tomato-sugo";
+export * from "./recipes/lemon-pangrattato";
+export * from "./recipes/pot-of-chickpeas";
+export * from "./recipes/pot-of-cannellini";
 
 // ── Challenge #2 — Mexico (La Cocina del Maíz) ──
 export * from "./recipes/corn-tortillas";
@@ -121,6 +126,11 @@ import { cicoria } from "./recipes/cicoria";
 import { minestrone } from "./recipes/minestrone";
 import { scarolaEFagioli } from "./recipes/scarola-e-fagioli";
 import { peperonata } from "./recipes/peperonata";
+
+import { tomatoSugo } from "./recipes/tomato-sugo";
+import { lemonPangrattato } from "./recipes/lemon-pangrattato";
+import { potOfChickpeas } from "./recipes/pot-of-chickpeas";
+import { potOfCannellini } from "./recipes/pot-of-cannellini";
 
 // Challenge #2 — Mexico
 import { cornTortillas } from "./recipes/corn-tortillas";
@@ -203,6 +213,11 @@ export const recipes: Recipe[] = [
   minestrone,
   scarolaEFagioli,
   peperonata,
+  // Bases (with instructions) — the engine the weeks build on
+  tomatoSugo,
+  lemonPangrattato,
+  potOfChickpeas,
+  potOfCannellini,
   // Challenge #2 — Mexico (La Cocina del Maíz)
   cornTortillas,
   chilaquilesRojos,

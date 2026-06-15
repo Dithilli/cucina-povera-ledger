@@ -399,9 +399,20 @@ function WeekCard({
                   follows (bean liquid becomes sauce, stale bread becomes crumbs — nothing wasted).
                 </p>
                 <ul>
-                  {plan.engine.map((e, i) => (
-                    <li key={i}>{e}</li>
-                  ))}
+                  {plan.engine.map((e, i) => {
+                    const r = recipesBySlug.get(e);
+                    return (
+                      <li key={i}>
+                        {r ? (
+                          <button className="recipe-link" onClick={() => onOpenRecipe(r.slug)}>
+                            {r.title}
+                          </button>
+                        ) : (
+                          e
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
               <div className="plan-days">
