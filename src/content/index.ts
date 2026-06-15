@@ -571,6 +571,36 @@ export * from "./recipes/caldo-verde-br";
 export * from "./recipes/canja-de-galinha-br";
 export * from "./recipes/sopa-de-feijao-br";
 
+// ── puerto-rican ──
+export * from "./recipes/arroz-con-gandules";
+export * from "./recipes/arroz-con-pollo-pr";
+export * from "./recipes/arroz-mamposteao";
+export * from "./recipes/arroz-con-salchichas";
+export * from "./recipes/habichuelas-guisadas";
+export * from "./recipes/carne-guisada-pr";
+export * from "./recipes/pollo-guisado-pr";
+export * from "./recipes/mofongo";
+export * from "./recipes/mofongo-relleno";
+export * from "./recipes/viandas-con-bacalao";
+export * from "./recipes/pernil";
+export * from "./recipes/chuletas-fritas";
+export * from "./recipes/pollo-al-horno";
+export * from "./recipes/carne-frita";
+export * from "./recipes/bacalao-guisado";
+export * from "./recipes/escabeche-de-pescado";
+export * from "./recipes/salmorejo-de-jueyes";
+export * from "./recipes/serenata-de-bacalao";
+export * from "./recipes/asopao-de-pollo";
+export * from "./recipes/sancocho-pr";
+export * from "./recipes/sopon-de-pescado";
+export * from "./recipes/alcapurrias";
+export * from "./recipes/bacalaitos";
+export * from "./recipes/pasteles";
+export * from "./recipes/pastelon";
+export * from "./recipes/tostones";
+export * from "./recipes/sofrito-pr";
+export * from "./recipes/arroz-blanco-y-habichuelas";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -594,6 +624,7 @@ export * from "./docs/culture-japanese";
 export * from "./docs/culture-ashkenazi";
 export * from "./docs/culture-andean";
 export * from "./docs/culture-brazilian";
+export * from "./docs/culture-puerto-rican";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -616,6 +647,7 @@ export * from "./weeks/japanese-weeks";
 export * from "./weeks/ashkenazi-weeks";
 export * from "./weeks/andean-weeks";
 export * from "./weeks/brazilian-weeks";
+export * from "./weeks/puerto-rican-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1133,6 +1165,7 @@ import { cultureJapanese } from "./docs/culture-japanese";
 import { cultureAshkenazi } from "./docs/culture-ashkenazi";
 import { cultureAndean } from "./docs/culture-andean";
 import { cultureBrazilian } from "./docs/culture-brazilian";
+import { culturePuertoRican } from "./docs/culture-puerto-rican";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1160,6 +1193,7 @@ import { japaneseWeeks } from "./weeks/japanese-weeks";
 import { ashkenaziWeeks } from "./weeks/ashkenazi-weeks";
 import { andeanWeeks } from "./weeks/andean-weeks";
 import { brazilianWeeks } from "./weeks/brazilian-weeks";
+import { puertoRicanWeeks } from "./weeks/puerto-rican-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1218,6 +1252,35 @@ import { vinagrete } from "./recipes/vinagrete";
 import { caldoVerdeBr } from "./recipes/caldo-verde-br";
 import { canjaDeGalinhaBr } from "./recipes/canja-de-galinha-br";
 import { sopaDeFeijaoBr } from "./recipes/sopa-de-feijao-br";
+
+import { arrozConGandules } from "./recipes/arroz-con-gandules";
+import { arrozConPolloPr } from "./recipes/arroz-con-pollo-pr";
+import { arrozMamposteao } from "./recipes/arroz-mamposteao";
+import { arrozConSalchichas } from "./recipes/arroz-con-salchichas";
+import { habichuelasGuisadas } from "./recipes/habichuelas-guisadas";
+import { carneGuisadaPr } from "./recipes/carne-guisada-pr";
+import { polloGuisadoPr } from "./recipes/pollo-guisado-pr";
+import { mofongo } from "./recipes/mofongo";
+import { mofongoRelleno } from "./recipes/mofongo-relleno";
+import { viandasConBacalao } from "./recipes/viandas-con-bacalao";
+import { pernil } from "./recipes/pernil";
+import { chuletasFritas } from "./recipes/chuletas-fritas";
+import { polloAlHorno } from "./recipes/pollo-al-horno";
+import { carneFrita } from "./recipes/carne-frita";
+import { bacalaoGuisado } from "./recipes/bacalao-guisado";
+import { escabecheDePescado } from "./recipes/escabeche-de-pescado";
+import { salmorejoDeJueyes } from "./recipes/salmorejo-de-jueyes";
+import { serenataDeBacalao } from "./recipes/serenata-de-bacalao";
+import { asopaoDePollo } from "./recipes/asopao-de-pollo";
+import { sancochoPr } from "./recipes/sancocho-pr";
+import { soponDePescado } from "./recipes/sopon-de-pescado";
+import { alcapurrias } from "./recipes/alcapurrias";
+import { bacalaitos } from "./recipes/bacalaitos";
+import { pasteles } from "./recipes/pasteles";
+import { pastelon } from "./recipes/pastelon";
+import { tostones } from "./recipes/tostones";
+import { sofritoPr } from "./recipes/sofrito-pr";
+import { arrozBlancoYHabichuelas } from "./recipes/arroz-blanco-y-habichuelas";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1759,6 +1822,35 @@ export const recipes: Recipe[] = [
   caldoVerdeBr,
   canjaDeGalinhaBr,
   sopaDeFeijaoBr,
+  // puerto-rican
+  arrozConGandules,
+  arrozConPolloPr,
+  arrozMamposteao,
+  arrozConSalchichas,
+  habichuelasGuisadas,
+  carneGuisadaPr,
+  polloGuisadoPr,
+  mofongo,
+  mofongoRelleno,
+  viandasConBacalao,
+  pernil,
+  chuletasFritas,
+  polloAlHorno,
+  carneFrita,
+  bacalaoGuisado,
+  escabecheDePescado,
+  salmorejoDeJueyes,
+  serenataDeBacalao,
+  asopaoDePollo,
+  sancochoPr,
+  soponDePescado,
+  alcapurrias,
+  bacalaitos,
+  pasteles,
+  pastelon,
+  tostones,
+  sofritoPr,
+  arrozBlancoYHabichuelas,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -1792,6 +1884,7 @@ export const docs: ContentDoc[] = [
   cultureAshkenazi,
   cultureAndean,
   cultureBrazilian,
+  culturePuertoRican,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1838,6 +1931,8 @@ export const weekThemes: WeekTheme[] = [
   ...andeanWeeks,
   // brazilian
   ...brazilianWeeks,
+  // puerto-rican
+  ...puertoRicanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1866,4 +1961,5 @@ export const weeks: WeekPlan[] = [
   ...ashkenaziWeeks,
   ...andeanWeeks,
   ...brazilianWeeks,
+  ...puertoRicanWeeks,
 ];

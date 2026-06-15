@@ -144,6 +144,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, the daily pot of beans, toasted cassava farofa, and a refogado — the comida caseira plate that stretches and wastes nothing.",
   },
+  "puerto-rican": {
+    slug: "arroz-y-habichuelas",
+    name: "Arroz y Habichuelas",
+    tagline:
+      "Sofrito, a pot of rice, the daily beans, and a shake of adobo — comida criolla that turns an island's scarcity into an abundant plate, wasting nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
