@@ -1,32 +1,14 @@
 import type { WeekTheme } from "../types";
+import { mxWeek1Masa } from "./mx-week-1-masa";
 
 // Challenge #2 — Mexico: La Cocina del Maíz.
+// Week 1 (Masa) is fully built out into a WeekPlan in ./mx-week-1-masa.ts; the
+// rest are themes the generator fills in.
 // The seven-week arc, each week a different register of the corn-and-bean
 // kitchen. The short palette is `description`; the fuller cultural read is
 // `context` (sourced from docs/challenges/mexican.md, matching how the Italian
 // weeks carry theirs). cuisine is "mexican" — the engine is cuisine-agnostic, so
 // these slot into the same content arrays as the Italian weeks, tagged by cuisine.
-
-export const week1Masa: WeekTheme = {
-  slug: "mx-week-1-masa",
-  number: 1,
-  cuisine: "mexican",
-  theme: "Masa",
-  title: "Week 1 — Masa",
-  description:
-    "Everything starts on the comal. Nixtamalized corn, ground to masa, becomes the tortilla — plate, utensil, and bread of Mesoamerica at once. Learn the masa and you've learned the cuisine.",
-  context:
-    `Everything starts on the comal, the flat griddle. Nixtamalized corn — soaked and cooked in lime, then ground — becomes masa, pressed and cooked into the tortilla, which is plate, utensil, and bread all at once. Learn the masa and you've learned the cuisine: tortillas, quesadillas, tlacoyos (masa pockets stuffed with beans), sopes, memelas. A tortilla and a smear of beans already starts stacking the complete-protein math the whole milpa is built on. Stale tortillas are not waste — they become chilaquiles, migas, and totopos.`,
-  dishes: [
-    "Corn tortillas (from masa harina)",
-    "Quesadillas de maíz with Oaxaca cheese",
-    "Tlacoyos (masa pockets stuffed with beans)",
-    "Sopes / memelas",
-    "Chilaquiles rojos — stale tortillas reborn",
-  ],
-  proteinNote: "Masa + a smear of beans + queso fresco starts the complete-protein math.",
-  preciousThread: "Good melting cheese (Oaxaca / quesillo).",
-};
 
 export const week2Frijoles: WeekTheme = {
   slug: "mx-week-2-frijoles",
@@ -149,7 +131,7 @@ export const week7Guisos: WeekTheme = {
 };
 
 export const mexicanWeeks: WeekTheme[] = [
-  week1Masa,
+  mxWeek1Masa,
   week2Frijoles,
   week3Chiles,
   week4Huevos,

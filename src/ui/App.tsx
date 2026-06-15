@@ -32,9 +32,13 @@ import type { User } from "@supabase/supabase-js";
 import { Gear, Check, Trash, Pencil, Flame, Plus, Close } from "./icons";
 
 // The active challenge. The app is generic over challenges; for now it serves
-// this one. Content (weeks/recipes/docs) is read from the DB by slug — not
-// hardcoded. Later this becomes a route/selection.
-const CHALLENGE_SLUG = "cucina-povera";
+// one at a time. Content (weeks/recipes/docs) is read from the DB by slug — not
+// hardcoded. Until there's a proper in-UI challenge switcher, the slug can be
+// overridden with a `?challenge=` URL param (e.g. ?challenge=cocina-del-maiz),
+// which makes the existing week dropdown list that challenge's weeks — handy for
+// testing a second cuisine. Later this becomes a route/selection.
+const CHALLENGE_SLUG =
+  new URLSearchParams(window.location.search).get("challenge") || "cucina-povera";
 
 type View = "about" | "ledger" | "challenge";
 
