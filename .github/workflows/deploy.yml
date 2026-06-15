@@ -26,6 +26,12 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+        env:
+          # Public, RLS-protected values — safe to ship in the client bundle.
+          # Set with: gh variable set VITE_SUPABASE_URL --body "https://...supabase.co"
+          #           gh variable set VITE_SUPABASE_ANON_KEY --body "<anon key>"
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
