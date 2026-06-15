@@ -601,6 +601,36 @@ export * from "./recipes/tostones";
 export * from "./recipes/sofrito-pr";
 export * from "./recipes/arroz-blanco-y-habichuelas";
 
+// ── senegalese ──
+export * from "./recipes/ceebu-jen";
+export * from "./recipes/ceebu-jen-weex";
+export * from "./recipes/ceebu-yapp";
+export * from "./recipes/yassa-poulet";
+export * from "./recipes/yassa-poisson";
+export * from "./recipes/riz-au-gras";
+export * from "./recipes/boulettes-de-poisson";
+export * from "./recipes/mafe-sn";
+export * from "./recipes/domoda";
+export * from "./recipes/mbahal";
+export * from "./recipes/soupou-kanja";
+export * from "./recipes/soupou-nebbe";
+export * from "./recipes/thiou-poisson-sn";
+export * from "./recipes/caldou";
+export * from "./recipes/thiere";
+export * from "./recipes/bassi-salte";
+export * from "./recipes/fonio-aux-legumes";
+export * from "./recipes/laax";
+export * from "./recipes/nebbe";
+export * from "./recipes/firire-jen";
+export * from "./recipes/dibi";
+export * from "./recipes/fataya";
+export * from "./recipes/accara-sn";
+export * from "./recipes/pastels-sn";
+export * from "./recipes/nem-senegalais";
+export * from "./recipes/nokoss-sn";
+export * from "./recipes/riz-brise-base";
+export * from "./recipes/kaani";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -625,6 +655,7 @@ export * from "./docs/culture-ashkenazi";
 export * from "./docs/culture-andean";
 export * from "./docs/culture-brazilian";
 export * from "./docs/culture-puerto-rican";
+export * from "./docs/culture-senegalese";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -648,6 +679,7 @@ export * from "./weeks/ashkenazi-weeks";
 export * from "./weeks/andean-weeks";
 export * from "./weeks/brazilian-weeks";
 export * from "./weeks/puerto-rican-weeks";
+export * from "./weeks/senegalese-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1166,6 +1198,7 @@ import { cultureAshkenazi } from "./docs/culture-ashkenazi";
 import { cultureAndean } from "./docs/culture-andean";
 import { cultureBrazilian } from "./docs/culture-brazilian";
 import { culturePuertoRican } from "./docs/culture-puerto-rican";
+import { cultureSenegalese } from "./docs/culture-senegalese";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1194,6 +1227,7 @@ import { ashkenaziWeeks } from "./weeks/ashkenazi-weeks";
 import { andeanWeeks } from "./weeks/andean-weeks";
 import { brazilianWeeks } from "./weeks/brazilian-weeks";
 import { puertoRicanWeeks } from "./weeks/puerto-rican-weeks";
+import { senegaleseWeeks } from "./weeks/senegalese-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1281,6 +1315,35 @@ import { pastelon } from "./recipes/pastelon";
 import { tostones } from "./recipes/tostones";
 import { sofritoPr } from "./recipes/sofrito-pr";
 import { arrozBlancoYHabichuelas } from "./recipes/arroz-blanco-y-habichuelas";
+
+import { ceebuJen } from "./recipes/ceebu-jen";
+import { ceebuJenWeex } from "./recipes/ceebu-jen-weex";
+import { ceebuYapp } from "./recipes/ceebu-yapp";
+import { yassaPoulet } from "./recipes/yassa-poulet";
+import { yassaPoisson } from "./recipes/yassa-poisson";
+import { rizAuGras } from "./recipes/riz-au-gras";
+import { boulettesDePoisson } from "./recipes/boulettes-de-poisson";
+import { mafeSn } from "./recipes/mafe-sn";
+import { domoda } from "./recipes/domoda";
+import { mbahal } from "./recipes/mbahal";
+import { soupouKanja } from "./recipes/soupou-kanja";
+import { soupouNebbe } from "./recipes/soupou-nebbe";
+import { thiouPoissonSn } from "./recipes/thiou-poisson-sn";
+import { caldou } from "./recipes/caldou";
+import { thiere } from "./recipes/thiere";
+import { bassiSalte } from "./recipes/bassi-salte";
+import { fonioAuxLegumes } from "./recipes/fonio-aux-legumes";
+import { laax } from "./recipes/laax";
+import { nebbe } from "./recipes/nebbe";
+import { firireJen } from "./recipes/firire-jen";
+import { dibi } from "./recipes/dibi";
+import { fataya } from "./recipes/fataya";
+import { accaraSn } from "./recipes/accara-sn";
+import { pastelsSn } from "./recipes/pastels-sn";
+import { nemSenegalais } from "./recipes/nem-senegalais";
+import { nokossSn } from "./recipes/nokoss-sn";
+import { rizBriseBase } from "./recipes/riz-brise-base";
+import { kaani } from "./recipes/kaani";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1851,6 +1914,35 @@ export const recipes: Recipe[] = [
   tostones,
   sofritoPr,
   arrozBlancoYHabichuelas,
+  // senegalese
+  ceebuJen,
+  ceebuJenWeex,
+  ceebuYapp,
+  yassaPoulet,
+  yassaPoisson,
+  rizAuGras,
+  boulettesDePoisson,
+  mafeSn,
+  domoda,
+  mbahal,
+  soupouKanja,
+  soupouNebbe,
+  thiouPoissonSn,
+  caldou,
+  thiere,
+  bassiSalte,
+  fonioAuxLegumes,
+  laax,
+  nebbe,
+  firireJen,
+  dibi,
+  fataya,
+  accaraSn,
+  pastelsSn,
+  nemSenegalais,
+  nokossSn,
+  rizBriseBase,
+  kaani,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -1885,6 +1977,7 @@ export const docs: ContentDoc[] = [
   cultureAndean,
   cultureBrazilian,
   culturePuertoRican,
+  cultureSenegalese,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1933,6 +2026,8 @@ export const weekThemes: WeekTheme[] = [
   ...brazilianWeeks,
   // puerto-rican
   ...puertoRicanWeeks,
+  // senegalese
+  ...senegaleseWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1962,4 +2057,5 @@ export const weeks: WeekPlan[] = [
   ...andeanWeeks,
   ...brazilianWeeks,
   ...puertoRicanWeeks,
+  ...senegaleseWeeks,
 ];

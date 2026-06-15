@@ -150,6 +150,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Sofrito, a pot of rice, the daily beans, and a shake of adobo — comida criolla that turns an island's scarcity into an abundant plate, wasting nothing.",
   },
+  "senegalese": {
+    slug: "ceebu-jen",
+    name: "Ceebu Jën",
+    tagline:
+      "Broken rice, a piece of fish, and the nététou-deep nokoss — the shared bowl of teranga, where the prized crust is scraped up and nothing is wasted.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
