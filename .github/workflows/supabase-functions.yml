@@ -1,0 +1,47 @@
+name: Deploy Supabase Edge Functions
+
+# Separate pipeline from the GitHub Pages deploy. The SPA ships to Pages; the
+# Edge Functions (scored-write + AI menu generator) ship to Supabase. This runs
+# ONLY when functions change, and no-ops cleanly until the first one is committed.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "supabase/functions/**"
+      - ".github/workflows/supabase-functions.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy-functions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: check
+        name: Any functions to deploy?
+        run: |
+          if [ -d supabase/functions ] && [ -n "$(ls -A supabase/functions 2>/dev/null)" ]; then
+            echo "have_functions=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "have_functions=false" >> "$GITHUB_OUTPUT"
+            echo "No supabase/functions/ yet — nothing to deploy. (This is expected until the backend lands.)"
+          fi
+
+      - if: steps.check.outputs.have_functions == 'true'
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - if: steps.check.outputs.have_functions == 'true'
+        name: Deploy functions
+        run: supabase functions deploy --project-ref "$SUPABASE_PROJECT_REF"
+        env:
+          # Personal access token (supabase.com → Account → Access Tokens):
+          #   gh secret set SUPABASE_ACCESS_TOKEN --body "<token>"
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ vars.SUPABASE_PROJECT_REF }}
+
+# NOTE: this does NOT run `supabase db push`. Auto-applying migrations on every
+# push can drop data; run schema changes deliberately (locally or a gated job).
+# The functions still need their own secrets set ONCE, on Supabase (not here):
+#   supabase secrets set ANTHROPIC_API_KEY=... SUPABASE_SERVICE_ROLE_KEY=...
