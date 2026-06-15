@@ -204,6 +204,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "A mound of rice ringed by little coconut curries, dark roasted spice, a fierce pol sambol, and a knob of Maldive fish for the savour — the island plate, nothing wasted.",
   },
+  "oaxacan": {
+    slug: "tlayuda-y-mole",
+    name: "Tlayuda y Mole",
+    tagline:
+      "Nixtamal masa on the comal, black beans with avocado leaf, the seven moles ground on the metate, and a wedge of quesillo — Oaxaca's deep indigenous larder, nothing wasted.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
