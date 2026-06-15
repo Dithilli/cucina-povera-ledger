@@ -871,6 +871,36 @@ export * from "./recipes/roasted-curry-powder-sl";
 export * from "./recipes/lunu-miris";
 export * from "./recipes/coconut-milk-base-sl";
 
+// ── oaxacan ──
+export * from "./recipes/tlayuda";
+export * from "./recipes/memelas-ox";
+export * from "./recipes/tetelas";
+export * from "./recipes/empanadas-amarillo";
+export * from "./recipes/mole-negro-ox";
+export * from "./recipes/mole-amarillo-ox";
+export * from "./recipes/mole-coloradito";
+export * from "./recipes/frijoles-de-olla-ox";
+export * from "./recipes/molotes-ox";
+export * from "./recipes/enfrijoladas-ox";
+export * from "./recipes/mole-de-olla-ox";
+export * from "./recipes/chichilo";
+export * from "./recipes/caldo-de-res-ox";
+export * from "./recipes/segueza";
+export * from "./recipes/tamales-oaxaquenos-ox";
+export * from "./recipes/tamales-chepil";
+export * from "./recipes/salsa-pasilla-oaxaquena";
+export * from "./recipes/chintextle";
+export * from "./recipes/arroz-oaxaqueno";
+export * from "./recipes/chileajo";
+export * from "./recipes/tasajo-asado";
+export * from "./recipes/garnachas-istmenas";
+export * from "./recipes/entomatadas-ox";
+export * from "./recipes/chiles-de-agua-rellenos";
+export * from "./recipes/higaditos";
+export * from "./recipes/tortillas-de-maiz-ox";
+export * from "./recipes/frijoles-negros-base-ox";
+export * from "./recipes/salsa-de-gusano";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -904,6 +934,7 @@ export * from "./docs/culture-appalachian";
 export * from "./docs/culture-cantonese";
 export * from "./docs/culture-south-indian";
 export * from "./docs/culture-sri-lankan";
+export * from "./docs/culture-oaxacan";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -936,6 +967,7 @@ export * from "./weeks/appalachian-weeks";
 export * from "./weeks/cantonese-weeks";
 export * from "./weeks/south-indian-weeks";
 export * from "./weeks/sri-lankan-weeks";
+export * from "./weeks/oaxacan-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1463,6 +1495,7 @@ import { cultureAppalachian } from "./docs/culture-appalachian";
 import { cultureCantonese } from "./docs/culture-cantonese";
 import { cultureSouthIndian } from "./docs/culture-south-indian";
 import { cultureSriLankan } from "./docs/culture-sri-lankan";
+import { cultureOaxacan } from "./docs/culture-oaxacan";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1500,6 +1533,7 @@ import { appalachianWeeks } from "./weeks/appalachian-weeks";
 import { cantoneseWeeks } from "./weeks/cantonese-weeks";
 import { southIndianWeeks } from "./weeks/south-indian-weeks";
 import { sriLankanWeeks } from "./weeks/sri-lankan-weeks";
+import { oaxacanWeeks } from "./weeks/oaxacan-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1848,6 +1882,35 @@ import { milkRiceKiribath } from "./recipes/milk-rice-kiribath";
 import { roastedCurryPowderSl } from "./recipes/roasted-curry-powder-sl";
 import { lunuMiris } from "./recipes/lunu-miris";
 import { coconutMilkBaseSl } from "./recipes/coconut-milk-base-sl";
+
+import { tlayuda } from "./recipes/tlayuda";
+import { memelasOx } from "./recipes/memelas-ox";
+import { tetelas } from "./recipes/tetelas";
+import { empanadasAmarillo } from "./recipes/empanadas-amarillo";
+import { moleNegroOx } from "./recipes/mole-negro-ox";
+import { moleAmarilloOx } from "./recipes/mole-amarillo-ox";
+import { moleColoradito } from "./recipes/mole-coloradito";
+import { frijolesDeOllaOx } from "./recipes/frijoles-de-olla-ox";
+import { molotesOx } from "./recipes/molotes-ox";
+import { enfrijoladasOx } from "./recipes/enfrijoladas-ox";
+import { moleDeOllaOx } from "./recipes/mole-de-olla-ox";
+import { chichilo } from "./recipes/chichilo";
+import { caldoDeResOx } from "./recipes/caldo-de-res-ox";
+import { segueza } from "./recipes/segueza";
+import { tamalesOaxaquenosOx } from "./recipes/tamales-oaxaquenos-ox";
+import { tamalesChepil } from "./recipes/tamales-chepil";
+import { salsaPasillaOaxaquena } from "./recipes/salsa-pasilla-oaxaquena";
+import { chintextle } from "./recipes/chintextle";
+import { arrozOaxaqueno } from "./recipes/arroz-oaxaqueno";
+import { chileajo } from "./recipes/chileajo";
+import { tasajoAsado } from "./recipes/tasajo-asado";
+import { garnachasIstmenas } from "./recipes/garnachas-istmenas";
+import { entomatadasOx } from "./recipes/entomatadas-ox";
+import { chilesDeAguaRellenos } from "./recipes/chiles-de-agua-rellenos";
+import { higaditos } from "./recipes/higaditos";
+import { tortillasDeMaizOx } from "./recipes/tortillas-de-maiz-ox";
+import { frijolesNegrosBaseOx } from "./recipes/frijoles-negros-base-ox";
+import { salsaDeGusano } from "./recipes/salsa-de-gusano";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2679,6 +2742,35 @@ export const recipes: Recipe[] = [
   roastedCurryPowderSl,
   lunuMiris,
   coconutMilkBaseSl,
+  // oaxacan
+  tlayuda,
+  memelasOx,
+  tetelas,
+  empanadasAmarillo,
+  moleNegroOx,
+  moleAmarilloOx,
+  moleColoradito,
+  frijolesDeOllaOx,
+  molotesOx,
+  enfrijoladasOx,
+  moleDeOllaOx,
+  chichilo,
+  caldoDeResOx,
+  segueza,
+  tamalesOaxaquenosOx,
+  tamalesChepil,
+  salsaPasillaOaxaquena,
+  chintextle,
+  arrozOaxaqueno,
+  chileajo,
+  tasajoAsado,
+  garnachasIstmenas,
+  entomatadasOx,
+  chilesDeAguaRellenos,
+  higaditos,
+  tortillasDeMaizOx,
+  frijolesNegrosBaseOx,
+  salsaDeGusano,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2722,6 +2814,7 @@ export const docs: ContentDoc[] = [
   cultureCantonese,
   cultureSouthIndian,
   cultureSriLankan,
+  cultureOaxacan,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2788,6 +2881,8 @@ export const weekThemes: WeekTheme[] = [
   ...southIndianWeeks,
   // sri-lankan
   ...sriLankanWeeks,
+  // oaxacan
+  ...oaxacanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2826,4 +2921,5 @@ export const weeks: WeekPlan[] = [
   ...cantoneseWeeks,
   ...southIndianWeeks,
   ...sriLankanWeeks,
+  ...oaxacanWeeks,
 ];
