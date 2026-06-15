@@ -223,6 +223,34 @@ export * from "./recipes/smothered-pork-chops";
 export * from "./recipes/the-trinity";
 export * from "./recipes/white-rice";
 
+// ── indonesian ──
+export * from "./recipes/balado-teri";
+export * from "./recipes/bumbu-dasar";
+export * from "./recipes/gado-gado";
+export * from "./recipes/ikan-goreng";
+export * from "./recipes/karedok";
+export * from "./recipes/lontong-sayur";
+export * from "./recipes/nasi-goreng";
+export * from "./recipes/nasi-putih";
+export * from "./recipes/nasi-uduk";
+export * from "./recipes/peanut-sauce";
+export * from "./recipes/pecel";
+export * from "./recipes/pepes-ikan";
+export * from "./recipes/sambal-goreng-kentang";
+export * from "./recipes/sambal-terasi";
+export * from "./recipes/sayur-asem";
+export * from "./recipes/sayur-lodeh";
+export * from "./recipes/sayur-sop";
+export * from "./recipes/soto-ayam";
+export * from "./recipes/tahu-bacem";
+export * from "./recipes/tahu-gejrot";
+export * from "./recipes/tahu-goreng";
+export * from "./recipes/telur-balado";
+export * from "./recipes/tempe-bacem";
+export * from "./recipes/tempe-mendoan";
+export * from "./recipes/tempe-orek";
+export * from "./recipes/tumis-kangkung";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -235,6 +263,7 @@ export * from "./docs/culture-greece";
 export * from "./docs/culture-levant";
 export * from "./docs/culture-north-indian";
 export * from "./docs/culture-american-south";
+export * from "./docs/culture-indonesian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -246,6 +275,7 @@ export * from "./weeks/greek-weeks";
 export * from "./weeks/levantine-weeks";
 export * from "./weeks/north-indian-weeks";
 export * from "./weeks/american-south-weeks";
+export * from "./weeks/indonesian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -461,6 +491,33 @@ import { smotheredOkra } from "./recipes/smothered-okra";
 import { smotheredPorkChops } from "./recipes/smothered-pork-chops";
 import { theTrinity } from "./recipes/the-trinity";
 import { whiteRice } from "./recipes/white-rice";
+// indonesian
+import { baladoTeri } from "./recipes/balado-teri";
+import { bumbuDasar } from "./recipes/bumbu-dasar";
+import { gadoGado } from "./recipes/gado-gado";
+import { ikanGoreng } from "./recipes/ikan-goreng";
+import { karedok } from "./recipes/karedok";
+import { lontongSayur } from "./recipes/lontong-sayur";
+import { nasiGoreng } from "./recipes/nasi-goreng";
+import { nasiPutih } from "./recipes/nasi-putih";
+import { nasiUduk } from "./recipes/nasi-uduk";
+import { peanutSauce } from "./recipes/peanut-sauce";
+import { pecel } from "./recipes/pecel";
+import { pepesIkan } from "./recipes/pepes-ikan";
+import { sambalGorengKentang } from "./recipes/sambal-goreng-kentang";
+import { sambalTerasi } from "./recipes/sambal-terasi";
+import { sayurAsem } from "./recipes/sayur-asem";
+import { sayurLodeh } from "./recipes/sayur-lodeh";
+import { sayurSop } from "./recipes/sayur-sop";
+import { sotoAyam } from "./recipes/soto-ayam";
+import { tahuBacem } from "./recipes/tahu-bacem";
+import { tahuGejrot } from "./recipes/tahu-gejrot";
+import { tahuGoreng } from "./recipes/tahu-goreng";
+import { telurBalado } from "./recipes/telur-balado";
+import { tempeBacem } from "./recipes/tempe-bacem";
+import { tempeMendoan } from "./recipes/tempe-mendoan";
+import { tempeOrek } from "./recipes/tempe-orek";
+import { tumisKangkung } from "./recipes/tumis-kangkung";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -472,6 +529,7 @@ import { cultureGreece } from "./docs/culture-greece";
 import { cultureLevant } from "./docs/culture-levant";
 import { cultureNorthIndian } from "./docs/culture-north-indian";
 import { cultureAmericanSouth } from "./docs/culture-american-south";
+import { cultureIndonesian } from "./docs/culture-indonesian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -488,6 +546,7 @@ import { greekWeeks } from "./weeks/greek-weeks";
 import { levantineWeeks } from "./weeks/levantine-weeks";
 import { northIndianWeeks } from "./weeks/north-indian-weeks";
 import { americanSouthWeeks } from "./weeks/american-south-weeks";
+import { indonesianWeeks } from "./weeks/indonesian-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -702,6 +761,33 @@ export const recipes: Recipe[] = [
   smotheredPorkChops,
   theTrinity,
   whiteRice,
+  // indonesian
+  baladoTeri,
+  bumbuDasar,
+  gadoGado,
+  ikanGoreng,
+  karedok,
+  lontongSayur,
+  nasiGoreng,
+  nasiPutih,
+  nasiUduk,
+  peanutSauce,
+  pecel,
+  pepesIkan,
+  sambalGorengKentang,
+  sambalTerasi,
+  sayurAsem,
+  sayurLodeh,
+  sayurSop,
+  sotoAyam,
+  tahuBacem,
+  tahuGejrot,
+  tahuGoreng,
+  telurBalado,
+  tempeBacem,
+  tempeMendoan,
+  tempeOrek,
+  tumisKangkung,
 ];
 
 export const docs: ContentDoc[] = [
@@ -715,6 +801,7 @@ export const docs: ContentDoc[] = [
   cultureLevant,
   cultureNorthIndian,
   cultureAmericanSouth,
+  cultureIndonesian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -739,6 +826,8 @@ export const weekThemes: WeekTheme[] = [
   ...northIndianWeeks,
   // american-south
   ...americanSouthWeeks,
+  // indonesian
+  ...indonesianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -756,4 +845,5 @@ export const weeks: WeekPlan[] = [
   ...levantineWeeks,
   ...northIndianWeeks,
   ...americanSouthWeeks,
+  ...indonesianWeeks,
 ];

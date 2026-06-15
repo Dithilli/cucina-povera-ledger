@@ -90,6 +90,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, beans, greens, and cornbread under a smoked-pork bone — making do, made magnificent.",
   },
+  "indonesian": {
+    slug: "nasi-tempe",
+    name: "Nasi & Tempe",
+    tagline:
+      "Rice, fermented soy, and sambal — a fistful of chili and peanuts turns pennies into a vivid table.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
