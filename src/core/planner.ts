@@ -172,48 +172,50 @@ function composeDayForDinner(
   return null;
 }
 
+/** One valid candidate day (no weekday assigned yet), certified by dayPasses. */
+export interface CandidateDay {
+  /** Slug of the dinner recipe anchoring the day. */
+  dinner: string;
+  /** All recipe slugs used across the day. */
+  components: string[];
+  calories: number;
+  protein: number;
+  cost: number;
+}
+
 /**
- * Plan a 7-day week. For each day (Sun..Sat) we compose a day from recipe
- * servings that lands at/under calorieTarget and at/over proteinFloor with zero
- * waste (certified by dayPasses), no dinner repeated across the week, minimizing
- * cost. Deterministic throughout; ties broken by slug.
+ * Every dinner that can anchor a passing day, cheapest first (ties by slug).
+ * This is the deterministic candidate set the AI stylist chooses among — the
+ * model selects and sequences 7 of these; it never invents macros or cost.
  */
-export function planWeek(pool: Recipe[], settings: Settings): WeekPlanResult {
+export function weekCandidates(
+  pool: Recipe[],
+  settings: Settings,
+): { ok: boolean; candidates: CandidateDay[]; reason?: string } {
   const pre = preflightFeasible(pool, settings);
-  if (!pre.ok) {
-    return { ok: false, days: [], totalCost: 0, reason: pre.reason };
-  }
+  if (!pre.ok) return { ok: false, candidates: [], reason: pre.reason };
 
   const dinners = dedupeBySlug(pool.filter(isDinnerCapable));
-
-  // Build the best passing day candidate for every possible dinner, then assign
-  // 7 distinct dinners greedily by cheapest day. This keeps assignment
-  // deterministic and globally cost-aware without backtracking explosions.
-  const candidates: DayCandidate[] = [];
+  const built: DayCandidate[] = [];
   for (const dinner of dinners) {
     const day = composeDayForDinner(dinner, pool, settings);
-    if (day) candidates.push(day);
+    if (day) built.push(day);
   }
 
-  if (candidates.length < 7) {
+  if (built.length < 7) {
     return {
       ok: false,
-      days: [],
-      totalCost: 0,
-      reason: `only ${candidates.length} dinner(s) can form a passing day; need 7 distinct`,
+      candidates: [],
+      reason: `only ${built.length} dinner(s) can form a passing day; need 7 distinct`,
     };
   }
 
-  // Cheapest first; tie-break by dinner slug for determinism.
-  candidates.sort((a, b) => {
+  built.sort((a, b) => {
     if (a.entry.cost !== b.entry.cost) return a.entry.cost - b.entry.cost;
     return a.dinner.slug < b.dinner.slug ? -1 : a.dinner.slug > b.dinner.slug ? 1 : 0;
   });
 
-  const picked = candidates.slice(0, 7);
-
-  const days: DayPlan[] = picked.map((c, i) => ({
-    day: WEEKDAYS[i],
+  const candidates: CandidateDay[] = built.map((c) => ({
     dinner: c.dinner.slug,
     components: c.recipes.map((r) => r.slug),
     calories: c.entry.calories,
@@ -221,8 +223,29 @@ export function planWeek(pool: Recipe[], settings: Settings): WeekPlanResult {
     cost: c.entry.cost,
   }));
 
-  const totalCost = round2(days.reduce((a, d) => a + d.cost, 0));
+  return { ok: true, candidates };
+}
 
+/**
+ * Plan a 7-day week deterministically: take the 7 cheapest passing candidate
+ * days, assign them Sun..Sat. No dinner repeats; every day certified by
+ * dayPasses (inside weekCandidates). Ties broken by slug throughout.
+ */
+export function planWeek(pool: Recipe[], settings: Settings): WeekPlanResult {
+  const res = weekCandidates(pool, settings);
+  if (!res.ok) return { ok: false, days: [], totalCost: 0, reason: res.reason };
+
+  const picked = res.candidates.slice(0, 7);
+  const days: DayPlan[] = picked.map((c, i) => ({
+    day: WEEKDAYS[i],
+    dinner: c.dinner,
+    components: c.components,
+    calories: c.calories,
+    protein: c.protein,
+    cost: c.cost,
+  }));
+
+  const totalCost = round2(days.reduce((a, d) => a + d.cost, 0));
   return { ok: true, days, totalCost };
 }
 

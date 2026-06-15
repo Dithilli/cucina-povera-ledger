@@ -8,8 +8,17 @@ import {
   getWeekPlan,
   type Challenge as ChallengeMeta,
 } from "../data/content";
-import { planWeek, type WeekPlanResult } from "../core/planner";
+import { planWeek, weekCandidates, type WeekPlanResult } from "../core/planner";
+import { generateWeek } from "../data/generator";
 import type { Settings } from "../types";
+
+interface AiDayView {
+  dinner: string;
+  blurb: string;
+  calories: number;
+  protein: number;
+  cost: number;
+}
 import { money } from "./format";
 import { renderMarkdown } from "./markdown";
 import { Close } from "./icons";
@@ -151,31 +160,89 @@ function GenerateWeek({
   onOpenRecipe: (slug: string) => void;
 }) {
   const [result, setResult] = useState<WeekPlanResult | null>(null);
+  const [ai, setAi] = useState<{ intro: string; days: AiDayView[] } | null>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState<string | null>(null);
+
+  const settings: Settings = {
+    calorieTarget: meta.defaultCalorieTarget,
+    proteinFloor: meta.defaultProteinFloor,
+    weeklyBudget: meta.defaultWeeklyBudget,
+    activeWeek: "generated",
+  };
 
   const generate = () => {
-    const settings: Settings = {
-      calorieTarget: meta.defaultCalorieTarget,
-      proteinFloor: meta.defaultProteinFloor,
-      weeklyBudget: meta.defaultWeeklyBudget,
-      activeWeek: "generated",
-    };
+    setAi(null);
+    setAiError(null);
     setResult(planWeek(recipes, settings));
   };
+
+  const aiGenerate = () => {
+    setResult(null);
+    setAiError(null);
+    const res = weekCandidates(recipes, settings);
+    if (!res.ok) {
+      setAiError(res.reason ?? "no candidates");
+      return;
+    }
+    const payload = res.candidates.map((c) => {
+      const r = recipesBySlug.get(c.dinner);
+      return {
+        dinner: c.dinner,
+        dinnerTitle: r?.title ?? c.dinner,
+        calories: c.calories,
+        protein: c.protein,
+        cost: c.cost,
+        tags: r?.tags ?? [],
+      };
+    });
+    setAiLoading(true);
+    setAi(null);
+    generateWeek(payload, {
+      calorieTarget: settings.calorieTarget,
+      proteinFloor: settings.proteinFloor,
+      weeklyBudget: settings.weeklyBudget,
+    })
+      .then((week) => {
+        // Re-certify: keep only days whose dinner is a real, distinct candidate.
+        const cand = new Map(res.candidates.map((c) => [c.dinner, c]));
+        const seen = new Set<string>();
+        const days: AiDayView[] = [];
+        for (const d of week.days) {
+          const c = cand.get(d.dinner);
+          if (!c || seen.has(d.dinner)) continue;
+          seen.add(d.dinner);
+          days.push({ dinner: d.dinner, blurb: d.blurb, calories: c.calories, protein: c.protein, cost: c.cost });
+        }
+        setAi({ intro: week.intro, days });
+      })
+      .catch((e) => setAiError(String(e?.message ?? e)))
+      .finally(() => setAiLoading(false));
+  };
+
+  const aiTotal = ai ? ai.days.reduce((a, d) => a + d.cost, 0) : 0;
 
   return (
     <section className="ch-block">
       <div className="gen-head">
         <h2>Generate a week</h2>
-        <button className="btn solid" onClick={generate}>
-          {result ? "Regenerate" : "Generate a week"}
-        </button>
+        <div className="gen-btns">
+          <button className="btn ghost" onClick={generate}>
+            {result ? "Regenerate" : "Deterministic"}
+          </button>
+          <button className="btn solid" onClick={aiGenerate} disabled={aiLoading}>
+            {aiLoading ? "Composing…" : "✦ AI: make it tastier"}
+          </button>
+        </div>
       </div>
       <p className="gen-note">
         The deterministic planner assembles 7 non-repeating days from the {recipes.length}-recipe
-        library, each certified by the same engine that scores your ledger — at/under{" "}
-        {meta.defaultCalorieTarget.toLocaleString()} kcal, over {meta.defaultProteinFloor}g protein,
-        zero waste.
+        library, each certified by the same engine that scores your ledger. The AI option lets Claude
+        pick the tastiest, most varied passing week from those same vetted dishes — it never invents a
+        number.
       </p>
+
+      {aiError && <div className="plan-empty">Couldn’t generate: {aiError}</div>}
 
       {result && !result.ok && (
         <div className="plan-empty">Couldn’t build a week: {result.reason}</div>
@@ -197,6 +264,31 @@ function GenerateWeek({
           <div className="plan-cost">
             <span>
               Week total {money(result.totalCost)} · budget {money(meta.defaultWeeklyBudget)}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {ai && (
+        <div className="gen-result">
+          <p className="ai-intro">{ai.intro}</p>
+          <div className="plan-days">
+            {ai.days.map((d, i) => (
+              <div className="plan-day ai" key={d.dinner}>
+                <span className="pd-day">{i + 1}</span>
+                <span className="ai-day-main">
+                  <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
+                  <span className="ai-blurb">{d.blurb}</span>
+                </span>
+                <span className="pd-num">
+                  {d.calories} kcal · {d.protein}g · {money(d.cost)}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="plan-cost">
+            <span>
+              Week total {money(aiTotal)} · budget {money(meta.defaultWeeklyBudget)} · composed by Claude
             </span>
           </div>
         </div>
