@@ -10,9 +10,11 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "ledger": "tsx scripts/ledger.ts"
+    "ledger": "tsx scripts/ledger.ts",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -215,3 +215,113 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
   .c-mark, .head-row .c-mark { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* ───────────────────────── tabs ───────────────────────── */
+.tabs {
+  display: flex; gap: 0; border-bottom: 1px solid var(--rule);
+  padding: 0 24px; background: var(--paper-2);
+}
+.tab {
+  background: none; border: none; cursor: pointer;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-soft);
+  padding: 12px 16px 11px; border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.tab:hover { color: var(--ink); }
+.tab.on { color: var(--rosso); border-bottom-color: var(--rosso); }
+
+/* ──────────────────── challenge view ───────────────────── */
+.challenge-view { padding: 8px 24px 8px; }
+.ch-intro { padding: 18px 0 16px; border-bottom: 1px dashed var(--rule); }
+.ch-tagline {
+  font-family: var(--display); font-style: italic; font-size: 19px;
+  line-height: 1.4; margin: 8px 0 12px; color: var(--ink);
+}
+.ch-dials { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+.ch-dials b { color: var(--ink); font-weight: 600; }
+.ch-dials .dot { margin: 0 8px; color: var(--rule); }
+
+.ch-block { padding: 18px 0; border-bottom: 1px dashed var(--rule); }
+.ch-block > h2 {
+  font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0 0 14px;
+}
+
+/* week cards */
+.week-cards { display: grid; gap: 12px; }
+.week-card { border: 1px solid var(--rule); background: var(--paper); padding: 14px 16px; }
+.week-card.open { border-color: var(--ink); }
+.week-card-head {
+  display: flex; align-items: center; gap: 12px; width: 100%;
+  background: none; border: none; cursor: pointer; text-align: left; padding: 0;
+}
+.week-num {
+  flex: none; width: 26px; height: 26px; display: grid; place-items: center;
+  font-family: var(--mono); font-size: 12px; font-weight: 600;
+  color: var(--paper); background: var(--rosso); border-radius: 50%;
+}
+.week-card-title {
+  font-family: var(--display); font-weight: 600; font-size: 17px;
+  display: flex; align-items: center; gap: 8px;
+}
+.badge {
+  font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--oliva); border: 1px solid var(--oliva); padding: 1px 5px; border-radius: 2px;
+}
+.week-desc { font-size: 13.5px; line-height: 1.55; color: var(--ink-soft); margin: 10px 0; }
+.dishes { margin: 8px 0; padding-left: 18px; }
+.dishes li { font-size: 13px; line-height: 1.6; }
+.week-foot { display: grid; gap: 4px; margin-top: 10px; }
+.thread { font-size: 12px; color: var(--ink-soft); }
+.thread i { font-style: normal; color: var(--rosso); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; margin-right: 6px; }
+
+.week-plan { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--rule); display: grid; gap: 14px; }
+.week-plan h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--rosso); margin: 0 0 6px; }
+.plan-engine ul { margin: 0; padding-left: 18px; }
+.plan-engine li { font-size: 13px; line-height: 1.6; }
+.plan-day { display: grid; grid-template-columns: 42px 1fr auto; gap: 10px; align-items: baseline; padding: 4px 0; border-bottom: 1px dotted var(--rule); }
+.pd-day { font-family: var(--mono); font-size: 11px; color: var(--rosso); }
+.pd-dinner { font-size: 13px; }
+.pd-num { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+.plan-cost { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); display: flex; gap: 16px; }
+.plan-empty, .loading.sm { font-size: 12.5px; font-style: italic; color: var(--ink-soft); }
+
+/* recipe list */
+.recipe-list { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.recipe-item { border-bottom: 1px solid var(--rule); }
+.recipe-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  width: 100%; background: none; border: none; cursor: pointer; text-align: left;
+  padding: 11px 2px;
+}
+.recipe-head:hover { background: var(--paper); }
+.recipe-title { font-family: var(--display); font-weight: 600; font-size: 16px; }
+.recipe-macros { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); white-space: nowrap; }
+.recipe-body { padding: 4px 2px 16px; }
+.recipe-blurb { font-size: 13.5px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 12px; }
+.recipe-cols { display: grid; grid-template-columns: 1fr 1.3fr; gap: 20px; }
+.recipe-cols h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--rosso); margin: 0 0 8px; }
+.ingredients { margin: 0; padding-left: 16px; }
+.ingredients li { font-size: 12.5px; line-height: 1.7; }
+.ing-qty { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+.method { margin: 0; padding-left: 18px; }
+.method li { font-size: 12.5px; line-height: 1.6; margin-bottom: 6px; }
+.modern-move { font-size: 13px; line-height: 1.55; margin: 14px 0 0; padding-top: 10px; border-top: 1px dotted var(--rule); }
+.modern-move i { font-style: normal; color: var(--rosso); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* docs */
+.doc-list { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.doc-item { border-bottom: 1px solid var(--rule); }
+.doc-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  width: 100%; background: none; border: none; cursor: pointer; text-align: left; padding: 12px 2px;
+}
+.doc-head:hover { background: var(--paper); }
+.doc-title { font-family: var(--display); font-weight: 600; font-size: 16px; }
+.doc-kind { font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--oliva); }
+.doc-body { font-size: 13.5px; line-height: 1.62; color: var(--ink); white-space: pre-wrap; padding: 4px 2px 18px; }
+
+@media (max-width: 640px) {
+  .challenge-view { padding: 8px 14px; }
+  .recipe-cols { grid-template-columns: 1fr; gap: 12px; }
+  .recipe-macros { font-size: 10px; }
+}

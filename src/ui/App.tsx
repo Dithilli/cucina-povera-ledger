@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Entry, Ledger } from "../types";
-import { WEEK_PRESETS } from "../core/constants";
 import {
   defaultLedger,
   upsertEntry,
@@ -20,9 +19,19 @@ import {
   clearWorkingCopy,
   hasWorkingCopy,
 } from "../storage/browserStore";
+import { listWeeks } from "../data/content";
+import type { WeekTheme } from "../content/types";
 import { money, moneyOrDash, formatDate, todayISO } from "./format";
 import { WeekChart } from "./components/WeekChart";
+import { Challenge } from "./Challenge";
 import { Gear, Check, Trash, Pencil, Flame, Plus, Close } from "./icons";
+
+// The active challenge. The app is generic over challenges; for now it serves
+// this one. Content (weeks/recipes/docs) is read from the DB by slug — not
+// hardcoded. Later this becomes a route/selection.
+const CHALLENGE_SLUG = "cucina-povera";
+
+type View = "ledger" | "challenge";
 
 const blankForm = () => ({
   date: todayISO(),
@@ -36,6 +45,8 @@ const blankForm = () => ({
 export default function App() {
   const [ledger, setLedger] = useState<Ledger>(defaultLedger());
   const [loaded, setLoaded] = useState(false);
+  const [view, setView] = useState<View>("ledger");
+  const [weeks, setWeeks] = useState<WeekTheme[]>([]);
   const [showSettings, setShowSettings] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState(blankForm());
@@ -47,6 +58,10 @@ export default function App() {
       setLocalCopy(hasWorkingCopy());
       setLoaded(true);
     });
+    // Week options come from the DB, not a hardcoded preset list.
+    listWeeks(CHALLENGE_SLUG)
+      .then(setWeeks)
+      .catch(() => setWeeks([]));
   }, []);
 
   const commit = (next: Ledger) => {
@@ -56,6 +71,15 @@ export default function App() {
   };
 
   const { settings } = ledger;
+
+  // Dropdown options: DB week titles, with the current selection always present
+  // (so a custom/legacy activeWeek never vanishes, and it's never empty on load).
+  const weekOptions = useMemo(() => {
+    const titles = weeks.map((w) => w.title);
+    return titles.includes(settings.activeWeek)
+      ? titles
+      : [settings.activeWeek, ...titles];
+  }, [weeks, settings.activeWeek]);
 
   const submit = () => {
     const candidate: Entry = {
@@ -128,257 +152,280 @@ export default function App() {
             <h1>Cucina Povera Challenge</h1>
           </div>
           <div className="toolbtns">
-            <button
-              className="iconbtn"
-              onClick={() => setShowSettings((v) => !v)}
-              aria-label="Edit targets"
-            >
-              <Gear size={18} />
-            </button>
+            {view === "ledger" && (
+              <button
+                className="iconbtn"
+                onClick={() => setShowSettings((v) => !v)}
+                aria-label="Edit targets"
+              >
+                <Gear size={18} />
+              </button>
+            )}
           </div>
         </header>
 
-        <div className="weekbar">
-          <label className="lbl" htmlFor="week">
-            Cooking
-          </label>
-          <select
-            id="week"
-            value={settings.activeWeek}
-            onChange={(e) => commit(updateSettings(ledger, { activeWeek: e.target.value }))}
+        <nav className="tabs">
+          <button
+            className={`tab ${view === "ledger" ? "on" : ""}`}
+            onClick={() => setView("ledger")}
           >
-            {WEEK_PRESETS.map((w) => (
-              <option key={w}>{w}</option>
-            ))}
-          </select>
-          <span className="spacer" />
-          <button className="linkbtn" onClick={() => exportLedger(ledger)}>
-            Export ledger.json
+            The ledger
           </button>
-          {localCopy && (
-            <button className="linkbtn" onClick={resetToCommitted} title="Discard local edits">
-              Reset to committed
-            </button>
-          )}
-        </div>
+          <button
+            className={`tab ${view === "challenge" ? "on" : ""}`}
+            onClick={() => setView("challenge")}
+          >
+            The challenge
+          </button>
+        </nav>
 
-        {showSettings && (
-          <div className="settings">
-            <div className="set-row">
-              <NumField
-                label="Calorie target"
-                value={settings.calorieTarget}
-                onChange={(v) => commit(updateSettings(ledger, { calorieTarget: v }))}
-                suffix="kcal"
-              />
-              <NumField
-                label="Protein floor"
-                value={settings.proteinFloor}
-                onChange={(v) => commit(updateSettings(ledger, { proteinFloor: v }))}
-                suffix="g"
-              />
-              <NumField
-                label="Weekly budget"
-                value={settings.weeklyBudget}
-                onChange={(v) => commit(updateSettings(ledger, { weeklyBudget: v }))}
-                prefix="$"
-              />
-            </div>
-            <p className="set-note">
-              A day counts as kept when it lands at or under the calorie target, meets the
-              protein floor, and wastes nothing.
-            </p>
-          </div>
-        )}
+        {view === "challenge" && <Challenge slug={CHALLENGE_SLUG} />}
 
-        <section className="reckoning">
-          <div className="tile">
-            <div className="tile-top">
-              <Flame size={13} />
-              <span>Streak</span>
-            </div>
-            <div className="tile-num">{streak}</div>
-            <div className="tile-sub">days kept</div>
-          </div>
-          <div className={`tile ${overBudget ? "alert" : ""}`}>
-            <div className="tile-top">
-              <span>This week</span>
-            </div>
-            <div className="tile-num">{money(active.cost)}</div>
-            <div className="tile-sub">of {money(settings.weeklyBudget)} budget</div>
-            <div className="meter">
-              <span style={{ width: `${budgetPct}%` }} />
-            </div>
-          </div>
-          <div className="tile">
-            <div className="tile-top">
-              <span>$ / 1,000 kcal</span>
-            </div>
-            <div className="tile-num">{moneyOrDash(active.costPerKcal)}</div>
-            <div className="tile-sub">this week</div>
-          </div>
-          <div className="tile">
-            <div className="tile-top">
-              <span>$ / 100g protein</span>
-            </div>
-            <div className="tile-num">{moneyOrDash(active.costPerProtein)}</div>
-            <div className="tile-sub">the real test</div>
-          </div>
-        </section>
-
-        <section className="register">
-          <div className="reg-head">
-            <h2>{editingId ? "Amend the entry" : "Enter the day"}</h2>
-            <span className="reg-week">{settings.activeWeek}</span>
-          </div>
-          <div className="reg-grid">
-            <div className="reg-field date">
-              <label htmlFor="f-date">Date</label>
-              <input
-                id="f-date"
-                type="date"
-                value={form.date}
-                onChange={(e) => setForm({ ...form, date: e.target.value })}
-              />
-            </div>
-            <div className="reg-field dish">
-              <label htmlFor="f-dish">What you cooked</label>
-              <input
-                id="f-dish"
-                type="text"
-                placeholder="pasta e ceci, pangrattato"
-                value={form.dish}
-                onChange={(e) => setForm({ ...form, dish: e.target.value })}
-              />
-            </div>
-            <div className="reg-field num">
-              <label htmlFor="f-cal">Calories</label>
-              <input
-                id="f-cal"
-                type="number"
-                inputMode="numeric"
-                placeholder="2000"
-                value={form.calories}
-                onChange={(e) => setForm({ ...form, calories: e.target.value })}
-              />
-            </div>
-            <div className="reg-field num">
-              <label htmlFor="f-prot">Protein (g)</label>
-              <input
-                id="f-prot"
-                type="number"
-                inputMode="numeric"
-                placeholder="100"
-                value={form.protein}
-                onChange={(e) => setForm({ ...form, protein: e.target.value })}
-              />
-            </div>
-            <div className="reg-field num">
-              <label htmlFor="f-cost">Cost ($)</label>
-              <input
-                id="f-cost"
-                type="number"
-                inputMode="decimal"
-                placeholder="7.50"
-                value={form.cost}
-                onChange={(e) => setForm({ ...form, cost: e.target.value })}
-              />
-            </div>
-            <button
-              type="button"
-              className={`waste ${form.zeroWaste ? "on" : ""}`}
-              onClick={() => setForm({ ...form, zeroWaste: !form.zeroWaste })}
-              aria-pressed={form.zeroWaste}
-            >
-              <span className="waste-box">{form.zeroWaste && <Check size={14} />}</span>
-              Zero waste
-            </button>
-          </div>
-          <div className="reg-actions">
-            {editingId && (
-              <button className="btn ghost" onClick={cancelEdit}>
-                <Close size={15} /> Cancel
+        {view === "ledger" && (
+          <>
+            <div className="weekbar">
+              <label className="lbl" htmlFor="week">
+                Cooking
+              </label>
+              <select
+                id="week"
+                value={settings.activeWeek}
+                onChange={(e) => commit(updateSettings(ledger, { activeWeek: e.target.value }))}
+              >
+                {weekOptions.map((w) => (
+                  <option key={w}>{w}</option>
+                ))}
+              </select>
+              <span className="spacer" />
+              <button className="linkbtn" onClick={() => exportLedger(ledger)}>
+                Export ledger.json
               </button>
+              {localCopy && (
+                <button className="linkbtn" onClick={resetToCommitted} title="Discard local edits">
+                  Reset to committed
+                </button>
+              )}
+            </div>
+
+            {showSettings && (
+              <div className="settings">
+                <div className="set-row">
+                  <NumField
+                    label="Calorie target"
+                    value={settings.calorieTarget}
+                    onChange={(v) => commit(updateSettings(ledger, { calorieTarget: v }))}
+                    suffix="kcal"
+                  />
+                  <NumField
+                    label="Protein floor"
+                    value={settings.proteinFloor}
+                    onChange={(v) => commit(updateSettings(ledger, { proteinFloor: v }))}
+                    suffix="g"
+                  />
+                  <NumField
+                    label="Weekly budget"
+                    value={settings.weeklyBudget}
+                    onChange={(v) => commit(updateSettings(ledger, { weeklyBudget: v }))}
+                    prefix="$"
+                  />
+                </div>
+                <p className="set-note">
+                  A day counts as kept when it lands at or under the calorie target, meets the
+                  protein floor, and wastes nothing.
+                </p>
+              </div>
             )}
-            <button className="btn solid" onClick={submit}>
-              <Plus size={15} /> {editingId ? "Save" : "Enter in ledger"}
-            </button>
-          </div>
-        </section>
 
-        <WeekChart groups={groups} />
-
-        <section className="ledger">
-          <h2>The ledger</h2>
-          {groups.length === 0 && (
-            <div className="empty">
-              The ledger is empty. Enter today above — calories, cost, protein — and the
-              reckoning begins.
-            </div>
-          )}
-          {groups.map((g) => (
-            <div className="week-block" key={g.week}>
-              <div className="week-head">
-                <h3>{g.week}</h3>
-                <div className="week-stats">
-                  <span className={g.summary.cost > settings.weeklyBudget ? "over" : ""}>
-                    {money(g.summary.cost)}
-                  </span>
-                  <span className="dot">·</span>
-                  <span>{g.summary.avgCalories} kcal avg</span>
-                  <span className="dot">·</span>
-                  <span>{g.summary.avgProtein}g avg</span>
-                  <span className="dot">·</span>
-                  <span>{moneyOrDash(g.summary.costPerProtein)}/100g</span>
+            <section className="reckoning">
+              <div className="tile">
+                <div className="tile-top">
+                  <Flame size={13} />
+                  <span>Streak</span>
+                </div>
+                <div className="tile-num">{streak}</div>
+                <div className="tile-sub">days kept</div>
+              </div>
+              <div className={`tile ${overBudget ? "alert" : ""}`}>
+                <div className="tile-top">
+                  <span>This week</span>
+                </div>
+                <div className="tile-num">{money(active.cost)}</div>
+                <div className="tile-sub">of {money(settings.weeklyBudget)} budget</div>
+                <div className="meter">
+                  <span style={{ width: `${budgetPct}%` }} />
                 </div>
               </div>
-              <div className="rows">
-                <div className="row head-row">
-                  <span className="c-date">Date</span>
-                  <span className="c-dish">Dish</span>
-                  <span className="c-num">Cal</span>
-                  <span className="c-num">Prot</span>
-                  <span className="c-num">Cost</span>
-                  <span className="c-mark">Kept</span>
-                  <span className="c-act" />
+              <div className="tile">
+                <div className="tile-top">
+                  <span>$ / 1,000 kcal</span>
                 </div>
-                {g.entries.map((e) => {
-                  const kept = dayPasses(e, settings);
-                  return (
-                    <div className={`row ${kept ? "kept" : ""}`} key={e.id}>
-                      <span className="c-date">{formatDate(e.date)}</span>
-                      <span className="c-dish">{e.dish || <em>—</em>}</span>
-                      <span className={`c-num ${e.calories > settings.calorieTarget ? "bad" : ""}`}>
-                        {e.calories}
+                <div className="tile-num">{moneyOrDash(active.costPerKcal)}</div>
+                <div className="tile-sub">this week</div>
+              </div>
+              <div className="tile">
+                <div className="tile-top">
+                  <span>$ / 100g protein</span>
+                </div>
+                <div className="tile-num">{moneyOrDash(active.costPerProtein)}</div>
+                <div className="tile-sub">the real test</div>
+              </div>
+            </section>
+
+            <section className="register">
+              <div className="reg-head">
+                <h2>{editingId ? "Amend the entry" : "Enter the day"}</h2>
+                <span className="reg-week">{settings.activeWeek}</span>
+              </div>
+              <div className="reg-grid">
+                <div className="reg-field date">
+                  <label htmlFor="f-date">Date</label>
+                  <input
+                    id="f-date"
+                    type="date"
+                    value={form.date}
+                    onChange={(e) => setForm({ ...form, date: e.target.value })}
+                  />
+                </div>
+                <div className="reg-field dish">
+                  <label htmlFor="f-dish">What you cooked</label>
+                  <input
+                    id="f-dish"
+                    type="text"
+                    placeholder="pasta e ceci, pangrattato"
+                    value={form.dish}
+                    onChange={(e) => setForm({ ...form, dish: e.target.value })}
+                  />
+                </div>
+                <div className="reg-field num">
+                  <label htmlFor="f-cal">Calories</label>
+                  <input
+                    id="f-cal"
+                    type="number"
+                    inputMode="numeric"
+                    placeholder="2000"
+                    value={form.calories}
+                    onChange={(e) => setForm({ ...form, calories: e.target.value })}
+                  />
+                </div>
+                <div className="reg-field num">
+                  <label htmlFor="f-prot">Protein (g)</label>
+                  <input
+                    id="f-prot"
+                    type="number"
+                    inputMode="numeric"
+                    placeholder="100"
+                    value={form.protein}
+                    onChange={(e) => setForm({ ...form, protein: e.target.value })}
+                  />
+                </div>
+                <div className="reg-field num">
+                  <label htmlFor="f-cost">Cost ($)</label>
+                  <input
+                    id="f-cost"
+                    type="number"
+                    inputMode="decimal"
+                    placeholder="7.50"
+                    value={form.cost}
+                    onChange={(e) => setForm({ ...form, cost: e.target.value })}
+                  />
+                </div>
+                <button
+                  type="button"
+                  className={`waste ${form.zeroWaste ? "on" : ""}`}
+                  onClick={() => setForm({ ...form, zeroWaste: !form.zeroWaste })}
+                  aria-pressed={form.zeroWaste}
+                >
+                  <span className="waste-box">{form.zeroWaste && <Check size={14} />}</span>
+                  Zero waste
+                </button>
+              </div>
+              <div className="reg-actions">
+                {editingId && (
+                  <button className="btn ghost" onClick={cancelEdit}>
+                    <Close size={15} /> Cancel
+                  </button>
+                )}
+                <button className="btn solid" onClick={submit}>
+                  <Plus size={15} /> {editingId ? "Save" : "Enter in ledger"}
+                </button>
+              </div>
+            </section>
+
+            <WeekChart groups={groups} />
+
+            <section className="ledger">
+              <h2>The ledger</h2>
+              {groups.length === 0 && (
+                <div className="empty">
+                  The ledger is empty. Enter today above — calories, cost, protein — and the
+                  reckoning begins.
+                </div>
+              )}
+              {groups.map((g) => (
+                <div className="week-block" key={g.week}>
+                  <div className="week-head">
+                    <h3>{g.week}</h3>
+                    <div className="week-stats">
+                      <span className={g.summary.cost > settings.weeklyBudget ? "over" : ""}>
+                        {money(g.summary.cost)}
                       </span>
-                      <span className={`c-num ${e.protein < settings.proteinFloor ? "bad" : ""}`}>
-                        {e.protein}
-                      </span>
-                      <span className="c-num">{money(e.cost)}</span>
-                      <span className="c-mark">
-                        {kept ? (
-                          <span className="kept-mark">
-                            <Check size={13} />
-                          </span>
-                        ) : (
-                          <span className="miss-mark">·</span>
-                        )}
-                      </span>
-                      <span className="c-act">
-                        <button onClick={() => startEdit(e)} aria-label="Edit entry">
-                          <Pencil size={13} />
-                        </button>
-                        <button onClick={() => commit(removeEntry(ledger, e.id))} aria-label="Delete entry">
-                          <Trash size={13} />
-                        </button>
-                      </span>
+                      <span className="dot">·</span>
+                      <span>{g.summary.avgCalories} kcal avg</span>
+                      <span className="dot">·</span>
+                      <span>{g.summary.avgProtein}g avg</span>
+                      <span className="dot">·</span>
+                      <span>{moneyOrDash(g.summary.costPerProtein)}/100g</span>
                     </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </section>
+                  </div>
+                  <div className="rows">
+                    <div className="row head-row">
+                      <span className="c-date">Date</span>
+                      <span className="c-dish">Dish</span>
+                      <span className="c-num">Cal</span>
+                      <span className="c-num">Prot</span>
+                      <span className="c-num">Cost</span>
+                      <span className="c-mark">Kept</span>
+                      <span className="c-act" />
+                    </div>
+                    {g.entries.map((e) => {
+                      const kept = dayPasses(e, settings);
+                      return (
+                        <div className={`row ${kept ? "kept" : ""}`} key={e.id}>
+                          <span className="c-date">{formatDate(e.date)}</span>
+                          <span className="c-dish">{e.dish || <em>—</em>}</span>
+                          <span className={`c-num ${e.calories > settings.calorieTarget ? "bad" : ""}`}>
+                            {e.calories}
+                          </span>
+                          <span className={`c-num ${e.protein < settings.proteinFloor ? "bad" : ""}`}>
+                            {e.protein}
+                          </span>
+                          <span className="c-num">{money(e.cost)}</span>
+                          <span className="c-mark">
+                            {kept ? (
+                              <span className="kept-mark">
+                                <Check size={13} />
+                              </span>
+                            ) : (
+                              <span className="miss-mark">·</span>
+                            )}
+                          </span>
+                          <span className="c-act">
+                            <button onClick={() => startEdit(e)} aria-label="Edit entry">
+                              <Pencil size={13} />
+                            </button>
+                            <button onClick={() => commit(removeEntry(ledger, e.id))} aria-label="Delete entry">
+                              <Trash size={13} />
+                            </button>
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </section>
+          </>
+        )}
 
         <footer className="foot">Constraint is the recipe.</footer>
       </div>
