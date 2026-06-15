@@ -21,12 +21,31 @@ short version of the rules that override default behaviour.
 3. **The app is challenge-agnostic.** "Cucina povera" is the first challenge, not
    the app. Challenges / recipes / weeks / docs come from the **database** — never
    hardcoded. `src/content/*` is SEED data only, loaded by `npm run seed`.
-4. **The moat is `src/core/ledger.ts`** — pure, I/O-free scoring (`dayPasses`,
-   `summarize`). Import it verbatim everywhere (UI, CLI, Edge Functions); never
-   re-implement scoring in SQL or let an LLM author it.
+4. **The moat is `src/core/ledger.ts`** — pure, I/O-free scoring (`mealPasses`,
+   `summarize`, `currentStreak`). Import it verbatim everywhere (UI, CLI, Edge
+   Functions); never re-implement scoring in SQL or let an LLM author it.
 5. **Secrets:** only `VITE_*` vars are client-safe. The `service_role` /
    `sb_secret_*` key, `ANTHROPIC_API_KEY`, and DB passwords live in `.env.local`
    (gitignored) and must never reach the client bundle or a chat transcript.
+6. **Different cuisines need different builds — never clone the Italian week
+   structure.** The seven-themed-week arc was shaped around Italian *cucina
+   povera*, which genuinely rotates its staple week to week (pasta → bread →
+   polenta → beans). That does **not** generalize. Most cuisines have a *constant
+   foundation* present every week — injera + legumes (Ethiopian), corn + beans
+   (Mexican), rice elsewhere. So:
+   - **Themes may *emphasize* different facets even on a constant staple** — Mexico's
+     masa / frijoles / chiles / huevos weeks read fine because each is a real dish you
+     eat. The failure mode is making the *inedible* foundation the theme: an "injera
+     week" breaks because injera is the plate and the spoon, not a dinner. A theme
+     must be something you actually eat as that night's dinner; the foundation (injera,
+     the base sofrito) stays the constant base shown once, never a week.
+   - **Design each cuisine's week framing from how that tradition actually eats**
+     (e.g. Ethiopian themes on fiery *key wot* ↔ gentle *alicha* under the
+     fasting↔feast calendar), not by copying Italy's one-ingredient-per-week template.
+   - Recipes are reusable data; the **week framing is per-cuisine** and is the part
+     that must be redesigned for every new challenge. The challenge is "one cucina
+     povera dinner a night," so a week is seven distinct, non-overlapping dinners —
+     not a single ingredient stretched across seven days.
 
 ## Commands
 
