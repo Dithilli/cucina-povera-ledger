@@ -27,10 +27,9 @@ export const mxWeek1Masa: WeekPlan = {
   bonus: false,
   preciousThread: "Good melting cheese (Oaxaca / quesillo). Use it to gild, not to fill.",
   engine: [
+    "The salsa foundation, made ahead — salsa-roja-asada + salsa-verde (the base under everything; Mexican food has salsa with it all)",
     "A big pot of frijoles de la olla (the bean bank for the week)",
     "A double batch of masa → a stack of fresh tortillas (and chips from the rest)",
-    "A jar of salsa roja asada",
-    "A jar of salsa verde",
   ],
   days: [
     {
