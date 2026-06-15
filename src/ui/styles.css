@@ -229,7 +229,13 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 
 @media (max-width: 640px) {
   .libretto { padding: 14px 8px 40px; }
+  /* Stack the masthead so the challenge picker and auth controls each get a full
+     row — the row layout overflowed and pushed them off a phone screen. */
+  .masthead { flex-direction: column; align-items: stretch; gap: 14px; padding: 18px 16px 14px; }
   .masthead h1 { font-size: 24px; }
+  .challenge-switch { margin-top: 8px; }
+  .challenge-picker { width: 100%; }
+  .toolbtns { width: 100%; }
   .reckoning { grid-template-columns: repeat(2, 1fr); }
   .reg-grid { grid-template-columns: 1fr 1fr; }
   .reg-field.dish, .reg-field.date { grid-column: 1 / -1; }
