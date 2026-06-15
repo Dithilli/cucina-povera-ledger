@@ -168,6 +168,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "A round of bread, a slow clay pot, preserved lemon and ras el hanout — a little meat stretched by vegetables under one shared tagine, wasting nothing.",
   },
+  "polish": {
+    slug: "chleb-i-ziemniaki",
+    name: "Chleb i Ziemniaki",
+    tagline:
+      "Rye bread, a sack of potatoes, a crock of soured cabbage, and a spoon of śmietana — the long-winter larder that stretches a little meat and wastes nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
