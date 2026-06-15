@@ -199,18 +199,21 @@ export default function App() {
                 "Cucina Povera Challenge"}
             </h1>
             {challenges.length > 1 && (
-              <select
-                className="challenge-picker"
-                value={challengeSlug}
-                onChange={(e) => changeChallenge(e.target.value)}
-                aria-label="Switch challenge"
-              >
-                {challenges.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    {c.name}
-                  </option>
-                ))}
-              </select>
+              <label className="challenge-switch">
+                <span className="cs-label">Switch challenge ▾</span>
+                <select
+                  className="challenge-picker"
+                  value={challengeSlug}
+                  onChange={(e) => changeChallenge(e.target.value)}
+                  aria-label="Switch challenge"
+                >
+                  {challenges.map((c) => (
+                    <option key={c.slug} value={c.slug}>
+                      {c.name}
+                    </option>
+                  ))}
+                </select>
+              </label>
             )}
           </div>
           <div className="toolbtns">

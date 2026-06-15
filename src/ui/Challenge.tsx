@@ -65,12 +65,15 @@ export function Challenge({ slug }: { slug: string }) {
   }, [recipes]);
 
   const openRecipe = bySlug.get(openSlug ?? "") ?? null;
+  const essay = docs.find((d) => d.kind === "essay");
+  const writingDocs = docs.filter((d) => d.kind !== "essay");
 
   if (!loaded) return <div className="loading">Loading the challenge…</div>;
   if (error) return <div className="empty">Couldn’t reach the challenge: {error}</div>;
 
   return (
     <div className="challenge-view">
+      {essay && <FeaturedEssay doc={essay} />}
       {meta && (
         <section className="ch-intro">
           <div className="eyebrow">
@@ -132,11 +135,11 @@ export function Challenge({ slug }: { slug: string }) {
         </div>
       </section>
 
-      {docs.length > 0 && (
+      {writingDocs.length > 0 && (
         <section className="ch-block">
           <h2>The writing</h2>
           <div className="doc-list">
-            {docs.map((d) => (
+            {writingDocs.map((d) => (
               <DocItem key={d.slug} doc={d} />
             ))}
           </div>
@@ -522,6 +525,25 @@ function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void 
         </div>
       </div>
     </div>
+  );
+}
+
+function FeaturedEssay({ doc }: { doc: ContentDoc }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <section className={`ch-essay ${open ? "open" : ""}`}>
+      <button className="ch-essay-head" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
+        <span className="eyebrow">The cuisine · essay</span>
+        <span className="ch-essay-title">{doc.title}</span>
+        <span className="ch-essay-toggle">{open ? "Hide ▴" : "Read the essay ▾"}</span>
+      </button>
+      {open && (
+        <div
+          className="doc-body markdown ch-essay-body"
+          dangerouslySetInnerHTML={{ __html: renderMarkdown(doc.body) }}
+        />
+      )}
+    </section>
   );
 }
 
