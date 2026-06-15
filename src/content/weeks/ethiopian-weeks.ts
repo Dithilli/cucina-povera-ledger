@@ -15,17 +15,17 @@ export const ethWeek1Injera: WeekPlan = {
   slug: "eth-week-1-injera",
   number: 1,
   cuisine: "ethiopian",
-  theme: "Injera & Teff",
-  title: "Week 1 — Injera",
+  theme: "The Fasting Plate",
+  title: "Week 1 — The Fasting Plate",
   description:
-    "Everything starts with the ferment. Teff — the tiny native grain of the highlands — is whisked with water, soured for days, and poured thin onto a hot griddle to become injera: the sour, lacy flatbread that is plate, utensil, and bread at once.",
+    "The everyday vegan rhythm of the Orthodox fast — lentil and pea wots over injera, the balanced plate eaten most days of the year. Start here: it's how the Horn actually eats, and it clears the protein floor with no meat at all.",
   context:
-    `Everything starts with the ferment. Teff, the tiniest grain in the world and native to the Horn of Africa, is milled, whisked with water, and left to sour for days until it bubbles. Poured thin on a hot griddle and steamed under a lid, it becomes injera — the wide, lacy, sour flatbread that is plate, utensil, and bread all at once, covered in "eyes" that drink up sauce. Like sourdough, the ferment is kept alive: a spoon of yesterday's sour ersho seeds tomorrow's batch. Master the ferment and you've learned the cuisine. The offcuts are never waste — toasted crisp and smeared with niter kibbeh and berbere, they become kategna.`,
+    `For up to two hundred days a year the Orthodox fast forbids all animal products, so the everyday plate was built entirely from teff, lentils, peas, and greens — and made good enough to want on a holy day. This is that plate: a round of injera laid with a few wots, eaten with the hands, no fork and no meat. Injera is the constant beneath all of it — you ferment and griddle a batch ahead and eat on it all week — so the week isn't about the bread but the rhythm of the fasting table: a fiery wot and a gentle one, a green, a scoop of shiro. The humble daily meal that is also, when the fast breaks, the feast.`,
   dishes: [
-    "100% teff injera, fresh off the mitad",
-    "Kategna (toasted injera with niter kibbeh + berbere)",
-    "Dabo kolo (crunchy spiced nuggets)",
-    "Shiro wot to christen the first injera",
+    "Shiro wot — the fifteen-minute everyman wot",
+    "Misir wot — the fiery red-lentil staple",
+    "Kik alicha — gentle, turmeric split peas",
+    "A small beyaynetu — a little of each on one injera round",
   ],
   proteinNote:
     "Teff itself carries a surprising amount of protein; the legume wots that sit on the injera do the rest. The floor is met with shiro and lentils, no meat.",

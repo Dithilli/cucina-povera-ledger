@@ -60,3 +60,22 @@ export interface WeekGroup {
   entries: Entry[];
   summary: Summary;
 }
+
+/** One dinner lifted out of a plan (curated, deterministic, or AI) so the ledger
+ *  can offer it as a one-tap quick-log. Macros prefill the entry form. */
+export interface PlannedDinner {
+  /** Display name — the recipe title, or the raw dinner string if not in the library. */
+  title: string;
+  calories: number;
+  protein: number;
+  cost: number;
+}
+
+/** A whole week handed from the challenge view to the ledger: its label becomes
+ *  the active week, and its dinners become quick-log chips. This is the
+ *  generate→log loop — a planned menu becomes the thing you log against. */
+export interface PlannedWeek {
+  /** Becomes `Settings.activeWeek`; new entries tag to it. */
+  label: string;
+  dinners: PlannedDinner[];
+}

@@ -10,7 +10,23 @@ import {
 } from "../data/content";
 import { planWeek, weekCandidates, type WeekPlanResult } from "../core/planner";
 import { generateWeek } from "../data/generator";
-import type { Settings } from "../types";
+import type { Settings, PlannedDinner, PlannedWeek } from "../types";
+
+/** Lift a dinner (slug or prose) into a PlannedDinner, preferring the real
+ *  recipe's macros and falling back to the plan's per-day estimates. */
+function toPlannedDinner(
+  dinner: string,
+  fallback: { calories: number; protein: number; cost: number },
+  bySlug: Map<string, Recipe>
+): PlannedDinner {
+  const r = bySlug.get(dinner);
+  return {
+    title: r?.title ?? dinner,
+    calories: r?.perServing.calories ?? fallback.calories,
+    protein: r?.perServing.protein ?? fallback.protein,
+    cost: r?.estCostPerServing ?? fallback.cost,
+  };
+}
 
 interface AiDayView {
   dinner: string;
@@ -48,7 +64,13 @@ function writePreferredServings(n: number): void {
  * Challenge-agnostic: give it a challenge slug and it renders that challenge's
  * weeks, recipes, and prose. Dishes drill down into the full recipe.
  */
-export function Challenge({ slug }: { slug: string }) {
+export function Challenge({
+  slug,
+  onUseWeek,
+}: {
+  slug: string;
+  onUseWeek?: (week: PlannedWeek) => void;
+}) {
   const [meta, setMeta] = useState<ChallengeMeta | null>(null);
   const [weeks, setWeeks] = useState<WeekTheme[]>([]);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -122,6 +144,7 @@ export function Challenge({ slug }: { slug: string }) {
           recipes={recipes}
           recipesBySlug={bySlug}
           onOpenRecipe={setOpenSlug}
+          onUseWeek={onUseWeek}
         />
       )}
 
@@ -135,6 +158,7 @@ export function Challenge({ slug }: { slug: string }) {
               week={w}
               recipesBySlug={bySlug}
               onOpenRecipe={setOpenSlug}
+              onUseWeek={onUseWeek}
             />
           ))}
         </div>
@@ -176,11 +200,13 @@ function GenerateWeek({
   recipes,
   recipesBySlug,
   onOpenRecipe,
+  onUseWeek,
 }: {
   meta: ChallengeMeta;
   recipes: Recipe[];
   recipesBySlug: Map<string, Recipe>;
   onOpenRecipe: (slug: string) => void;
+  onUseWeek?: (week: PlannedWeek) => void;
 }) {
   const [result, setResult] = useState<WeekPlanResult | null>(null);
   const [ai, setAi] = useState<{ intro: string; days: AiDayView[] } | null>(null);
@@ -288,6 +314,21 @@ function GenerateWeek({
             <span>
               Week total {money(result.totalCost)} · budget {money(meta.defaultWeeklyBudget)}
             </span>
+            {onUseWeek && (
+              <button
+                className="btn solid use-week"
+                onClick={() =>
+                  onUseWeek({
+                    label: `${meta.name} · generated week`,
+                    dinners: result.days.map((d) =>
+                      toPlannedDinner(d.dinner, d, recipesBySlug)
+                    ),
+                  })
+                }
+              >
+                Cook this week →
+              </button>
+            )}
           </div>
         </div>
       )}
@@ -313,6 +354,21 @@ function GenerateWeek({
             <span>
               Week total {money(aiTotal)} · budget {money(meta.defaultWeeklyBudget)} · composed by Claude
             </span>
+            {onUseWeek && (
+              <button
+                className="btn solid use-week"
+                onClick={() =>
+                  onUseWeek({
+                    label: `${meta.name} · AI week`,
+                    dinners: ai.days.map((d) =>
+                      toPlannedDinner(d.dinner, d, recipesBySlug)
+                    ),
+                  })
+                }
+              >
+                Cook this week →
+              </button>
+            )}
           </div>
         </div>
       )}
@@ -325,11 +381,13 @@ function WeekCard({
   week,
   recipesBySlug,
   onOpenRecipe,
+  onUseWeek,
 }: {
   challengeSlug: string;
   week: WeekTheme;
   recipesBySlug: Map<string, Recipe>;
   onOpenRecipe: (slug: string) => void;
+  onUseWeek?: (week: PlannedWeek) => void;
 }) {
   const [open, setOpen] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
@@ -457,14 +515,31 @@ function WeekCard({
                   </div>
                 ))}
               </div>
-              {(plan.firstShopTotal != null || plan.steadyStateWeekly != null) && (
-                <div className="plan-cost">
-                  {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
-                  {plan.steadyStateWeekly != null && (
-                    <span>Steady state {money(plan.steadyStateWeekly)}/wk</span>
-                  )}
-                </div>
-              )}
+              <div className="plan-cost">
+                {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
+                {plan.steadyStateWeekly != null && (
+                  <span>Steady state {money(plan.steadyStateWeekly)}/wk</span>
+                )}
+                {onUseWeek && (
+                  <button
+                    className="btn solid use-week"
+                    onClick={() =>
+                      onUseWeek({
+                        label: week.title,
+                        dinners: plan.days.map((d) =>
+                          toPlannedDinner(
+                            d.dinner,
+                            { calories: d.estCalories, protein: d.estProtein, cost: 0 },
+                            recipesBySlug
+                          )
+                        ),
+                      })
+                    }
+                  >
+                    Cook this week →
+                  </button>
+                )}
+              </div>
             </>
           )}
         </div>

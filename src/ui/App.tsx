@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Entry, Ledger } from "../types";
+import type { Entry, Ledger, PlannedWeek, PlannedDinner } from "../types";
 import {
   defaultLedger,
   upsertEntry,
@@ -63,6 +63,7 @@ export default function App() {
   const [localCopy, setLocalCopy] = useState(false);
   const [challengeSlug, setChallengeSlug] = useState(initialChallenge);
   const [challenges, setChallenges] = useState<ChallengeMeta[]>([]);
+  const [planned, setPlanned] = useState<PlannedWeek | null>(null);
   const { user } = useSession();
 
   // The available challenges (for the picker).
@@ -141,6 +142,32 @@ export default function App() {
     commit(upsertEntry(ledger, candidate));
     setForm(blankForm());
     setEditingId(null);
+  };
+
+  // The generate→log loop: a planned week (curated, deterministic, or AI)
+  // becomes the active week. Its dinners surface as quick-log chips below, and
+  // new entries tag to its label.
+  const useWeek = (week: PlannedWeek) => {
+    setPlanned(week);
+    setEditingId(null);
+    setForm(blankForm());
+    commit(updateSettings(ledger, { activeWeek: week.label }));
+    setView("ledger");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Tapping a planned dinner prefills tonight's entry — the cook still confirms.
+  const quickFill = (d: PlannedDinner) => {
+    setEditingId(null);
+    setForm({
+      date: todayISO(),
+      dish: d.title,
+      calories: d.calories ? String(d.calories) : "",
+      protein: d.protein ? String(d.protein) : "",
+      cost: d.cost ? String(d.cost) : "",
+      zeroWaste: true,
+    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const startEdit = (e: Entry) => {
@@ -260,7 +287,9 @@ export default function App() {
           />
         )}
 
-        {view === "challenge" && <Challenge key={challengeSlug} slug={challengeSlug} />}
+        {view === "challenge" && (
+          <Challenge key={challengeSlug} slug={challengeSlug} onUseWeek={useWeek} />
+        )}
 
         {view === "ledger" && (
           <>
@@ -358,6 +387,31 @@ export default function App() {
                 <h2>{editingId ? "Amend the entry" : "Log tonight’s dinner"}</h2>
                 <span className="reg-week">{settings.activeWeek}</span>
               </div>
+              {planned && planned.label === settings.activeWeek && !editingId && (
+                <div className="planned-strip">
+                  <div className="planned-lead">
+                    <span>Tap a dinner from this week to fill it in — then confirm below.</span>
+                    <button className="linkbtn" onClick={() => setPlanned(null)}>
+                      Dismiss
+                    </button>
+                  </div>
+                  <div className="planned-chips">
+                    {planned.dinners.map((d, i) => (
+                      <button
+                        key={`${d.title}-${i}`}
+                        className={`planned-chip ${form.dish === d.title ? "on" : ""}`}
+                        onClick={() => quickFill(d)}
+                        title={`${d.calories} kcal · ${d.protein}g · ${money(d.cost)}`}
+                      >
+                        <span className="pc-name">{d.title}</span>
+                        <span className="pc-macros">
+                          {d.calories} kcal · {d.protein}g · {money(d.cost)}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="reg-grid">
                 <div className="reg-field date">
                   <label htmlFor="f-date">Date</label>

@@ -364,8 +364,24 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .pd-day { font-family: var(--mono); font-size: 11px; color: var(--rosso); }
 .pd-dinner { font-size: 13px; }
 .pd-num { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
-.plan-cost { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); display: flex; gap: 16px; }
+.plan-cost { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
 .plan-empty, .loading.sm { font-size: 12.5px; font-style: italic; color: var(--ink-soft); }
+
+/* Cook-this-week — the hand-off from a plan into the ledger. */
+.use-week { margin-left: auto; padding: 7px 13px; font-size: 11px; }
+
+/* Quick-log strip: the planned dinners surfaced in the ledger as one-tap chips. */
+.planned-strip { border: 1px solid var(--rule); border-left: 3px solid var(--oliva); background: var(--paper); padding: 12px 14px; margin: 14px 0 4px; }
+.planned-lead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; color: var(--ink-soft); margin-bottom: 10px; }
+.planned-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.planned-chip {
+  display: flex; flex-direction: column; gap: 2px; text-align: left; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--paper-2); padding: 7px 11px;
+}
+.planned-chip:hover { border-color: var(--ink); }
+.planned-chip.on { border-color: var(--oliva); background: color-mix(in srgb, var(--oliva) 12%, var(--paper-2)); }
+.pc-name { font-family: var(--display); font-weight: 600; font-size: 13.5px; }
+.pc-macros { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); }
 
 /* recipe list */
 .recipe-list { display: grid; gap: 0; border-top: 1px solid var(--rule); }
