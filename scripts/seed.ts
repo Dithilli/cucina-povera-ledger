@@ -156,6 +156,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Broken rice, a piece of fish, and the nététou-deep nokoss — the shared bowl of teranga, where the prized crust is scraped up and nothing is wasted.",
   },
+  "east-african": {
+    slug: "ugali-na-sukuma",
+    name: "Ugali na Sukuma",
+    tagline:
+      "Maize pap, a pan of greens, a coconut-deep stew, and the Swahili spice trade — bara thrift meets pwani coast, wasting nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
