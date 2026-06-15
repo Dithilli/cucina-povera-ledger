@@ -29,7 +29,7 @@ import {
   makeId,
   validateEntry,
 } from "../src/core/ledger";
-import { planWeek } from "../src/core/planner";
+import { planWeek, weekCandidates } from "../src/core/planner";
 import { DEFAULT_SETTINGS } from "../src/core/constants";
 
 // --- env (load .env.local relative to the repo, like scripts/seed.ts) ----------
@@ -250,14 +250,75 @@ server.tool(
 
 server.tool(
   "generate_week",
-  "Deterministically assemble a 7-day plan from the challenge's recipe library — each day certified at/under the calorie target, over the protein floor, zero waste, no dinner repeated. Returns the plan or the binding constraint.",
-  { challenge: z.string().default(DEFAULT_CHALLENGE) },
-  guard(async ({ challenge }) => {
-    const rows = await fetchRecipes(challenge);
-    const pool: Recipe[] = rows.map(toRecipe);
+  "Assemble a passing 7-day week from the challenge's recipe library — every day at/under the calorie target, over the protein floor, zero waste, no dinner repeated. Deterministic by default (cheapest passing week); set ai=true to have Claude pick the tastiest, most varied passing week from the same vetted dishes (writes an intro + per-day blurbs).",
+  { challenge: z.string().default(DEFAULT_CHALLENGE), ai: z.boolean().default(false) },
+  guard(async ({ challenge, ai }) => {
+    const pool: Recipe[] = (await fetchRecipes(challenge)).map(toRecipe);
     const settings = await challengeSettings(challenge);
-    const result = planWeek(pool, settings);
-    return json(result);
+
+    if (!ai) return json({ mode: "deterministic", ...planWeek(pool, settings) });
+
+    const cand = weekCandidates(pool, settings);
+    if (!cand.ok) return json({ mode: "ai", ok: false, reason: cand.reason });
+
+    const bySlug = new Map(pool.map((r) => [r.slug, r]));
+    const payload = cand.candidates.map((c) => {
+      const r = bySlug.get(c.dinner);
+      return {
+        dinner: c.dinner,
+        dinnerTitle: r?.title ?? c.dinner,
+        calories: c.calories,
+        protein: c.protein,
+        cost: c.cost,
+        tags: r?.tags ?? [],
+      };
+    });
+
+    const { data, error } = await anon.functions.invoke("generate-week", {
+      body: {
+        candidates: payload,
+        settings: {
+          calorieTarget: settings.calorieTarget,
+          proteinFloor: settings.proteinFloor,
+          weeklyBudget: settings.weeklyBudget,
+        },
+      },
+    });
+    if (error) {
+      // Surface the Edge Function's own error body (e.g. missing ANTHROPIC_API_KEY)
+      // instead of the generic "non-2xx" wrapper.
+      let detail = (error as Error).message;
+      try {
+        const ctx = (error as { context?: Response }).context;
+        const body = ctx ? await ctx.json() : null;
+        if (body?.error) detail = body.error;
+      } catch {
+        /* keep the generic message */
+      }
+      return fail(`generator: ${detail}`);
+    }
+    const res = data as { error?: string; intro?: string; days?: { dinner: string; blurb: string }[] };
+    if (res?.error) return fail(`generator: ${res.error}`);
+
+    // Re-certify Claude's picks against the candidate set (distinct, valid).
+    const macros = new Map(cand.candidates.map((c) => [c.dinner, c]));
+    const seen = new Set<string>();
+    const days: { dinner: string; title: string; blurb: string; calories: number; protein: number; cost: number }[] = [];
+    for (const d of res.days ?? []) {
+      const m = macros.get(d.dinner);
+      if (!m || seen.has(d.dinner)) continue;
+      seen.add(d.dinner);
+      days.push({
+        dinner: d.dinner,
+        title: bySlug.get(d.dinner)?.title ?? d.dinner,
+        blurb: d.blurb,
+        calories: m.calories,
+        protein: m.protein,
+        cost: m.cost,
+      });
+    }
+    const totalCost = Math.round(days.reduce((a, x) => a + x.cost, 0) * 100) / 100;
+    return json({ mode: "ai", ok: true, intro: res.intro, days, totalCost });
   }),
 );
 

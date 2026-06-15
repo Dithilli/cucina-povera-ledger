@@ -5,6 +5,11 @@ an agent **use** the app (not just read the rendered page): browse the challenge
 generate a constraint-satisfying week, log days, and read stats. It runs over
 stdio and talks to the same Supabase backend the web app does.
 
+It speaks **standard MCP over stdio**, so it works with *any* MCP client — Claude
+Desktop, Claude Code, openclaw, Cline, Continue, and others. The config shape
+(`command` + `args`, optional `env`) is the same across clients; only the file it
+goes in differs.
+
 Run it standalone: `npm run mcp`.
 
 ## Tools
@@ -16,7 +21,7 @@ Run it standalone: `npm run mcp`.
 | `get_week` | One week incl. the full plan (Sunday engine, 7 days, shopping) | anon |
 | `list_recipes` | The recipe library (title, macros, cost, tags) | anon |
 | `get_recipe` | One recipe in full (ingredients, method, modern move) | anon |
-| `generate_week` | Deterministically assemble a passing 7-day week, certified by the engine | anon |
+| `generate_week` | Assemble a passing 7-day week, certified by the engine. `ai=true` has Claude pick the tastiest/most-varied one + write blurbs | anon (`ai=true` also needs the Edge Function's `ANTHROPIC_API_KEY`) |
 | `get_stats` | The user's streak, this-week-vs-budget, efficiency stats | service + user |
 | `log_day` | Log a day; returns whether it's **kept** (under cal, over protein, zero waste) | service + user |
 | `set_targets` | Update calorie target / protein floor / weekly budget / active week | service + user |
@@ -48,19 +53,9 @@ CUCINA_USER_EMAIL="you@email.com"              # whose ledger to read/write
 claude mcp add cucina-povera -- npx tsx /ABS/PATH/cucina-povera-ledger/scripts/mcp-server.ts
 ```
 
-or commit a `.mcp.json` in the repo:
-
-```json
-{
-  "mcpServers": {
-    "cucina-povera": {
-      "command": "npx",
-      "args": ["tsx", "scripts/mcp-server.ts"],
-      "cwd": "/ABS/PATH/cucina-povera-ledger"
-    }
-  }
-}
-```
+This repo already ships a project-scoped **`.mcp.json`**, so Claude Code
+auto-discovers the server when you open the project — just approve it when prompted.
+No manual step needed.
 
 ### Claude Desktop
 
@@ -79,6 +74,30 @@ or commit a `.mcp.json` in the repo:
 
 (The server loads `.env.local` by absolute path relative to the script, so `cwd`
 isn't required for env to resolve.)
+
+### Any other MCP client (openclaw, Cline, Continue, Goose, …)
+
+Same standard MCP stdio config — use an **absolute path** to the script so it works
+regardless of the client's working directory:
+
+```json
+{
+  "mcpServers": {
+    "cucina-povera": {
+      "command": "npx",
+      "args": ["tsx", "/ABS/PATH/cucina-povera-ledger/scripts/mcp-server.ts"]
+    }
+  }
+}
+```
+
+Notes for portability across clients:
+
+- Run `npm install` in the repo once so `tsx` and `@supabase/supabase-js` resolve.
+- The server self-loads `.env.local` (by the script's own path), so you don't have to
+  pass `env` in the client config — but you may, if your client supports an `env`
+  block and you'd rather keep creds out of `.env.local`.
+- It's stdio JSON-RPC MCP with no Claude-specific bits, so any compliant client works.
 
 ## Smoke test
 

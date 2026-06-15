@@ -5,6 +5,12 @@ making changes. It describes what the project is, where everything lives, the
 invariants you must not break, and the exact commands for the two jobs you'll do
 most: **modifying** the app and **using** it to log days.
 
+> **Agents using the app at runtime** — browse the weeks, generate a week, log a
+> day, read stats — should connect via the **MCP server** (`scripts/mcp-server.ts`),
+> not screen-scrape the SPA. See **`docs/mcp.md`**. This repo ships a `.mcp.json`
+> so Claude Code auto-registers it; it's standard MCP over stdio, so any MCP client
+> (Claude Desktop, openclaw, Cline, …) works. `npm run mcp` runs it standalone.
+
 ## What this is
 
 A single-user web app — an "account book" — for a cucina povera cooking

@@ -22,5 +22,15 @@ const plan = JSON.parse(gen.content[0].text);
 console.log("\ngenerate_week → ok:", plan.ok, "· total $" + plan.totalCost);
 for (const d of plan.days ?? []) console.log("  " + d.day + "  " + d.dinner + "  " + d.calories + "kcal " + d.protein + "g $" + d.cost);
 
+const genAi = await client.callTool({ name: "generate_week", arguments: { challenge: "cucina-povera", ai: true } });
+if (genAi.isError) {
+  console.log("\ngenerate_week ai=true → error:", genAi.content[0].text);
+} else {
+  const aiPlan = JSON.parse(genAi.content[0].text);
+  console.log("\ngenerate_week ai=true → ok:", aiPlan.ok, aiPlan.reason ? "· " + aiPlan.reason : "");
+  if (aiPlan.intro) console.log("  intro:", aiPlan.intro);
+  for (const d of aiPlan.days ?? []) console.log("  " + d.dinner + " — " + (d.blurb || "").slice(0, 64));
+}
+
 await client.close();
 console.log("\nSMOKE OK");
