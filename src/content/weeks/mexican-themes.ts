@@ -165,13 +165,13 @@ export const week3Antojitos: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "tacos dorados — tortillas rolled around beans, fried crisp, drowned in salsa-verde, crema, and queso",
+      dinner: "tacos-dorados — tortillas rolled around beans, fried crisp, drowned in salsa-verde, crema, and queso",
       estCalories: 690,
       estProtein: 21,
     },
     {
       day: "Fri",
-      dinner: "enchiladas rojas — tortillas dipped in salsa-roja-asada, filled with beans and queso, baked",
+      dinner: "enchiladas-rojas — tortillas dipped in salsa-roja-asada, filled with beans and queso, baked",
       estCalories: 700,
       estProtein: 26,
     },
@@ -254,13 +254,13 @@ export const week4Huevos: WeekPlan = {
     },
     {
       day: "Mon",
-      dinner: "huevos en salsa verde over rice and beans",
+      dinner: "huevos-en-salsa-verde over rice and beans",
       estCalories: 660,
       estProtein: 28,
     },
     {
       day: "Tue",
-      dinner: "huevos en salsa roja with frijoles-refritos and tortillas",
+      dinner: "huevos-en-salsa-roja with frijoles-refritos and tortillas",
       estCalories: 670,
       estProtein: 27,
     },
@@ -278,7 +278,7 @@ export const week4Huevos: WeekPlan = {
     },
     {
       day: "Fri",
-      dinner: "huevos en salsa roja over the last of the beans and tortillas",
+      dinner: "huevos-en-salsa-roja over the last of the beans and tortillas",
       estCalories: 670,
       estProtein: 28,
     },
@@ -486,7 +486,7 @@ export const week6Verduras: WeekPlan = {
     },
     {
       day: "Sat",
-      dinner: "sopa de guías — squash vine, blossom, calabacita, and corn in one pot, finished with beans and queso; the whole plant goes in, nothing wasted",
+      dinner: "sopa-de-guias — squash vine, blossom, calabacita, and corn in one pot, finished with beans and queso; the whole plant goes in, nothing wasted",
       estCalories: 690,
       estProtein: 25,
     },
@@ -578,7 +578,7 @@ export const week7Guisos: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "picadillo-stuffed chiles with salsa-roja-asada and beans",
+      dinner: "chiles-rellenos de picadillo with salsa-roja-asada and beans",
       estCalories: 680,
       estProtein: 26,
     },

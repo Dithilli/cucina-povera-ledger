@@ -406,6 +406,13 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .modern-move { font-size: 13px; line-height: 1.55; margin: 14px 0 0; padding-top: 10px; border-top: 1px dotted var(--rule); }
 .modern-move i { font-style: normal; color: var(--rosso); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
 
+.recipe-sources { font-size: 12px; line-height: 1.5; margin: 14px 0 0; padding-top: 10px; border-top: 1px dotted var(--rule); }
+.recipe-sources h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--rosso); margin: 0 0 6px; }
+.recipe-sources ul { margin: 0; padding-left: 16px; }
+.recipe-sources li { margin: 0 0 4px; }
+.recipe-sources a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+.recipe-sources .src-note { color: var(--ink-soft); }
+
 /* docs */
 .doc-list { display: grid; gap: 0; border-top: 1px solid var(--rule); }
 .doc-item { border-bottom: 1px solid var(--rule); }

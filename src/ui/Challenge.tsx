@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import type { WeekTheme, WeekPlan, Recipe, ContentDoc } from "../content/types";
 import {
   listWeeks,
@@ -480,27 +480,9 @@ function WeekCard({
                   follows is built on. Nothing is wasted.
                 </p>
                 <ul>
-                  {plan.engine.map((e, i) => {
-                    // Each item is either a bare recipe slug, or "<slug> — note".
-                    const dash = e.indexOf(" — ");
-                    const head = (dash >= 0 ? e.slice(0, dash) : e).trim();
-                    const rest = dash >= 0 ? e.slice(dash) : "";
-                    const r = recipesBySlug.get(head);
-                    return (
-                      <li key={i}>
-                        {r ? (
-                          <>
-                            <button className="recipe-link" onClick={() => onOpenRecipe(r.slug)}>
-                              {r.title}
-                            </button>
-                            {rest}
-                          </>
-                        ) : (
-                          e
-                        )}
-                      </li>
-                    );
-                  })}
+                  {plan.engine.map((e, i) => (
+                    <li key={i}>{linkifyDishes(e, recipesBySlug, onOpenRecipe)}</li>
+                  ))}
                 </ul>
               </div>
               <div className="plan-days">
@@ -548,8 +530,41 @@ function WeekCard({
   );
 }
 
-/** A dinner cell: a clickable link into the recipe when the value is a known
- *  recipe slug, otherwise plain prose (e.g. dishes not yet in the library). */
+const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Turn a prose line ("zuppa-di-legumi with pecorino + fettunta") into mixed
+ *  text + links by replacing every embedded recipe slug with a clickable link to
+ *  that recipe (shown by its title). Slugs are matched whole-word, longest first,
+ *  so multi-word slugs win over any shorter slug they contain. Plain text when
+ *  the line names no known dish. */
+function linkifyDishes(
+  text: string,
+  recipesBySlug: Map<string, Recipe>,
+  onOpen: (slug: string) => void
+): ReactNode {
+  const slugs = Array.from(recipesBySlug.keys()).sort((a, b) => b.length - a.length);
+  if (slugs.length === 0) return text;
+  const re = new RegExp(`\\b(?:${slugs.map(escapeRegExp).join("|")})\\b`, "g");
+  const out: ReactNode[] = [];
+  let last = 0;
+  let key = 0;
+  for (let m = re.exec(text); m !== null; m = re.exec(text)) {
+    const r = recipesBySlug.get(m[0]);
+    if (!r) continue;
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <button key={key++} type="button" className="recipe-link" onClick={() => onOpen(r.slug)}>
+        {r.title}
+      </button>
+    );
+    last = m.index + m[0].length;
+  }
+  if (out.length === 0) return text;
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
+/** A dinner cell: prose with every named library dish rendered as a link. */
 function DinnerCell({
   dinner,
   recipesBySlug,
@@ -559,15 +574,7 @@ function DinnerCell({
   recipesBySlug: Map<string, Recipe>;
   onOpen: (slug: string) => void;
 }) {
-  const recipe = recipesBySlug.get(dinner);
-  if (recipe) {
-    return (
-      <button className="pd-dinner recipe-link" onClick={() => onOpen(recipe.slug)}>
-        {recipe.title}
-      </button>
-    );
-  }
-  return <span className="pd-dinner">{dinner}</span>;
+  return <span className="pd-dinner">{linkifyDishes(dinner, recipesBySlug, onOpen)}</span>;
 }
 
 function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void }) {
@@ -657,6 +664,25 @@ function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void 
             <p className="modern-move">
               <i>Notes —</i> {recipe.notes}
             </p>
+          )}
+          {recipe.sources && recipe.sources.length > 0 && (
+            <div className="recipe-sources">
+              <h4>Sources</h4>
+              <ul>
+                {recipe.sources.map((s, i) => (
+                  <li key={i}>
+                    {s.url ? (
+                      <a href={s.url} target="_blank" rel="noopener noreferrer">
+                        {s.title}
+                      </a>
+                    ) : (
+                      s.title
+                    )}
+                    {s.note && <span className="src-note"> — {s.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       </div>
