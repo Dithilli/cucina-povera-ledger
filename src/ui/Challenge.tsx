@@ -36,6 +36,8 @@ interface AiDayView {
   cost: number;
 }
 import { money } from "./format";
+import { ShoppingList } from "./components/ShoppingList";
+import { buildShoppingList, shoppingListFromAuthored, extractRecipeSlugs } from "../core/shopping";
 import { scaleQty } from "./scale";
 import { renderMarkdown } from "./markdown";
 import { Close } from "./icons";
@@ -330,6 +332,13 @@ function GenerateWeek({
               </button>
             )}
           </div>
+          <div className="plan-shopping">
+            <h4>Shopping list</h4>
+            <ShoppingList
+              list={buildShoppingList(dinnerRecipes(result.days, recipesBySlug))}
+              title={`${meta.name} · generated week`}
+            />
+          </div>
         </div>
       )}
 
@@ -369,6 +378,13 @@ function GenerateWeek({
                 Cook this week →
               </button>
             )}
+          </div>
+          <div className="plan-shopping">
+            <h4>Shopping list</h4>
+            <ShoppingList
+              list={buildShoppingList(dinnerRecipes(ai.days, recipesBySlug))}
+              title={`${meta.name} · AI week`}
+            />
           </div>
         </div>
       )}
@@ -522,11 +538,87 @@ function WeekCard({
                   </button>
                 )}
               </div>
+              <WeekShopping plan={plan} recipesBySlug={recipesBySlug} title={week.title} />
             </>
           )}
         </div>
       )}
     </article>
+  );
+}
+
+/** Collect the distinct library recipes referenced across a set of dinners
+ *  (each `dinner` may be a bare slug or prose with several embedded slugs). */
+function dinnerRecipes(
+  days: ReadonlyArray<{ dinner: string }>,
+  recipesBySlug: Map<string, Recipe>
+): Recipe[] {
+  const slugKeys = Array.from(recipesBySlug.keys());
+  const out: Recipe[] = [];
+  const seen = new Set<string>();
+  for (const d of days) {
+    for (const slug of extractRecipeSlugs(d.dinner, slugKeys)) {
+      if (seen.has(slug)) continue;
+      const r = recipesBySlug.get(slug);
+      if (r) {
+        seen.add(slug);
+        out.push(r);
+      }
+    }
+  }
+  return out;
+}
+
+/** The shopping list for a built-out curated week: the hand-authored list by
+ *  default, with a toggle to generate one from the week's actual dinners. */
+function WeekShopping({
+  plan,
+  recipesBySlug,
+  title,
+}: {
+  plan: WeekPlan;
+  recipesBySlug: Map<string, Recipe>;
+  title: string;
+}) {
+  const generated = useMemo(
+    () => buildShoppingList(dinnerRecipes(plan.days, recipesBySlug)),
+    [plan, recipesBySlug]
+  );
+  const authored = useMemo(
+    () => (plan.shopping && plan.shopping.length > 0 ? shoppingListFromAuthored(plan.shopping) : null),
+    [plan]
+  );
+  const hasGenerated = generated.lines.length > 0;
+  const [mode, setMode] = useState<"authored" | "generated">(authored ? "authored" : "generated");
+
+  if (!authored && !hasGenerated) return null;
+  const list = mode === "authored" && authored ? authored : generated;
+
+  return (
+    <div className="plan-shopping">
+      <div className="shop-title-row">
+        <h4>Shopping list</h4>
+        {authored && hasGenerated && (
+          <div className="shop-toggle" role="group" aria-label="Shopping list source">
+            <button
+              type="button"
+              className={mode === "authored" ? "on" : ""}
+              onClick={() => setMode("authored")}
+            >
+              Curated
+            </button>
+            <button
+              type="button"
+              className={mode === "generated" ? "on" : ""}
+              onClick={() => setMode("generated")}
+            >
+              From these dinners
+            </button>
+          </div>
+        )}
+      </div>
+      <ShoppingList list={list} title={title} />
+    </div>
   );
 }
 
