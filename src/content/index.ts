@@ -541,6 +541,36 @@ export * from "./recipes/salchipapas";
 export * from "./recipes/aji-amarillo-base";
 export * from "./recipes/salsa-criolla";
 
+// ── brazilian ──
+export * from "./recipes/feijao-tropeiro";
+export * from "./recipes/tutu-de-feijao";
+export * from "./recipes/baiao-de-dois";
+export * from "./recipes/feijoada-leve";
+export * from "./recipes/moqueca-de-peixe";
+export * from "./recipes/peixe-frito-com-pirao";
+export * from "./recipes/bobo-de-mandioca";
+export * from "./recipes/galinhada";
+export * from "./recipes/frango-com-quiabo";
+export * from "./recipes/xinxim-de-galinha";
+export * from "./recipes/frango-ensopado";
+export * from "./recipes/picadinho-de-carne";
+export * from "./recipes/carne-de-panela";
+export * from "./recipes/escondidinho";
+export * from "./recipes/angu-com-molho";
+export * from "./recipes/cuscuz-paulista";
+export * from "./recipes/cuscuz-nordestino";
+export * from "./recipes/polenta-cremosa";
+export * from "./recipes/coxinha";
+export * from "./recipes/pastel";
+export * from "./recipes/bolinho-de-bacalhau";
+export * from "./recipes/pao-de-queijo";
+export * from "./recipes/farofa";
+export * from "./recipes/arroz-e-feijao";
+export * from "./recipes/vinagrete";
+export * from "./recipes/caldo-verde-br";
+export * from "./recipes/canja-de-galinha-br";
+export * from "./recipes/sopa-de-feijao-br";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -563,6 +593,7 @@ export * from "./docs/culture-korean";
 export * from "./docs/culture-japanese";
 export * from "./docs/culture-ashkenazi";
 export * from "./docs/culture-andean";
+export * from "./docs/culture-brazilian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -584,6 +615,7 @@ export * from "./weeks/korean-weeks";
 export * from "./weeks/japanese-weeks";
 export * from "./weeks/ashkenazi-weeks";
 export * from "./weeks/andean-weeks";
+export * from "./weeks/brazilian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1100,6 +1132,7 @@ import { cultureKorean } from "./docs/culture-korean";
 import { cultureJapanese } from "./docs/culture-japanese";
 import { cultureAshkenazi } from "./docs/culture-ashkenazi";
 import { cultureAndean } from "./docs/culture-andean";
+import { cultureBrazilian } from "./docs/culture-brazilian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1126,6 +1159,7 @@ import { koreanWeeks } from "./weeks/korean-weeks";
 import { japaneseWeeks } from "./weeks/japanese-weeks";
 import { ashkenaziWeeks } from "./weeks/ashkenazi-weeks";
 import { andeanWeeks } from "./weeks/andean-weeks";
+import { brazilianWeeks } from "./weeks/brazilian-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1155,6 +1189,35 @@ import { anticuchos } from "./recipes/anticuchos";
 import { salchipapas } from "./recipes/salchipapas";
 import { ajiAmarilloBase } from "./recipes/aji-amarillo-base";
 import { salsaCriolla } from "./recipes/salsa-criolla";
+
+import { feijaoTropeiro } from "./recipes/feijao-tropeiro";
+import { tutuDeFeijao } from "./recipes/tutu-de-feijao";
+import { baiaoDeDois } from "./recipes/baiao-de-dois";
+import { feijoadaLeve } from "./recipes/feijoada-leve";
+import { moquecaDePeixe } from "./recipes/moqueca-de-peixe";
+import { peixeFritoComPirao } from "./recipes/peixe-frito-com-pirao";
+import { boboDeMandioca } from "./recipes/bobo-de-mandioca";
+import { galinhada } from "./recipes/galinhada";
+import { frangoComQuiabo } from "./recipes/frango-com-quiabo";
+import { xinximDeGalinha } from "./recipes/xinxim-de-galinha";
+import { frangoEnsopado } from "./recipes/frango-ensopado";
+import { picadinhoDeCarne } from "./recipes/picadinho-de-carne";
+import { carneDePanela } from "./recipes/carne-de-panela";
+import { escondidinho } from "./recipes/escondidinho";
+import { anguComMolho } from "./recipes/angu-com-molho";
+import { cuscuzPaulista } from "./recipes/cuscuz-paulista";
+import { cuscuzNordestino } from "./recipes/cuscuz-nordestino";
+import { polentaCremosa } from "./recipes/polenta-cremosa";
+import { coxinha } from "./recipes/coxinha";
+import { pastel } from "./recipes/pastel";
+import { bolinhoDeBacalhau } from "./recipes/bolinho-de-bacalhau";
+import { paoDeQueijo } from "./recipes/pao-de-queijo";
+import { farofa } from "./recipes/farofa";
+import { arrozEFeijao } from "./recipes/arroz-e-feijao";
+import { vinagrete } from "./recipes/vinagrete";
+import { caldoVerdeBr } from "./recipes/caldo-verde-br";
+import { canjaDeGalinhaBr } from "./recipes/canja-de-galinha-br";
+import { sopaDeFeijaoBr } from "./recipes/sopa-de-feijao-br";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1667,6 +1730,35 @@ export const recipes: Recipe[] = [
   salchipapas,
   ajiAmarilloBase,
   salsaCriolla,
+  // brazilian
+  feijaoTropeiro,
+  tutuDeFeijao,
+  baiaoDeDois,
+  feijoadaLeve,
+  moquecaDePeixe,
+  peixeFritoComPirao,
+  boboDeMandioca,
+  galinhada,
+  frangoComQuiabo,
+  xinximDeGalinha,
+  frangoEnsopado,
+  picadinhoDeCarne,
+  carneDePanela,
+  escondidinho,
+  anguComMolho,
+  cuscuzPaulista,
+  cuscuzNordestino,
+  polentaCremosa,
+  coxinha,
+  pastel,
+  bolinhoDeBacalhau,
+  paoDeQueijo,
+  farofa,
+  arrozEFeijao,
+  vinagrete,
+  caldoVerdeBr,
+  canjaDeGalinhaBr,
+  sopaDeFeijaoBr,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -1699,6 +1791,7 @@ export const docs: ContentDoc[] = [
   cultureJapanese,
   cultureAshkenazi,
   cultureAndean,
+  cultureBrazilian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1743,6 +1836,8 @@ export const weekThemes: WeekTheme[] = [
   ...ashkenaziWeeks,
   // andean
   ...andeanWeeks,
+  // brazilian
+  ...brazilianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1770,4 +1865,5 @@ export const weeks: WeekPlan[] = [
   ...japaneseWeeks,
   ...ashkenaziWeeks,
   ...andeanWeeks,
+  ...brazilianWeeks,
 ];
