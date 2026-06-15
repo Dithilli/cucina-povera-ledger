@@ -59,16 +59,17 @@ export function updateSettings(ledger: Ledger, patch: Partial<Settings>): Ledger
 }
 
 /**
- * The single definition of a "kept" day: at or under the calorie target, at or
- * over the protein floor, and zero waste. Referenced by the UI badges, the
- * streak counter, and the CLI `stats` command — keep it here only.
+ * The single definition of a "kept" night: you cooked the dinner and wasted
+ * nothing. Calories, protein, and cost are tracked as targets to aim at, but
+ * they do NOT gate — the challenge is exploring cucina povera nightly, not
+ * dieting. Referenced by the UI badges, the streak counter, and the CLI
+ * `stats` command — keep it here only.
+ *
+ * Takes `_settings` for signature stability (the planner and callers pass it),
+ * though the rule no longer depends on any target.
  */
-export function dayPasses(entry: Entry, settings: Settings): boolean {
-  return (
-    entry.calories <= settings.calorieTarget &&
-    entry.protein >= settings.proteinFloor &&
-    entry.zeroWaste
-  );
+export function mealPasses(entry: Entry, _settings: Settings): boolean {
+  return entry.zeroWaste;
 }
 
 const round2 = (n: number) => Math.round(n * 100) / 100;
@@ -77,14 +78,14 @@ export function summarize(entries: Entry[]): Summary {
   const cost = entries.reduce((a, e) => a + e.cost, 0);
   const calories = entries.reduce((a, e) => a + e.calories, 0);
   const protein = entries.reduce((a, e) => a + e.protein, 0);
-  const days = entries.length;
+  const meals = entries.length;
   return {
     cost: round2(cost),
     calories,
     protein,
-    days,
-    avgCalories: days ? Math.round(calories / days) : 0,
-    avgProtein: days ? Math.round(protein / days) : 0,
+    meals,
+    avgCalories: meals ? Math.round(calories / meals) : 0,
+    avgProtein: meals ? Math.round(protein / meals) : 0,
     costPerKcal: calories > 0 ? round2(cost / (calories / 1000)) : null,
     costPerProtein: protein > 0 ? round2(cost / (protein / 100)) : null,
   };
@@ -96,14 +97,14 @@ export function sortedByDate(entries: Entry[]): Entry[] {
 }
 
 /**
- * Current streak: count back from the most recent logged day while each day is
- * "kept", stopping at the first miss. Counts logged days, not calendar gaps.
+ * Current streak: count back from the most recent logged night while each is
+ * "kept", stopping at the first miss. Counts logged nights, not calendar gaps.
  */
 export function currentStreak(ledger: Ledger): number {
   const sorted = sortedByDate(ledger.entries);
   let streak = 0;
   for (let i = sorted.length - 1; i >= 0; i--) {
-    if (dayPasses(sorted[i], ledger.settings)) streak++;
+    if (mealPasses(sorted[i], ledger.settings)) streak++;
     else break;
   }
   return streak;

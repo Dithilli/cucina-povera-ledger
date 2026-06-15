@@ -34,16 +34,16 @@ export function About({
         <div className="eyebrow">What this is</div>
         <p className="ch-tagline">
           {meta?.tagline ??
-            "An account book for cooking well on almost nothing — calories, protein, and cost, reckoned day by day."}
+            "An account book for cooking one good cucina povera dinner a night — calories, protein, and cost, reckoned night by night."}
         </p>
         {meta && (
           <div className="ch-dials">
             <span>
-              <b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/day
+              <b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/meal
             </span>
             <span className="dot">·</span>
             <span>
-              <b>{meta.defaultProteinFloor}g</b> protein floor
+              <b>{meta.defaultProteinFloor}g</b> protein/meal
             </span>
             <span className="dot">·</span>
             <span>
@@ -58,13 +58,14 @@ export function About({
         <p className="about-prose">
           Cucina povera — “poor kitchen” — is the art of eating well on little:
           beans, bread, greens, the cheap cuts, nothing wasted. This is its
-          ledger. You log what you cook each day; the app keeps the score.
+          ledger. Cook one cucina povera dinner a night; the app keeps the score.
         </p>
         <p className="about-prose">
-          A day is <b>kept</b> when it lands at or under the calorie target,
-          meets the protein floor, and wastes nothing. Keep enough days in a row
-          and a streak builds. The real test isn’t the cheapest day — it’s the
-          cheapest <i>gram of protein</i>.
+          A night is <b>kept</b> when you cook the dinner and waste nothing. Keep
+          enough nights in a row and a streak builds. Calories, protein, and cost
+          are <i>targets to aim at</i> — logged beside each meal, never pass/fail.
+          It’s less about dieting than about exploring the tradition, night after
+          night, tight and cheap.
         </p>
       </section>
 
@@ -74,8 +75,8 @@ export function About({
           <button className="about-step" onClick={onStartLedger}>
             <span className="about-step-k">The ledger</span>
             <span className="about-step-d">
-              Enter each day — dish, calories, protein, cost, zero-waste — and
-              watch the streak, the weekly budget, and the cost per 100g of
+              Log each night’s dinner — dish, calories, protein, cost, zero-waste —
+              and watch the streak, the weekly budget, and the cost per 100g of
               protein settle. Sign in to save it to the cloud, or keep it local.
             </span>
             <span className="about-step-go">Open the ledger →</span>

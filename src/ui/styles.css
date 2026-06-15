@@ -449,6 +449,16 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .modal-close:hover { background: var(--ink); color: var(--paper); }
 .modal-head { margin: 0 30px 16px 0; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
 .modal-head h3 { font-family: var(--display); font-weight: 600; font-size: 23px; margin: 0 0 6px; }
+.serving-stepper { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.ss-label { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--rosso); }
+.ss-btn {
+  width: 24px; height: 24px; display: grid; place-items: center; flex: none;
+  font-family: var(--mono); font-size: 16px; line-height: 1; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 50%; cursor: pointer;
+}
+.ss-btn:hover:not(:disabled) { border-color: var(--ink); color: var(--rosso); }
+.ss-btn:disabled { opacity: .35; cursor: default; }
+.ss-count { font-family: var(--mono); font-size: 14px; font-weight: 600; min-width: 18px; text-align: center; }
 
 @media (max-width: 640px) {
   .challenge-view, .about-view { padding: 8px 14px; }

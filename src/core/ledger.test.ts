@@ -4,7 +4,7 @@ import {
   validateEntry,
   upsertEntry,
   removeEntry,
-  dayPasses,
+  mealPasses,
   summarize,
   currentStreak,
   weekGroups,
@@ -57,19 +57,22 @@ describe("upsertEntry / removeEntry", () => {
   });
 });
 
-describe("dayPasses", () => {
+describe("mealPasses", () => {
   const s = defaultLedger().settings;
-  it("passes a kept day", () => {
-    expect(dayPasses(entry(), s)).toBe(true);
+  it("passes a kept night (cooked + zero waste)", () => {
+    expect(mealPasses(entry(), s)).toBe(true);
   });
-  it("fails over the calorie target", () => {
-    expect(dayPasses(entry({ calories: 2200 }), s)).toBe(false);
+  it("ignores calories — a target, not a gate", () => {
+    expect(mealPasses(entry({ calories: 5000 }), s)).toBe(true);
   });
-  it("fails under the protein floor", () => {
-    expect(dayPasses(entry({ protein: 80 }), s)).toBe(false);
+  it("ignores protein — a target, not a gate", () => {
+    expect(mealPasses(entry({ protein: 0 }), s)).toBe(true);
+  });
+  it("ignores cost — a target, not a gate", () => {
+    expect(mealPasses(entry({ cost: 999 }), s)).toBe(true);
   });
   it("fails when waste occurred", () => {
-    expect(dayPasses(entry({ zeroWaste: false }), s)).toBe(false);
+    expect(mealPasses(entry({ zeroWaste: false }), s)).toBe(false);
   });
 });
 
@@ -92,9 +95,9 @@ describe("summarize", () => {
 });
 
 describe("currentStreak", () => {
-  it("counts trailing kept days and stops at a miss", () => {
+  it("counts trailing kept nights and stops at a miss", () => {
     let l = defaultLedger();
-    l = upsertEntry(l, entry({ date: "2026-06-10", protein: 80 })); // miss
+    l = upsertEntry(l, entry({ date: "2026-06-10", zeroWaste: false })); // miss: wasted food
     l = upsertEntry(l, entry({ date: "2026-06-11" }));
     l = upsertEntry(l, entry({ date: "2026-06-12" }));
     expect(currentStreak(l)).toBe(2);

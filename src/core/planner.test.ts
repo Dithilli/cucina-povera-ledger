@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { planWeek, preflightFeasible } from "./planner";
 import type { DayPlan } from "./planner";
-import { dayPasses } from "./ledger";
+import { mealPasses } from "./ledger";
 import type { Entry, Settings } from "../types";
 import type { Recipe } from "../content/types";
 
@@ -69,21 +69,20 @@ describe("preflightFeasible", () => {
     expect(res.reason).toMatch(/7 distinct dinner/);
   });
 
-  it("fails when protein floor is unreachable in the calorie budget", () => {
-    const res = preflightFeasible(POOL, { ...SETTINGS, proteinFloor: 9999 });
-    expect(res.ok).toBe(false);
-    expect(res.reason).toMatch(/protein floor/);
+  it("does not gate on macros — protein/calorie targets never block feasibility", () => {
+    const res = preflightFeasible(POOL, { ...SETTINGS, proteinFloor: 9999, calorieTarget: 1 });
+    expect(res.ok).toBe(true);
   });
 });
 
 describe("planWeek", () => {
-  it("(1) every day passes dayPasses and no dinner repeats", () => {
+  it("(1) every night passes mealPasses and no dinner repeats", () => {
     const res = planWeek(POOL, SETTINGS);
     expect(res.ok).toBe(true);
     expect(res.days).toHaveLength(7);
 
     for (const d of res.days) {
-      expect(dayPasses(asEntry(d), SETTINGS)).toBe(true);
+      expect(mealPasses(asEntry(d), SETTINGS)).toBe(true);
     }
 
     const dinners = res.days.map((d) => d.dinner);
@@ -97,11 +96,9 @@ describe("planWeek", () => {
     expect(res.totalCost).toBe(sum);
   });
 
-  it("(3) an impossible (low-protein) pool returns ok:false with a reason", () => {
-    const lowProtein: Recipe[] = POOL.map((r) =>
-      recipe({ ...r, perServing: { calories: 800, protein: 5 } }),
-    );
-    const res = planWeek(lowProtein, SETTINGS);
+  it("(3) a pool with fewer than 7 dinners returns ok:false with a reason", () => {
+    const tooFew = POOL.slice(0, 6);
+    const res = planWeek(tooFew, SETTINGS);
     expect(res.ok).toBe(false);
     expect(res.reason).toBeTruthy();
     expect(res.days).toHaveLength(0);
