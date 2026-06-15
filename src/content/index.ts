@@ -163,6 +163,37 @@ export * from "./recipes/labneh";
 export * from "./recipes/fatteh";
 export * from "./recipes/salatet-banadoura";
 
+// ── Challenge — north-indian ──
+export * from "./recipes/aloo-gobi";
+export * from "./recipes/aloo-methi";
+export * from "./recipes/baingan-bharta";
+export * from "./recipes/bhindi-masala";
+export * from "./recipes/boondi-raita";
+export * from "./recipes/chana-dal";
+export * from "./recipes/chole";
+export * from "./recipes/dal-tadka";
+export * from "./recipes/garam-masala";
+export * from "./recipes/ghee";
+export * from "./recipes/ginger-garlic-paste";
+export * from "./recipes/jeera-aloo";
+export * from "./recipes/jeera-rice";
+export * from "./recipes/kadhi-pakora";
+export * from "./recipes/kala-chana";
+export * from "./recipes/khichdi";
+export * from "./recipes/masoor-dal";
+export * from "./recipes/matar-paneer";
+export * from "./recipes/mixed-veg-pakora";
+export * from "./recipes/moong-dal";
+export * from "./recipes/palak-paneer";
+export * from "./recipes/palak-saag";
+export * from "./recipes/paneer-bhurji";
+export * from "./recipes/rajma";
+export * from "./recipes/roti";
+export * from "./recipes/sarson-ka-saag";
+export * from "./recipes/shahi-paneer";
+export * from "./recipes/tahari";
+export * from "./recipes/veg-pulao";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -173,6 +204,7 @@ export * from "./docs/culture-ethiopia";
 export * from "./docs/culture-levant";
 export * from "./docs/culture-greece";
 export * from "./docs/culture-levant";
+export * from "./docs/culture-north-indian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -182,6 +214,7 @@ export * from "./weeks/mexican-themes";
 export * from "./weeks/ethiopian-weeks";
 export * from "./weeks/greek-weeks";
 export * from "./weeks/levantine-weeks";
+export * from "./weeks/north-indian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -339,6 +372,36 @@ import { moutabal } from "./recipes/moutabal";
 import { labneh } from "./recipes/labneh";
 import { fatteh } from "./recipes/fatteh";
 import { salatetBanadoura } from "./recipes/salatet-banadoura";
+// north-indian
+import { alooGobi } from "./recipes/aloo-gobi";
+import { alooMethi } from "./recipes/aloo-methi";
+import { bainganBharta } from "./recipes/baingan-bharta";
+import { bhindiMasala } from "./recipes/bhindi-masala";
+import { boondiRaita } from "./recipes/boondi-raita";
+import { chanaDal } from "./recipes/chana-dal";
+import { chole } from "./recipes/chole";
+import { dalTadka } from "./recipes/dal-tadka";
+import { garamMasala } from "./recipes/garam-masala";
+import { ghee } from "./recipes/ghee";
+import { gingerGarlicPaste } from "./recipes/ginger-garlic-paste";
+import { jeeraAloo } from "./recipes/jeera-aloo";
+import { jeeraRice } from "./recipes/jeera-rice";
+import { kadhiPakora } from "./recipes/kadhi-pakora";
+import { kalaChana } from "./recipes/kala-chana";
+import { khichdi } from "./recipes/khichdi";
+import { masoorDal } from "./recipes/masoor-dal";
+import { matarPaneer } from "./recipes/matar-paneer";
+import { mixedVegPakora } from "./recipes/mixed-veg-pakora";
+import { moongDal } from "./recipes/moong-dal";
+import { palakPaneer } from "./recipes/palak-paneer";
+import { palakSaag } from "./recipes/palak-saag";
+import { paneerBhurji } from "./recipes/paneer-bhurji";
+import { rajma } from "./recipes/rajma";
+import { roti } from "./recipes/roti";
+import { sarsonKaSaag } from "./recipes/sarson-ka-saag";
+import { shahiPaneer } from "./recipes/shahi-paneer";
+import { tahari } from "./recipes/tahari";
+import { vegPulao } from "./recipes/veg-pulao";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -348,6 +411,7 @@ import { cultureItaly } from "./docs/culture-italy";
 import { cultureEthiopia } from "./docs/culture-ethiopia";
 import { cultureGreece } from "./docs/culture-greece";
 import { cultureLevant } from "./docs/culture-levant";
+import { cultureNorthIndian } from "./docs/culture-north-indian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -362,6 +426,7 @@ import { mexicanWeeks } from "./weeks/mexican-themes";
 import { ethiopianWeeks } from "./weeks/ethiopian-weeks";
 import { greekWeeks } from "./weeks/greek-weeks";
 import { levantineWeeks } from "./weeks/levantine-weeks";
+import { northIndianWeeks } from "./weeks/north-indian-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -518,6 +583,36 @@ export const recipes: Recipe[] = [
   labneh,
   fatteh,
   salatetBanadoura,
+  // north-indian
+  alooGobi,
+  alooMethi,
+  bainganBharta,
+  bhindiMasala,
+  boondiRaita,
+  chanaDal,
+  chole,
+  dalTadka,
+  garamMasala,
+  ghee,
+  gingerGarlicPaste,
+  jeeraAloo,
+  jeeraRice,
+  kadhiPakora,
+  kalaChana,
+  khichdi,
+  masoorDal,
+  matarPaneer,
+  mixedVegPakora,
+  moongDal,
+  palakPaneer,
+  palakSaag,
+  paneerBhurji,
+  rajma,
+  roti,
+  sarsonKaSaag,
+  shahiPaneer,
+  tahari,
+  vegPulao,
 ];
 
 export const docs: ContentDoc[] = [
@@ -529,6 +624,7 @@ export const docs: ContentDoc[] = [
   cultureEthiopia,
   cultureGreece,
   cultureLevant,
+  cultureNorthIndian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -549,6 +645,8 @@ export const weekThemes: WeekTheme[] = [
   ...greekWeeks,
   // Challenge #5 — Levant
   ...levantineWeeks,
+  // north-indian
+  ...northIndianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -564,4 +662,5 @@ export const weeks: WeekPlan[] = [
   ...ethiopianWeeks,
   ...greekWeeks,
   ...levantineWeeks,
+  ...northIndianWeeks,
 ];

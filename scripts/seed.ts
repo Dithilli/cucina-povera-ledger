@@ -78,6 +78,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Olive oil, lentils, chickpeas, and bread — the Levantine table where a few cheap plates make a feast.",
   },
+  "north-indian": {
+    slug: "dal-roti",
+    name: "Dāl Roṭī",
+    tagline:
+      "Lentils, rice, and roti under a spoon of ghee — vegetarian home cooking that feeds a family for pennies.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
