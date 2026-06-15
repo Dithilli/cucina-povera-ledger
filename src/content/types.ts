@@ -32,6 +32,17 @@ export interface IngredientLine {
   spansWeeks?: boolean;
 }
 
+/** A cited source a recipe is drawn from — author/work and, where one exists, a
+ *  canonical URL. Stored as jsonb on the recipe row; rendered in the recipe modal. */
+export interface RecipeSource {
+  /** Author + work or site, e.g. "Mely Martínez — Mexico in My Kitchen". */
+  title: string;
+  /** Canonical URL, when there is one. */
+  url?: string;
+  /** What this recipe drew from the source. */
+  note?: string;
+}
+
 export interface Recipe {
   /** Stable kebab-case id, e.g. "pasta-e-ceci". */
   slug: string;
@@ -55,6 +66,8 @@ export interface Recipe {
   /** True for the zero-waste hero dishes (frittata di pasta, pappa, etc.). */
   zeroWasteHero?: boolean;
   tags: string[];
+  /** Cited sources the recipe is drawn from. Optional; rendered in the modal. */
+  sources?: RecipeSource[];
 }
 
 export type Weekday = "Sun" | "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat";

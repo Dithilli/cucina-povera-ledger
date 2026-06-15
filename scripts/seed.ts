@@ -66,6 +66,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Lentils, split peas, and injera under berbere — the fasting table, a feast from almost nothing.",
   },
+  ashkenazi: {
+    slug: "schmaltz-and-onions",
+    name: "Schmaltz & Onions",
+    tagline:
+      "The shtetl larder — potato, herring, schmaltz, and rye — bent all week toward the Shabbos table.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
@@ -89,6 +95,7 @@ function recipeRow(challengeId: string, r: Recipe) {
     notes: r.notes ?? null,
     zero_waste_hero: r.zeroWasteHero ?? false,
     tags: r.tags,
+    sources: r.sources ?? [],
   };
 }
 

@@ -90,6 +90,20 @@ export default function App() {
     const u = new URL(window.location.href);
     u.searchParams.set("challenge", slug);
     window.history.replaceState({}, "", u);
+    // The previous challenge's activeWeek doesn't exist in the new challenge.
+    // Snap it to the new challenge's first week so the "Cooking" picker shows a
+    // valid option instead of stranding the prior selection (weekOptions would
+    // otherwise prepend the now-orphaned week and keep displaying it).
+    listWeeks(slug)
+      .then((w) => {
+        const titles = w.map((t) => t.title);
+        if (titles.length > 0 && !titles.includes(ledger.settings.activeWeek)) {
+          commit(updateSettings(ledger, { activeWeek: titles[0] }));
+        }
+      })
+      .catch(() => {
+        /* ignore — the weeks effect handles the empty case */
+      });
   };
 
   // The ledger loads (and reloads) for the current identity: from the cloud when

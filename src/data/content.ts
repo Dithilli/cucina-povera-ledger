@@ -7,6 +7,7 @@ import { supabase } from "../lib/supabase";
 import type { Database } from "../lib/database.types";
 import type {
   Recipe,
+  RecipeSource,
   WeekTheme,
   WeekPlan,
   ContentDoc,
@@ -62,6 +63,7 @@ function toRecipe(r: RecipeRow): Recipe {
     notes: r.notes ?? undefined,
     zeroWasteHero: r.zero_waste_hero,
     tags: r.tags ?? [],
+    sources: (r.sources ?? []) as unknown as RecipeSource[],
   };
 }
 

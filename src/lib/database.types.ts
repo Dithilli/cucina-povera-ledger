@@ -203,6 +203,7 @@ export type Database = {
           roles: string[]
           servings: number
           slug: string
+          sources: Json
           tags: string[]
           title: string
           zero_waste_hero: boolean
@@ -224,6 +225,7 @@ export type Database = {
           roles?: string[]
           servings: number
           slug: string
+          sources?: Json
           tags?: string[]
           title: string
           zero_waste_hero?: boolean
@@ -245,6 +247,7 @@ export type Database = {
           roles?: string[]
           servings?: number
           slug?: string
+          sources?: Json
           tags?: string[]
           title?: string
           zero_waste_hero?: boolean

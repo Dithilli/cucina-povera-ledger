@@ -487,7 +487,7 @@ export const bonusSicilian: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "spaghetti aglio e olio with anchovy, capers, pangrattato",
+      dinner: "spaghetti-aglio-olio with anchovy, capers, pangrattato",
       estCalories: 670,
       estProtein: 19,
     },
