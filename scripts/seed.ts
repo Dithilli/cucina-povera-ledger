@@ -132,6 +132,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, the jang trinity, and kimchi — a rotating cast of banchan from one fermented brick, nothing wasted.",
   },
+  "japanese": {
+    slug: "ichiju-sansai",
+    name: "Ichijū Sansai",
+    tagline:
+      "Rice, miso, and dashi — soybeans in every form and mottainai thrift, nothing wasted.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
