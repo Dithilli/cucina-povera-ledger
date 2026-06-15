@@ -511,6 +511,36 @@ export * from "./recipes/tempe-balado";
 export * from "./recipes/tahu-balado";
 export * from "./recipes/lotek";
 
+// ── andean ──
+export * from "./recipes/chupe-de-quinua";
+export * from "./recipes/sopa-de-mani";
+export * from "./recipes/locro-de-papa";
+export * from "./recipes/chairo-paceno";
+export * from "./recipes/papa-a-la-huancaina";
+export * from "./recipes/causa-limena";
+export * from "./recipes/ocopa-arequipena";
+export * from "./recipes/papa-rellena";
+export * from "./recipes/seco-de-frejoles";
+export * from "./recipes/carapulcra";
+export * from "./recipes/aji-de-gallina";
+export * from "./recipes/olluquito";
+export * from "./recipes/quinua-pesque";
+export * from "./recipes/quinua-atamalada";
+export * from "./recipes/kispino";
+export * from "./recipes/sopa-de-quinua";
+export * from "./recipes/humitas";
+export * from "./recipes/pastel-de-choclo";
+export * from "./recipes/mote-con-queso";
+export * from "./recipes/choclo-con-queso";
+export * from "./recipes/tamales-andinos";
+export * from "./recipes/sopa-de-habas";
+export * from "./recipes/habas-guisadas";
+export * from "./recipes/lentejas-andinas";
+export * from "./recipes/anticuchos";
+export * from "./recipes/salchipapas";
+export * from "./recipes/aji-amarillo-base";
+export * from "./recipes/salsa-criolla";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -532,6 +562,7 @@ export * from "./docs/culture-portuguese";
 export * from "./docs/culture-korean";
 export * from "./docs/culture-japanese";
 export * from "./docs/culture-ashkenazi";
+export * from "./docs/culture-andean";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -552,6 +583,7 @@ export * from "./weeks/portuguese-weeks";
 export * from "./weeks/korean-weeks";
 export * from "./weeks/japanese-weeks";
 export * from "./weeks/ashkenazi-weeks";
+export * from "./weeks/andean-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1067,6 +1099,7 @@ import { culturePortuguese } from "./docs/culture-portuguese";
 import { cultureKorean } from "./docs/culture-korean";
 import { cultureJapanese } from "./docs/culture-japanese";
 import { cultureAshkenazi } from "./docs/culture-ashkenazi";
+import { cultureAndean } from "./docs/culture-andean";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1092,6 +1125,36 @@ import { portugueseWeeks } from "./weeks/portuguese-weeks";
 import { koreanWeeks } from "./weeks/korean-weeks";
 import { japaneseWeeks } from "./weeks/japanese-weeks";
 import { ashkenaziWeeks } from "./weeks/ashkenazi-weeks";
+import { andeanWeeks } from "./weeks/andean-weeks";
+
+import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
+import { sopaDeMani } from "./recipes/sopa-de-mani";
+import { locroDePapa } from "./recipes/locro-de-papa";
+import { chairoPaceno } from "./recipes/chairo-paceno";
+import { papaALaHuancaina } from "./recipes/papa-a-la-huancaina";
+import { causaLimena } from "./recipes/causa-limena";
+import { ocopaArequipena } from "./recipes/ocopa-arequipena";
+import { papaRellena } from "./recipes/papa-rellena";
+import { secoDeFrejoles } from "./recipes/seco-de-frejoles";
+import { carapulcra } from "./recipes/carapulcra";
+import { ajiDeGallina } from "./recipes/aji-de-gallina";
+import { olluquito } from "./recipes/olluquito";
+import { quinuaPesque } from "./recipes/quinua-pesque";
+import { quinuaAtamalada } from "./recipes/quinua-atamalada";
+import { kispino } from "./recipes/kispino";
+import { sopaDeQuinua } from "./recipes/sopa-de-quinua";
+import { humitas } from "./recipes/humitas";
+import { pastelDeChoclo } from "./recipes/pastel-de-choclo";
+import { moteConQueso } from "./recipes/mote-con-queso";
+import { chocloConQueso } from "./recipes/choclo-con-queso";
+import { tamalesAndinos } from "./recipes/tamales-andinos";
+import { sopaDeHabas } from "./recipes/sopa-de-habas";
+import { habasGuisadas } from "./recipes/habas-guisadas";
+import { lentejasAndinas } from "./recipes/lentejas-andinas";
+import { anticuchos } from "./recipes/anticuchos";
+import { salchipapas } from "./recipes/salchipapas";
+import { ajiAmarilloBase } from "./recipes/aji-amarillo-base";
+import { salsaCriolla } from "./recipes/salsa-criolla";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1575,6 +1638,35 @@ export const recipes: Recipe[] = [
   gefilteFish,
   roastChickenWithSchmaltz,
   kreplach,
+  // andean
+  chupeDeQuinua,
+  sopaDeMani,
+  locroDePapa,
+  chairoPaceno,
+  papaALaHuancaina,
+  causaLimena,
+  ocopaArequipena,
+  papaRellena,
+  secoDeFrejoles,
+  carapulcra,
+  ajiDeGallina,
+  olluquito,
+  quinuaPesque,
+  quinuaAtamalada,
+  kispino,
+  sopaDeQuinua,
+  humitas,
+  pastelDeChoclo,
+  moteConQueso,
+  chocloConQueso,
+  tamalesAndinos,
+  sopaDeHabas,
+  habasGuisadas,
+  lentejasAndinas,
+  anticuchos,
+  salchipapas,
+  ajiAmarilloBase,
+  salsaCriolla,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -1606,6 +1698,7 @@ export const docs: ContentDoc[] = [
   cultureKorean,
   cultureJapanese,
   cultureAshkenazi,
+  cultureAndean,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1648,6 +1741,8 @@ export const weekThemes: WeekTheme[] = [
   ...japaneseWeeks,
   // Ashkenazi (Schmaltz & Onions)
   ...ashkenaziWeeks,
+  // andean
+  ...andeanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1674,4 +1769,5 @@ export const weeks: WeekPlan[] = [
   ...koreanWeeks,
   ...japaneseWeeks,
   ...ashkenaziWeeks,
+  ...andeanWeeks,
 ];

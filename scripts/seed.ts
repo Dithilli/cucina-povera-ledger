@@ -132,6 +132,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, the jang trinity, and kimchi — a rotating cast of banchan from one fermented brick, nothing wasted.",
   },
+  "andean": {
+    slug: "papa-y-aji",
+    name: "Papa y Ají",
+    tagline:
+      "Three thousand potatoes, freeze-dried chuño, quinoa, and a fistful of ají — the highland table that wastes nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
