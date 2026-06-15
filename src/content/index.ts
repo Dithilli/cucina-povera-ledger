@@ -104,6 +104,36 @@ export * from "./recipes/kategna";
 export * from "./recipes/fasolia";
 export * from "./recipes/telba-fitfit";
 
+// ── Challenge #4 — Greece (Greek cucina povera) ──
+export * from "./recipes/fasolada";
+export * from "./recipes/gigantes-plaki";
+export * from "./recipes/mavromatika-spanaki";
+export * from "./recipes/dakos";
+export * from "./recipes/skordalia";
+export * from "./recipes/pot-of-gigantes";
+export * from "./recipes/fakes";
+export * from "./recipes/revithada";
+export * from "./recipes/revithokeftedes";
+export * from "./recipes/santorini-fava";
+export * from "./recipes/fasolakia-ladera";
+export * from "./recipes/briam";
+export * from "./recipes/bamies";
+export * from "./recipes/arakas-latheros";
+export * from "./recipes/gemista";
+export * from "./recipes/dolmadakia";
+export * from "./recipes/lahanodolmades";
+export * from "./recipes/horta-vrasta";
+export * from "./recipes/spanakopita";
+export * from "./recipes/spanakorizo";
+export * from "./recipes/prasorizo";
+export * from "./recipes/soupa-avgolemono";
+export * from "./recipes/youvarlakia";
+export * from "./recipes/kotopoulo-fricassee";
+export * from "./recipes/marides-tiganites";
+export * from "./recipes/bakaliaros-skordalia";
+export * from "./recipes/psarosoupa";
+export * from "./recipes/sardeles-sto-fourno";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -111,6 +141,7 @@ export * from "./docs/manifesto";
 export * from "./docs/culture-mexico";
 export * from "./docs/culture-italy";
 export * from "./docs/culture-ethiopia";
+export * from "./docs/culture-greece";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -118,6 +149,7 @@ export * from "./weeks/themes";
 export * from "./weeks/mx-week-1-masa";
 export * from "./weeks/mexican-themes";
 export * from "./weeks/ethiopian-weeks";
+export * from "./weeks/greek-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -217,12 +249,43 @@ import { kategna } from "./recipes/kategna";
 import { fasolia } from "./recipes/fasolia";
 import { telbaFitfit } from "./recipes/telba-fitfit";
 
+// Challenge #4 — Greece
+import { fasolada } from "./recipes/fasolada";
+import { gigantesPlaki } from "./recipes/gigantes-plaki";
+import { mavromatikaSpanaki } from "./recipes/mavromatika-spanaki";
+import { dakos } from "./recipes/dakos";
+import { skordalia } from "./recipes/skordalia";
+import { potOfGigantes } from "./recipes/pot-of-gigantes";
+import { fakes } from "./recipes/fakes";
+import { revithada } from "./recipes/revithada";
+import { revithokeftedes } from "./recipes/revithokeftedes";
+import { santoriniFava } from "./recipes/santorini-fava";
+import { fasolakiaLadera } from "./recipes/fasolakia-ladera";
+import { briam } from "./recipes/briam";
+import { bamies } from "./recipes/bamies";
+import { arakasLatheros } from "./recipes/arakas-latheros";
+import { gemista } from "./recipes/gemista";
+import { dolmadakia } from "./recipes/dolmadakia";
+import { lahanodolmades } from "./recipes/lahanodolmades";
+import { hortaVrasta } from "./recipes/horta-vrasta";
+import { spanakopita } from "./recipes/spanakopita";
+import { spanakorizo } from "./recipes/spanakorizo";
+import { prasorizo } from "./recipes/prasorizo";
+import { soupaAvgolemono } from "./recipes/soupa-avgolemono";
+import { youvarlakia } from "./recipes/youvarlakia";
+import { kotopouloFricassee } from "./recipes/kotopoulo-fricassee";
+import { maridesTiganites } from "./recipes/marides-tiganites";
+import { bakaliarosSkordalia } from "./recipes/bakaliaros-skordalia";
+import { psarosoupa } from "./recipes/psarosoupa";
+import { sardelesStoFourno } from "./recipes/sardeles-sto-fourno";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
 import { cultureMexico } from "./docs/culture-mexico";
 import { cultureItaly } from "./docs/culture-italy";
 import { cultureEthiopia } from "./docs/culture-ethiopia";
+import { cultureGreece } from "./docs/culture-greece";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -235,6 +298,7 @@ import {
 } from "./weeks/themes";
 import { mexicanWeeks } from "./weeks/mexican-themes";
 import { ethiopianWeeks } from "./weeks/ethiopian-weeks";
+import { greekWeeks } from "./weeks/greek-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -334,6 +398,35 @@ export const recipes: Recipe[] = [
   kategna,
   fasolia,
   telbaFitfit,
+  // Challenge #4 — Greece
+  fasolada,
+  gigantesPlaki,
+  mavromatikaSpanaki,
+  dakos,
+  skordalia,
+  potOfGigantes,
+  fakes,
+  revithada,
+  revithokeftedes,
+  santoriniFava,
+  fasolakiaLadera,
+  briam,
+  bamies,
+  arakasLatheros,
+  gemista,
+  dolmadakia,
+  lahanodolmades,
+  hortaVrasta,
+  spanakopita,
+  spanakorizo,
+  prasorizo,
+  soupaAvgolemono,
+  youvarlakia,
+  kotopouloFricassee,
+  maridesTiganites,
+  bakaliarosSkordalia,
+  psarosoupa,
+  sardelesStoFourno,
 ];
 
 export const docs: ContentDoc[] = [
@@ -343,6 +436,7 @@ export const docs: ContentDoc[] = [
   cultureMexico,
   cultureItaly,
   cultureEthiopia,
+  cultureGreece,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -359,6 +453,8 @@ export const weekThemes: WeekTheme[] = [
   ...mexicanWeeks,
   // Challenge #3 — Ethiopia & Eritrea
   ...ethiopianWeeks,
+  // Challenge #4 — Greece
+  ...greekWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -372,4 +468,5 @@ export const weeks: WeekPlan[] = [
   bonusGarden,
   ...mexicanWeeks,
   ...ethiopianWeeks,
+  ...greekWeeks,
 ];

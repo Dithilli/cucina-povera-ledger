@@ -66,6 +66,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Lentils, split peas, and injera under berbere — the fasting table, a feast from almost nothing.",
   },
+  greek: {
+    slug: "magirefti",
+    name: "Mageireftá",
+    tagline:
+      "Olive oil, a pot of beans, foraged greens, lemon — the fasting table of the Aegean, cheap and sun-bright.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
