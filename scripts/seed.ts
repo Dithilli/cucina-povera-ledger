@@ -174,6 +174,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rye bread, a sack of potatoes, a crock of soured cabbage, and a spoon of śmietana — the long-winter larder that stretches a little meat and wastes nothing.",
   },
+  "irish": {
+    slug: "prata-agus-aran",
+    name: "Prátaí agus Arán",
+    tagline:
+      "A pot of floury spuds, a soda loaf, a knob of butter, and a little bacon to flavour the lot — the cottage hearth that made plenty from want, wasting nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
