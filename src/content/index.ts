@@ -364,6 +364,34 @@ export * from "./recipes/sabzi-polo";
 export * from "./recipes/tahchin";
 export * from "./recipes/torshi";
 
+// ── portuguese ──
+export * from "./recipes/acorda-alentejana";
+export * from "./recipes/acorda-de-alho";
+export * from "./recipes/arroz-branco";
+export * from "./recipes/arroz-de-feijao";
+export * from "./recipes/arroz-de-grelos";
+export * from "./recipes/arroz-de-tomate";
+export * from "./recipes/bacalhau-a-bras";
+export * from "./recipes/bacalhau-gomes-de-sa";
+export * from "./recipes/bolinhos-de-bacalhau";
+export * from "./recipes/broa";
+export * from "./recipes/caldeirada";
+export * from "./recipes/caldo-verde";
+export * from "./recipes/canja-de-galinha";
+export * from "./recipes/cozido-a-portuguesa";
+export * from "./recipes/favas-guisadas";
+export * from "./recipes/feijoada-transmontana";
+export * from "./recipes/jaquinzinhos";
+export * from "./recipes/jardineira";
+export * from "./recipes/migas-de-pao";
+export * from "./recipes/ovos-mexidos-com-grelos";
+export * from "./recipes/pataniscas-de-bacalhau";
+export * from "./recipes/peixinhos-da-horta";
+export * from "./recipes/piri-piri";
+export * from "./recipes/refogado";
+export * from "./recipes/sardinhas-assadas";
+export * from "./recipes/sopa-de-feijao";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -381,6 +409,7 @@ export * from "./docs/culture-west-african";
 export * from "./docs/culture-filipino";
 export * from "./docs/culture-vietnamese";
 export * from "./docs/culture-persian";
+export * from "./docs/culture-portuguese";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -397,6 +426,7 @@ export * from "./weeks/west-african-weeks";
 export * from "./weeks/filipino-weeks";
 export * from "./weeks/vietnamese-weeks";
 export * from "./weeks/persian-weeks";
+export * from "./weeks/portuguese-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -748,6 +778,33 @@ import { mirzaGhasemi } from "./recipes/mirza-ghasemi";
 import { sabziPolo } from "./recipes/sabzi-polo";
 import { tahchin } from "./recipes/tahchin";
 import { torshi } from "./recipes/torshi";
+// portuguese
+import { acordaAlentejana } from "./recipes/acorda-alentejana";
+import { acordaDeAlho } from "./recipes/acorda-de-alho";
+import { arrozBranco } from "./recipes/arroz-branco";
+import { arrozDeFeijao } from "./recipes/arroz-de-feijao";
+import { arrozDeGrelos } from "./recipes/arroz-de-grelos";
+import { arrozDeTomate } from "./recipes/arroz-de-tomate";
+import { bacalhauABras } from "./recipes/bacalhau-a-bras";
+import { bacalhauGomesDeSa } from "./recipes/bacalhau-gomes-de-sa";
+import { bolinhosDeBacalhau } from "./recipes/bolinhos-de-bacalhau";
+import { broa } from "./recipes/broa";
+import { caldeirada } from "./recipes/caldeirada";
+import { caldoVerde } from "./recipes/caldo-verde";
+import { canjaDeGalinha } from "./recipes/canja-de-galinha";
+import { cozidoAPortuguesa } from "./recipes/cozido-a-portuguesa";
+import { favasGuisadas } from "./recipes/favas-guisadas";
+import { feijoadaTransmontana } from "./recipes/feijoada-transmontana";
+import { jaquinzinhos } from "./recipes/jaquinzinhos";
+import { jardineira } from "./recipes/jardineira";
+import { migasDePao } from "./recipes/migas-de-pao";
+import { ovosMexidosComGrelos } from "./recipes/ovos-mexidos-com-grelos";
+import { pataniscasDeBacalhau } from "./recipes/pataniscas-de-bacalhau";
+import { peixinhosDaHorta } from "./recipes/peixinhos-da-horta";
+import { piriPiri } from "./recipes/piri-piri";
+import { refogado } from "./recipes/refogado";
+import { sardinhasAssadas } from "./recipes/sardinhas-assadas";
+import { sopaDeFeijao } from "./recipes/sopa-de-feijao";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -764,6 +821,7 @@ import { cultureWestAfrican } from "./docs/culture-west-african";
 import { cultureFilipino } from "./docs/culture-filipino";
 import { cultureVietnamese } from "./docs/culture-vietnamese";
 import { culturePersian } from "./docs/culture-persian";
+import { culturePortuguese } from "./docs/culture-portuguese";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -785,6 +843,7 @@ import { westAfricanWeeks } from "./weeks/west-african-weeks";
 import { filipinoWeeks } from "./weeks/filipino-weeks";
 import { vietnameseWeeks } from "./weeks/vietnamese-weeks";
 import { persianWeeks } from "./weeks/persian-weeks";
+import { portugueseWeeks } from "./weeks/portuguese-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1135,6 +1194,33 @@ export const recipes: Recipe[] = [
   sabziPolo,
   tahchin,
   torshi,
+  // portuguese
+  acordaAlentejana,
+  acordaDeAlho,
+  arrozBranco,
+  arrozDeFeijao,
+  arrozDeGrelos,
+  arrozDeTomate,
+  bacalhauABras,
+  bacalhauGomesDeSa,
+  bolinhosDeBacalhau,
+  broa,
+  caldeirada,
+  caldoVerde,
+  canjaDeGalinha,
+  cozidoAPortuguesa,
+  favasGuisadas,
+  feijoadaTransmontana,
+  jaquinzinhos,
+  jardineira,
+  migasDePao,
+  ovosMexidosComGrelos,
+  pataniscasDeBacalhau,
+  peixinhosDaHorta,
+  piriPiri,
+  refogado,
+  sardinhasAssadas,
+  sopaDeFeijao,
 ];
 
 export const docs: ContentDoc[] = [
@@ -1153,6 +1239,7 @@ export const docs: ContentDoc[] = [
   cultureFilipino,
   cultureVietnamese,
   culturePersian,
+  culturePortuguese,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1187,6 +1274,8 @@ export const weekThemes: WeekTheme[] = [
   ...vietnameseWeeks,
   // persian
   ...persianWeeks,
+  // portuguese
+  ...portugueseWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1209,4 +1298,5 @@ export const weeks: WeekPlan[] = [
   ...filipinoWeeks,
   ...vietnameseWeeks,
   ...persianWeeks,
+  ...portugueseWeeks,
 ];
