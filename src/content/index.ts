@@ -265,5 +265,11 @@ export const weekThemes: WeekTheme[] = [
 // Weeks that are fully built out into executable plans (engine + days + shopping).
 export const weeks: WeekPlan[] = [
   week1Pasta,
+  week2Bread,
+  week3Eggs,
+  week4Legumes,
+  week5Polenta,
+  bonusSicilian,
+  bonusGarden,
   ...mexicanWeeks,
 ];
