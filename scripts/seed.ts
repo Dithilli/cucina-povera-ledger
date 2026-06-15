@@ -192,6 +192,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "A pot of steamed rice and the dishes that go with it — a scrap of meat for a wok of greens, a master stock kept for years, and congee for the scraps. Nothing wasted.",
   },
+  "south-indian": {
+    slug: "saadam-sambar",
+    name: "Sāadam & Sambar",
+    tagline:
+      "Rice, a pot of dal, a crackle of mustard seed and curry leaf, coconut and tamarind — the banana-leaf meal that feeds a family on legumes and ferment, wasting nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
