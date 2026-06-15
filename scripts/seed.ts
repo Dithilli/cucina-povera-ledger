@@ -120,6 +120,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, herbs, and legumes under dried lime — a little meat stretched across many bowls, the burnt crust the prize.",
   },
+  "portuguese": {
+    slug: "cozinha-pobre",
+    name: "Cozinha Pobre",
+    tagline:
+      "Bread, olive oil, salt cod, and beans — the faithful friend with 365 preparations, nothing wasted.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
