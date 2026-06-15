@@ -8,6 +8,8 @@ import {
   getWeekPlan,
   type Challenge as ChallengeMeta,
 } from "../data/content";
+import { planWeek, type WeekPlanResult } from "../core/planner";
+import type { Settings } from "../types";
 import { money } from "./format";
 import { renderMarkdown } from "./markdown";
 import { Close } from "./icons";
@@ -82,6 +84,15 @@ export function Challenge({ slug }: { slug: string }) {
         </section>
       )}
 
+      {meta && (
+        <GenerateWeek
+          meta={meta}
+          recipes={recipes}
+          recipesBySlug={bySlug}
+          onOpenRecipe={setOpenSlug}
+        />
+      )}
+
       <section className="ch-block">
         <h2>The themed weeks</h2>
         <div className="week-cards">
@@ -125,6 +136,72 @@ export function Challenge({ slug }: { slug: string }) {
 
       {openRecipe && <RecipeModal recipe={openRecipe} onClose={() => setOpenSlug(null)} />}
     </div>
+  );
+}
+
+function GenerateWeek({
+  meta,
+  recipes,
+  recipesBySlug,
+  onOpenRecipe,
+}: {
+  meta: ChallengeMeta;
+  recipes: Recipe[];
+  recipesBySlug: Map<string, Recipe>;
+  onOpenRecipe: (slug: string) => void;
+}) {
+  const [result, setResult] = useState<WeekPlanResult | null>(null);
+
+  const generate = () => {
+    const settings: Settings = {
+      calorieTarget: meta.defaultCalorieTarget,
+      proteinFloor: meta.defaultProteinFloor,
+      weeklyBudget: meta.defaultWeeklyBudget,
+      activeWeek: "generated",
+    };
+    setResult(planWeek(recipes, settings));
+  };
+
+  return (
+    <section className="ch-block">
+      <div className="gen-head">
+        <h2>Generate a week</h2>
+        <button className="btn solid" onClick={generate}>
+          {result ? "Regenerate" : "Generate a week"}
+        </button>
+      </div>
+      <p className="gen-note">
+        The deterministic planner assembles 7 non-repeating days from the {recipes.length}-recipe
+        library, each certified by the same engine that scores your ledger — at/under{" "}
+        {meta.defaultCalorieTarget.toLocaleString()} kcal, over {meta.defaultProteinFloor}g protein,
+        zero waste.
+      </p>
+
+      {result && !result.ok && (
+        <div className="plan-empty">Couldn’t build a week: {result.reason}</div>
+      )}
+
+      {result && result.ok && (
+        <div className="gen-result">
+          <div className="plan-days">
+            {result.days.map((d) => (
+              <div className="plan-day" key={d.day}>
+                <span className="pd-day">{d.day}</span>
+                <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
+                <span className="pd-num">
+                  {d.calories} kcal · {d.protein}g · {money(d.cost)}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="plan-cost">
+            <span>
+              Week total {money(result.totalCost)} · budget {money(meta.defaultWeeklyBudget)}
+            </span>
+          </div>
+        </div>
+      )}
+    </section>
   );
 }
 

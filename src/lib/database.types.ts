@@ -39,6 +39,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      app_settings: {
+        Row: {
+          active_week: string
+          calorie_target: number
+          challenge_slug: string
+          protein_floor: number
+          updated_at: string
+          user_id: string
+          weekly_budget: number
+        }
+        Insert: {
+          active_week: string
+          calorie_target: number
+          challenge_slug?: string
+          protein_floor: number
+          updated_at?: string
+          user_id: string
+          weekly_budget: number
+        }
+        Update: {
+          active_week?: string
+          calorie_target?: number
+          challenge_slug?: string
+          protein_floor?: number
+          updated_at?: string
+          user_id?: string
+          weekly_budget?: number
+        }
+        Relationships: []
+      }
       challenges: {
         Row: {
           created_at: string
@@ -109,6 +139,51 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      entries: {
+        Row: {
+          calories: number
+          challenge_slug: string
+          cost: number
+          created_at: string
+          date: string
+          dish: string
+          id: string
+          protein: number
+          updated_at: string
+          user_id: string
+          week: string
+          zero_waste: boolean
+        }
+        Insert: {
+          calories: number
+          challenge_slug?: string
+          cost: number
+          created_at?: string
+          date: string
+          dish?: string
+          id: string
+          protein: number
+          updated_at?: string
+          user_id: string
+          week: string
+          zero_waste: boolean
+        }
+        Update: {
+          calories?: number
+          challenge_slug?: string
+          cost?: number
+          created_at?: string
+          date?: string
+          dish?: string
+          id?: string
+          protein?: number
+          updated_at?: string
+          user_id?: string
+          week?: string
+          zero_waste?: boolean
+        }
+        Relationships: []
       }
       recipes: {
         Row: {

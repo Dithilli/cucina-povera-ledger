@@ -253,6 +253,10 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 .ch-block > h2 {
   font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0 0 14px;
 }
+.gen-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.gen-head > h2 { font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0; }
+.gen-note { font-size: 12.5px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 14px; }
+.gen-result { border-top: 1px solid var(--rule); padding-top: 12px; }
 
 /* week cards */
 .week-cards { display: grid; gap: 12px; }

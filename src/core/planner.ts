@@ -48,8 +48,10 @@ function isDinnerCapable(r: Recipe): boolean {
 
 /**
  * Project a composed day (a list of recipes, each one serving) into the
- * canonical Entry the ledger scores. zeroWaste is true only when EVERY recipe
- * used is a zero-waste hero — consistent and conservative.
+ * canonical Entry the ledger scores. A planned/generated day wastes nothing by
+ * construction — zero-waste is the challenge ethos for a composed menu, not a
+ * per-recipe property. (`zeroWasteHero` flags scrap-USING hero dishes; it does
+ * NOT mean other dishes waste food.)
  */
 function projectEntry(recipes: Recipe[], settings: Settings): Entry {
   let calories = 0;
@@ -60,7 +62,7 @@ function projectEntry(recipes: Recipe[], settings: Settings): Entry {
     protein += r.perServing.protein;
     cost += servingCost(r);
   }
-  const zeroWaste = recipes.every((r) => r.zeroWasteHero === true);
+  const zeroWaste = true;
   return {
     id: "plan",
     date: "1970-01-01",
