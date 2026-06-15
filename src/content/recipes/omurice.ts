@@ -32,4 +32,11 @@ export const omurice: Recipe = {
   modernMove:
     "It's purpose-built leftover management: cold day-old rice fries up separate and chewy instead of mushy, and any odd scrap of meat or vegetable in the fridge disappears into the ketchup rice.",
   tags: ["rice", "eggs", "fried-rice", "omelette", "leftovers", "zero-waste"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Omurice (Japanese Omelette Rice)",
+      url: "https://www.justonecookbook.com/omurice-japanese-omelette-rice/",
+      note: "Ketchup-seasoned chicken rice wrapped in a soft custardy omelette.",
+    },
+  ],
 };

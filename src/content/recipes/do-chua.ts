@@ -31,4 +31,16 @@ export const doChua: Recipe = {
     "Daikon can smell funky as it pickles — that's normal; a tight lid keeps it out of the rest of the fridge. Keeps 3 to 4 weeks refrigerated and only improves. All-carrot works if daikon is hard to find.",
   zeroWasteHero: true,
   tags: ["side", "base", "pickle", "do-chua", "make-ahead", "banh-mi", "vegan", "no-cook"],
+  sources: [
+    {
+      title: "Andrea Nguyen — Daikon and Carrot Pickle (Đồ Chua), Viet World Kitchen",
+      url: "https://www.vietworldkitchen.com/blog/2009/05/daikon-and-carrot-pickle-recipe-do-chua.html",
+      note: "Salting the roots, then the sweet-sour vinegar brine that keeps them crunchy",
+    },
+    {
+      title: "Hungry Huy — Vietnamese Pickled Carrots & Daikon (Đồ Chua)",
+      url: "https://www.hungryhuy.com/vietnamese-pickled-daikon-carrot-recipe-do-chua/",
+      note: "Julienne, brine ratio, and fridge keeping time",
+    },
+  ],
 };

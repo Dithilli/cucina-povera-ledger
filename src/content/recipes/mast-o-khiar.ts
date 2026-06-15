@@ -30,4 +30,11 @@ export const mastOKhiar: Recipe = {
   notes:
     "Doubles as a dip with barbari bread or a light lunch over rice. Thicker, it becomes the spoon-firm borani style.",
   tags: ["side", "base", "yogurt", "cucumber", "mint", "vegetarian", "no-cook"],
+  sources: [
+    {
+      title: "The Caspian Chef (Omid Roustaei) — Maast-o Khiar",
+      url: "https://thecaspianchef.com/2019/06/yogurt-with-dried-mint-cucumber-and-raisins/",
+      note: "Yogurt with cucumber, dried mint, and optional walnuts/rose — the base method.",
+    },
+  ],
 };

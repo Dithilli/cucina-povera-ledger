@@ -37,4 +37,8 @@ export const pritongGalunggong: Recipe = {
     "Salting and thoroughly drying the fish before a hot, hands-off fry is the whole technique — it gives shattering skin and crunchable tails so even the cheapest fish on the market eats like a treat, nothing wasted.",
   zeroWasteHero: true,
   tags: ["fish", "fried", "galunggong", "crispy", "sawsawan", "everyday"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Fried Galunggong)", url: "https://panlasangpinoy.com/fried-galunggong-with-salted-egg-and-tomato-salad/", note: "Salting and drying galunggong before a hot fry for crisp skin" },
+    { title: "Wikipedia — Galunggong (mackerel scad)", url: "https://en.wikipedia.org/wiki/Galunggong", note: "Round scad as the Filipino budget fish, typically fried and served with rice" },
+  ],
 };

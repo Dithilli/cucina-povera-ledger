@@ -36,4 +36,16 @@ export const thitXaoRau: Recipe = {
   modernMove:
     "A cornstarch-and-fish-sauce velveting marinade is the home-cook trick that makes cheap pork sear up tender and self-glazing — and cooking meat and vegetables in separate fast passes keeps both from stewing in the wok.",
   tags: ["stir-fry", "xao", "pork", "vegetables", "weeknight", "rice"],
+  sources: [
+    {
+      title: "Vicky Pham — Simple Vietnamese Stir Fry Sauce (Nước Sốt Xào)",
+      url: "https://vickypham.com/blog/simple-stir-fry-sauce/",
+      note: "Fish-sauce/oyster-sauce stir-fry sauce for pork with seasonal vegetables",
+    },
+    {
+      title: "Cooking with Lane — Vietnamese Chayote and Pork Stir Fry",
+      url: "https://cookingwithlane.com/vietnamese-chayote-pork-stir-fry/",
+      note: "Thin-sliced pork seared, then tossed with vegetables in separate fast passes",
+    },
+  ],
 };

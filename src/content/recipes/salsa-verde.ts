@@ -27,4 +27,11 @@ export const salsaVerde: Recipe = {
   modernMove:
     "Decide the register: raw-blended tomatillos give a grassy, electric salsa; boiled or charred ones give a rounder, sweeter sauce for braising. Same four ingredients, two different jobs.",
   tags: ["salsa", "tomatillo", "condiment", "side", "green"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Salsa Verde (Tomatillo Sauce)",
+      url: "https://www.mexicoinmykitchen.com/salsa-verde-recipe/",
+      note: "Simmered tomatillos and chile blended with garlic, onion, and cilantro.",
+    },
+  ],
 };

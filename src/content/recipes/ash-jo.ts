@@ -86,4 +86,11 @@ export const ashJo: Recipe = {
   modernMove:
     "Letting the pearl barley overcook until its starch breaks gives the whole pottage a risotto-like cream without any dairy in the body — the kashk on top is then pure accent, not the only richness.",
   tags: ["pottage", "barley", "legumes", "greens", "kashk", "ash", "one-pot"],
+  sources: [
+    {
+      title: "The Caspian Chef — Aash-e Jow",
+      url: "https://thecaspianchef.com/2018/12/aash-e-jow/",
+      note: "Barley-and-bean pottage simmered with herbs and spinach, finished with kashk, fried onion and a garlic-mint oil.",
+    },
+  ],
 };

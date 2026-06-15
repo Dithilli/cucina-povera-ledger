@@ -43,4 +43,8 @@ export const sayurSop: Recipe = {
   modernMove:
     "Building the broth on slowly-sweated garlic and shallots — then poaching eggs right in it — gives a meatless soup body and savor for pennies, and lets you swap in whatever vegetable is cheapest without changing the bones of the dish.",
   tags: ["vegetable", "soup", "clear-broth", "garlic", "flexible", "meatless"],
+  sources: [
+    { title: "Cook Me Indonesian — Cook Me Indonesian", url: "https://www.cookmeindonesian.com/sayur-sop-indonesian-vegetable-soup-vegan/", note: "clear home-style vegetable soup on a garlic broth, served with rice" },
+    { title: "Wikipedia — Sayur sop", url: "https://en.wikipedia.org/wiki/Sayur_sop", note: "vegetables in a clear broth definition" },
+  ],
 };

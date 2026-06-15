@@ -37,4 +37,16 @@ export const thitKho: Recipe = {
     "Traditionally made in a big batch for Tết and eaten down over a week, reheated daily — it deepens each time. Sub plain water plus a teaspoon of sugar if young coconut isn't around; the caramel still carries it.",
   zeroWasteHero: false,
   tags: ["dinner", "pork", "egg", "kho", "caramel-braise", "coconut", "make-ahead", "tet"],
+  sources: [
+    {
+      title: "Vicky Pham — Thịt Kho Trứng (Braised Pork Belly with Eggs)",
+      url: "https://www.vickypham.com/blog/vietnamese-caramelized-pork-belly-eggs-thit-kho-trung-tau",
+      note: "Pork belly and eggs braised in caramel, fish sauce, and coconut water — the Tết classic",
+    },
+    {
+      title: "RunAwayRice — Caramelized Pork and Eggs (Thit Kho Trung)",
+      url: "https://runawayrice.com/main-dishes/caramelized-pork-and-eggs/",
+      note: "Blanching the pork and building the braise on caramel for a clean sauce",
+    },
+  ],
 };

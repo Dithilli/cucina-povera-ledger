@@ -28,4 +28,11 @@ export const tingaDePollo: Recipe = {
     "Poach, don't boil, and keep the broth — it becomes the braising liquid, so the chicken cooks in its own stock and nothing washes down the drain.",
   notes: "A pound of chicken seasons a platter; the beans and tortillas do the filling.",
   tags: ["guiso", "chicken", "chipotle", "dinner", "tostada"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Chicken Tinga (Tinga de Pollo)",
+      url: "https://www.mexicoinmykitchen.com/chicken-tinga-recipe/",
+      note: "Poached, shredded chicken simmered in a chipotle-tomato sauce with caramelized onion.",
+    },
+  ],
 };

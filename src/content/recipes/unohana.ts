@@ -57,4 +57,11 @@ export const unohana: Recipe = {
   notes:
     "Okara is what's strained out when soy milk is pressed into tofu — ask a tofu shop or save it if you make your own. Keeps a few days refrigerated and is even better the next day.",
   tags: ["okara", "soybean", "tofu", "dashi", "zero-waste", "by-product"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Okara (Unohana) — Simmered Soy Pulp & Vegetables",
+      url: "https://www.justonecookbook.com/okara-unohana/",
+      note: "The irini technique — stir-frying okara and vegetables, then simmering in dashi until just damp.",
+    },
+  ],
 };

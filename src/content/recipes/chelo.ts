@@ -29,4 +29,7 @@ export const chelo: Recipe = {
   notes:
     "Tahdig can be built from rice alone, from a yogurt-rice paste, or from a layer of thin flatbread or sliced potato laid in the oil first. Low and slow is what makes it golden, not burnt.",
   tags: ["base", "side", "rice", "tahdig", "saffron", "vegetarian"],
+  sources: [
+    { title: "Naz Deravian (Bottom of the Pot) — Chelo ba Tahdig", url: "https://bottomofthepot.com/rice-and-the-art-of-getting-to-the-bottom-of-the-pot-chelo-ba-tahdig/", note: "two-step parboil-then-steam abkesh method and tahdig formation" },
+  ],
 };

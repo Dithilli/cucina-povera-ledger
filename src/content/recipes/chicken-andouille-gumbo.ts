@@ -55,4 +55,11 @@ export const chickenAndouilleGumbo: Recipe = {
   modernMove:
     "A long, dark roux is both your thickener and your entire flavor base — toast it to milk-chocolate brown and you need almost no meat to taste deeply of it. A few ounces of andouille perfumes the whole pot.",
   tags: ["gumbo", "roux", "holy-trinity", "chicken", "andouille", "rice", "creole", "one-pot"],
+  sources: [
+    {
+      title: "George Graham — Acadiana Table: Chicken and Andouille Gumbo",
+      url: "https://acadianatable.com/gumbo-and-more/",
+      note: "Authoritative Cajun source for the dark-roux, smoked-andouille chicken gumbo built on the holy trinity.",
+    },
+  ],
 };

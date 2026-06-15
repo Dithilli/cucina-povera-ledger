@@ -34,4 +34,11 @@ export const tamagoDon: Recipe = {
     "A genuinely good dashi matters most here since there's no meat hiding behind it; the anchovy-kelp stock in this collection works perfectly.",
   zeroWasteHero: true,
   tags: ["dinner", "egg", "donburi", "rice-bowl", "dashi", "cheapest", "meatless"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Oyakodon (Chicken and Egg Bowl)",
+      url: "https://www.justonecookbook.com/oyakodon/",
+      note: "Same donburi technique meatless — onion in dashi-soy-mirin and the two-pour half-set egg.",
+    },
+  ],
 };

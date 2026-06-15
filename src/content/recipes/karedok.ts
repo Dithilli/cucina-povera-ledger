@@ -41,4 +41,8 @@ export const karedok: Recipe = {
   notes:
     "If kencur is unavailable, fresh ginger plus a pinch of galangal approximates its sharp, camphor edge.",
   tags: ["peanut-sauce", "raw", "salad", "sundanese", "vegetables"],
+  sources: [
+    { title: "Marvellina — What To Cook Today", url: "https://whattocooktoday.com/karedok-west-javanese-vegetable-salad-with-sweet-and-sour-dressing.html", note: "raw Sundanese vegetable mix and kencur in the dressing" },
+    { title: "Wikipedia — Karedok", url: "https://en.wikipedia.org/wiki/Karedok", note: "Sundanese origin, kencur peanut sauce, and contrast with gado-gado" },
+  ],
 };

@@ -34,4 +34,11 @@ export const butterBeans: Recipe = {
     "Speckled or 'baby' limas work too and cook faster. The smoked seasoning meat carries the whole pot; smoked turkey keeps it leaner.",
   zeroWasteHero: true,
   tags: ["dinner", "side", "legumes", "butter-beans", "lima-beans", "smoked-pork", "soul-food"],
+  sources: [
+    {
+      title: "Camellia Brand — Southern Large Limas with Ham Hocks",
+      url: "https://www.camelliabrand.com/recipes/southern-large-limas-with-ham-hock/",
+      note: "Confirms the dried large lima (butter) bean and smoked ham hock pairing stewed Southern-style.",
+    },
+  ],
 };

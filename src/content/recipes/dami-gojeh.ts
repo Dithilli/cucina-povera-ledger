@@ -42,4 +42,7 @@ export const damiGojeh: Recipe = {
     "Frying the tomato paste to a brick-red fond before the fresh tomatoes go in builds a roasted depth, so a one-pot rice tastes braised rather than boiled.",
   zeroWasteHero: true,
   tags: ["rice", "dami", "tomato", "tahdig", "one-pot", "vegan"],
+  sources: [
+    { title: "Persian Mama — Kateh Gojeh Farangi (Tomato Rice)", url: "https://persianmama.com/kateh-gojeh-farangi-tomato-rice/", note: "one-pot tomato rice with tomato paste, turmeric, and a tahdig crust" },
+  ],
 };

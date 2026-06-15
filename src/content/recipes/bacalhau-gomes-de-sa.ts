@@ -33,4 +33,8 @@ export const bacalhauGomesDeSa: Recipe = {
   notes:
     "Created by José Luís Gomes de Sá, a Porto cod merchant. A textbook of frugality — three quarters of a pound of fish, a few eggs, and a bag of potatoes feed six.",
   tags: ["fish", "salt-cod", "bacalhau", "potato", "egg", "olives", "baked", "dinner"],
+  sources: [
+    { title: "David Leite — Bacalhau a Gomes de Sá (Leite's Culinaria)", url: "https://leitesculinaria.com/112173/recipes-bacalhau-a-gomes-de-sa.html", note: "Porto salt cod-potato-onion casserole with hard-boiled egg and olives" },
+    { title: "196 flavors — Bacalhau à Gomes de Sá", url: "https://www.196flavors.com/portugal-bacalhau-a-gomes-de-sa/", note: "named after Porto cod merchant José Luís Gomes de Sá; layered cod, potato, onion, egg, olives" },
+  ],
 };

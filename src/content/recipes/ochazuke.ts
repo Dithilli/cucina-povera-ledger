@@ -31,4 +31,11 @@ export const ochazuke: Recipe = {
   notes:
     "Genmaicha (toasted-brown-rice tea) gives a nuttier, more filling broth than plain sencha.",
   tags: ["rice", "tea", "leftovers", "zero-waste", "two-minute"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Ochazuke (Green Tea Over Rice)",
+      url: "https://www.justonecookbook.com/ochazuke/",
+      note: "Hot green tea or dashi poured over rice with salty toppings; genmaicha and sencha options.",
+    },
+  ],
 };

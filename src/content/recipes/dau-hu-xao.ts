@@ -36,4 +36,16 @@ export const dauHuXao: Recipe = {
   modernMove:
     "Brown the tofu hard and pull it before it goes back in at the end — that crust holds up against the sauce instead of turning to mush, and a press beforehand is the difference between frying and steaming.",
   tags: ["stir-fry", "xao", "tofu", "vegetables", "vegetarian-option", "rice"],
+  sources: [
+    {
+      title: "Vicky Pham — Simple Vietnamese Stir Fry Sauce (Nước Sốt Xào)",
+      url: "https://vickypham.com/blog/simple-stir-fry-sauce/",
+      note: "The fish-sauce/soy/sugar stir-fry sauce for tofu and whatever vegetables are cheap",
+    },
+    {
+      title: "The Viet Vegan — Lemongrass Tofu (Đậu Hũ Sả)",
+      url: "https://thevietvegan.com/lemongrass-tofu/",
+      note: "Pressing and pan-crisping tofu before it goes into the stir-fry",
+    },
+  ],
 };

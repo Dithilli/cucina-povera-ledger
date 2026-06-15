@@ -44,4 +44,8 @@ export const pepesIkan: Recipe = {
   modernMove:
     "Steaming inside a sealed banana leaf is moist cooking with no added fat and no lost liquid: the spice paste poaches into the fish and the leaf perfumes it, turning a one-dollar fish into something layered.",
   tags: ["fish", "steamed", "banana-leaf", "pepes", "sundanese", "no-fat"],
+  sources: [
+    { title: "Wikipedia — Pepes", url: "https://en.wikipedia.org/wiki/Pepes", note: "Sundanese banana-leaf steaming method with fish as the common filling" },
+    { title: "Cook Me Indonesian — Cook Me Indonesian", url: "https://www.cookmeindonesian.com/pepes-ikan-kembung-steamed-grilled-mackerel-in-banana-leaves/", note: "fish and spice paste steamed then grilled in banana leaves" },
+  ],
 };

@@ -33,4 +33,11 @@ export const yosenabe: Recipe = {
     "Yosenabe is the most forgiving dinner in the cuisine: any vegetable nearing its end, any scrap of fish, the heel of a tofu block all belong in it. Tofu carries the protein when the fish is thin. Do not pour out that final broth — it is the entire premise of the next two recipes.",
   zeroWasteHero: false,
   tags: ["nabe", "hot-pot", "tofu", "dashi", "one-pot", "communal"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Yosenabe (Japanese Hot Pot)",
+      url: "https://www.justonecookbook.com/yosenabe/",
+      note: "Lightly seasoned dashi simmered with tofu, vegetables, and fish or chicken at the table.",
+    },
+  ],
 };

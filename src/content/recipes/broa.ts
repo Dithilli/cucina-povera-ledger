@@ -32,4 +32,16 @@ export const broa: Recipe = {
   notes:
     "Broa is the everyday bread of northern Portugal, eaten with caldo verde, sardines, and every bean dish. Stale broa is never wasted — it thickens açorda and migas.",
   tags: ["bread", "cornbread", "maize", "rye", "base", "broa"],
+  sources: [
+    {
+      title: "David Leite — Leite's Culinaria",
+      url: "https://leitesculinaria.com/7723/recipes-portuguese-corn-bread-broa.html",
+      note: "Maize-and-rye dough with scalded cornmeal baked into the characteristic domed, cracked loaf.",
+    },
+    {
+      title: "Broa — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Broa",
+      note: "Background on broa as the maize/rye peasant bread of northern Portugal and Galicia.",
+    },
+  ],
 };

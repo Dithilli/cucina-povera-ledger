@@ -39,4 +39,8 @@ export const telurBalado: Recipe = {
   modernMove:
     "Blistering the boiled eggs in oil before saucing gives the smooth white a craggy, sauce-catching surface — the balado clings instead of sliding off.",
   tags: ["egg", "balado", "chili", "minangkabau", "protein"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/telur-balado-eggs-with-chili-sauce.html", note: "fried boiled eggs in a red balado paste of chili, shallot, garlic, tomato" },
+    { title: "Wikipedia — Balado (food)", url: "https://en.wikipedia.org/wiki/Balado_(food)", note: "Minangkabau/West Sumatra origin of balado sauce; telur balado as a variant" },
+  ],
 };

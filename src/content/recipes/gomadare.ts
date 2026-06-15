@@ -30,4 +30,16 @@ export const gomadare: Recipe = {
     "Keeps a few days refrigerated, though it thickens — slacken with a little dashi before serving. Stretch it with a spoon of miso or peanut butter for richer noodle sauces. Sesame that's gone slightly stale is revived by toasting, so this is a good home for the bottom of the jar.",
   zeroWasteHero: false,
   tags: ["side", "base", "sauce", "sesame", "goma-ae", "make-ahead"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, How to Make Sesame Sauce (Goma Dare)",
+      url: "https://www.justonecookbook.com/how-to-make-sesame-sauce-goma-dare/",
+      note: "Grinding toasted seeds in a suribachi and balancing with soy and sweetness.",
+    },
+    {
+      title: "Namiko Chen — Just One Cookbook, Japanese Spinach Salad with Sesame Dressing (Gomaae)",
+      url: "https://www.justonecookbook.com/spinach-with-sesame-sauce/",
+      note: "Dressing blanched, squeezed greens with the thick goma-ae version.",
+    },
+  ],
 };

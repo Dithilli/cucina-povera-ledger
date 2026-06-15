@@ -41,4 +41,8 @@ export const sinigangNaHipon: Recipe = {
   notes:
     "Shrimp cook in minutes, so this is the fastest sinigang — keep the shells on for both flavor and the frugal ritual of peeling at the table.",
   tags: ["soup", "shrimp", "tamarind", "sour", "vegetables", "one-pot"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/sinigang-na-hipon-sa-sampaloc/", note: "Shrimp in tamarind-sour broth; adding shrimp last so they don't overcook" },
+    { title: "Bebs — Foxy Folksy", url: "https://www.foxyfolksy.com/sinigang-na-hipon-shrimp-in-sour-soup/", note: "Souring agents and the quick 2–3 minute shrimp simmer" },
+  ],
 };

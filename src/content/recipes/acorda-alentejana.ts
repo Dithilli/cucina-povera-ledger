@@ -54,4 +54,8 @@ export const acordaAlentejana: Recipe = {
     "A zero-waste classic: the staler the bread the better it drinks the broth. The egg poaching water IS the soup base — never thrown out.",
   zeroWasteHero: true,
   tags: ["bread", "garlic", "coriander", "egg", "soup", "alentejo", "stale-bread"],
+  sources: [
+    { title: "Easy Portuguese Recipes — Alentejo Bread and Egg Soup (Açorda Alentejana)", url: "https://www.easyportugueserecipes.com/alentejo-bread-egg-soup-acorda-alentejana/", note: "raw garlic-coriander paste, bread, and poached egg scalded with hot broth" },
+    { title: "196 flavors — Açorda", url: "https://www.196flavors.com/portugal-acorda/", note: "Alentejo origin and cozinha pobre frugality" },
+  ],
 };

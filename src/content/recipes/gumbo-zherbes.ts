@@ -46,4 +46,16 @@ export const gumboZherbes: Recipe = {
     "The greens' own pot likker becomes the broth, so almost nothing is wasted and meat is optional — the dark roux plus an odd-numbered mix of greens carries a full pot of flavor on pennies of produce.",
   zeroWasteHero: true,
   tags: ["gumbo", "greens", "roux", "holy-trinity", "pot-likker", "vegetarian-option", "creole", "frugal"],
+  sources: [
+    {
+      title: "George Graham — Acadiana Table: Gumbo Z'herbes",
+      url: "https://acadianatable.com/2026/03/30/gumbo-zherbes/",
+      note: "Dark-roux green gumbo over the trinity with an odd number of greens for luck, served for the Lenten/Holy Thursday tradition.",
+    },
+    {
+      title: "Gumbo — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Gumbo",
+      note: "Covers gumbo z'herbes as the meatless Lenten 'gumbo of greens' simmered from a mix of leafy vegetables.",
+    },
+  ],
 };

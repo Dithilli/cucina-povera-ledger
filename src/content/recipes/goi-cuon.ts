@@ -35,4 +35,16 @@ export const goiCuon: Recipe = {
   notes:
     "No cooking once the rolls are filled — this is assembly, ideal for a hot night. Any leftover poached pork and shrimp go into the next day's bún or fried rice.",
   tags: ["fresh", "rolls", "herbs", "shrimp", "pork", "no-cook", "rice-paper"],
+  sources: [
+    {
+      title: "RunAwayRice — Fresh Spring Rolls with Pork and Shrimp (Goi Cuon)",
+      url: "https://runawayrice.com/appetizers/so-simple-spring-rolls/",
+      note: "Poaching pork and shrimp, soaking the rice paper, and the rolling method",
+    },
+    {
+      title: "Wikipedia — Gỏi cuốn",
+      url: "https://en.wikipedia.org/wiki/G%E1%BB%8Fi_cu%E1%BB%91n",
+      note: "Background: fresh (unfried) rolls of noodles, herbs, shrimp and pork with dip",
+    },
+  ],
 };

@@ -48,4 +48,15 @@ export const ovosMexidosComGrelos: Recipe = {
   notes:
     "The thriftiest of dinners — built entirely from eggs, a bunch of greens, garlic, and yesterday's bread. The blanching water goes into the next soup.",
   tags: ["eggs", "greens", "grelos", "garlic", "quick", "broa"],
+  sources: [
+    {
+      title: "Honest Cooking — Portuguese Rice with Turnip Greens (Arroz de Grelos), Rochelle Ramos",
+      url: "https://honestcooking.com/portuguese-recipe-arroz-grelos-turnip-greens/",
+      note: "Supports the Portuguese use of grelos (turnip tops) blanched and dressed in garlic and olive oil.",
+    },
+    {
+      title: "TasteAtlas — Ovos Mexidos (traditional Portuguese soft scrambled eggs)",
+      note: "Supports the Portuguese ovos mexidos tradition of soft scrambled eggs pulled off the heat while still glossy.",
+    },
+  ],
 };

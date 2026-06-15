@@ -31,4 +31,11 @@ export const tamagoyaki: Recipe = {
   notes:
     "No square pan? Roll in a small round skillet and square the block off in the bamboo mat at the end.",
   tags: ["eggs", "omelette", "dashi", "bento", "rolled"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Classic Tamagoyaki (Japanese Rolled Omelette)",
+      url: "https://www.justonecookbook.com/tamagoyaki/",
+      note: "Rolling thin layered sheets seasoned with dashi, sugar, soy, and mirin into a striped block.",
+    },
+  ],
 };

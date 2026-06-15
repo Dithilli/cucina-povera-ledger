@@ -35,4 +35,7 @@ export const tempeBacem: Recipe = {
   notes:
     "Braised tempe keeps 3–4 days refrigerated, so braise a big batch on cook day and fry to order through the week. The same braise works for firm tofu (tahu bacem) or hard-boiled eggs in the same pot.",
   tags: ["dinner", "tempe", "javanese", "sweet-soy", "protein", "make-ahead"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/tahu-tempeh-bacem.html", note: "Central Javanese braise in coconut water and palm sugar, then fry (bacem)" },
+  ],
 };

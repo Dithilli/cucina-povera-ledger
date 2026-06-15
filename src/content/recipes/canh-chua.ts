@@ -37,4 +37,16 @@ export const canhChua: Recipe = {
   modernMove:
     "Balance the broth by taste, not recipe — push sour with tamarind, salty with fish sauce, sweet with pineapple until the three lock together. Adding the sprouts and herbs off the heat keeps the soup alive instead of stewed.",
   tags: ["soup", "canh", "tamarind", "fish", "southern", "rice"],
+  sources: [
+    {
+      title: "Vicky Pham — Vietnamese Sweet & Sour Fish Soup (Canh Chua Ca)",
+      url: "https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/",
+      note: "Tamarind broth balanced sour-sweet with pineapple, tomato, and a little fish",
+    },
+    {
+      title: "Wikipedia — Canh chua",
+      url: "https://en.wikipedia.org/wiki/Canh_chua",
+      note: "Background: southern sweet-sour tamarind soup served over rice",
+    },
+  ],
 };

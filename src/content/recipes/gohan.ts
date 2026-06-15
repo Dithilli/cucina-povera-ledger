@@ -26,4 +26,11 @@ export const gohan: Recipe = {
   notes:
     "Day-old rice is never wasted: it becomes ochazuke (rice in hot tea or dashi), fried rice, or onigiri. The faint crust that forms at the bottom of a pot is okoge, prized for its toasty flavor — scrape it up rather than soaking it away. Wash rice water can be saved to blanch bitter greens or daikon, a classic mottainai trick.",
   tags: ["base", "side", "rice", "washoku", "staple"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Japanese Short-Grain Rice",
+      url: "https://www.justonecookbook.com/premium-japanese-short-grain-rice/",
+      note: "Rinsing, soaking, and the water ratio for distinct, glossy steamed grains.",
+    },
+  ],
 };

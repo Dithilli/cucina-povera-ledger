@@ -42,4 +42,11 @@ export const candiedYams: Recipe = {
   notes:
     "A stovetop method uses far less fuel and sugar than the casserole version, and keeps the potato's own flavor forward instead of burying it under marshmallow.",
   tags: ["sweet-potato", "yams", "side", "caramel", "frugal"],
+  sources: [
+    {
+      title: "Butter Be Ready — Southern Candied Yams (Stovetop)",
+      url: "https://www.butterbeready.com/southern-candied-yams-recipe/",
+      note: "Supports the stovetop method: sweet potatoes simmered then glazed in a reduced brown-sugar, butter, and warm-spice syrup.",
+    },
+  ],
 };

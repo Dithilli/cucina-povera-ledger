@@ -46,4 +46,11 @@ export const smotheredPorkChops: Recipe = {
   modernMove:
     "Browning the chops but finishing them in the gravy is the whole point of 'smothering' — the slow braise hydrates a lean, cheap cut that would dry out grilled, and the dredging flour thickens the sauce.",
   tags: ["pork", "braise", "smothered", "roux", "gravy", "rice", "one-pan"],
+  sources: [
+    {
+      title: "Jocelyn Delk Adams — Grandbaby Cakes",
+      url: "https://grandbaby-cakes.com/smothered-pork-chops-recipe/",
+      note: "Dredge-and-brown chops finished in a roux-built oniony brown gravy over rice.",
+    },
+  ],
 };

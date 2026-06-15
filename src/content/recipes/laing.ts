@@ -34,4 +34,8 @@ export const laing: Recipe = {
   notes:
     "Use only DRIED taro leaves, never fresh, unless you're certain of the variety — fresh gabi leaves of the wrong type can be intensely irritating raw.",
   tags: ["coconut", "taro-leaves", "bicolano", "bagoong", "vegetables", "rice"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/laing/", note: "Cooking dried taro leaves in coconut milk without stirring to kill the oxalate itch" },
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/laing-recipe/", note: "Bicolano dried-taro-leaf dish finished with thick coconut cream and chili" },
+  ],
 };

@@ -30,4 +30,7 @@ export const tahuGoreng: Recipe = {
   modernMove:
     "Salting and drying the tofu before it hits the oil pulls out surface water, so it puffs and crisps instead of steaming in its own moisture.",
   tags: ["tofu", "fried", "kecap-manis", "sambal", "warung"],
+  sources: [
+    { title: "Marvellina — What To Cook Today", url: "https://whattocooktoday.com/tahu-goreng-kecap.html", note: "fried tofu with a sweet soy (kecap manis) chili dip" },
+  ],
 };

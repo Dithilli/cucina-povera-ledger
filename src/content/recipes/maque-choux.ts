@@ -46,4 +46,11 @@ export const maqueChoux: Recipe = {
   notes:
     "Frozen corn works off-season; the cob-milk and stock steps are what separate maque choux from plain creamed corn.",
   tags: ["corn", "trinity", "cajun", "smothered", "vegetable"],
+  sources: [
+    {
+      title: "George Graham — Acadiana Table: Corn Maque Choux",
+      url: "https://acadianatable.com/2010/12/17/corn-maque-choux-with-shrimp/",
+      note: "Authoritative Cajun source for milking the cobs and smothering corn with the trinity, cream, and tomato.",
+    },
+  ],
 };

@@ -31,4 +31,11 @@ export const redBeansAndRice: Recipe = {
   notes:
     "Monday red beans came from putting a pot on the back of the stove to mind itself through the day's laundry, using the ham bone left from Sunday dinner. Make the bean pot ahead; the dish only improves overnight.",
   tags: ["dinner", "legumes", "red-beans", "rice", "sausage", "creole", "new-orleans"],
+  sources: [
+    {
+      title: "NewOrleans.com — Red Beans and Rice",
+      url: "https://www.neworleans.com/restaurants/traditional-new-orleans-foods/red-beans-and-rice/",
+      note: "Supports the Monday laundry-day tradition and the beans-over-rice service.",
+    },
+  ],
 };

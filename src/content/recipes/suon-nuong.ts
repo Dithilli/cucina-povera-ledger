@@ -31,4 +31,16 @@ export const suonNuong: Recipe = {
   modernMove:
     "Sugar in the marinade is the trick: it caramelizes into a lacquered, bittersweet crust that makes a thin, inexpensive chop taste like far more meat than it is.",
   tags: ["grilled-pork", "lemongrass", "rice-plate", "nuoc-cham", "marinade"],
+  sources: [
+    {
+      title: "Hungry Huy — Vietnamese Pork Chop (Sườn Nướng)",
+      url: "https://www.hungryhuy.com/vietnamese-pork-chops/",
+      note: "Garlic-lemongrass marinade and the high-heat grill that chars the sugar",
+    },
+    {
+      title: "RunAwayRice — Grilled Lemongrass Pork Chops (Suon Nuong Xa)",
+      url: "https://runawayrice.com/main-dishes/grilled-lemongrass-pork-chops/",
+      note: "Scoring thin chops and marinating before searing over high heat",
+    },
+  ],
 };

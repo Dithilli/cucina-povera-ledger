@@ -34,4 +34,11 @@ export const pataniscasDeBacalhau: Recipe = {
     "Pataniscas turn the smallest scraps and ends of bacalhau — too little to plate on their own — into a full, crowd-feeding dinner. Lisbon's classic frugal Friday meal.",
   zeroWasteHero: true,
   tags: ["fish", "salt-cod", "bacalhau", "fritters", "fried", "zero-waste", "dinner"],
+  sources: [
+    {
+      title: "Tia Maria — Tia Maria's Blog",
+      url: "https://tiamariasblog.com/pataniscas-de-bacalhao-easy-lent/",
+      note: "Confirms flat, pan-fried salt cod fritters of flaked bacalhau, egg, flour, onion, and parsley, served as a Lenten dish.",
+    },
+  ],
 };

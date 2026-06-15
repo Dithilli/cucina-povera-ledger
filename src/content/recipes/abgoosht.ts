@@ -47,4 +47,11 @@ export const abgoosht: Recipe = {
     "Traditionally cooked and served in a stone crock (dizi). Pierce the dried limes so they release their sour perfume without bursting; fish out and discard the skins before mashing if you prefer it milder.",
   zeroWasteHero: true,
   tags: ["lamb", "chickpeas", "white-beans", "stew", "two-course", "zero-waste"],
+  sources: [
+    {
+      title: "Persian Mama — Abgoosht (Dizi)",
+      url: "https://persianmama.com/abgoosht-persian-short-ribs-vegetable-stew/",
+      note: "One-pot abgoosht with chickpeas, beans, potato and dried lime served as broth-soaked bread (tileet) plus the mashed solids.",
+    },
+  ],
 };

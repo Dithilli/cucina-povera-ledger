@@ -38,4 +38,8 @@ export const pecel: Recipe = {
   modernMove:
     "Kaffir lime leaf pounded straight into the peanut paste perfumes the whole sauce from the inside — a free aromatic lift that separates pecel from a plain satay dressing.",
   tags: ["peanut-sauce", "vegetables", "kangkung", "javanese", "blanched"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/pecel-madiun-vegetables-in-peanut-sauce.html", note: "Javanese blanched vegetables with kencur/kaffir-lime peanut sauce" },
+    { title: "Wikipedia — Pecel", url: "https://en.wikipedia.org/wiki/Pecel", note: "pecel as a traditional Javanese boiled-vegetable salad with peanut sauce" },
+  ],
 };

@@ -45,4 +45,8 @@ export const pinakbet: Recipe = {
   notes:
     "Bitter melon's bitterness is the point — it's the Ilocano contrast that makes the bagoong taste sweeter.",
   tags: ["vegetables", "bagoong", "ginisa", "ilocano", "frugal"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Pinakbet Ilocano)", url: "https://panlasangpinoy.com/pakbet/", note: "Ilocano vegetable stew seasoned with bagoong isda; blooming the paste in the base" },
+    { title: "Bebs — Foxy Folksy", url: "https://www.foxyfolksy.com/pinakbet/", note: "Layering vegetables by toughness and steaming rather than stirring" },
+  ],
 };

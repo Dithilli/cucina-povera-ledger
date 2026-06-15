@@ -49,4 +49,11 @@ export const smotheredOkra: Recipe = {
   notes:
     "The vinegar's acid, like the tomato's, keeps okra from roping. Leave out the sausage for a vegetable side; keep it in for a one-pot dinner over rice.",
   tags: ["okra", "tomato", "smothered", "rice", "frugal"],
+  sources: [
+    {
+      title: "Chef John Folse — Smothered Okra and Tomatoes",
+      url: "https://www.fox8live.com/story/36200148/chef-john-folse-smothered-okra-and-tomatoes/",
+      note: "Smothering okra with tomato until the 'stringing' slime cooks off and thickens the pot.",
+    },
+  ],
 };

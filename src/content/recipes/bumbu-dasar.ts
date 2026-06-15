@@ -32,4 +32,7 @@ export const bumbuDasar: Recipe = {
     "This is the yellow/white workhorse base. Skip the turmeric and lean on more chili for a red bumbu; the structure is the same. Save the candlenut frying oil to start the next dish.",
   zeroWasteHero: true,
   tags: ["base", "bumbu", "spice-paste", "aromatics", "make-ahead", "pantry"],
+  sources: [
+    { title: "Cook Me Indonesian — Cook Me Indonesian", url: "https://www.cookmeindonesian.com/bumbu-dasar-merah-basic-red-spice-paste/", note: "make-ahead base spice paste — ingredients and frying-down technique" },
+  ],
 };

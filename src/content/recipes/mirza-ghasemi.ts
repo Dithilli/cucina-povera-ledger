@@ -41,4 +41,16 @@ export const mirzaGhasemi: Recipe = {
   notes:
     "From Gilan on the Caspian. Heavy on garlic by design. Some cooks fold the egg in fully; others leave it streaky — both are correct.",
   tags: ["eggplant", "eggs", "smoky", "tomato", "gilaki"],
+  sources: [
+    {
+      title: "Persian Mama — Mirza Ghasemi",
+      url: "https://persianmama.com/mirza-ghasemi-eggplant-tomato-dip/",
+      note: "Gilan-style charred eggplant with garlic, tomato, and egg.",
+    },
+    {
+      title: "The Caspian Chef (Omid Roustaei) — Mirza Ghasemi",
+      url: "https://thecaspianchef.com/2019/03/smoked-eggplant-spread-with-poached-eggs/",
+      note: "Confirms the Caspian/Gilaki origin and the smoke-over-flame technique.",
+    },
+  ],
 };

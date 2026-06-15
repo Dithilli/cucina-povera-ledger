@@ -28,4 +28,8 @@ export const tortangTalong: Recipe = {
   modernMove:
     "Flame-charring the eggplant before it ever meets the egg gives the omelette a deep smoky backbone — you're not frying raw eggplant, you're wrapping egg around something already cooked and roasty.",
   tags: ["eggplant", "egg", "tortang", "smoky", "vegetarian", "rice"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy (Basic Tortang Talong)", url: "https://panlasangpinoy.com/basic-tortang-talong-recipe/", note: "Charring and peeling the eggplant, then frying it in beaten egg" },
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/tortang-talong/", note: "Flattening the charred eggplant into a fan before the egg dip" },
+  ],
 };

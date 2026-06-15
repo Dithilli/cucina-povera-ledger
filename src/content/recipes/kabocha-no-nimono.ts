@@ -37,4 +37,11 @@ export const kabochaNoNimono: Recipe = {
   notes:
     "Keeps several days refrigerated and is often eaten cold from the box; it's a standard bento and tray-meal side, so it doubles as a vegetable course or a light meatless dinner over rice.",
   tags: ["dinner", "side", "nimono", "simmered", "kabocha", "squash", "dashi", "meatless"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Japanese Simmered Kabocha (Kabocha no Nimono)",
+      url: "https://www.justonecookbook.com/simmered-kabocha-squash/",
+      note: "Skin-down single layer, otoshibuta simmer in dashi-soy-sake, and resting to absorb broth.",
+    },
+  ],
 };

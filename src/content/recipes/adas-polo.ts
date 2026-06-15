@@ -47,4 +47,11 @@ export const adasPolo: Recipe = {
   modernMove:
     "Toasting the dried fruit in the spiced onion oil before layering caramelizes its sugars, so the sweetness reads as depth rather than candy against the savory lentils.",
   tags: ["rice", "polo", "tahdig", "lentils", "legumes", "dried-fruit"],
+  sources: [
+    {
+      title: "Naz Deravian (Bottom of the Pot) — Adas Polo",
+      url: "https://bottomofthepot.com/a-thanksgiving-offering-a-rice-and-lentil-dish-adas-polo/",
+      note: "Lentil-and-rice polo layered with caramelized onions, raisins and dates over a crisp tahdig, scented with saffron and cinnamon.",
+    },
+  ],
 };

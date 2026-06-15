@@ -34,4 +34,8 @@ export const gheymeh: Recipe = {
   notes:
     "A classic small-meat stretch: half a pound of meat plus a handful of split peas feeds six. The fried potatoes can be swapped for fried eggplant in summer.",
   tags: ["dinner", "stew", "split-peas", "tomato", "dried-lime", "potato", "khoresh"],
+  sources: [
+    { title: "The Caspian Chef (Omid Roustaei) — Khoresh Gheymeh", url: "https://thecaspianchef.com/2019/07/07/meat-and-yellow-split-pea-stew-with-roasted-potatoes/", note: "small-cubed meat, yellow split peas, dried lime, advieh, and crisp potatoes" },
+    { title: "Wikipedia — Gheimeh", url: "https://en.wikipedia.org/wiki/Gheimeh", note: "stew of diced meat, split peas, tomato, dried lime, topped with straw potatoes" },
+  ],
 };

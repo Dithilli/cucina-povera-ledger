@@ -27,4 +27,11 @@ export const calabacitas: Recipe = {
   modernMove:
     "Let the squash sweat under a lid in its own water rather than boiling it — it keeps shape and flavor, and the pan stays a stew, not a soup.",
   tags: ["verduras", "squash", "corn", "milpa", "three-sisters"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Calabacitas con Elote",
+      url: "https://www.mexicoinmykitchen.com/corn-and-zucchini-mexican-style/",
+      note: "Authentic squash-corn-tomato method with serrano and cheese.",
+    },
+  ],
 };

@@ -30,4 +30,11 @@ export const refogado: Recipe = {
   notes:
     "Refogado (or refogar) is the Portuguese sofrito. A jar in the fridge turns a pot of beans or rice into dinner in minutes.",
   tags: ["base", "refogado", "onion", "garlic", "tomato", "olive-oil"],
+  sources: [
+    {
+      title: "Sofrito — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Sofrito",
+      note: "Confirms refogado as the Portuguese sofrito with garlic, onion, and olive oil essential, tomato and bay the common additions.",
+    },
+  ],
 };

@@ -27,4 +27,11 @@ export const tamalesDeFrijol: Recipe = {
     "The float test is the whole game — properly aerated masa (fat beaten in until light, dough loose with broth) steams into a tender tamal instead of a dense brick.",
   notes: "Make a big batch on a Sunday; tamales are the meal-prep of Mesoamerica.",
   tags: ["masa", "beans", "tamales", "make-ahead", "steamed"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Black Bean Tamales",
+      url: "https://www.mexicoinmykitchen.com/black-beans-tamales-recipe/",
+      note: "Aerated masa spread around beans, wrapped and steamed; the float-test dough.",
+    },
+  ],
 };

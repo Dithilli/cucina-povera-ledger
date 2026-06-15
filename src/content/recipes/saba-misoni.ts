@@ -35,4 +35,11 @@ export const sabaMisoni: Recipe = {
     "Mackerel is among the most affordable and protein-dense fish, and oily fish like saba are prized for going further with bold seasoning — a little sauce carries a lot of rice. Sardines (iwashi) work the same way in this braise. Leftover glaze and flaked fish make an excellent rice bowl or onigiri filling the next day.",
   zeroWasteHero: false,
   tags: ["dinner", "fish", "mackerel", "miso", "simmered", "protein", "washoku"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Saba Misoni (Mackerel Simmered in Miso)",
+      url: "https://www.justonecookbook.com/saba-misoni-simmered-mackerel-in-miso-sauce/",
+      note: "The shimofuri blanch to clean the fish, ginger, and adding miso late so it keeps its aroma.",
+    },
+  ],
 };

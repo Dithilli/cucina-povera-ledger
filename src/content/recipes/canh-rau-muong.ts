@@ -32,4 +32,16 @@ export const canhRauMuong: Recipe = {
   modernMove:
     "A spoon of ground pork or a few dried shrimp turns plain water into a real broth for almost nothing — and pulling the greens off the heat the second they wilt keeps the pot clear and green instead of khaki.",
   tags: ["soup", "canh", "water-spinach", "greens", "rice", "weeknight"],
+  sources: [
+    {
+      title: "Vicky Pham — Water Spinach and Pork Noodle Soup (Canh Bún)",
+      url: "https://vickypham.com/blog/vietnamese-water-spinach-pork-noodle-soup-canh-bun/",
+      note: "Water spinach simmered in a light pork broth, a sister preparation to canh rau muống",
+    },
+    {
+      title: "Wikipedia — Ipomoea aquatica (rau muống / water spinach)",
+      url: "https://en.wikipedia.org/wiki/Ipomoea_aquatica",
+      note: "Background: the cheap, fast-cooking green at the heart of the soup",
+    },
+  ],
 };

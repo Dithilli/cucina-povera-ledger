@@ -41,4 +41,7 @@ export const arrozDeFeijao: Recipe = {
   modernMove:
     "Cooking the rice directly in the bean broth and mashing a handful of beans gives a creamy, self-saucing pot from nothing but pantry staples.",
   tags: ["legumes", "red-beans", "rice", "one-pot", "frugal"],
+  sources: [
+    { title: "We Travel Portugal — Arroz de Feijão (Portuguese Rice with Beans)", url: "https://wetravelportugal.com/arroz-de-feijao/", note: "beans simmered into a tomato refogado with rice cooked loose in the bean broth" },
+  ],
 };

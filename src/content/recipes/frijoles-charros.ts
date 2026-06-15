@@ -28,4 +28,16 @@ export const frijolesCharros: Recipe = {
   modernMove:
     "Build it like a soup, not a side — render the pork fat first and use it as the flavor base, so 2 oz of meat seasons four full bowls.",
   tags: ["beans", "pork", "brothy", "dinner", "one-pot"],
+  sources: [
+    {
+      title: "Frijoles charros — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Frijoles_charros",
+      note: "Brothy pinto beans stewed with onion, garlic, bacon, chile, and cured pork.",
+    },
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Frijoles de la Olla",
+      url: "https://www.mexicoinmykitchen.com/mexican-beans-recipe/",
+      note: "Brothy de-la-olla beans that form this dish's base.",
+    },
+  ],
 };

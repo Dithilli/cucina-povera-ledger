@@ -70,4 +70,11 @@ export const canjaDeGalinha: Recipe = {
     "The traditional Portuguese convalescent soup and Christmas-Eve starter. Cheap bone-in cuts make the best broth; the bones are simmered twice before they're done.",
   zeroWasteHero: true,
   tags: ["soup", "chicken", "rice", "broth", "mint", "whole-bird", "one-pot"],
+  sources: [
+    {
+      title: "Canja de galinha — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Canja_de_galinha",
+      note: "Portuguese chicken-and-rice soup flavoured with mint; rice cooked soft in the bird's own broth.",
+    },
+  ],
 };

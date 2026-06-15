@@ -31,4 +31,11 @@ export const chickenAndDumplings: Recipe = {
   notes:
     "Built to use a leftover roast-chicken carcass: simmer the bones for the broth and stretch the last scraps of meat across six bowls.",
   tags: ["chicken", "one-pot", "dumplings", "broth", "stretch", "finale"],
+  sources: [
+    {
+      title: "Gonna Want Seconds — Old-Fashioned Southern Chicken and Flat Dumplings",
+      url: "https://www.gonnawantseconds.com/chicken-and-southern-dumplings/",
+      note: "Supports the flat rolled dumplings cut from dough and simmered in broth, where the flour thickens the pot into gravy.",
+    },
+  ],
 };

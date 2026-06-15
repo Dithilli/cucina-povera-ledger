@@ -51,4 +51,11 @@ export const redRice: Recipe = {
   modernMove:
     "Darkening tomato paste in the bacon fat before the rice goes in builds a roasted, umami backbone — so three ounces of pork and a can of tomatoes flavour a pot that feeds six.",
   tags: ["rice", "one-pot", "tomato", "bacon", "lowcountry", "gullah"],
+  sources: [
+    {
+      title: "The Seasoned Mom — Charleston Red Rice",
+      url: "https://www.theseasonedmom.com/red-rice/",
+      note: "Lowcountry/Gullah tomato rice with bacon, traced to a 1950 Charleston cookbook.",
+    },
+  ],
 };

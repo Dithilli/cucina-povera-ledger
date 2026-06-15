@@ -34,4 +34,8 @@ export const sambalTerasi: Recipe = {
     "Adjust the bird's-eye chilies for heat; the big red chilies are mostly for color and body. For a vegetarian version, swap toasted terasi for a teaspoon of fermented soybean paste or a splash of soy — different but in the same savory register.",
   zeroWasteHero: true,
   tags: ["base", "side", "sambal", "condiment", "chili", "make-ahead"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/sambal-terasi-matang-cooked-shrimp-paste-chili-sauce.html", note: "cooked shrimp-paste chili relish with toasted terasi, tomato, and palm sugar" },
+    { title: "Marvellina — What To Cook Today", url: "https://whattocooktoday.com/sambal-terasi.html", note: "fried sambal terasi method" },
+  ],
 };

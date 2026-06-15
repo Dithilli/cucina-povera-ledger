@@ -99,4 +99,11 @@ export const ashAnar: Recipe = {
     "ash",
     "one-pot",
   ],
+  sources: [
+    {
+      title: "The Caspian Chef — Aash-e Anar (Pomegranate Soup)",
+      url: "https://thecaspianchef.com/2020/12/aash-e-anar-pomegranate-soup-with-meatballs/",
+      note: "Sweet-tart pomegranate pottage with yellow split peas, herbs and optional meatballs, balanced with pomegranate juice and molasses.",
+    },
+  ],
 };

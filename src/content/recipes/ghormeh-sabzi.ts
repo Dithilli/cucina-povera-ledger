@@ -33,4 +33,8 @@ export const ghormehSabzi: Recipe = {
   notes:
     "A little meat goes a long way: under a pound feeds six because the beans and the mountain of herbs carry the bulk. Even better the next day.",
   tags: ["dinner", "stew", "herbs", "kidney-beans", "dried-lime", "lamb", "khoresh"],
+  sources: [
+    { title: "Wikipedia — Ghormeh sabzi", url: "https://en.wikipedia.org/wiki/Ghormeh_sabzi", note: "long-sauteed parsley/cilantro/chive with fenugreek, kidney beans, dried lime, and lamb" },
+    { title: "Naz Deravian — Bottom of the Pot (cookbook)", note: "Azari-tradition ghormeh sabzi establishing the deep-fried-herb technique as the dish's backbone" },
+  ],
 };

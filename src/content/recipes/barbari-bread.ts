@@ -30,4 +30,8 @@ export const barbariBread: Recipe = {
   notes:
     "Best within hours of baking. Day-old barbari is never wasted — it goes into soups, under stews, or torn into yogurt as a fitfit-style sop.",
   tags: ["base", "bread", "flatbread", "sesame", "nigella", "vegetarian", "vegan"],
+  sources: [
+    { title: "Persian Mama — Noon Barbari", url: "https://persianmama.com/noon-barbari/", note: "roomal flour-and-soda glaze and sesame/nigella topping" },
+    { title: "Wikipedia — Barbari bread", url: "https://en.wikipedia.org/wiki/Barbari_bread", note: "yeast-leavened Iranian flatbread, flour-water glaze, Maillard crust" },
+  ],
 };

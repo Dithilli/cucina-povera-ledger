@@ -32,4 +32,16 @@ export const pozoleRojo: Recipe = {
     "The broth is the dish — toast the chiles to fragrant (not bitter), strain the blended base for a clean, glossy caldo, and let the hominy soak it up. The bone gives body a bouillon cube can't.",
   notes: "A small amount of pork stretches across a huge, generous pot — the frugal feast at its best.",
   tags: ["maíz", "hominy", "pork", "stew", "celebration"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Pozole Rojo",
+      url: "https://www.mexicoinmykitchen.com/red-pozole-rojo/",
+      note: "Hominy and pork in a strained toasted-chile broth, with the table garnishes.",
+    },
+    {
+      title: "Pozole — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pozole",
+      note: "Nahua origins, nixtamalized hominy, and guajillo/ancho red broth.",
+    },
+  ],
 };

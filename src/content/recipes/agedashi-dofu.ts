@@ -46,4 +46,11 @@ export const agedashiDofu: Recipe = {
   notes:
     "Grated daikon (oroshi) cuts the fried richness and is traditional — don't skip it if you can get the radish.",
   tags: ["tofu", "soybean", "dashi", "shallow-fry", "brothy"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Agedashi Tofu",
+      url: "https://www.justonecookbook.com/agedashi-tofu-2/",
+      note: "Potato-starch coating, shallow-frying, and the dashi-soy-mirin broth.",
+    },
+  ],
 };

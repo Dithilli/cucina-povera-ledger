@@ -31,4 +31,16 @@ export const nukazuke: Recipe = {
     "If you go away, refrigerate the bed to slow it, or bury a fistful of salt on top and rest it. Too sour means it needs more frequent stirring or a fresh handful of bran and a pinch of salt; too flat means it's hungry — feed it more vegetables. The spent bran clinging to vegetables can be wiped into the pot, not washed down the drain.",
   zeroWasteHero: false,
   tags: ["side", "base", "pickle", "fermented", "nuka", "mottainai", "make-ahead"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Tsukemono: A Guide to Japanese Pickles",
+      url: "https://www.justonecookbook.com/tsukemono-guide-to-japanese-pickles/",
+      note: "Nukazuke as the rice-bran-mash pickle, turned by hand daily, in the family of tsukemono.",
+    },
+    {
+      title: "Nukazuke — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Nukazuke",
+      note: "17th-century Edo origin, the nukadoko bed of bran, salt, and kombu, and its lactic fermentation and B vitamins.",
+    },
+  ],
 };

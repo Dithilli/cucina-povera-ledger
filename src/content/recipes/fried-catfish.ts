@@ -33,4 +33,11 @@ export const friedCatfish: Recipe = {
   modernMove:
     "A short buttermilk soak plus a cornmeal-heavy (not flour-heavy) dredge gives a sandy, gravelly crust that stays crisp far longer than a flour batter — the real fish-fry texture.",
   tags: ["fish", "catfish", "cornmeal", "cast-iron", "fried", "shallow-fry"],
+  sources: [
+    {
+      title: "Alton Brown — Southern Fried Catfish with a Cornmeal Crust",
+      url: "https://altonbrown.com/recipes/southern-fried-catfish/",
+      note: "Buttermilk soak plus a stone-ground cornmeal-and-flour dredge fried at 350°F — the technique this recipe follows.",
+    },
+  ],
 };

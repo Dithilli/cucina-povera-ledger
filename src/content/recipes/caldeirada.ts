@@ -37,4 +37,11 @@ export const caldeirada: Recipe = {
   modernMove:
     "Layering and steaming instead of stirring is the whole technique — the vegetables shield the fish, and the pot builds a rich broth from the wine and the catch's own juices with no stock at all.",
   tags: ["fish", "stew", "potatoes", "one-pot", "seafood", "no-waste"],
+  sources: [
+    {
+      title: "Caldeirada — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Caldeirada",
+      note: "Fishermen's stew of mixed cheap fish layered with potatoes, onions, peppers, and tomatoes in the catch's own juices.",
+    },
+  ],
 };

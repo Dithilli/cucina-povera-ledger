@@ -73,4 +73,11 @@ export const kukuSabzi: Recipe = {
     "The high herb-to-egg ratio plus a pinch of baking powder gives a kuku that's almost a savory herb cake — eaten room-temperature it travels and keeps for days, making it the best frugal protein of the week.",
   zeroWasteHero: true,
   tags: ["kuku", "frittata", "eggs", "herbs", "walnut", "barberry", "meatless"],
+  sources: [
+    {
+      title: "Ayeh Manfre — Cooking With Ayeh",
+      url: "https://cookingwithayeh.com/kuku-sabzi-persian-herb-frittata/",
+      note: "Family recipe supporting the high herb-to-egg ratio, walnut and barberry, served at Nowruz.",
+    },
+  ],
 };

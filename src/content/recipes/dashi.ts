@@ -28,4 +28,11 @@ export const dashi: Recipe = {
     "Ichiban ('first') dashi is the delicate broth for clear soups. Don't throw the solids out: simmer the same kombu and katsuobushi a second time in fresh water for niban ('second') dashi, a sturdier stock perfect for miso soup and simmered dishes — two stocks from one set of ingredients. After the niban dashi, the truly spent kombu and bonito become furikake or tsukudani (see zeroWasteHero). Strained dashi keeps 3 days refrigerated and freezes well in jars or cubes.",
   zeroWasteHero: true,
   tags: ["base", "stock", "dashi", "kombu", "katsuobushi", "umami", "mottainai"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, How to Make Dashi",
+      url: "https://www.justonecookbook.com/how-to-make-dashi/",
+      note: "Awase (ichiban) dashi method — remove kombu before boil, never boil katsuobushi; reuse the solids.",
+    },
+  ],
 };

@@ -30,4 +30,11 @@ export const misoshiru: Recipe = {
     "Misoshiru is endlessly thrifty — it's the natural home for odds and ends: a few greens, a handful of mushrooms, the soft end of a daikon, yesterday's tofu. Keep a tub of miso and a bag of wakame and you can build a bowl from a cup of dashi any night. Don't reboil leftovers hard; rewarm gently.",
   zeroWasteHero: false,
   tags: ["dinner", "side", "soup", "miso", "tofu", "wakame", "washoku", "quick"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Homemade Miso Soup",
+      url: "https://www.justonecookbook.com/homemade-miso-soup/",
+      note: "Dashi base with tofu and wakame; dissolving miso off the boil to keep its aroma.",
+    },
+  ],
 };

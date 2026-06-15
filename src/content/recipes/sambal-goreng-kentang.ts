@@ -44,4 +44,7 @@ export const sambalGorengKentang: Recipe = {
   modernMove:
     "Frying the potatoes hard first, then coating them only at the end, keeps them crisp inside the wet sambal — texture survives the sauce instead of dissolving into it.",
   tags: ["potato", "sambal", "kecap-manis", "fried", "frugal"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/sambal-goreng-kentang-roast-potatoes-in-spicy-chili-sauce.html", note: "fried potatoes tossed in a sweet-spicy sambal goreng paste" },
+  ],
 };

@@ -29,4 +29,11 @@ export const hushPuppies: Recipe = {
   modernMove:
     "Resting the batter and using grated onion with its juice lets the cornmeal hydrate evenly, so the puppies puff into a light interior instead of frying up dense and raw in the middle.",
   tags: ["cornmeal", "fried", "side", "hush-puppies", "deep-fry"],
+  sources: [
+    {
+      title: "Grits and Pinecones — Crispy Southern Hush Puppies",
+      url: "https://www.gritsandpinecones.com/hush-puppies/",
+      note: "Cornmeal-and-buttermilk batter with grated onion, deep-fried as the classic fish-fry side.",
+    },
+  ],
 };

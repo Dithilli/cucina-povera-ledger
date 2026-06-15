@@ -34,4 +34,8 @@ export const kareKare: Recipe = {
   modernMove:
     "Ground toasted rice, not just peanut butter, is what gives kare-kare its silky cling and nutty backbone — and leaving the stew under-seasoned on purpose lets the table-side bagoong do the salting, so the same gentle pot suits every eater.",
   tags: ["peanut", "oxtail", "tripe", "annatto", "vegetables", "stew"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/kare-kare-recipe/", note: "Ground toasted rice plus peanut butter as the thickener; finished at the table with bagoong" },
+    { title: "Panlasang Pinoy — Oxtail Kare-Kare", url: "https://panlasangpinoy.com/oxtail-kare-kare-recipe-peanut-stew/", note: "Annatto color, the vegetable parade, and the under-seasoned stew" },
+  ],
 };

@@ -27,4 +27,11 @@ export const frijolesPuercos: Recipe = {
     "Build on the chorizo's rendered fat the way refritos build on lard — the bean paste carries the chorizo flavor through the whole dish, so a few ounces go a long way.",
   zeroWasteHero: true,
   tags: ["beans", "chorizo", "cheese", "guiso", "festive"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Frijoles Puercos (Dirty Beans Dip)",
+      url: "https://www.mexicoinmykitchen.com/dirty-beans-dip-recipe/",
+      note: "Sinaloa-style refried beans enriched with chorizo, melting cheese, and chiles.",
+    },
+  ],
 };

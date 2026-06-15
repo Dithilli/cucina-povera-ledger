@@ -27,4 +27,7 @@ export const nasiPutih: Recipe = {
   notes:
     "Day-old chilled nasi putih is the only correct base for nasi goreng — fresh rice steams and clumps in the wok. Spread leftovers thin and chill fast so they dry out a touch.",
   tags: ["base", "side", "rice", "staple", "quick"],
+  sources: [
+    { title: "Wikipedia — Nasi campur", url: "https://en.wikipedia.org/wiki/Nasi_campur", note: "nasi putih as the plain-rice base of a composed Indonesian meal with lauk" },
+  ],
 };

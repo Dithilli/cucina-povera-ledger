@@ -29,4 +29,11 @@ export const picadillo: Recipe = {
     "Brown the meat hard first and build everything in its rendered fat — the half-pound of beef flavors the whole pot, and the potato carries it the rest of the way.",
   zeroWasteHero: true,
   tags: ["guiso", "beef", "potato", "stretch", "dinner"],
+  sources: [
+    {
+      title: "Mely Martínez — Mexico in My Kitchen, Mexican Picadillo (Ground Beef and Potatoes)",
+      url: "https://www.mexicoinmykitchen.com/mexican-picadillo-recipe/",
+      note: "Ground meat stretched with potato and carrot in a tomato base.",
+    },
+  ],
 };

@@ -30,4 +30,16 @@ export const piriPiri: Recipe = {
   notes:
     "Piri-piri travelled from Africa into the Portuguese kitchen and back out again. A frugal way to make plain grilled fish or a bowl of beans taste like a feast.",
   tags: ["chili", "sauce", "piri-piri", "condiment", "side", "base"],
+  sources: [
+    {
+      title: "David Leite — Leite's Culinaria",
+      url: "https://leitesculinaria.com/7745/recipes-portuguese-piri-piri-hot-sauce.html",
+      note: "Bird's-eye chilies, garlic, lemon/vinegar, and olive oil; piri-piri's route from Africa into the Portuguese kitchen.",
+    },
+    {
+      title: "Easy Portuguese Recipes — Homemade Hot Sauce (Piri Piri)",
+      url: "https://www.easyportugueserecipes.com/portuguese-homemade-hot-sauce-piri-piri/",
+      note: "Supports the chili-oil condiment built on African bird's-eye chili for grilled fish, chicken, and rice.",
+    },
+  ],
 };

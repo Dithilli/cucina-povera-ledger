@@ -34,4 +34,7 @@ export const tempeOrek: Recipe = {
   notes:
     "Kept dry it stays crisp a couple of days and travels well in a lunchbox. Add a handful of fried peanuts or anchovies to the glaze to stretch it further, the way warung cooks do.",
   tags: ["dinner", "tempe", "stir-fry", "sweet-soy", "crispy", "protein"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/tempeh-kecap-fried-tempeh-in-sweet-soy-sauce.html", note: "crispy fried tempe sticks tossed in a sticky kecap-manis chili glaze" },
+  ],
 };

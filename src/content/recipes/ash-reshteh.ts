@@ -82,4 +82,11 @@ export const ashReshteh: Recipe = {
   modernMove:
     "Pulling half the fried onions and the mint-garlic oil out as finishing garnishes turns a heavy bean stew into something layered — bitter-sweet allium and sharp kashk against the deep green base.",
   tags: ["pottage", "legumes", "noodles", "greens", "kashk", "ash", "one-pot"],
+  sources: [
+    {
+      title: "Naz Deravian (Bottom of the Pot) — Aash-e Reshteh",
+      url: "https://bottomofthepot.com/a-fresh-herb-bean-and-noodle-soup-aash-e-reshteh-azadi/",
+      note: "The Nowruz noodle-and-bean pottage of chickpeas, beans, lentils and herbs crowned with kashk, fried mint and onion.",
+    },
+  ],
 };

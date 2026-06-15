@@ -40,4 +40,11 @@ export const peixinhosDaHorta: Recipe = {
   notes:
     "A meat-free lenten dish — peixinhos da horta means 'little garden fish', eaten on fast days in place of fish. Works as a light dinner with bread and salad, or as a side to grilled fish or a tomato rice.",
   tags: ["green-beans", "fried", "batter", "lenten", "tempura-ancestor"],
+  sources: [
+    {
+      title: "David Leite — Leite's Culinaria",
+      url: "https://leitesculinaria.com/135672/recipes-peixinhos-da-horta.html",
+      note: "Confirms the dish as tempura green beans and the flour-and-fizzy-water batter; adapted from Rebecca Seal's 'Lisbon'.",
+    },
+  ],
 };

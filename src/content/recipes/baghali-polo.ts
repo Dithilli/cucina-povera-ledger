@@ -48,4 +48,11 @@ export const baghaliPolo: Recipe = {
   modernMove:
     "Adding the dried dill after the parboil, off the heat, keeps its grassy oils from cooking flat — the rice tastes of fresh herb even from a pantry jar.",
   tags: ["rice", "polo", "tahdig", "fava-beans", "dill", "herbs", "legumes"],
+  sources: [
+    {
+      title: "Wikipedia — Baghali polo",
+      url: "https://en.wikipedia.org/wiki/Baghali_polo",
+      note: "Confirms baghali polo as Iranian rice with fava beans and dill, steamed to a tahdig and served at Nowruz.",
+    },
+  ],
 };

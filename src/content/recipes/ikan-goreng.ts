@@ -39,4 +39,8 @@ export const ikanGoreng: Recipe = {
   modernMove:
     "Drying the marinated fish completely before it hits the oil is the whole trick: a wet fish steams and sticks, a dry one shatters. Frying small fish hard makes the bones crunchable, so nothing is left behind.",
   tags: ["fish", "fried", "turmeric", "marinated", "crispy", "everyday"],
+  sources: [
+    { title: "Wikipedia — Ikan goreng", url: "https://en.wikipedia.org/wiki/Ikan_goreng", note: "dish definition and turmeric-spiced regional context" },
+    { title: "Cook Me Indonesian — Cook Me Indonesian", url: "https://www.cookmeindonesian.com/ikan-goreng-deep-fried-fish/", note: "turmeric–coriander marinade and fry-hard technique" },
+  ],
 };

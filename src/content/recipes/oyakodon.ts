@@ -38,4 +38,11 @@ export const oyakodon: Recipe = {
   notes:
     "Cook one portion at a time in a small pan if you can; the egg sets far better in a single shallow layer than crowded into a big skillet.",
   tags: ["dinner", "chicken", "egg", "donburi", "rice-bowl", "dashi"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Oyakodon (Chicken and Egg Bowl)",
+      url: "https://www.justonecookbook.com/oyakodon/",
+      note: "Chicken and onion in dashi-soy-mirin, with the two-pour, pull-early half-set egg over rice.",
+    },
+  ],
 };

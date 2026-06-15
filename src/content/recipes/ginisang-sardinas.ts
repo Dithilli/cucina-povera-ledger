@@ -35,4 +35,7 @@ export const ginisangSardinas: Recipe = {
     "Building a real garlic–onion–tomato ginisa under the canned fish is what separates dinner from eating sardines cold from the tin — the fresh sofrito gives the cheap can depth and a sauce of its own.",
   zeroWasteHero: true,
   tags: ["fish", "canned", "sardines", "ginisa", "rice", "everyday"],
+  sources: [
+    { title: "Vanjo Merano — Panlasang Pinoy", url: "https://panlasangpinoy.com/ginisang-sardinas-recipe/", note: "Canned sardines sautéed over a fresh garlic–onion–tomato ginisa" },
+  ],
 };

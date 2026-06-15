@@ -33,4 +33,16 @@ export const nasuDengaku: Recipe = {
     "Stretch the dengaku miso — it keeps for weeks refrigerated and glazes grilled tofu, daikon, or konnyaku just as well, so a single batch seeds several dinners. Salting and resting the eggplant first draws out bitterness and helps it drink less oil, a thrifty move when oil is dear.",
   zeroWasteHero: false,
   tags: ["dinner", "eggplant", "miso", "vegetarian", "glaze", "washoku"],
+  sources: [
+    {
+      title: "Namiko Chen — Just One Cookbook, Miso Dengaku",
+      url: "https://www.justonecookbook.com/miso-dengaku/",
+      note: "The sweet dengaku miso glaze (miso, mirin, sake, sugar) and broiling it onto eggplant.",
+    },
+    {
+      title: "Namiko Chen — Just One Cookbook, Miso Glazed Eggplant (Nasu Dengaku)",
+      url: "https://www.justonecookbook.com/miso-glazed-eggplant/",
+      note: "Scoring, cooking the eggplant to silk, then broiling the glaze until it caramelizes.",
+    },
+  ],
 };

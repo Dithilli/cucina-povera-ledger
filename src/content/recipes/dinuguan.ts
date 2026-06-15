@@ -33,4 +33,8 @@ export const dinuguan: Recipe = {
     "Two non-negotiable techniques: let the vinegar boil off untouched before stirring, and add the blood low and slow with constant motion — that's what turns it into a velvet gravy rather than a grainy one. It's also the purest zero-waste cook there is: it rescues the blood and offcuts a butcher would otherwise bin.",
   zeroWasteHero: true,
   tags: ["nose-to-tail", "blood", "pork", "offal", "vinegar", "stew"],
+  sources: [
+    { title: "Lalaine Manalo — Kawaling Pinoy", url: "https://www.kawalingpinoy.com/dinuguan/", note: "Boiling the vinegar untouched, then stirring the blood in low and slow to avoid curdling" },
+    { title: "Panlasang Pinoy Meaty Recipes — Pork Dinuguan", url: "https://www.panlasangpinoymeatrecipes.com/dinuguan-recipe.htm", note: "Pork-blood stew with offal trimmings and chilies" },
+  ],
 };

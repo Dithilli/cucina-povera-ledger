@@ -52,4 +52,11 @@ export const dirtyRice: Recipe = {
   modernMove:
     "Hard-searing the chopped livers until they catch and form fond — not gently sweating them — is the trick: the Maillard crust reads as roasted meat, so the rice tastes far richer than its cost.",
   tags: ["rice", "one-pot", "offal", "chicken-liver", "trinity", "cajun", "nose-to-tail"],
+  sources: [
+    {
+      title: "RealCajunRecipes.com — Dirty Rice",
+      url: "https://www.realcajunrecipes.com/recipe/dirty-rice/",
+      note: "Traditional Cajun dirty rice using chopped chicken livers and gizzards with the holy trinity.",
+    },
+  ],
 };

@@ -35,4 +35,7 @@ export const tempeMendoan: Recipe = {
   notes:
     "Best the second it leaves the oil, so fry to order. The same batter and aromatics fry up tofu, sliced long beans, or oyster mushrooms when tempe runs short. Strain and reuse the frying oil.",
   tags: ["dinner", "tempe", "fried", "javanese", "batter", "snack"],
+  sources: [
+    { title: "Anita Jacobson — Daily Cooking Quest", url: "https://dailycookingquest.com/tempeh-mendoan-deep-fried-tempeh-with-spiced-batter.html", note: "Banyumas-style soft, half-cooked battered fried tempe" },
+  ],
 };

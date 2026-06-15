@@ -54,4 +54,11 @@ export const migasDePao: Recipe = {
     "Pure leftover-bread cookery: dry crusts are the point, not a compromise. Traditionally served alongside fried pork or sardines, but stands alone as a frugal dinner.",
   zeroWasteHero: true,
   tags: ["bread", "garlic", "paprika", "fried", "stale-bread", "alentejo"],
+  sources: [
+    {
+      title: "Easy Portuguese Recipes — Migas à Alentejana",
+      url: "https://www.easyportugueserecipes.com/migas-a-alentejana/",
+      note: "Confirms the Alentejo technique of frying leftover bread in garlic and olive oil and working it into a pressed cake.",
+    },
+  ],
 };

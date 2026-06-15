@@ -71,4 +71,11 @@ export const kukuSibzamini: Recipe = {
     "Grating cooled, already-boiled potato (instead of raw) lets the kuku set quickly and stay fluffy inside while the egg-coated edges crisp — a fried-potato-and-egg dinner for under a dollar a plate.",
   zeroWasteHero: true,
   tags: ["kuku", "frittata", "eggs", "potato", "saffron", "meatless", "frugal"],
+  sources: [
+    {
+      title: "Shadi Hasanzadenemati — Unicorns in the Kitchen",
+      url: "https://www.unicornsinthekitchen.com/persian-potato-patties-recipe-kuku-sibzamini/",
+      note: "Supports boiled-potato-and-egg kuku with turmeric and saffron, fried until golden.",
+    },
+  ],
 };

@@ -45,4 +45,7 @@ export const boraniBademjan: Recipe = {
   notes:
     "'Borani' covers a family of Persian yogurt dishes (spinach, beet, eggplant). The eggplant version is the most substantial and stands as a light dinner with bread.",
   tags: ["eggplant", "yogurt", "garlic", "mint", "side", "vegetarian"],
+  sources: [
+    { title: "Wikipedia — Borani", url: "https://en.wikipedia.org/wiki/Borani", note: "borani as a family of Persian garlicky-yogurt vegetable dishes, including the eggplant version" },
+  ],
 };

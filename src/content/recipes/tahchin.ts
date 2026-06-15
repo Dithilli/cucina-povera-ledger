@@ -47,4 +47,11 @@ export const tahchin: Recipe = {
   modernMove:
     "Binding the crust layer with yogurt and egg, not just oil, sets it into a sliceable golden cake — the tahdig becomes the whole structure, so a small piece of chicken reads as a celebration dish.",
   tags: ["rice", "tahdig", "saffron", "yogurt", "chicken", "baked"],
+  sources: [
+    {
+      title: "The Caspian Chef (Omid Roustaei) — Tahchin (Crispy Saffron Rice Cake)",
+      url: "https://thecaspianchef.com/2019/08/tahchin-savory-rice-cake/",
+      note: "Yogurt-egg-saffron rice bound and baked into a sliceable cake with chicken.",
+    },
+  ],
 };

@@ -35,4 +35,11 @@ export const hoppinJohn: Recipe = {
     "Hoppin' John is the South's New Year good-luck plate, but it's a frugal staple any night. The technique is straight from West African rice cookery carried over by enslaved cooks of the Carolina Lowcountry.",
   zeroWasteHero: true,
   tags: ["dinner", "legumes", "black-eyed-peas", "rice", "smoked-pork", "lowcountry"],
+  sources: [
+    {
+      title: "Hoppin' John — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Hoppin'_John",
+      note: "Documents the Gullah/Lowcountry origins, West African rice-and-pea ancestry, and the New Year's good-luck tradition.",
+    },
+  ],
 };
