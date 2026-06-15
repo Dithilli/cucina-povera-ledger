@@ -138,6 +138,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Three thousand potatoes, freeze-dried chuño, quinoa, and a fistful of ají — the highland table that wastes nothing.",
   },
+  "brazilian": {
+    slug: "feijao-e-farinha",
+    name: "Feijão e Farinha",
+    tagline:
+      "Rice, the daily pot of beans, toasted cassava farofa, and a refogado — the comida caseira plate that stretches and wastes nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
