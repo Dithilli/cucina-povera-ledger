@@ -2,12 +2,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// base: "/" suits a custom domain (you said you'll buy a URL). If you instead
-// deploy to https://<user>.github.io/<repo>/ without a custom domain, set
-// base to "/<repo>/".
+// Deployed to https://dithilli.github.io/cucina-povera-ledger/ (GitHub Pages
+// project page), so base must be the repo path. If you later add a custom
+// domain (Settings → Pages + public/CNAME), change this back to "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/cucina-povera-ledger/",
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],
