@@ -10,10 +10,14 @@ export const WEEK_PRESETS = [
   "Bonus — Garden",
 ] as const;
 
+// Per-MEAL targets, not per-day. The challenge is one cucina povera dinner a
+// night — these are goals to aim at, shown alongside the entry. Only zero-waste
+// gates whether a night is "kept" (see `mealPasses`); calories, protein, and
+// cost are tracked and compared to these, but never pass/fail.
 export const DEFAULT_SETTINGS: Settings = {
-  calorieTarget: 2000,
-  proteinFloor: 100,
-  weeklyBudget: 55,
+  calorieTarget: 700,
+  proteinFloor: 15,
+  weeklyBudget: 14,
   activeWeek: "Week 1 — Pasta",
 };
 

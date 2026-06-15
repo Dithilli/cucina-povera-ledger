@@ -22,7 +22,7 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { Entry, Ledger, Settings } from "../src/types";
 import type { Recipe } from "../src/content/types";
 import {
-  dayPasses,
+  mealPasses,
   currentStreak,
   weekSummary,
   weekGroups,
@@ -250,7 +250,7 @@ server.tool(
 
 server.tool(
   "generate_week",
-  "Assemble a passing 7-day week from the challenge's recipe library — every day at/under the calorie target, over the protein floor, zero waste, no dinner repeated. Deterministic by default (cheapest passing week); set ai=true to have Claude pick the tastiest, most varied passing week from the same vetted dishes (writes an intro + per-day blurbs).",
+  "Assemble a 7-night plan from the challenge's recipe library — one cucina povera dinner per night, ranked cheapest-first, zero waste, no dinner repeated. Calories/protein/cost are reported as targets, not gates. Deterministic by default; set ai=true to have Claude pick the tastiest, most varied plan from the same vetted dishes (writes an intro + per-night blurbs). Returns the plan or the binding constraint.",
   { challenge: z.string().default(DEFAULT_CHALLENGE), ai: z.boolean().default(false) },
   guard(async ({ challenge, ai }) => {
     const pool: Recipe[] = (await fetchRecipes(challenge)).map(toRecipe);
@@ -324,7 +324,7 @@ server.tool(
 
 server.tool(
   "get_stats",
-  "Read the configured user's ledger: streak of kept days, this week vs budget, and the efficiency stats.",
+  "Read the configured user's ledger: streak of kept nights, this week vs budget, and the efficiency stats.",
   {},
   guard(async () => {
     const ledger = await loadUserLedger();
@@ -340,7 +340,7 @@ server.tool(
 
 server.tool(
   "log_day",
-  "Log a day to the user's ledger. Returns whether the day is KEPT (at/under calorie target, at/over protein floor, zero waste).",
+  "Log a night's dinner to the user's ledger. Returns whether the night is KEPT (you cooked it and wasted nothing). Calories, protein, and cost are logged as targets to aim at — they do NOT gate.",
   {
     date: z.string().describe("YYYY-MM-DD"),
     calories: z.number().int().nonnegative(),
@@ -367,7 +367,7 @@ server.tool(
     };
     const v = validateEntry(entry);
     if (!v.ok) return fail(`Invalid entry: ${JSON.stringify(v)}`);
-    const passed = dayPasses(entry, ledger.settings);
+    const passed = mealPasses(entry, ledger.settings);
     const { error } = await db.from("entries").upsert(
       {
         id: entry.id,

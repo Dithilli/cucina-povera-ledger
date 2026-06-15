@@ -7,47 +7,47 @@ export const challenge: ContentDoc = {
   kind: "challenge",
   body: `# The Cucina Povera Challenge
 
-Eat beautifully inside hard limits, using only humble ingredients, wasting
-nothing. The constraint is the creativity. Cucina povera is the perfect vehicle
-because constraint is literally its aesthetic — the whole cuisine exists because
-someone had almost nothing and made it sing. You are not depriving yourself; you
-are doing historical re-enactment with a scoreboard.
+Cook one beautiful cucina povera dinner a night, using only humble ingredients,
+wasting nothing. The constraint is the creativity. Cucina povera is the perfect
+vehicle because constraint is literally its aesthetic — the whole cuisine exists
+because someone had almost nothing and made it sing. You are not on a diet; you
+are doing historical re-enactment with a scoreboard, one night at a time.
 
 ## The premise
 
-Every week, eat well within a weekly grocery budget and a daily calorie target,
-using cucina povera ingredients, with a zero-waste ethos. You "win" a week if you
-stayed in budget, hit your numbers every day, used every scrap, and didn't repeat
-a dinner.
+Each night, cook a cucina povera dinner and waste nothing. That's the whole game.
+Logging every meal for a week is a lot to ask — so the unit here is a single
+dinner, the one you'd actually look forward to. A night is **kept** when you
+cooked it and used every scrap. Keep enough nights in a row and a streak builds.
 
-## The three dials
+## The three numbers — targets, not lines
 
-The numbers you already track:
+You log calories, protein, and cost for each dinner, but none of them pass or
+fail you. They're there to aim at and to compare over time:
 
-- **Calories** — the daily target (default 2,000). This is the focus mechanism:
-  it's the line, not a suggestion.
-- **Cost** — a weekly grocery cap (start around $55). Once you find your groove,
-  ratchet it down a week at a time as a difficulty setting.
-- **Protein** — a floor of ~100g/day. The most important rule: it makes a deficit
-  livable instead of punishing, keeps the weight you lose from being muscle, and is
-  a genuine *cooking puzzle* — squeezing 100g out of legumes, eggs, anchovy, and a
-  little pecorino on a budget is the real game.
+- **Cost** — the heart of it. Cucina povera is the kitchen of the poor; keep it
+  cheap (aim around a couple of dollars a plate). But price is deeply regional and
+  hard to pin down for one cook, so it's *your* honest estimate, not a cap. Down
+  the line, that's what makes regional leaderboards possible — comparing cooks
+  against their own market, not a single global number.
+- **Calories** — a per-meal target (default ~700). A satisfying dinner, not a
+  deprivation. Aim at it; don't obey it.
+- **Protein** — a per-meal target (default ~15g). Legumes, eggs, anchovy, a little
+  pecorino do the work. It's a nudge toward eating well, not a gate.
 
 ## House rules
 
-1. Hit the protein floor every day (satiety + muscle-sparing).
-2. A vegetable minimum each day — volume is what fills you at a deficit, so this is
-   self-interest, not virtue.
-3. Zero waste: rinds become brodo, stale bread becomes pangrattato or pappa, bean
-   liquid becomes sauce. Authentic *and* it stretches the budget.
-4. No dinner repeats within a week — forces invention.
-5. One "precious thread" allowed per week: a great finishing oil, the anchovy tin,
+1. Zero waste: rinds become brodo, stale bread becomes pangrattato or pappa, bean
+   liquid becomes sauce. Authentic *and* it stretches the budget. This is the one
+   rule that decides a kept night.
+2. No dinner repeats within a week — forces invention.
+3. One "precious thread" allowed per week: a great finishing oil, the anchovy tin,
    the aged pecorino. The contadino's one luxury, used sparingly.
-6. Dinners get plated like you mean it. The deficit shouldn't show on the plate.
+4. Dinners get plated like you mean it. Cheap shouldn't show on the plate.
 
 ## The themed weeks
 
-Same dials, new palette, so it never gets stale:
+A rotating palette of dinners, so it never gets stale:
 
 - **Week 1 — Pasta** (Southern pasta poverty: mollica, aglio e olio, pasta e patate)
 - **Week 2 — Bread** (pappa al pomodoro, ribollita, panzanella, acquacotta)
@@ -58,18 +58,18 @@ Same dials, new palette, so it never gets stale:
 
 ## The scoreboard
 
-Log per day: calories, cost, protein, dish, and whether the day wasted nothing.
-Two headline efficiency stats are worth optimizing — **cost per 1,000 kcal** and
-**cost per 100g protein** — plus a streak of consecutive *kept* days (under the
-calorie target, over the protein floor, zero waste). At week's end, ask: did you
-go four-for-four on the rules?
+Log each night: the dish, calories, protein, cost, and whether it wasted nothing.
+The streak counts consecutive *kept* nights — cooked and zero-waste. Two efficiency
+stats are worth optimizing for the sport of it — **cost per 1,000 kcal** and **cost
+per 100g protein** — and a weekly budget shows how the dinners add up. The point
+isn't to hit a number; it's to keep showing up to cook.
 
 ## Why it works
 
-Adherence is the hard part of every diet, and this replaces willpower with a game
-you're intrinsically motivated to play. The protein floor and vegetable minimum do
-the quiet health work underneath, so the calorie target stops feeling like
-punishment — the "without hating myself" lever, pointed at the goal you actually
-care about.
+This isn't really a diet — it's a reason to cook the tradition every night, tight
+and cheap, with nothing thrown away. Removing the pass/fail gates removes the
+willpower tax; what's left is a game you're intrinsically motivated to play. The
+calorie and protein targets do their quiet good-sense work underneath, while the
+real pull is simple: what cheap, beautiful thing will you make tonight?
 `,
 };

@@ -4,7 +4,7 @@
  *
  * It reads and writes the canonical data file (public/ledger.json) using the
  * same pure core as the web UI, so the two can never disagree about what a
- * "kept" day is or how the efficiency stats are computed.
+ * "kept" night is or how the efficiency stats are computed.
  *
  * Run with: npm run ledger -- <command> [flags]
  *
@@ -31,7 +31,7 @@ import {
   removeEntry,
   updateSettings,
   validateEntry,
-  dayPasses,
+  mealPasses,
   currentStreak,
   weekGroups,
   weekSummary,
@@ -90,7 +90,7 @@ function cmdAdd(args: Record<string, string | boolean>): void {
     process.exit(1);
   }
   save(upsertEntry(l, entry));
-  const kept = dayPasses(entry, l.settings);
+  const kept = mealPasses(entry, l.settings);
   console.log(
     `Logged ${entry.date} (${entry.week}): ${entry.calories} kcal, ${entry.protein}g, ${m(
       entry.cost
@@ -119,7 +119,7 @@ function cmdList(args: Record<string, string | boolean>): void {
     return;
   }
   for (const e of rows) {
-    const kept = dayPasses(e, l.settings) ? "✓" : " ";
+    const kept = mealPasses(e, l.settings) ? "✓" : " ";
     console.log(
       `${kept} ${e.date}  ${String(e.calories).padStart(4)}kcal ${String(e.protein).padStart(
         3
@@ -134,14 +134,14 @@ function cmdStats(args: Record<string, string | boolean>): void {
   if (week) {
     const s = weekSummary(l, week);
     console.log(`${week}`);
-    console.log(`  days logged     ${s.days}`);
+    console.log(`  nights logged   ${s.meals}`);
     console.log(`  spend           ${m(s.cost)} of ${m(l.settings.weeklyBudget)} budget`);
     console.log(`  avg calories    ${s.avgCalories} (target ${l.settings.calorieTarget})`);
     console.log(`  avg protein     ${s.avgProtein}g (floor ${l.settings.proteinFloor}g)`);
     console.log(`  $ / 1,000 kcal  ${mn(s.costPerKcal)}`);
     console.log(`  $ / 100g protein ${mn(s.costPerProtein)}`);
   } else {
-    console.log(`Streak: ${currentStreak(l)} days kept\n`);
+    console.log(`Streak: ${currentStreak(l)} nights kept\n`);
     for (const g of weekGroups(l)) {
       console.log(
         `${g.week.padEnd(20)} ${m(g.summary.cost).padStart(8)}  ${mn(

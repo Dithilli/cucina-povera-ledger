@@ -5,7 +5,7 @@ import {
   upsertEntry,
   removeEntry,
   updateSettings,
-  dayPasses,
+  mealPasses,
   currentStreak,
   weekGroups,
   weekSummary,
@@ -298,7 +298,7 @@ export default function App() {
                     suffix="kcal"
                   />
                   <NumField
-                    label="Protein floor"
+                    label="Protein target"
                     value={settings.proteinFloor}
                     onChange={(v) => commit(updateSettings(ledger, { proteinFloor: v }))}
                     suffix="g"
@@ -311,8 +311,9 @@ export default function App() {
                   />
                 </div>
                 <p className="set-note">
-                  A day counts as kept when it lands at or under the calorie target, meets the
-                  protein floor, and wastes nothing.
+                  A night is kept when you cook the dinner and waste nothing. Calories, protein,
+                  and cost are targets to aim at — shown beside each meal, never pass/fail (and
+                  cost is yours to estimate; prices are regional).
                 </p>
               </div>
             )}
@@ -324,7 +325,7 @@ export default function App() {
                   <span>Streak</span>
                 </div>
                 <div className="tile-num">{streak}</div>
-                <div className="tile-sub">days kept</div>
+                <div className="tile-sub">nights kept</div>
               </div>
               <div className={`tile ${overBudget ? "alert" : ""}`}>
                 <div className="tile-top">
@@ -348,13 +349,13 @@ export default function App() {
                   <span>$ / 100g protein</span>
                 </div>
                 <div className="tile-num">{moneyOrDash(active.costPerProtein)}</div>
-                <div className="tile-sub">the real test</div>
+                <div className="tile-sub">this week</div>
               </div>
             </section>
 
             <section className="register">
               <div className="reg-head">
-                <h2>{editingId ? "Amend the entry" : "Enter the day"}</h2>
+                <h2>{editingId ? "Amend the entry" : "Log tonight’s dinner"}</h2>
                 <span className="reg-week">{settings.activeWeek}</span>
               </div>
               <div className="reg-grid">
@@ -383,7 +384,7 @@ export default function App() {
                     id="f-cal"
                     type="number"
                     inputMode="numeric"
-                    placeholder="2000"
+                    placeholder="700"
                     value={form.calories}
                     onChange={(e) => setForm({ ...form, calories: e.target.value })}
                   />
@@ -394,7 +395,7 @@ export default function App() {
                     id="f-prot"
                     type="number"
                     inputMode="numeric"
-                    placeholder="100"
+                    placeholder="15"
                     value={form.protein}
                     onChange={(e) => setForm({ ...form, protein: e.target.value })}
                   />
@@ -405,7 +406,7 @@ export default function App() {
                     id="f-cost"
                     type="number"
                     inputMode="decimal"
-                    placeholder="7.50"
+                    placeholder="1.50"
                     value={form.cost}
                     onChange={(e) => setForm({ ...form, cost: e.target.value })}
                   />
@@ -469,17 +470,13 @@ export default function App() {
                       <span className="c-act" />
                     </div>
                     {g.entries.map((e) => {
-                      const kept = dayPasses(e, settings);
+                      const kept = mealPasses(e, settings);
                       return (
                         <div className={`row ${kept ? "kept" : ""}`} key={e.id}>
                           <span className="c-date">{formatDate(e.date)}</span>
                           <span className="c-dish">{e.dish || <em>—</em>}</span>
-                          <span className={`c-num ${e.calories > settings.calorieTarget ? "bad" : ""}`}>
-                            {e.calories}
-                          </span>
-                          <span className={`c-num ${e.protein < settings.proteinFloor ? "bad" : ""}`}>
-                            {e.protein}
-                          </span>
+                          <span className="c-num">{e.calories}</span>
+                          <span className="c-num">{e.protein}</span>
                           <span className="c-num">{money(e.cost)}</span>
                           <span className="c-mark">
                             {kept ? (

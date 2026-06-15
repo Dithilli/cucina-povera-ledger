@@ -20,8 +20,28 @@ interface AiDayView {
   cost: number;
 }
 import { money } from "./format";
+import { scaleQty } from "./scale";
 import { renderMarkdown } from "./markdown";
 import { Close } from "./icons";
+
+// The diner's preferred household size, remembered across recipes — set it once
+// (e.g. to 1 if you cook for yourself) and every recipe opens scaled to it.
+const SERVINGS_KEY = "cucina:preferred-servings";
+function readPreferredServings(fallback: number): number {
+  try {
+    const v = Number(localStorage.getItem(SERVINGS_KEY));
+    return Number.isFinite(v) && v >= 1 ? v : fallback;
+  } catch {
+    return fallback;
+  }
+}
+function writePreferredServings(n: number): void {
+  try {
+    localStorage.setItem(SERVINGS_KEY, String(n));
+  } catch {
+    /* storage unavailable — fall back to per-session state */
+  }
+}
 
 /**
  * The challenge browser — reads everything live from Supabase via the data layer.
@@ -82,11 +102,11 @@ export function Challenge({ slug }: { slug: string }) {
           {meta.tagline && <p className="ch-tagline">{meta.tagline}</p>}
           <div className="ch-dials">
             <span>
-              <b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/day
+              <b>{meta.defaultCalorieTarget.toLocaleString()}</b> kcal/meal
             </span>
             <span className="dot">·</span>
             <span>
-              <b>{meta.defaultProteinFloor}g</b> protein floor
+              <b>{meta.defaultProteinFloor}g</b> protein/meal
             </span>
             <span className="dot">·</span>
             <span>
@@ -469,6 +489,15 @@ function DinnerCell({
 }
 
 function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void }) {
+  const [servings, setServings] = useState(() => readPreferredServings(recipe.servings));
+  const factor = servings / recipe.servings;
+
+  const changeServings = (n: number) => {
+    const v = Math.max(1, Math.min(99, n));
+    setServings(v);
+    writePreferredServings(v);
+  };
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -486,9 +515,34 @@ function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void 
         <div className="modal-head">
           <h3>{recipe.title}</h3>
           <span className="recipe-macros">
-            Serves {recipe.servings} · {recipe.perServing.calories} kcal · {recipe.perServing.protein}g
-            {recipe.estCostPerServing != null && <> · {money(recipe.estCostPerServing)}/serving</>}
+            {recipe.perServing.calories} kcal · {recipe.perServing.protein}g per serving
+            {recipe.estCostPerServing != null && (
+              <> · {money(recipe.estCostPerServing * servings)} for {servings}</>
+            )}
           </span>
+          <div className="serving-stepper" role="group" aria-label="Servings">
+            <span className="ss-label">Serves</span>
+            <button
+              type="button"
+              className="ss-btn"
+              onClick={() => changeServings(servings - 1)}
+              disabled={servings <= 1}
+              aria-label="Fewer servings"
+            >
+              −
+            </button>
+            <span className="ss-count" aria-live="polite">
+              {servings}
+            </span>
+            <button
+              type="button"
+              className="ss-btn"
+              onClick={() => changeServings(servings + 1)}
+              aria-label="More servings"
+            >
+              +
+            </button>
+          </div>
         </div>
         <div className="recipe-body">
           <p className="recipe-blurb">{recipe.blurb}</p>
@@ -498,7 +552,7 @@ function RecipeModal({ recipe, onClose }: { recipe: Recipe; onClose: () => void 
               <ul className="ingredients">
                 {recipe.ingredients.map((ing, i) => (
                   <li key={i}>
-                    <span className="ing-qty">{ing.qty}</span> {ing.item}
+                    <span className="ing-qty">{scaleQty(ing.qty, factor)}</span> {ing.item}
                   </li>
                 ))}
               </ul>

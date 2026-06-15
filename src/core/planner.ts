@@ -5,20 +5,24 @@
 // recipe pool — it takes Recipe[] as input and hardcodes nothing about any
 // particular challenge.
 //
-// The single source of truth for what makes a day "kept" lives in ledger.ts as
-// `dayPasses`. This module NEVER re-implements scoring: it composes candidate
-// days, projects each into a canonical Entry, and certifies it via dayPasses.
+// The single source of truth for what makes a night "kept" lives in ledger.ts
+// as `mealPasses`. This module NEVER re-implements scoring: it projects each
+// candidate dinner into a canonical Entry and certifies it via mealPasses.
+//
+// The challenge is one cucina povera dinner a night, so a "day" in the plan is
+// just that night's dinner — one meal, not a stacked full day. Dinners are
+// ranked cheapest-first (cost is the cucina povera target).
 
 import type { Recipe, Weekday } from "../content/types";
 import type { Entry, Settings } from "../types";
-import { dayPasses } from "./ledger";
+import { mealPasses } from "./ledger";
 
-/** A composed day: a dinner plus the recipes assembled across the day. */
+/** A planned night: the dinner that anchors it. */
 export interface DayPlan {
   day: Weekday;
-  /** Slug of the dinner recipe anchoring the day. */
+  /** Slug of the dinner recipe for this night. */
   dinner: string;
-  /** All recipe slugs used across breakfast/lunch/dinner for this day. */
+  /** Recipe slugs used (just the dinner — kept as an array for API stability). */
   components: string[];
   calories: number;
   protein: number;
@@ -47,42 +51,31 @@ function isDinnerCapable(r: Recipe): boolean {
 }
 
 /**
- * Project a composed day (a list of recipes, each one serving) into the
- * canonical Entry the ledger scores. A planned/generated day wastes nothing by
- * construction — zero-waste is the challenge ethos for a composed menu, not a
- * per-recipe property. (`zeroWasteHero` flags scrap-USING hero dishes; it does
- * NOT mean other dishes waste food.)
+ * Project a single dinner (one serving) into the canonical Entry the ledger
+ * scores. A planned dinner wastes nothing by construction — zero-waste is the
+ * challenge ethos for a composed menu, not a per-recipe property.
  */
-function projectEntry(recipes: Recipe[], settings: Settings): Entry {
-  let calories = 0;
-  let protein = 0;
-  let cost = 0;
-  for (const r of recipes) {
-    calories += r.perServing.calories;
-    protein += r.perServing.protein;
-    cost += servingCost(r);
-  }
-  const zeroWaste = true;
+function projectEntry(dinner: Recipe, settings: Settings): Entry {
   return {
     id: "plan",
     date: "1970-01-01",
     week: settings.activeWeek,
-    dish: recipes.map((r) => r.slug).join(" + "),
-    calories,
-    protein,
-    cost: round2(cost),
-    zeroWaste,
+    dish: dinner.slug,
+    calories: dinner.perServing.calories,
+    protein: dinner.perServing.protein,
+    cost: round2(servingCost(dinner)),
+    zeroWaste: true,
   };
 }
 
 /**
- * Fast feasibility check. Confirms (a) the pool can in principle reach the
- * protein floor while staying at/under the calorie target, and (b) there are at
- * least 7 distinct dinner-capable recipes to fill a non-repeating week.
+ * Fast feasibility check: there must be at least 7 distinct dinner-capable
+ * recipes to fill a non-repeating week. Macros and cost no longer gate (they're
+ * targets, not requirements), so any dinner can anchor a night.
  */
 export function preflightFeasible(
   pool: Recipe[],
-  settings: Settings,
+  _settings?: Settings,
 ): { ok: boolean; reason?: string } {
   const dinners = pool.filter(isDinnerCapable);
   const distinctDinners = new Set(dinners.map((r) => r.slug)).size;
@@ -92,91 +85,14 @@ export function preflightFeasible(
       reason: `need >=7 distinct dinner-capable recipes, pool has ${distinctDinners}`,
     };
   }
-
-  // Best achievable protein within the calorie budget, via a bounded knapsack on
-  // protein-per-calorie-efficient servings. We allow each recipe once (a day is
-  // a few distinct recipes); this is a sound upper-bound proxy for feasibility.
-  const candidates = [...pool].sort((a, b) => {
-    const ea = a.perServing.protein / Math.max(1, a.perServing.calories);
-    const eb = b.perServing.protein / Math.max(1, b.perServing.calories);
-    if (eb !== ea) return eb - ea;
-    return a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0;
-  });
-
-  let calories = 0;
-  let protein = 0;
-  for (const r of candidates) {
-    if (calories + r.perServing.calories > settings.calorieTarget) continue;
-    calories += r.perServing.calories;
-    protein += r.perServing.protein;
-    if (protein >= settings.proteinFloor) {
-      return { ok: true };
-    }
-  }
-
-  return {
-    ok: false,
-    reason: `best achievable protein ${protein}g within ${settings.calorieTarget} kcal is below the protein floor ${settings.proteinFloor}g`,
-  };
+  return { ok: true };
 }
 
-interface DayCandidate {
-  dinner: Recipe;
-  recipes: Recipe[];
-  entry: Entry;
-}
-
-/**
- * For a fixed dinner, find the cheapest set of additional recipes (drawn from
- * `extras`) that makes a passing day. Deterministic greedy build with a small
- * beam: we sort extras by cost-efficiency and add until the day passes, keeping
- * total calories at/under the target. Returns null if no passing day is found.
- */
-function composeDayForDinner(
-  dinner: Recipe,
-  extras: Recipe[],
-  settings: Settings,
-): DayCandidate | null {
-  // Already passing with just the dinner?
-  const solo = projectEntry([dinner], settings);
-  if (dayPasses(solo, settings)) {
-    return { dinner, recipes: [dinner], entry: solo };
-  }
-
-  // Order extras by protein gained per dollar (then per slug) so the greedy
-  // build is deterministic and cost-aware.
-  const ordered = [...extras]
-    .filter((r) => r.slug !== dinner.slug)
-    .sort((a, b) => {
-      const ca = servingCost(a);
-      const cb = servingCost(b);
-      const ea = a.perServing.protein / (ca > 0 ? ca : 0.0001);
-      const eb = b.perServing.protein / (cb > 0 ? cb : 0.0001);
-      if (eb !== ea) return eb - ea;
-      return a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0;
-    });
-
-  const chosen: Recipe[] = [dinner];
-  let cal = dinner.perServing.calories;
-  for (const r of ordered) {
-    if (cal + r.perServing.calories > settings.calorieTarget) continue;
-    chosen.push(r);
-    cal += r.perServing.calories;
-    const entry = projectEntry(chosen, settings);
-    if (dayPasses(entry, settings)) {
-      return { dinner, recipes: [...chosen], entry };
-    }
-  }
-
-  // Could not reach a passing day under the calorie budget.
-  return null;
-}
-
-/** One valid candidate day (no weekday assigned yet), certified by dayPasses. */
+/** One valid candidate night (no weekday assigned yet), certified by mealPasses. */
 export interface CandidateDay {
-  /** Slug of the dinner recipe anchoring the day. */
+  /** Slug of the dinner recipe for this night. */
   dinner: string;
-  /** All recipe slugs used across the day. */
+  /** Recipe slugs used (just the dinner). */
   components: string[];
   calories: number;
   protein: number;
@@ -184,7 +100,7 @@ export interface CandidateDay {
 }
 
 /**
- * Every dinner that can anchor a passing day, cheapest first (ties by slug).
+ * Every dinner that can anchor a kept night, cheapest first (ties by slug).
  * This is the deterministic candidate set the AI stylist chooses among — the
  * model selects and sequences 7 of these; it never invents macros or cost.
  */
@@ -196,17 +112,15 @@ export function weekCandidates(
   if (!pre.ok) return { ok: false, candidates: [], reason: pre.reason };
 
   const dinners = dedupeBySlug(pool.filter(isDinnerCapable));
-  const built: DayCandidate[] = [];
-  for (const dinner of dinners) {
-    const day = composeDayForDinner(dinner, pool, settings);
-    if (day) built.push(day);
-  }
+  const built = dinners
+    .map((dinner) => ({ dinner, entry: projectEntry(dinner, settings) }))
+    .filter(({ entry }) => mealPasses(entry, settings));
 
   if (built.length < 7) {
     return {
       ok: false,
       candidates: [],
-      reason: `only ${built.length} dinner(s) can form a passing day; need 7 distinct`,
+      reason: `only ${built.length} dinner(s) can anchor a kept night; need 7 distinct`,
     };
   }
 
@@ -215,21 +129,21 @@ export function weekCandidates(
     return a.dinner.slug < b.dinner.slug ? -1 : a.dinner.slug > b.dinner.slug ? 1 : 0;
   });
 
-  const candidates: CandidateDay[] = built.map((c) => ({
-    dinner: c.dinner.slug,
-    components: c.recipes.map((r) => r.slug),
-    calories: c.entry.calories,
-    protein: c.entry.protein,
-    cost: c.entry.cost,
+  const candidates: CandidateDay[] = built.map(({ dinner, entry }) => ({
+    dinner: dinner.slug,
+    components: [dinner.slug],
+    calories: entry.calories,
+    protein: entry.protein,
+    cost: entry.cost,
   }));
 
   return { ok: true, candidates };
 }
 
 /**
- * Plan a 7-day week deterministically: take the 7 cheapest passing candidate
- * days, assign them Sun..Sat. No dinner repeats; every day certified by
- * dayPasses (inside weekCandidates). Ties broken by slug throughout.
+ * Plan a 7-night week deterministically: take the 7 cheapest kept dinners and
+ * assign them Sun..Sat. No dinner repeats; every night certified by mealPasses
+ * (inside weekCandidates). Ties broken by slug throughout.
  */
 export function planWeek(pool: Recipe[], settings: Settings): WeekPlanResult {
   const res = weekCandidates(pool, settings);
