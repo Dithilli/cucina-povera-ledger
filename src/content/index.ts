@@ -58,6 +58,15 @@ export * from "./recipes/salsa-roja-asada";
 export * from "./recipes/salsa-verde";
 export * from "./recipes/huevos-a-la-mexicana";
 export * from "./recipes/huevos-rancheros";
+export * from "./recipes/pozole-rojo";
+export * from "./recipes/esquites";
+export * from "./recipes/tamales-de-frijol";
+export * from "./recipes/nopales-con-huevo";
+export * from "./recipes/calabacitas";
+export * from "./recipes/rajas-con-crema";
+export * from "./recipes/tinga-de-pollo";
+export * from "./recipes/picadillo";
+export * from "./recipes/frijoles-puercos";
 
 // Docs
 export * from "./docs/budget";
@@ -122,6 +131,15 @@ import { salsaRojaAsada } from "./recipes/salsa-roja-asada";
 import { salsaVerde } from "./recipes/salsa-verde";
 import { huevosALaMexicana } from "./recipes/huevos-a-la-mexicana";
 import { huevosRancheros } from "./recipes/huevos-rancheros";
+import { pozoleRojo } from "./recipes/pozole-rojo";
+import { esquites } from "./recipes/esquites";
+import { tamalesDeFrijol } from "./recipes/tamales-de-frijol";
+import { nopalesConHuevo } from "./recipes/nopales-con-huevo";
+import { calabacitas } from "./recipes/calabacitas";
+import { rajasConCrema } from "./recipes/rajas-con-crema";
+import { tingaDePollo } from "./recipes/tinga-de-pollo";
+import { picadillo } from "./recipes/picadillo";
+import { frijolesPuercos } from "./recipes/frijoles-puercos";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -193,6 +211,15 @@ export const recipes: Recipe[] = [
   salsaVerde,
   huevosALaMexicana,
   huevosRancheros,
+  pozoleRojo,
+  esquites,
+  tamalesDeFrijol,
+  nopalesConHuevo,
+  calabacitas,
+  rajasConCrema,
+  tingaDePollo,
+  picadillo,
+  frijolesPuercos,
 ];
 
 export const docs: ContentDoc[] = [
