@@ -96,6 +96,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, fermented soy, and sambal — a fistful of chili and peanuts turns pennies into a vivid table.",
   },
+  "west-african": {
+    slug: "jollof",
+    name: "Jollof & Soup",
+    tagline:
+      "Rice, beans, egusi, and palm oil — a communal pot and a fistful of crayfish, nothing wasted.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */

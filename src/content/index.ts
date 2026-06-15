@@ -251,6 +251,35 @@ export * from "./recipes/tempe-mendoan";
 export * from "./recipes/tempe-orek";
 export * from "./recipes/tumis-kangkung";
 
+// ── west-african ──
+export * from "./recipes/akara";
+export * from "./recipes/asaro";
+export * from "./recipes/ayamase";
+export * from "./recipes/banga-soup";
+export * from "./recipes/bitterleaf-soup";
+export * from "./recipes/boiled-rice";
+export * from "./recipes/boiled-yam-and-sauce";
+export * from "./recipes/coconut-rice";
+export * from "./recipes/dodo";
+export * from "./recipes/eba";
+export * from "./recipes/efo-riro";
+export * from "./recipes/egusi-soup";
+export * from "./recipes/ewa-agoyin";
+export * from "./recipes/gbegiri-and-ewedu";
+export * from "./recipes/groundnut-soup";
+export * from "./recipes/jollof-rice";
+export * from "./recipes/kelewele";
+export * from "./recipes/light-soup";
+export * from "./recipes/moimoi";
+export * from "./recipes/nigerian-stew";
+export * from "./recipes/obe-ata";
+export * from "./recipes/ogbono-soup";
+export * from "./recipes/okro-soup";
+export * from "./recipes/pepper-sauce";
+export * from "./recipes/pepper-soup";
+export * from "./recipes/red-red";
+export * from "./recipes/waakye";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -264,6 +293,7 @@ export * from "./docs/culture-levant";
 export * from "./docs/culture-north-indian";
 export * from "./docs/culture-american-south";
 export * from "./docs/culture-indonesian";
+export * from "./docs/culture-west-african";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -276,6 +306,7 @@ export * from "./weeks/levantine-weeks";
 export * from "./weeks/north-indian-weeks";
 export * from "./weeks/american-south-weeks";
 export * from "./weeks/indonesian-weeks";
+export * from "./weeks/west-african-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -518,6 +549,34 @@ import { tempeBacem } from "./recipes/tempe-bacem";
 import { tempeMendoan } from "./recipes/tempe-mendoan";
 import { tempeOrek } from "./recipes/tempe-orek";
 import { tumisKangkung } from "./recipes/tumis-kangkung";
+// west-african
+import { akara } from "./recipes/akara";
+import { asaro } from "./recipes/asaro";
+import { ayamase } from "./recipes/ayamase";
+import { bangaSoup } from "./recipes/banga-soup";
+import { bitterleafSoup } from "./recipes/bitterleaf-soup";
+import { boiledRice } from "./recipes/boiled-rice";
+import { boiledYamAndSauce } from "./recipes/boiled-yam-and-sauce";
+import { coconutRice } from "./recipes/coconut-rice";
+import { dodo } from "./recipes/dodo";
+import { eba } from "./recipes/eba";
+import { efoRiro } from "./recipes/efo-riro";
+import { egusiSoup } from "./recipes/egusi-soup";
+import { ewaAgoyin } from "./recipes/ewa-agoyin";
+import { gbegiriAndEwedu } from "./recipes/gbegiri-and-ewedu";
+import { groundnutSoup } from "./recipes/groundnut-soup";
+import { jollofRice } from "./recipes/jollof-rice";
+import { kelewele } from "./recipes/kelewele";
+import { lightSoup } from "./recipes/light-soup";
+import { moimoi } from "./recipes/moimoi";
+import { nigerianStew } from "./recipes/nigerian-stew";
+import { obeAta } from "./recipes/obe-ata";
+import { ogbonoSoup } from "./recipes/ogbono-soup";
+import { okroSoup } from "./recipes/okro-soup";
+import { pepperSauce } from "./recipes/pepper-sauce";
+import { pepperSoup } from "./recipes/pepper-soup";
+import { redRed } from "./recipes/red-red";
+import { waakye } from "./recipes/waakye";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -530,6 +589,7 @@ import { cultureLevant } from "./docs/culture-levant";
 import { cultureNorthIndian } from "./docs/culture-north-indian";
 import { cultureAmericanSouth } from "./docs/culture-american-south";
 import { cultureIndonesian } from "./docs/culture-indonesian";
+import { cultureWestAfrican } from "./docs/culture-west-african";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -547,6 +607,7 @@ import { levantineWeeks } from "./weeks/levantine-weeks";
 import { northIndianWeeks } from "./weeks/north-indian-weeks";
 import { americanSouthWeeks } from "./weeks/american-south-weeks";
 import { indonesianWeeks } from "./weeks/indonesian-weeks";
+import { westAfricanWeeks } from "./weeks/west-african-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -788,6 +849,34 @@ export const recipes: Recipe[] = [
   tempeMendoan,
   tempeOrek,
   tumisKangkung,
+  // west-african
+  akara,
+  asaro,
+  ayamase,
+  bangaSoup,
+  bitterleafSoup,
+  boiledRice,
+  boiledYamAndSauce,
+  coconutRice,
+  dodo,
+  eba,
+  efoRiro,
+  egusiSoup,
+  ewaAgoyin,
+  gbegiriAndEwedu,
+  groundnutSoup,
+  jollofRice,
+  kelewele,
+  lightSoup,
+  moimoi,
+  nigerianStew,
+  obeAta,
+  ogbonoSoup,
+  okroSoup,
+  pepperSauce,
+  pepperSoup,
+  redRed,
+  waakye,
 ];
 
 export const docs: ContentDoc[] = [
@@ -802,6 +891,7 @@ export const docs: ContentDoc[] = [
   cultureNorthIndian,
   cultureAmericanSouth,
   cultureIndonesian,
+  cultureWestAfrican,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -828,6 +918,8 @@ export const weekThemes: WeekTheme[] = [
   ...americanSouthWeeks,
   // indonesian
   ...indonesianWeeks,
+  // west-african
+  ...westAfricanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -846,4 +938,5 @@ export const weeks: WeekPlan[] = [
   ...northIndianWeeks,
   ...americanSouthWeeks,
   ...indonesianWeeks,
+  ...westAfricanWeeks,
 ];
