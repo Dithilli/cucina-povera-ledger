@@ -198,6 +198,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, a pot of dal, a crackle of mustard seed and curry leaf, coconut and tamarind — the banana-leaf meal that feeds a family on legumes and ferment, wasting nothing.",
   },
+  "sri-lankan": {
+    slug: "bath-curry",
+    name: "Bath & Curry",
+    tagline:
+      "A mound of rice ringed by little coconut curries, dark roasted spice, a fierce pol sambol, and a knob of Maldive fish for the savour — the island plate, nothing wasted.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
