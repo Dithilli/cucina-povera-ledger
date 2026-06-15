@@ -691,6 +691,36 @@ export * from "./recipes/khobz-base";
 export * from "./recipes/ras-el-hanout";
 export * from "./recipes/hamd-markad";
 
+// ── polish ──
+export * from "./recipes/pierogi-ruskie";
+export * from "./recipes/pierogi-kapusta-grzyby";
+export * from "./recipes/pierogi-miesem";
+export * from "./recipes/bigos";
+export * from "./recipes/golabki-pl";
+export * from "./recipes/kapusta-zasmazana";
+export * from "./recipes/lazanki";
+export * from "./recipes/zurek";
+export * from "./recipes/rosol";
+export * from "./recipes/barszcz-pl";
+export * from "./recipes/kapusniak";
+export * from "./recipes/placki-ziemniaczane";
+export * from "./recipes/kopytka";
+export * from "./recipes/zapiekanka-pl";
+export * from "./recipes/kotlet-schabowy";
+export * from "./recipes/gulasz-pl";
+export * from "./recipes/klopsiki";
+export * from "./recipes/kasza-gryczana-gulasz";
+export * from "./recipes/grochowka";
+export * from "./recipes/fasolka-po-bretonsku";
+export * from "./recipes/kasza-ze-skwarkami";
+export * from "./recipes/krokiety";
+export * from "./recipes/nalesniki";
+export * from "./recipes/jajka-w-sosie";
+export * from "./recipes/ziemniaki-okraszone";
+export * from "./recipes/kiszona-kapusta";
+export * from "./recipes/smalec";
+export * from "./recipes/ogorki-kiszone";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -718,6 +748,7 @@ export * from "./docs/culture-puerto-rican";
 export * from "./docs/culture-senegalese";
 export * from "./docs/culture-east-african";
 export * from "./docs/culture-moroccan";
+export * from "./docs/culture-polish";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -744,6 +775,7 @@ export * from "./weeks/puerto-rican-weeks";
 export * from "./weeks/senegalese-weeks";
 export * from "./weeks/east-african-weeks";
 export * from "./weeks/moroccan-weeks";
+export * from "./weeks/polish-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1265,6 +1297,7 @@ import { culturePuertoRican } from "./docs/culture-puerto-rican";
 import { cultureSenegalese } from "./docs/culture-senegalese";
 import { cultureEastAfrican } from "./docs/culture-east-african";
 import { cultureMoroccan } from "./docs/culture-moroccan";
+import { culturePolish } from "./docs/culture-polish";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1296,6 +1329,7 @@ import { puertoRicanWeeks } from "./weeks/puerto-rican-weeks";
 import { senegaleseWeeks } from "./weeks/senegalese-weeks";
 import { eastAfricanWeeks } from "./weeks/east-african-weeks";
 import { moroccanWeeks } from "./weeks/moroccan-weeks";
+import { polishWeeks } from "./weeks/polish-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1470,6 +1504,35 @@ import { taktouka } from "./recipes/taktouka";
 import { khobzBase } from "./recipes/khobz-base";
 import { rasElHanout } from "./recipes/ras-el-hanout";
 import { hamdMarkad } from "./recipes/hamd-markad";
+
+import { pierogiRuskie } from "./recipes/pierogi-ruskie";
+import { pierogiKapustaGrzyby } from "./recipes/pierogi-kapusta-grzyby";
+import { pierogiMiesem } from "./recipes/pierogi-miesem";
+import { bigos } from "./recipes/bigos";
+import { golabkiPl } from "./recipes/golabki-pl";
+import { kapustaZasmazana } from "./recipes/kapusta-zasmazana";
+import { lazanki } from "./recipes/lazanki";
+import { zurekPl } from "./recipes/zurek";
+import { rosolPl } from "./recipes/rosol";
+import { barszczPl } from "./recipes/barszcz-pl";
+import { kapusniakPl } from "./recipes/kapusniak";
+import { plackiZiemniaczanePl } from "./recipes/placki-ziemniaczane";
+import { kopytkaPl } from "./recipes/kopytka";
+import { zapiekankaPl } from "./recipes/zapiekanka-pl";
+import { kotletSchabowyPl } from "./recipes/kotlet-schabowy";
+import { gulaszPl } from "./recipes/gulasz-pl";
+import { klopsikiPl } from "./recipes/klopsiki";
+import { kaszaGryczanaGulaszPl } from "./recipes/kasza-gryczana-gulasz";
+import { grochowkaPl } from "./recipes/grochowka";
+import { fasolkaPoBretonskuPl } from "./recipes/fasolka-po-bretonsku";
+import { kaszaZeSkwarkamiPl } from "./recipes/kasza-ze-skwarkami";
+import { krokiety } from "./recipes/krokiety";
+import { nalesniki } from "./recipes/nalesniki";
+import { jajkaWSosie } from "./recipes/jajka-w-sosie";
+import { ziemniakiOkraszone } from "./recipes/ziemniaki-okraszone";
+import { kiszonaKapusta } from "./recipes/kiszona-kapusta";
+import { smalec } from "./recipes/smalec";
+import { ogorkiKiszone } from "./recipes/ogorki-kiszone";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2127,6 +2190,35 @@ export const recipes: Recipe[] = [
   khobzBase,
   rasElHanout,
   hamdMarkad,
+  // polish
+  pierogiRuskie,
+  pierogiKapustaGrzyby,
+  pierogiMiesem,
+  bigos,
+  golabkiPl,
+  kapustaZasmazana,
+  lazanki,
+  zurekPl,
+  rosolPl,
+  barszczPl,
+  kapusniakPl,
+  plackiZiemniaczanePl,
+  kopytkaPl,
+  zapiekankaPl,
+  kotletSchabowyPl,
+  gulaszPl,
+  klopsikiPl,
+  kaszaGryczanaGulaszPl,
+  grochowkaPl,
+  fasolkaPoBretonskuPl,
+  kaszaZeSkwarkamiPl,
+  krokiety,
+  nalesniki,
+  jajkaWSosie,
+  ziemniakiOkraszone,
+  kiszonaKapusta,
+  smalec,
+  ogorkiKiszone,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2164,6 +2256,7 @@ export const docs: ContentDoc[] = [
   cultureSenegalese,
   cultureEastAfrican,
   cultureMoroccan,
+  culturePolish,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2218,6 +2311,8 @@ export const weekThemes: WeekTheme[] = [
   ...eastAfricanWeeks,
   // moroccan
   ...moroccanWeeks,
+  // polish
+  ...polishWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2250,4 +2345,5 @@ export const weeks: WeekPlan[] = [
   ...senegaleseWeeks,
   ...eastAfricanWeeks,
   ...moroccanWeeks,
+  ...polishWeeks,
 ];
