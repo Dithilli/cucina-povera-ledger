@@ -811,6 +811,36 @@ export * from "./recipes/steamed-rice-base";
 export * from "./recipes/ginger-scallion-oil";
 export * from "./recipes/superior-stock";
 
+// ── south-indian ──
+export * from "./recipes/sambar-si";
+export * from "./recipes/rasam-rice-si";
+export * from "./recipes/curd-rice-si";
+export * from "./recipes/masala-dosa-si";
+export * from "./recipes/plain-dosa-si";
+export * from "./recipes/idli-sambar-si";
+export * from "./recipes/ven-pongal";
+export * from "./recipes/beans-poriyal";
+export * from "./recipes/cabbage-poriyal";
+export * from "./recipes/kootu-si";
+export * from "./recipes/rasam-si";
+export * from "./recipes/more-kuzhambu";
+export * from "./recipes/vendakkai-poriyal";
+export * from "./recipes/keerai-masiyal";
+export * from "./recipes/avial";
+export * from "./recipes/olan";
+export * from "./recipes/thoran";
+export * from "./recipes/kerala-fish-curry-si";
+export * from "./recipes/tamarind-rice-si";
+export * from "./recipes/vatha-kuzhambu";
+export * from "./recipes/lemon-rice-si";
+export * from "./recipes/upma-si";
+export * from "./recipes/bisi-bele-bath";
+export * from "./recipes/medu-vada";
+export * from "./recipes/rava-dosa";
+export * from "./recipes/steamed-rice-base-si";
+export * from "./recipes/coconut-chutney-si";
+export * from "./recipes/tadka-base";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -842,6 +872,7 @@ export * from "./docs/culture-polish";
 export * from "./docs/culture-irish";
 export * from "./docs/culture-appalachian";
 export * from "./docs/culture-cantonese";
+export * from "./docs/culture-south-indian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -872,6 +903,7 @@ export * from "./weeks/polish-weeks";
 export * from "./weeks/irish-weeks";
 export * from "./weeks/appalachian-weeks";
 export * from "./weeks/cantonese-weeks";
+export * from "./weeks/south-indian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1397,6 +1429,7 @@ import { culturePolish } from "./docs/culture-polish";
 import { cultureIrish } from "./docs/culture-irish";
 import { cultureAppalachian } from "./docs/culture-appalachian";
 import { cultureCantonese } from "./docs/culture-cantonese";
+import { cultureSouthIndian } from "./docs/culture-south-indian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1432,6 +1465,7 @@ import { polishWeeks } from "./weeks/polish-weeks";
 import { irishWeeks } from "./weeks/irish-weeks";
 import { appalachianWeeks } from "./weeks/appalachian-weeks";
 import { cantoneseWeeks } from "./weeks/cantonese-weeks";
+import { southIndianWeeks } from "./weeks/south-indian-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1722,6 +1756,35 @@ import { siuMaiCt } from "./recipes/siu-mai-ct";
 import { steamedRiceBase } from "./recipes/steamed-rice-base";
 import { gingerScallionOil } from "./recipes/ginger-scallion-oil";
 import { superiorStock } from "./recipes/superior-stock";
+
+import { sambarSi } from "./recipes/sambar-si";
+import { rasamRiceSi } from "./recipes/rasam-rice-si";
+import { curdRiceSi } from "./recipes/curd-rice-si";
+import { masalaDosaSi } from "./recipes/masala-dosa-si";
+import { plainDosaSi } from "./recipes/plain-dosa-si";
+import { idliSambarSi } from "./recipes/idli-sambar-si";
+import { venPongal } from "./recipes/ven-pongal";
+import { beansPoriyal } from "./recipes/beans-poriyal";
+import { cabbagePoriyal } from "./recipes/cabbage-poriyal";
+import { kootuSi } from "./recipes/kootu-si";
+import { rasamSi } from "./recipes/rasam-si";
+import { moreKuzhambu } from "./recipes/more-kuzhambu";
+import { vendakkaiPoriyal } from "./recipes/vendakkai-poriyal";
+import { keeraiMasiyal } from "./recipes/keerai-masiyal";
+import { avial } from "./recipes/avial";
+import { olan } from "./recipes/olan";
+import { thoran } from "./recipes/thoran";
+import { keralaFishCurrySi } from "./recipes/kerala-fish-curry-si";
+import { tamarindRiceSi } from "./recipes/tamarind-rice-si";
+import { vathaKuzhambu } from "./recipes/vatha-kuzhambu";
+import { lemonRiceSi } from "./recipes/lemon-rice-si";
+import { upmaSi } from "./recipes/upma-si";
+import { bisiBeleBath } from "./recipes/bisi-bele-bath";
+import { meduVada } from "./recipes/medu-vada";
+import { ravaDosa } from "./recipes/rava-dosa";
+import { steamedRiceBaseSi } from "./recipes/steamed-rice-base-si";
+import { coconutChutneySi } from "./recipes/coconut-chutney-si";
+import { tadkaBase } from "./recipes/tadka-base";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2495,6 +2558,35 @@ export const recipes: Recipe[] = [
   steamedRiceBase,
   gingerScallionOil,
   superiorStock,
+  // south-indian
+  sambarSi,
+  rasamRiceSi,
+  curdRiceSi,
+  masalaDosaSi,
+  plainDosaSi,
+  idliSambarSi,
+  venPongal,
+  beansPoriyal,
+  cabbagePoriyal,
+  kootuSi,
+  rasamSi,
+  moreKuzhambu,
+  vendakkaiPoriyal,
+  keeraiMasiyal,
+  avial,
+  olan,
+  thoran,
+  keralaFishCurrySi,
+  tamarindRiceSi,
+  vathaKuzhambu,
+  lemonRiceSi,
+  upmaSi,
+  bisiBeleBath,
+  meduVada,
+  ravaDosa,
+  steamedRiceBaseSi,
+  coconutChutneySi,
+  tadkaBase,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2536,6 +2628,7 @@ export const docs: ContentDoc[] = [
   cultureIrish,
   cultureAppalachian,
   cultureCantonese,
+  cultureSouthIndian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2598,6 +2691,8 @@ export const weekThemes: WeekTheme[] = [
   ...appalachianWeeks,
   // cantonese
   ...cantoneseWeeks,
+  // south-indian
+  ...southIndianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2634,4 +2729,5 @@ export const weeks: WeekPlan[] = [
   ...irishWeeks,
   ...appalachianWeeks,
   ...cantoneseWeeks,
+  ...southIndianWeeks,
 ];
