@@ -180,6 +180,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "A pot of floury spuds, a soda loaf, a knob of butter, and a little bacon to flavour the lot — the cottage hearth that made plenty from want, wasting nothing.",
   },
+  "appalachian": {
+    slug: "beans-n-cornbread",
+    name: "Beans n' Cornbread",
+    tagline:
+      "A pot of soup beans, a skillet of cornbread, a little sidemeat to season the lot, and the garden put up for winter — mountain thrift that makes do and wastes nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",

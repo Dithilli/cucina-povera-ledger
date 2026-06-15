@@ -751,6 +751,36 @@ export * from "./recipes/soda-bread-ie";
 export * from "./recipes/boxty-base";
 export * from "./recipes/irish-oatmeal-base";
 
+// ── appalachian ──
+export * from "./recipes/soup-beans";
+export * from "./recipes/leather-britches";
+export * from "./recipes/cornbread-ap";
+export * from "./recipes/soup-beans-cornbread-supper";
+export * from "./recipes/killed-lettuce";
+export * from "./recipes/kilt-greens";
+export * from "./recipes/fried-taters-onions";
+export * from "./recipes/sausage-gravy-biscuits";
+export * from "./recipes/fried-pork-chops-gravy";
+export * from "./recipes/country-ham-redeye";
+export * from "./recipes/souse-meat";
+export * from "./recipes/fried-mush";
+export * from "./recipes/johnnycakes";
+export * from "./recipes/grits-ap";
+export * from "./recipes/fried-chicken-ap";
+export * from "./recipes/chicken-and-dumplings-ap";
+export * from "./recipes/fried-green-tomatoes-ap";
+export * from "./recipes/succotash-ap";
+export * from "./recipes/shuck-beans";
+export * from "./recipes/corn-fritters";
+export * from "./recipes/soup-mix-stone";
+export * from "./recipes/fried-catfish-ap";
+export * from "./recipes/fried-trout-cornmeal";
+export * from "./recipes/chicken-stew-stack";
+export * from "./recipes/apple-stack-cake";
+export * from "./recipes/cathead-biscuits";
+export * from "./recipes/chow-chow";
+export * from "./recipes/apple-butter";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -780,6 +810,7 @@ export * from "./docs/culture-east-african";
 export * from "./docs/culture-moroccan";
 export * from "./docs/culture-polish";
 export * from "./docs/culture-irish";
+export * from "./docs/culture-appalachian";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -808,6 +839,7 @@ export * from "./weeks/east-african-weeks";
 export * from "./weeks/moroccan-weeks";
 export * from "./weeks/polish-weeks";
 export * from "./weeks/irish-weeks";
+export * from "./weeks/appalachian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1331,6 +1363,7 @@ import { cultureEastAfrican } from "./docs/culture-east-african";
 import { cultureMoroccan } from "./docs/culture-moroccan";
 import { culturePolish } from "./docs/culture-polish";
 import { cultureIrish } from "./docs/culture-irish";
+import { cultureAppalachian } from "./docs/culture-appalachian";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1364,6 +1397,7 @@ import { eastAfricanWeeks } from "./weeks/east-african-weeks";
 import { moroccanWeeks } from "./weeks/moroccan-weeks";
 import { polishWeeks } from "./weeks/polish-weeks";
 import { irishWeeks } from "./weeks/irish-weeks";
+import { appalachianWeeks } from "./weeks/appalachian-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1596,6 +1630,35 @@ import { barmbrack } from "./recipes/barmbrack";
 import { sodaBreadIe } from "./recipes/soda-bread-ie";
 import { boxtyBase } from "./recipes/boxty-base";
 import { irishOatmealBase } from "./recipes/irish-oatmeal-base";
+
+import { soupBeans } from "./recipes/soup-beans";
+import { leatherBritches } from "./recipes/leather-britches";
+import { cornbreadAp } from "./recipes/cornbread-ap";
+import { soupBeansCornbreadSupper } from "./recipes/soup-beans-cornbread-supper";
+import { killedLettuce } from "./recipes/killed-lettuce";
+import { kiltGreens } from "./recipes/kilt-greens";
+import { friedTatersOnions } from "./recipes/fried-taters-onions";
+import { sausageGravyBiscuits } from "./recipes/sausage-gravy-biscuits";
+import { friedPorkChopsGravy } from "./recipes/fried-pork-chops-gravy";
+import { countryHamRedeye } from "./recipes/country-ham-redeye";
+import { souseMeat } from "./recipes/souse-meat";
+import { friedMush } from "./recipes/fried-mush";
+import { johnnycakes } from "./recipes/johnnycakes";
+import { gritsAp } from "./recipes/grits-ap";
+import { friedChickenAp } from "./recipes/fried-chicken-ap";
+import { chickenAndDumplingsAp } from "./recipes/chicken-and-dumplings-ap";
+import { friedGreenTomatoesAp } from "./recipes/fried-green-tomatoes-ap";
+import { succotashAp } from "./recipes/succotash-ap";
+import { shuckBeans } from "./recipes/shuck-beans";
+import { cornFritters } from "./recipes/corn-fritters";
+import { soupMixStone } from "./recipes/soup-mix-stone";
+import { friedCatfishAp } from "./recipes/fried-catfish-ap";
+import { friedTroutCornmeal } from "./recipes/fried-trout-cornmeal";
+import { chickenStewStack } from "./recipes/chicken-stew-stack";
+import { appleStackCake } from "./recipes/apple-stack-cake";
+import { catheadBiscuits } from "./recipes/cathead-biscuits";
+import { chowChow } from "./recipes/chow-chow";
+import { appleButter } from "./recipes/apple-butter";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2311,6 +2374,35 @@ export const recipes: Recipe[] = [
   sodaBreadIe,
   boxtyBase,
   irishOatmealBase,
+  // appalachian
+  soupBeans,
+  leatherBritches,
+  cornbreadAp,
+  soupBeansCornbreadSupper,
+  killedLettuce,
+  kiltGreens,
+  friedTatersOnions,
+  sausageGravyBiscuits,
+  friedPorkChopsGravy,
+  countryHamRedeye,
+  souseMeat,
+  friedMush,
+  johnnycakes,
+  gritsAp,
+  friedChickenAp,
+  chickenAndDumplingsAp,
+  friedGreenTomatoesAp,
+  succotashAp,
+  shuckBeans,
+  cornFritters,
+  soupMixStone,
+  friedCatfishAp,
+  friedTroutCornmeal,
+  chickenStewStack,
+  appleStackCake,
+  catheadBiscuits,
+  chowChow,
+  appleButter,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2350,6 +2442,7 @@ export const docs: ContentDoc[] = [
   cultureMoroccan,
   culturePolish,
   cultureIrish,
+  cultureAppalachian,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2408,6 +2501,8 @@ export const weekThemes: WeekTheme[] = [
   ...polishWeeks,
   // irish
   ...irishWeeks,
+  // appalachian
+  ...appalachianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2442,4 +2537,5 @@ export const weeks: WeekPlan[] = [
   ...moroccanWeeks,
   ...polishWeeks,
   ...irishWeeks,
+  ...appalachianWeeks,
 ];
