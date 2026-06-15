@@ -73,18 +73,51 @@ export * from "./recipes/tinga-de-pollo";
 export * from "./recipes/picadillo";
 export * from "./recipes/frijoles-puercos";
 
+// ── Challenge #3 — Ethiopia & Eritrea (Beyaynetu) ──
+export * from "./recipes/teff-injera";
+export * from "./recipes/berbere";
+export * from "./recipes/niter-kibbeh";
+export * from "./recipes/pot-of-red-lentils";
+export * from "./recipes/misir-wot";
+export * from "./recipes/misir-alicha";
+export * from "./recipes/shiro-wot";
+export * from "./recipes/bozena-shiro";
+export * from "./recipes/kik-alicha";
+export * from "./recipes/ater-kik-alicha";
+export * from "./recipes/kik-wot";
+export * from "./recipes/yemisir-kik";
+export * from "./recipes/ful";
+export * from "./recipes/tsebhi-birsen";
+export * from "./recipes/tsebhi-shiro";
+export * from "./recipes/doro-wot";
+export * from "./recipes/zigni";
+export * from "./recipes/beyaynetu";
+export * from "./recipes/dinich-wot";
+export * from "./recipes/gomen";
+export * from "./recipes/atakilt-wot";
+export * from "./recipes/shiro-fitfit";
+export * from "./recipes/azifa";
+export * from "./recipes/timatim-fitfit";
+export * from "./recipes/dabo-kolo";
+export * from "./recipes/hilbet";
+export * from "./recipes/kategna";
+export * from "./recipes/fasolia";
+export * from "./recipes/telba-fitfit";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
 export * from "./docs/manifesto";
 export * from "./docs/culture-mexico";
 export * from "./docs/culture-italy";
+export * from "./docs/culture-ethiopia";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
 export * from "./weeks/themes";
 export * from "./weeks/mx-week-1-masa";
 export * from "./weeks/mexican-themes";
+export * from "./weeks/ethiopian-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -153,11 +186,43 @@ import { tingaDePollo } from "./recipes/tinga-de-pollo";
 import { picadillo } from "./recipes/picadillo";
 import { frijolesPuercos } from "./recipes/frijoles-puercos";
 
+// Challenge #3 — Ethiopia & Eritrea
+import { teffInjera } from "./recipes/teff-injera";
+import { berbere } from "./recipes/berbere";
+import { niterKibbeh } from "./recipes/niter-kibbeh";
+import { potOfRedLentils } from "./recipes/pot-of-red-lentils";
+import { misirWot } from "./recipes/misir-wot";
+import { misirAlicha } from "./recipes/misir-alicha";
+import { shiroWot } from "./recipes/shiro-wot";
+import { bozenaShiro } from "./recipes/bozena-shiro";
+import { kikAlicha } from "./recipes/kik-alicha";
+import { aterKikAlicha } from "./recipes/ater-kik-alicha";
+import { kikWot } from "./recipes/kik-wot";
+import { yemisirKik } from "./recipes/yemisir-kik";
+import { ful } from "./recipes/ful";
+import { tsebhiBirsen } from "./recipes/tsebhi-birsen";
+import { tsebhiShiro } from "./recipes/tsebhi-shiro";
+import { doroWot } from "./recipes/doro-wot";
+import { zigni } from "./recipes/zigni";
+import { beyaynetu } from "./recipes/beyaynetu";
+import { dinichWot } from "./recipes/dinich-wot";
+import { gomen } from "./recipes/gomen";
+import { atakiltWot } from "./recipes/atakilt-wot";
+import { shiroFitfit } from "./recipes/shiro-fitfit";
+import { azifa } from "./recipes/azifa";
+import { timatimFitfit } from "./recipes/timatim-fitfit";
+import { daboKolo } from "./recipes/dabo-kolo";
+import { hilbet } from "./recipes/hilbet";
+import { kategna } from "./recipes/kategna";
+import { fasolia } from "./recipes/fasolia";
+import { telbaFitfit } from "./recipes/telba-fitfit";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
 import { cultureMexico } from "./docs/culture-mexico";
 import { cultureItaly } from "./docs/culture-italy";
+import { cultureEthiopia } from "./docs/culture-ethiopia";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -169,6 +234,7 @@ import {
   bonusGarden,
 } from "./weeks/themes";
 import { mexicanWeeks } from "./weeks/mexican-themes";
+import { ethiopianWeeks } from "./weeks/ethiopian-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -238,6 +304,36 @@ export const recipes: Recipe[] = [
   tingaDePollo,
   picadillo,
   frijolesPuercos,
+  // Challenge #3 — Ethiopia & Eritrea (Beyaynetu)
+  teffInjera,
+  berbere,
+  niterKibbeh,
+  potOfRedLentils,
+  misirWot,
+  misirAlicha,
+  shiroWot,
+  bozenaShiro,
+  kikAlicha,
+  aterKikAlicha,
+  kikWot,
+  yemisirKik,
+  ful,
+  tsebhiBirsen,
+  tsebhiShiro,
+  doroWot,
+  zigni,
+  beyaynetu,
+  dinichWot,
+  gomen,
+  atakiltWot,
+  shiroFitfit,
+  azifa,
+  timatimFitfit,
+  daboKolo,
+  hilbet,
+  kategna,
+  fasolia,
+  telbaFitfit,
 ];
 
 export const docs: ContentDoc[] = [
@@ -246,6 +342,7 @@ export const docs: ContentDoc[] = [
   manifesto,
   cultureMexico,
   cultureItaly,
+  cultureEthiopia,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -260,10 +357,13 @@ export const weekThemes: WeekTheme[] = [
   bonusGarden,
   // Challenge #2 — Mexico
   ...mexicanWeeks,
+  // Challenge #3 — Ethiopia & Eritrea
+  ...ethiopianWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
 export const weeks: WeekPlan[] = [
   week1Pasta,
   ...mexicanWeeks,
+  ...ethiopianWeeks,
 ];

@@ -60,6 +60,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     name: "La Cocina del Maíz",
     tagline: "Magnificence from corn, beans, and chiles — nothing wasted.",
   },
+  ethiopian: {
+    slug: "beyaynetu",
+    name: "Beyaynetu",
+    tagline:
+      "Lentils, split peas, and injera under berbere — the fasting table, a feast from almost nothing.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */

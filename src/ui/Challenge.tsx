@@ -418,18 +418,25 @@ function WeekCard({
               <div className="plan-engine">
                 <h4>Cook ahead — the Sunday engine</h4>
                 <p className="engine-lead">
-                  Batch-cook these once at the start of the week; they carry every dinner that
-                  follows (bean liquid becomes sauce, stale bread becomes crumbs — nothing wasted).
+                  Batch-cook these once at the start of the week — the foundation every dinner that
+                  follows is built on. Nothing is wasted.
                 </p>
                 <ul>
                   {plan.engine.map((e, i) => {
-                    const r = recipesBySlug.get(e);
+                    // Each item is either a bare recipe slug, or "<slug> — note".
+                    const dash = e.indexOf(" — ");
+                    const head = (dash >= 0 ? e.slice(0, dash) : e).trim();
+                    const rest = dash >= 0 ? e.slice(dash) : "";
+                    const r = recipesBySlug.get(head);
                     return (
                       <li key={i}>
                         {r ? (
-                          <button className="recipe-link" onClick={() => onOpenRecipe(r.slug)}>
-                            {r.title}
-                          </button>
+                          <>
+                            <button className="recipe-link" onClick={() => onOpenRecipe(r.slug)}>
+                              {r.title}
+                            </button>
+                            {rest}
+                          </>
                         ) : (
                           e
                         )}
