@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "settings": {
+    "calorieTarget": 2000,
+    "proteinFloor": 100,
+    "weeklyBudget": 55,
+    "activeWeek": "Week 1 — Pasta"
+  },
+  "entries": []
+}
