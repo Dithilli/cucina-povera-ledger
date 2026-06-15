@@ -29,4 +29,7 @@ export const shiroFitfit: Recipe = {
   notes:
     "Any leftover wot can be turned into fitfit/firfir this way — shiro, misir, or timatim. The day-old injera is the point, not a compromise.",
   tags: ["fitfit", "shiro", "zero-waste", "leftovers", "breakfast"],
+  sources: [
+    { title: "Fit-fit — Wikipedia", url: "https://en.wikipedia.org/wiki/Fit-fit", note: "Defines the fitfit class and names shiro fit-fit — torn injera revived with shiro and spiced fat." },
+  ],
 };

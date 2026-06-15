@@ -47,4 +47,11 @@ export const moutabal: Recipe = {
     "Open-flame charring, not oven-roasting, is the whole point — that bitter smoke is the flavor, and draining the flesh before whipping keeps it lush instead of soupy.",
   notes: "Mashing by fork rather than blending gives the proper rustic texture.",
   tags: ["eggplant", "tahini", "smoky", "dip", "mezze", "vegetarian"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/moutabal-recipe/",
+      note: "Open-flame charred eggplant moutabal — confirms the smoky char as the defining technique.",
+    },
+  ],
 };

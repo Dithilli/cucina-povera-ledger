@@ -30,4 +30,15 @@ export const potatoKugel: Recipe = {
   notes:
     "Made with oil it's pareve and goes with anything; made with schmaltz it's fleishig and richer — pick one and keep it off the dairy table either way. A cold slab the next morning, fried in a little oil, is its own quiet reward.",
   tags: ["potato", "baked", "kugel", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Kugel",
+      url: "https://en.wikipedia.org/wiki/Kugel",
+      note: "Baked casserole made from shredded potato; the savory pareve/fleishig version.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Potato kugel history and the hot-oil crust technique.",
+    },
+  ],
 };

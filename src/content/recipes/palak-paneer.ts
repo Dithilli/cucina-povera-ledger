@@ -33,4 +33,16 @@ export const palakPaneer: Recipe = {
   modernMove:
     "Blanch-and-shock the spinach instead of stewing it — keeping the green bright and the cooking brief is what separates a fresh palak from a dull khaki one.",
   tags: ["paneer", "spinach", "greens", "vegetarian", "north-indian"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/palak-paneer/",
+      note: "Blanch-and-shock the spinach to keep the gravy bright green; paneer in spinach gravy",
+    },
+    {
+      title: "Palak paneer — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Palak_paneer",
+      note: "Background on the spinach-and-paneer dish",
+    },
+  ],
 };

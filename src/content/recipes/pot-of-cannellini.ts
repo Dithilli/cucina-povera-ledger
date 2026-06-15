@@ -26,4 +26,11 @@ export const potOfCannellini: Recipe = {
   modernMove:
     "A gentle simmer (never a rolling boil) keeps them whole and silky. Mash a portion against the pot and stir back in to thicken pasta e fagioli without a drop of cream.",
   tags: ["base", "legumes", "beans", "make-ahead"],
+  sources: [
+    {
+      title: "Cannellini bean — Wikipedia (Common bean)",
+      url: "https://en.wikipedia.org/wiki/Common_bean",
+      note: "White cannellini simmered soft in their broth as a Tuscan base",
+    },
+  ],
 };

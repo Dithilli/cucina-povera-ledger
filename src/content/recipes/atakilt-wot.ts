@@ -31,4 +31,8 @@ export const atakiltWot: Recipe = {
   notes:
     "A fasting-day staple: no animal product needed, and the potato gives it body so it eats like a complete dish over injera.",
   tags: ["vegetable", "cabbage", "atakilt", "side", "fasting"],
+  sources: [
+    { title: "Vegan Richa — Atakilt Wat (Ethiopian Cabbage, Potato & Carrots)", url: "https://www.veganricha.com/atakilt-wat-ethiopian-cabbage-potato/", note: "Cabbage, potato, and carrot stewed with turmeric and onion — the mild golden vegetable medley." },
+    { title: "The Wanderlust Kitchen — Atakilt Wat (Ethiopian Spiced Cabbage)", url: "https://thewanderlustkitchen.com/atakilt-wat-ethiopian-spiced-cabbage-carrot-potatoes/", note: "Classic cabbage-carrot-potato side cooked low until soft." },
+  ],
 };

@@ -52,4 +52,11 @@ export const gyeranJjim: Recipe = {
   modernMove:
     "Whisking the eggs with savory anchovy-kelp stock rather than plain water — and straining the mix, then keeping the heat low — turns four eggs into a quivering, custardy cloud instead of a tough scramble; the ttukbaegi holds its heat so it keeps puffing on its way to the table.",
   tags: ["egg", "jjim", "steamed", "custard", "anchovy-kelp-stock", "side"],
+  sources: [
+    {
+      title: "Maangchi — Steamed eggs in an earthenware bowl (Ttukbaegi gyeranjjim)",
+      url: "https://www.maangchi.com/recipe/ttukbaegi-gyeranjjim",
+      note: "Whisking eggs with stock and steaming low in a ttukbaegi for a soufflé-like custard",
+    },
+  ],
 };

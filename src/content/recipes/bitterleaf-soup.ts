@@ -34,4 +34,11 @@ export const bitterleafSoup: Recipe = {
     "Onugbu is the Sunday/celebration soup of Igboland; a little dried fish and crayfish season the whole pot, so the protein is cheap and intense.",
   zeroWasteHero: false,
   tags: ["bitterleaf", "greens", "palm-oil", "crayfish", "igbo", "swallow"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — Bitterleaf Soup (Ofe Onugbu)",
+      url: "https://www.allnigerianrecipes.com/soups/bitterleaf-soup/",
+      note: "Washing the bitterleaf to tame bitterness and thickening the palm-oil broth with cocoyam paste.",
+    },
+  ],
 };

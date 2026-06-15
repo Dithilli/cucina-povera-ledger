@@ -55,4 +55,11 @@ export const ewaAgoyin: Recipe = {
     "street-food",
     "nigerian",
   ],
+  sources: [
+    {
+      title: "Sisi Jemimah — Ewa Agoyin and Agoyin Sauce Recipe",
+      url: "https://sisijemimah.com/2015/08/12/ewa-agoyin-and-agoyin-sauce-recipe/",
+      note: "Mashed beans with the dark agoyin sauce — dried peppers and plenty of palm oil fried low and slow for the authentic taste.",
+    },
+  ],
 };

@@ -33,4 +33,16 @@ export const pepperSauce: Recipe = {
     "Store it submerged under a film of oil; that seal is what gives it weeks of fridge life. A condiment, not a main — a teaspoon transforms a bowl.",
   zeroWasteHero: true,
   tags: ["base", "side", "condiment", "pepper-sauce", "shito", "scotch-bonnet", "batch"],
+  sources: [
+    {
+      title: "Sisi Jemimah (Jemimah Adebiyi) — Ewa Agoyin and Agoyin Sauce",
+      url: "https://sisijemimah.com/2015/08/12/ewa-agoyin-and-agoyin-sauce-recipe/",
+      note: "Confirms the agoyin/buka-style pepper sauce — blended peppers and onion fried long and hard in palm oil until dark and concentrated.",
+    },
+    {
+      title: "Lola Osinkolu — Chef Lola's Kitchen: Ewa Agoyin",
+      url: "https://cheflolaskitchen.com/ewa-agoyin/",
+      note: "Corroborates the dried-pepper-and-onion sauce fried in palm oil served over beans.",
+    },
+  ],
 };

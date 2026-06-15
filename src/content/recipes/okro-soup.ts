@@ -57,4 +57,11 @@ export const okroSoup: Recipe = {
   modernMove:
     "Grate rather than slice the okra and add it last for the briefest possible cook — short heat preserves the mucilage and the vivid green, which is the entire point of a draw soup.",
   tags: ["okra", "okro", "draw-soup", "palm-oil", "swallow", "one-pot"],
+  sources: [
+    {
+      title: "Flo Madubike — All Nigerian Recipes",
+      url: "https://www.allnigerianrecipes.com/soups/okra-okro-soup/",
+      note: "Confirms the draw technique — cutting/grating okra finely and a brief cook to preserve the slimy draw and bright green colour.",
+    },
+  ],
 };

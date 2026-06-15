@@ -38,4 +38,11 @@ export const potOfGigantes: Recipe = {
     "The constant foundation behind the bean week — one pot feeds gigantes plaki, a fasolada-style soup, or a plain dressed bowl. Freezes well in its broth.",
   zeroWasteHero: false,
   tags: ["legumes", "giant-beans", "base", "batch-cook", "broth", "vegan"],
+  sources: [
+    {
+      title: "Diane Kochilas — Greek Giant Beans Casserole (Gigantes)",
+      url: "https://www.dianekochilas.com/best-gigantes-recipe-greek-giant-beans-casserole/",
+      note: "Confirms dried giant beans soaked and simmered tender before use.",
+    },
+  ],
 };

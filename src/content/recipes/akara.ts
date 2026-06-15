@@ -46,4 +46,11 @@ export const akara: Recipe = {
     "street-food",
     "nigerian",
   ],
+  sources: [
+    {
+      title: "Chef Lola's Kitchen — How to Make Akara (African Bean Fritters)",
+      url: "https://cheflolaskitchen.com/akara-acaraje/",
+      note: "Whisking the skinned-bean batter until light and fluffy to trap air before frying.",
+    },
+  ],
 };

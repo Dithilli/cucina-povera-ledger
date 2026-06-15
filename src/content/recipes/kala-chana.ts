@@ -34,4 +34,11 @@ export const kalaChana: Recipe = {
   modernMove:
     "The black chickpea's near-black cooking water isn't waste — built back in with tamarind it becomes the body of the broth, a free, savory stock most cooks pour down the drain.",
   tags: ["legumes", "black-chickpeas", "curry", "tamarind", "high-protein"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/kala-chana/",
+      note: "Black chickpeas cooked tender in a spiced onion-tomato base, served brothy",
+    },
+  ],
 };

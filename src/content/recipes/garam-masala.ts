@@ -30,4 +30,16 @@ export const garamMasala: Recipe = {
   notes:
     "'Garam' means warming, not hot — there's little to no chile here. The heat in a dish comes from tadka chiles and cayenne; this blend is for fragrance and finish.",
   tags: ["base", "garam-masala", "spice-blend", "pantry", "warm-spices"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/garam-masala-recipe-garam-masala-powder/",
+      note: "Toasting and grinding whole warm spices fresh in small batches",
+    },
+    {
+      title: "Garam masala — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Garam_masala",
+      note: "Background — 'garam' means warming, not hot; a fragrance blend, not a chile heat",
+    },
+  ],
 };

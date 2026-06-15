@@ -30,4 +30,8 @@ export const shiroWot: Recipe = {
   notes:
     "Shiro is the cheapest, fastest protein on the arc — pantry flour plus an onion. Day-old shiro stiffens overnight and becomes shiro fitfit, torn into injera the next morning.",
   tags: ["shiro", "chickpea", "wot", "dinner", "weeknight"],
+  sources: [
+    { title: "196 flavors — Shiro Wot", url: "https://www.196flavors.com/shiro-wot/", note: "Spiced chickpea-flour stew, including the thicker tegabino version cooked in an earthenware pot." },
+    { title: "Holy Cow Vegan — Ethiopian Shiro Wot", url: "https://holycowvegan.net/ethiopian-shiro-wot-ground-chickpea-stew/", note: "Silky ground-chickpea stew with berbere and niter kibbeh from a bag of flour." },
+  ],
 };

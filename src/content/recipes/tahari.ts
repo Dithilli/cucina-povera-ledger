@@ -55,4 +55,11 @@ export const tahari: Recipe = {
   modernMove:
     "Tahari is the vegetarian's biryani — the trick is treating the potato like the meat: browning it in the bloomed masala before the rice goes in, so it carries the spice and the cheap dinner eats rich.",
   tags: ["rice", "potato", "one-pot", "awadhi", "biryani-style", "frugal"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/veg-tehri-recipe/",
+      note: "Awadhi-style one-pot rice with potatoes and whole spices browned in the masala",
+    },
+  ],
 };

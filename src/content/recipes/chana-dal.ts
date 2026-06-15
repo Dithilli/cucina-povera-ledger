@@ -32,4 +32,11 @@ export const chanaDal: Recipe = {
   notes:
     "Split chickpeas pack the most protein and the most chew of the everyday dals and keep you full for hours — a genuinely substantial dinner from a cup of dry pulses. The soak is optional but rewards you with a faster pot and gentler digestion.",
   tags: ["dinner", "dal", "chana-dal", "split-chickpeas", "bhuna", "legumes"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/chana-dal-recipe-chana-dal/",
+      note: "Cooking split Bengal gram just to tender over an onion-tomato masala base",
+    },
+  ],
 };

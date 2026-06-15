@@ -46,4 +46,11 @@ export const polentaConcia: Recipe = {
     "Add the cheese off the boil and fold rather than stir hard — you want ropy strands of melted cheese running through, not a homogenized paste.",
   notes: "Set leftovers chill firm and become the base for grilled polenta.",
   tags: ["polenta", "cheese", "alpine", "rich", "comfort"],
+  sources: [
+    {
+      title: "Polenta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Polenta",
+      note: "Alpine polenta enriched with melting cheese and butter (polenta concia)",
+    },
+  ],
 };

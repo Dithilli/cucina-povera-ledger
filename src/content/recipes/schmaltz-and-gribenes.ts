@@ -29,4 +29,16 @@ export const schmaltzAndGribenes: Recipe = {
     "Nothing is wasted: the fat that would have been scrap becomes the cooking medium for the whole week — kasha, kugel, fried eggs, soup — and the gribenes are a salted snack or a crown for chopped liver and mashed potato. Strictly fleishig; never let it near dairy.",
   zeroWasteHero: true,
   tags: ["base", "schmaltz", "fat", "fleishig", "zero-waste"],
+  sources: [
+    {
+      title: "Wikipedia — Schmaltz",
+      url: "https://en.wikipedia.org/wiki/Schmaltz",
+      note: "Rendered chicken/goose fat and the gribenes (skin-and-onion cracklings) byproduct.",
+    },
+    {
+      title: "Wikipedia — Gribenes",
+      url: "https://en.wikipedia.org/wiki/Gribenes",
+      note: "Crisp chicken or goose skin cracklings with fried onions.",
+    },
+  ],
 };

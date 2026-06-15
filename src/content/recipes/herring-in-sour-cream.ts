@@ -30,4 +30,15 @@ export const herringInSourCream: Recipe = {
   notes:
     "Dairy (milchig) — sour cream means no meat anywhere near it, and it follows a dairy meal, never a fleishig one. The same soaked herring without the cream becomes the pareve schmaltz-herring plate.",
   tags: ["herring", "dairy", "milchig"],
+  sources: [
+    {
+      title: "Wikipedia — Pickled herring",
+      url: "https://en.wikipedia.org/wiki/Pickled_herring",
+      note: "Pickled herring styles, including the sour-cream (milchig) preparation with onion.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Herring folded into sour cream with onion as a dairy plate, served with hot potatoes.",
+    },
+  ],
 };

@@ -43,4 +43,11 @@ export const skordalia: Recipe = {
   notes:
     "Often eaten on fasting days with fried salt cod or beetroot. Stretch it further (and milder) by working in a handful of stale bread soaked and squeezed, the older bread-based version of the sauce.",
   tags: ["sauce", "garlic", "potato", "skordalia", "meze", "vegan"],
+  sources: [
+    {
+      title: "My Greek Dish — Skordalia (Greek Potato and Garlic Dip)",
+      url: "https://www.mygreekdish.com/recipe/greek-skordalia-recipe-potato-garlic-dip/",
+      note: "Confirms potato pounded with raw garlic and olive oil into a thick meze dip.",
+    },
+  ],
 };

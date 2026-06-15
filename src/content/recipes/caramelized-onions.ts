@@ -27,4 +27,14 @@ export const caramelizedOnions: Recipe = {
   notes:
     "Made in oil, these stay pareve, so they slide into a dairy kugel or a fleishig soup with equal ease — the one base that goes anywhere on the Shabbos table.",
   tags: ["base", "onion", "pareve"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Fried/caramelized onion as the foundational flavoring of the Ashkenazi kitchen.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Slow-fried onions as the pareve base under kasha, kugel, and knish.",
+    },
+  ],
 };

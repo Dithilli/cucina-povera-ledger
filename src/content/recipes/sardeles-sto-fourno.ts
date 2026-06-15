@@ -31,4 +31,11 @@ export const sardelesStoFourno: Recipe = {
   notes:
     "Sardines are among the cheapest, most sustainable, most omega-rich fish in the Mediterranean; baking a whole tin of them is classic island peasant cooking.",
   tags: ["fish", "sardines", "baked", "tomato", "oregano", "lemon"],
+  sources: [
+    {
+      title: "The Glutton Life — Sardeles ston Fourno (Greek Oven-Baked Sardines)",
+      url: "https://www.thegluttonlife.com/2019/09/10/sardeles-ston-fourno-greek-oven-baked-sardines/",
+      note: "Confirms sardines baked with olive oil, oregano, and lemon.",
+    },
+  ],
 };

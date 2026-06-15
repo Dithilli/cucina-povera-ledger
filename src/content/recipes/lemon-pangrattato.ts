@@ -26,4 +26,11 @@ export const lemonPangrattato: Recipe = {
     "Get them properly crisp (they should rattle in the jar), and add the lemon and parsley off the heat so they stay bright — heat would dull them.",
   zeroWasteHero: true,
   tags: ["base", "bread", "pangrattato", "make-ahead"],
+  sources: [
+    {
+      title: "Breadcrumbs — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Breadcrumbs",
+      note: "Pangrattato is toasted seasoned breadcrumbs used to garnish pasta and vegetables",
+    },
+  ],
 };

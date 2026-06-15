@@ -33,4 +33,11 @@ export const mujaddara: Recipe = {
     "Endlessly forgiving and even better the next day. The Palestinian and Lebanese versions both lean on the onions; some cooks swap bulgur for the rice.",
   zeroWasteHero: true,
   tags: ["dinner", "legumes", "lentils", "rice", "onions", "one-pot", "vegan"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/lebanese-mujadara/",
+      note: "Authentic Lebanese mujadara — confirms deeply caramelized (near-burnt) onions and lentils-with-rice as the heart of the dish.",
+    },
+  ],
 };

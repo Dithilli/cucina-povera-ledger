@@ -33,4 +33,11 @@ export const shahiPaneer: Recipe = {
   modernMove:
     "A spoon of cashews blended into the gravy does the work of cream — the 'royal' richness comes from emulsified nuts and a late splash of yogurt, not an expensive pour of cream.",
   tags: ["paneer", "cashew-gravy", "tomato", "vegetarian", "north-indian"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/shahi-paneer/",
+      note: "Shahi paneer — nut-and-tomato gravy enriched with cashews and yogurt rather than cream",
+    },
+  ],
 };

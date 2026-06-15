@@ -34,4 +34,11 @@ export const balila: Recipe = {
   notes:
     "Balila is the warm street-corner relative of msabbaha with the tahini left out — fastest and cheapest of the chickpea dinners. A spoonful of tahini stirred in at the end bridges the two.",
   tags: ["legumes", "chickpeas", "lemon", "cumin", "no-blender"],
+  sources: [
+    {
+      title: "Plant Based Folk — Balila",
+      url: "https://plantbasedfolk.com/balila/",
+      note: "Confirms balila as warm whole chickpeas dressed off the heat with cumin and olive oil — the no-tahini chickpea supper.",
+    },
+  ],
 };

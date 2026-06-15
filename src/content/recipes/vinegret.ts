@@ -33,4 +33,15 @@ export const vinegret: Recipe = {
     "Pareve — oil, not schmaltz or cream — so it rides alongside any meal. The whole thing is a use-it-up dish: yesterday's boiled roots, the last beans in the pot, and the brine that would otherwise go down the drain.",
   zeroWasteHero: true,
   tags: ["beet", "potato", "pickle", "salad", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Vinegret",
+      url: "https://en.wikipedia.org/wiki/Vinegret",
+      note: "Eastern European salad of diced cooked beet, potato, and carrot with onion and brined pickle.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Vinegret as a thrifty use-up dish of boiled roots and pickle brine.",
+    },
+  ],
 };

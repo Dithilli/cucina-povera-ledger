@@ -35,4 +35,16 @@ export const gbegiriAndEwedu: Recipe = {
     "The Ibadan way is gbegiri + ewedu + a little stew together — the beans bring body and protein, the jute leaves bring the slippery draw, the stew brings the pepper.",
   zeroWasteHero: true,
   tags: ["beans", "jute-leaf", "draw-soup", "eba", "palm-oil", "yoruba"],
+  sources: [
+    {
+      title: "My Active Kitchen (Ajoke) — Gbegiri (Abula) Soup",
+      url: "https://www.myactivekitchen.com/gbegiri-abula/",
+      note: "Blending peeled beans into a smooth gbegiri, served abula-style with ewedu and stew.",
+    },
+    {
+      title: "My Active Kitchen (Ajoke) — Ewedu Soup",
+      url: "https://www.myactivekitchen.com/ewedu-soup/",
+      note: "Brief hot blanch and blend of jute leaves for a bright-green, slippery draw.",
+    },
+  ],
 };

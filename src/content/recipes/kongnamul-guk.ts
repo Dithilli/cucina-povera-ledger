@@ -69,4 +69,11 @@ export const kongnamulGuk: Recipe = {
     "zero-waste",
     "weeknight",
   ],
+  sources: [
+    {
+      title: "Maangchi — Soybean sprout soup (Kongnamul-guk)",
+      url: "https://www.maangchi.com/recipe/kongnamulguk",
+      note: "Anchovy-kelp broth, whole sprouts, and the lid-stays-on cooking rule",
+    },
+  ],
 };

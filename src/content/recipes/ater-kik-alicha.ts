@@ -30,4 +30,8 @@ export const aterKikAlicha: Recipe = {
   notes:
     "The distinction is texture: 'ater kik' is the smooth, fully-broken-down version of the same gentle yellow-pea dish.",
   tags: ["alicha", "split-peas", "puree", "dinner", "mild"],
+  sources: [
+    { title: "Vegan Richa — Ethiopian Split Pea Stew (Kik Alicha)", url: "https://www.veganricha.com/ethiopian-split-pea-stew-kik-alicha/", note: "Yellow split peas cooked soft with turmeric, onion, garlic, and ginger and served on injera — the gentle pea dish this purées." },
+    { title: "Kittee Berns — Teff Love: Adventures in Vegan Ethiopian Cooking", note: "Cookbook covering Ye'kik Alicha, the mild yellow-pea alicha." },
+  ],
 };

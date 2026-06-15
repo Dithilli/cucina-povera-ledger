@@ -34,4 +34,11 @@ export const ayamase: Recipe = {
   notes:
     "An Egba/Ijebu classic, traditionally rich with offal — but a little mackerel and a few eggs stretch the pot just as well on a budget.",
   tags: ["pepper-stew", "green-pepper", "ofada", "bleached-palm-oil", "iru", "rice"],
+  sources: [
+    {
+      title: "Sisi Jemimah — Ayamase (Ofada Stew)",
+      url: "https://sisijemimah.com/2015/08/04/ayamase-ofada-stew/",
+      note: "Bleaching the palm oil and frying the de-watered green pepper base with locust beans (iru).",
+    },
+  ],
 };

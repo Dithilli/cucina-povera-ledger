@@ -53,4 +53,11 @@ export const falafel: Recipe = {
   notes:
     "Salt and baking soda go in just before frying so the batter stays light. Leftover paste freezes well raw.",
   tags: ["chickpeas", "fava", "fried", "herbs", "legumes", "street-food"],
+  sources: [
+    {
+      title: "Maureen Abood — Easy Homemade Falafel (Authentic Lebanese Recipe)",
+      url: "https://maureenabood.com/authentic-lebanese-falafel/",
+      note: "Confirms soaked-but-raw chickpeas and fava beans (never cooked) ground with herbs and spice for a light, crisp falafel.",
+    },
+  ],
 };

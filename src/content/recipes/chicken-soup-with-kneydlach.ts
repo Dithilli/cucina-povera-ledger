@@ -34,4 +34,15 @@ export const chickenSoupWithKneydlach: Recipe = {
   notes:
     "Schmaltz and chicken make this fleishig — no dairy. The genius is the economy: one whole bird gives a feast's worth of broth, and the boiled meat pulled off the bones feeds a second meal entirely (chicken salad, a filling for kreplach, a quick hash). The carcass simmered again stretches even further.",
   tags: ["soup", "chicken", "matzo-ball", "shabbos", "fleishig"],
+  sources: [
+    {
+      title: "Wikipedia — Matzah ball",
+      url: "https://en.wikipedia.org/wiki/Matzah_ball",
+      note: "Kneydlach made from matzah meal, eggs, water, and schmaltz, served in chicken soup.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Ashkenazi chicken soup (Jewish penicillin) and light matzo-ball technique.",
+    },
+  ],
 };

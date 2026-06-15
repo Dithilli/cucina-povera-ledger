@@ -40,4 +40,11 @@ export const spanakopita: Recipe = {
   notes:
     "Keep unused phyllo under a damp towel so it doesn't crack. Made with chard or wild greens it becomes hortopita; either way it's frugal, travels well, and reheats crisp.",
   tags: ["spinach", "feta", "phyllo", "pita", "pie"],
+  sources: [
+    {
+      title: "My Greek Dish — Authentic Greek Spinach Pie (Spanakopita)",
+      url: "https://www.mygreekdish.com/recipe/traditional-greek-spinach-pie-spanakopita-recipe-with-homemade-phyllo/",
+      note: "Confirms a spinach-feta-herb filling layered in phyllo and baked until crisp.",
+    },
+  ],
 };

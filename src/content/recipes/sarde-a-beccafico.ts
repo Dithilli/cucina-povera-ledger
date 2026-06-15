@@ -55,4 +55,11 @@ export const sardeABeccafico: Recipe = {
   modernMove:
     "Toast the breadcrumbs in good oil before stuffing so the filling stays crunchy after baking, and let the citrus juice glaze the tops rather than steam them.",
   tags: ["sicilian", "sardines", "baked", "stuffed", "fish", "agrodolce"],
+  sources: [
+    {
+      title: "La Cucina Italiana — Sarde a beccafico, a beloved Sicilian dish",
+      url: "https://www.lacucinaitaliana.com/italian-food/italian-dishes/sarde-a-beccafico-a-beloved-sicilian-dish",
+      note: "Sicilian stuffed sardines named for the beccafico bird; breadcrumb-raisin-pine nut filling",
+    },
+  ],
 };

@@ -67,4 +67,11 @@ export const egusiSoup: Recipe = {
   modernMove:
     "Frying the tomato-onion-pepper base until the oil splits, then dropping the egusi in undisturbed lumps, gives you defined nutty pockets instead of a muddy slurry — texture, not just thickness.",
   tags: ["egusi", "melon-seed", "draw-soup", "greens", "swallow", "one-pot"],
+  sources: [
+    {
+      title: "Sisi Jemimah — Egusi Soup (Efo Elegusi)",
+      url: "https://sisijemimah.com/2015/08/27/egusi-soup-efo-elegusi-2/",
+      note: "Ground melon-seed soup over a fried tomato-onion-pepper base, with greens (ugu, spinach, or bitterleaf) folded in at the end.",
+    },
+  ],
 };

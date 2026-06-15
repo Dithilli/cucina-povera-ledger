@@ -29,4 +29,7 @@ export const gomen: Recipe = {
   notes:
     "Often served with a wedge of fresh ayib (a mild crumbly cheese), 'gomen be ayib,' which cools the greens and adds protein on a feast day.",
   tags: ["greens", "collards", "gomen", "side", "vegetable"],
+  sources: [
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/gomen-ethiopian-collard-greens/", note: "Collard greens stewed with onion, garlic, ginger, and niter kibbeh — the greens side of the platter." },
+  ],
 };

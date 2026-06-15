@@ -30,4 +30,7 @@ export const misirAlicha: Recipe = {
   notes:
     "On the plate, alicha and a spicy wot are deliberate opposites — the cool and the fire, both built from the same cheap pot of lentils.",
   tags: ["alicha", "lentils", "turmeric", "dinner", "mild"],
+  sources: [
+    { title: "Cozy Delicious — Misir Alicha (Mild Lentil Stew)", url: "https://www.cozydelicious.com/misir-alicha-mild-lentil-stew/", note: "Red lentils with turmeric and no berbere — the mild, golden twin of misir wot." },
+  ],
 };

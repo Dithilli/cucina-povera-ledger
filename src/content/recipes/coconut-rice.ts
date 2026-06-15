@@ -35,4 +35,11 @@ export const coconutRice: Recipe = {
   notes:
     "Lovely with fried plantain and a fried egg or any leftover stew. Use the lighter coconut 'second pressing' or thin a can with water to keep it cheap and not too heavy.",
   tags: ["dinner", "lunch", "rice", "one-pot", "coconut", "tomato-pepper"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — Nigerian Coconut Rice",
+      url: "https://www.allnigerianrecipes.com/rice/nigerian-coconut-rice/",
+      note: "Cooking the rice in coconut milk over a tomato-pepper base until the grains drink up the liquid.",
+    },
+  ],
 };

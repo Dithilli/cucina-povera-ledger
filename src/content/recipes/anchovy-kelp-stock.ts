@@ -29,4 +29,11 @@ export const anchovyKelpStock: Recipe = {
     "Make a big batch and refrigerate up to 4 days or freeze in jars for instant stews. The strained-out anchovies and shiitake can be chopped and stir-fried into a salty rice-side rather than tossed. For a vegan stock, drop the anchovies and lean on kelp plus shiitake.",
   zeroWasteHero: false,
   tags: ["base", "stock", "anchovy", "kelp", "umami", "make-ahead"],
+  sources: [
+    {
+      title: "Maangchi — Anchovy kelp stock (Myeolchi-dasima-yuksu)",
+      url: "https://www.maangchi.com/recipe/myeolchi-dasima-yuksu",
+      note: "Method: dry-toast the anchovies, then steep with dried kelp for a clean umami stock",
+    },
+  ],
 };

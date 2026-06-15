@@ -32,4 +32,11 @@ export const kotopouloFricassee: Recipe = {
   notes:
     "A spring dish built on whatever leafy greens are cheap and abundant; the lettuce and dill do most of the volume so the chicken goes a long way.",
   tags: ["chicken", "greens", "lettuce", "dill", "avgolemono", "braise"],
+  sources: [
+    {
+      title: "Dimitra's Dishes — Greek-Style Chicken Fricassée Avgolemono",
+      url: "https://www.dimitrasdishes.com/greek-style-chicken-fricassee-avgolemono/",
+      note: "Confirms chicken braised with romaine lettuce and dill, finished with egg-lemon sauce.",
+    },
+  ],
 };

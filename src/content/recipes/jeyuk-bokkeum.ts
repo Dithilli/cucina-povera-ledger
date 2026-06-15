@@ -65,4 +65,16 @@ export const jeyukBokkeum: Recipe = {
   modernMove:
     "Marinate the pork in the gochujang itself, then cook it screaming-hot and undisturbed: the sugar in the paste caramelizes onto the meat, so 12 oz of pork eats like twice that.",
   tags: ["pork", "bokkeum", "gochujang", "spicy", "stir-fry"],
+  sources: [
+    {
+      title: "Korean Bapsang (Hyosun Ro) — Jeyuk Bokkeum (Spicy Pork Bulgogi)",
+      url: "https://www.koreanbapsang.com/dweji-bulgogi-korean-spicy-pork-bbq/",
+      note: "Gochujang-and-gochugaru marinade with garlic and ginger, pan-fried hot",
+    },
+    {
+      title: "Maangchi — Spicy stir-fried pork (Dwaejigogi-bokkeum)",
+      url: "https://www.maangchi.com/recipe/dwaejigogi-bokkeum",
+      note: "Marinating the pork in the spicy paste then stir-frying with onion and green onion",
+    },
+  ],
 };

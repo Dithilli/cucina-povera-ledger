@@ -27,4 +27,14 @@ export const potOfWhiteBeans: Recipe = {
   notes:
     "Pareve as written, so the pot can swing either way: into a milchig dairy soup with a knob of butter, or into a fleishig cholent with schmaltz and a marrow bone. Day-two beans mash into spreads or fall into soup.",
   tags: ["base", "beans", "pareve"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Beans as a cheap protein base of the Ashkenazi kitchen, feeding soups and cholent.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Salting beans only once tender, and the starchy bean broth as a cooking stock.",
+    },
+  ],
 };

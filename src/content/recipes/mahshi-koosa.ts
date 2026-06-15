@@ -37,4 +37,11 @@ export const mahshiKoosa: Recipe = {
     "The scooped-out zucchini cores become the base of the braising broth, so nothing is thrown away — the shell and its insides cook the same dish from two angles.",
   zeroWasteHero: true,
   tags: ["zucchini", "stuffed", "rice", "tomato", "vegan", "zero-waste"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/vegetarian-stuffed-koosa/",
+      note: "Vegetarian koosa mahshi — rice-and-herb stuffing poached in a garlicky tomato broth, matching the meatless braise here.",
+    },
+  ],
 };

@@ -29,4 +29,8 @@ export const telbaFitfit: Recipe = {
   notes:
     "Telba (flax) is a quiet hero of fasting nutrition — protein and good fat with no animal product — and here it rescues leftover injera at the same time.",
   tags: ["fitfit", "flax", "telba", "zero-waste", "fasting"],
+  sources: [
+    { title: "Whats4eats — Telba (Ethiopian Flaxseed)", url: "https://www.whats4eats.com/beverages/telba-recipe", note: "Toasted ground-flaxseed preparation, with the telba fitfit variant mixing the flax sauce into torn injera." },
+    { title: "Fit-fit — Wikipedia", url: "https://en.wikipedia.org/wiki/Fit-fit", note: "The general fitfit framing of reviving day-old injera in a sauce." },
+  ],
 };

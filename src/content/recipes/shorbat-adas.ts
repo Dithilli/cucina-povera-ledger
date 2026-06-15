@@ -34,4 +34,11 @@ export const shorbatAdas: Recipe = {
   notes:
     "The most frugal soup in the region — almost all pantry. Thicken it for a stew or thin it for a starter; it reheats for days and only deepens.",
   tags: ["dinner", "soup", "legumes", "red-lentils", "cumin", "lemon", "vegan"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/lebanese-lentil-soup/",
+      note: "Authentic Lebanese shorbet adas — red lentils simmered to a purée with cumin and finished with lemon.",
+    },
+  ],
 };

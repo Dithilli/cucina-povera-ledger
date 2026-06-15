@@ -35,4 +35,11 @@ export const doenjangJjigae: Recipe = {
     "Endlessly flexible: mushrooms, dried anchovies left whole, a handful of clams, or a little diced pork or beef all belong here if you have them. Made in a clay ttukbaegi it keeps bubbling at the table. Use a vegan kelp-shiitake stock and it stays fully plant-based.",
   zeroWasteHero: false,
   tags: ["dinner", "stew", "jjigae", "doenjang", "tofu", "fermented", "vegetarian"],
+  sources: [
+    {
+      title: "Maangchi — Doenjang-jjigae (Fermented soybean paste stew)",
+      url: "https://www.maangchi.com/recipe/doenjang-jjigae",
+      note: "Dissolving doenjang into the broth with potato, zucchini, tofu, and chili",
+    },
+  ],
 };

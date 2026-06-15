@@ -32,4 +32,11 @@ export const youvarlakia: Recipe = {
   notes:
     "Youvarlakia means 'little round ones.' A winter staple that turns the cheapest mince into a complete, protein-rich dinner.",
   tags: ["meatballs", "beef", "rice", "avgolemono", "egg-lemon", "one-pot"],
+  sources: [
+    {
+      title: "My Greek Dish — Youvarlakia (Greek Meatball Soup in Egg-Lemon Sauce)",
+      url: "https://www.mygreekdish.com/recipe/creamy-meatball-soup-egg-lemon-sauce-youvarlakia-avgolemono/",
+      note: "Confirms rice-studded meatballs simmered in broth and finished with avgolemono.",
+    },
+  ],
 };

@@ -38,4 +38,11 @@ export const briam: Recipe = {
     "A baked ladero — the long roast in olive oil is the whole point. Like all ladera the protein is modest; lean on the feta and bread alongside. Keeps for days and tastes better cold.",
   zeroWasteHero: true,
   tags: ["ladera", "briam", "vegetable", "olive-oil", "roasted", "summer", "vegetarian"],
+  sources: [
+    {
+      title: "My Greek Dish — Briam (Greek Mixed Roasted Vegetables)",
+      url: "https://www.mygreekdish.com/recipe/briam-recipe-greek-mixed-roasted-vegetables/",
+      note: "Confirms potatoes, courgettes, aubergines, and tomato roasted in olive oil; served with feta and bread.",
+    },
+  ],
 };

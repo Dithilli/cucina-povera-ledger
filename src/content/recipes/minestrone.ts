@@ -59,4 +59,11 @@ export const minestrone: Recipe = {
     "Let the Parmesan rind dissolve slowly into the pot — it seasons the whole soup with savory depth and is exactly the kind of scrap this week is built to use.",
   zeroWasteHero: true,
   tags: ["garden", "soup", "legumes", "vegetable", "zero-waste", "one-pot"],
+  sources: [
+    {
+      title: "Minestrone — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Minestrone",
+      note: "Thick Italian vegetable-and-bean soup of seasonal odds and ends with pasta",
+    },
+  ],
 };

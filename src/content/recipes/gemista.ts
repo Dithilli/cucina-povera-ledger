@@ -42,4 +42,11 @@ export const gemista: Recipe = {
     "A ladera (cooked-in-oil) dish from the Greek summer garden; traditionally meatless and eaten lukewarm with bread and feta to mop the oil.",
   zeroWasteHero: true,
   tags: ["vegetable", "rice", "ladera", "stuffed", "summer"],
+  sources: [
+    {
+      title: "My Greek Dish — Gemista (Greek Stuffed Tomatoes and Peppers with Rice)",
+      url: "https://www.mygreekdish.com/recipe/gemista-stuffed-tomatoes-peppers-and-onions/",
+      note: "Confirms tomatoes and peppers stuffed with a herbed rice filling and baked in olive oil.",
+    },
+  ],
 };

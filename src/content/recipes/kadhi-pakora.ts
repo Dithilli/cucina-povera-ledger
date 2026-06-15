@@ -55,4 +55,11 @@ export const kadhiPakora: Recipe = {
   modernMove:
     "The long low simmer is the whole dish — it cooks out the besan's chalkiness and emulsifies the yogurt so it stays silky instead of splitting. Rushing it is why most home kadhi tastes raw.",
   tags: ["yogurt", "gram-flour", "besan", "curry", "pakora", "frugal"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/punjabi-kadhi-recipe-punjabi-kadhi-pakora/",
+      note: "Punjabi kadhi pakora — long low simmer of the besan-yogurt base, onion fritters added in",
+    },
+  ],
 };

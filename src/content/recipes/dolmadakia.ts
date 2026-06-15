@@ -40,4 +40,11 @@ export const dolmadakia: Recipe = {
   notes:
     "These oil-braised, meatless dolmadakia are the cold-eaten lenten version; serve straight from the fridge with extra lemon. Worth making a big batch.",
   tags: ["vine-leaves", "rice", "ladera", "lemon", "meze"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Dolmades (Stuffed Vine Leaves)",
+      url: "https://www.mygreekdish.com/recipe/greek-dolmades-recipe-stuffed-vine-leaves/",
+      note: "Confirms vine leaves rolled around a rice-and-herb filling and braised with lemon.",
+    },
+  ],
 };

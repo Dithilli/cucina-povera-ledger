@@ -45,4 +45,11 @@ export const stracciatella: Recipe = {
   modernMove:
     "Whisk the cheese into the raw egg before it hits the pot so it suspends in the strands rather than clumping — silkier rags, deeper savor.",
   tags: ["eggs", "soup", "brodo", "quick", "protein-forward"],
+  sources: [
+    {
+      title: "Stracciatella (soup) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Stracciatella_(soup)",
+      note: "Roman egg-drop soup of beaten egg, Parmesan, lemon, and nutmeg in hot brodo",
+    },
+  ],
 };

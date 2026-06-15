@@ -31,4 +31,11 @@ export const bakaliarosSkordalia: Recipe = {
   notes:
     "Salt cod was the cheap, shelf-stable fish that reached inland villages with no coast; properly soaked, a pound feeds four. Traditional on March 25th and Palm Sunday.",
   tags: ["fish", "salt-cod", "bakaliaros", "skordalia", "garlic", "fried"],
+  sources: [
+    {
+      title: "My Greek Dish — Bakaliaros Skordalia (Cod Fritters with Garlicky Potato Purée)",
+      url: "https://www.mygreekdish.com/recipe/cod-fritters-garlicky-potato-puree-bakaliaros-skordalia/",
+      note: "Confirms desalted cod fried in batter and served with garlic-and-potato skordalia.",
+    },
+  ],
 };

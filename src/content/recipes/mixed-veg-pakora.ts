@@ -49,4 +49,11 @@ export const mixedVegPakora: Recipe = {
   modernMove:
     "Salting the vegetables to draw their own water (instead of adding it) and a spoon of rice flour in the besan are what separate shatter-crisp pakoras from soggy ones.",
   tags: ["gram-flour", "besan", "fritters", "vegetables", "fried", "frugal"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/mix-veg-pakora-recipe/",
+      note: "Mixed vegetables in a thick clinging besan batter, fried crisp",
+    },
+  ],
 };

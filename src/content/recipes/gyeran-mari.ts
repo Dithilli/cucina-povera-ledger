@@ -50,4 +50,11 @@ export const gyeranMari: Recipe = {
   notes:
     "The classic clear-out dish: whatever odd vegetable, leftover rice, or sour kimchi is in the fridge gets finely chopped and rolled into the egg. Almost any banchan scrap can disappear into the layers.",
   tags: ["egg", "banchan", "rolled-omelette", "make-ahead", "vegetarian"],
+  sources: [
+    {
+      title: "Maangchi — Korean rolled omelette (Gyeran-mari)",
+      url: "https://www.maangchi.com/recipe/gyeran-mari",
+      note: "Rolling thin layers of seasoned egg into a log over low heat, then slicing",
+    },
+  ],
 };

@@ -37,4 +37,11 @@ export const jollofRice: Recipe = {
   notes:
     "Stretch it to a full dinner with a fried egg, fried plantain, or a few beans on the side. Leftovers reheat better than almost any rice — the flavour keeps developing.",
   tags: ["dinner", "lunch", "rice", "one-pot", "jollof", "tomato-pepper", "party-rice"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — Smoky Party Jollof Rice",
+      url: "https://www.allnigerianrecipes.com/rice/smoky-party-jollof-rice/",
+      note: "Cooking covered without stirring so the base toasts into the coveted smoky party-rice layer.",
+    },
+  ],
 };

@@ -37,4 +37,16 @@ export const alooGobi: Recipe = {
   modernMove:
     "Covered low-heat steaming with almost no added water keeps each vegetable distinct and lets the masala caramelize onto it — the difference between a dry sabzi and a wet stew.",
   tags: ["sabzi", "potato", "cauliflower", "dry-curry", "vegetable"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/aloo-gobi-recipe-punjabialoo-gobi/",
+      note: "Punjabi dry aloo gobi — covered low-heat cooking so the masala clings instead of stewing",
+    },
+    {
+      title: "Aloo gobi — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Aloo_gobi",
+      note: "Background on the dish as a North Indian potato-and-cauliflower sabzi",
+    },
+  ],
 };

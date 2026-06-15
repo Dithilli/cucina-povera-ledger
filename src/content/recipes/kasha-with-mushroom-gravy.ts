@@ -32,4 +32,14 @@ export const kashaWithMushroomGravy: Recipe = {
   notes:
     "Pareve as written with oil. Made with rendered chicken schmaltz the gravy turns fleishig and tastes like it came off a roast — fine over kasha beside chicken, but then keep all dairy off the table.",
   tags: ["kasha", "buckwheat", "mushroom"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Kasha (buckwheat) and the importance of foraged/dried mushrooms in the Ashkenazi kitchen.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Kasha served under an onion-and-mushroom gravy as a meatless supper.",
+    },
+  ],
 };

@@ -61,4 +61,11 @@ export const pastaEFagioli: Recipe = {
   ],
   modernMove: `The Parmesan rind and a portion of mashed beans do the work of cream — thick, glossy, and entirely from scraps.`,
   tags: ["legumes", "pasta", "soup", "one-pot", "tomato"],
+  sources: [
+    {
+      title: "Pasta e fagioli — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_e_fagioli",
+      note: "Italian pasta-and-bean soup with regional cannellini/borlotti variants",
+    },
+  ],
 };

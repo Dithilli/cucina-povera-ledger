@@ -46,4 +46,11 @@ export const cannelliniSuFettunta: Recipe = {
   modernMove:
     "Crush only some of the beans so half spread into the toast and half stay whole — texture contrast under a runny yolk that sauces the whole thing.",
   tags: ["legumes", "beans", "eggs", "bread", "protein-forward"],
+  sources: [
+    {
+      title: "Bruschetta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Bruschetta",
+      note: "Fettunta is the Tuscan garlic-rubbed, oiled grilled bread that bases this toast",
+    },
+  ],
 };

@@ -36,4 +36,16 @@ export const bainganBharta: Recipe = {
   modernMove:
     "Charring the whole eggplant over open flame before mashing gives a deep smoky bharta that no amount of spice can fake — the smoke, not the oil, is the luxury here.",
   tags: ["sabzi", "eggplant", "baingan", "smoked", "mash"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/baingan-bharta-recipe-punjabi-baingan-bharta-recipe/",
+      note: "Punjabi baingan bharta — flame-roasting the whole eggplant for the smoky mash",
+    },
+    {
+      title: "Baingan bharta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Baingan_bharta",
+      note: "Background on the smoked mashed-eggplant dish",
+    },
+  ],
 };

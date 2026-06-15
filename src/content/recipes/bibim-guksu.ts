@@ -75,4 +75,11 @@ export const bibimGuksu: Recipe = {
   notes:
     "Endlessly stretchable: leftover sour kimchi, any crunchy vegetable, or a handful of greens all belong on top. The same sauce works on rice or over blanched vegetables when there are no noodles.",
   tags: ["noodles", "cold-noodles", "gochujang", "spicy", "summer", "fast"],
+  sources: [
+    {
+      title: "Maangchi — Bibim-guksu (Spicy mixed noodles)",
+      url: "https://www.maangchi.com/recipe/bibim-guksu",
+      note: "Gochujang sauce, rinsing the somyeon cold, and topping with cucumber and egg",
+    },
+  ],
 };

@@ -37,4 +37,11 @@ export const loubiaBzeit: Recipe = {
     "Traditionally served at room temperature, which makes it an ideal cook-once dish: the leftovers are the intended state, not a compromise.",
   zeroWasteHero: true,
   tags: ["green-beans", "olive-oil", "tomato", "yakhni", "rice", "vegan"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/green-beans-recipe-loubieh-bi-zeit/",
+      note: "Lebanese green beans braised in olive oil with tomato, onion, and garlic — meatless and good warm or cool.",
+    },
+  ],
 };

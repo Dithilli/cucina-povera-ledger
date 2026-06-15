@@ -67,4 +67,11 @@ export const kimchiBokkeumbap: Recipe = {
     "The canonical zero-waste dinner: it exists precisely to use up the two things every Korean fridge always has too much of — leftover rice and kimchi that's turned sour. Any odd scrap of vegetable or meat can ride along.",
   zeroWasteHero: true,
   tags: ["rice", "kimchi", "bokkeum", "fried-rice", "leftovers", "make-ahead"],
+  sources: [
+    {
+      title: "Maangchi — Kimchi fried rice (Kimchi-bokkeumbap)",
+      url: "https://www.maangchi.com/recipe/kimchi-bokkeumbap",
+      note: "Frying sour kimchi with day-old rice and kimchi juice, topped with a fried egg and gim",
+    },
+  ],
 };

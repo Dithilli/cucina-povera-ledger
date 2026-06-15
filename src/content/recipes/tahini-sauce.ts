@@ -29,4 +29,11 @@ export const tahiniSauce: Recipe = {
   notes:
     "Keeps a week refrigerated. Use it as a dressing thinned with extra water and lemon over roasted vegetables, or as the bound base for hummus.",
   tags: ["side", "base", "tahini", "sauce", "no-cook", "vegan"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/tahini-sauce/",
+      note: "Tarator method — tahini, lemon, garlic, and cold water whisked to a smooth pourable cream.",
+    },
+  ],
 };

@@ -57,4 +57,11 @@ export const kongnamulBap: Recipe = {
     "Classic Jeonju cold-weather food. The leftover sauce keeps for days and dresses any plain rice or namul.",
   zeroWasteHero: true,
   tags: ["rice", "soybean-sprouts", "one-pot", "soy-scallion", "frugal"],
+  sources: [
+    {
+      title: "Maangchi — Kongnamulbap (Soybean sprouts bibimbap)",
+      url: "https://www.maangchi.com/recipe/kongnamulbap",
+      note: "Steaming soybean sprouts on top of the rice and forking through a soy-scallion sauce",
+    },
+  ],
 };

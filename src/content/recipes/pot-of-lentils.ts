@@ -29,4 +29,11 @@ export const potOfLentils: Recipe = {
   notes:
     "Brown and green lentils hold their shape; avoid red/orange lentils here, as those dissolve into soup (use the red-lentil pot for shorbat adas).",
   tags: ["base", "legumes", "lentils", "make-ahead"],
+  sources: [
+    {
+      title: "Feel Good Foodie — feelgoodfoodie.net",
+      url: "https://feelgoodfoodie.net/recipe/how-to-cook-lentils/",
+      note: "How to cook lentils — confirms no soaking needed and that green/brown lentils hold their shape (cooked slow, not boiled hard).",
+    },
+  ],
 };

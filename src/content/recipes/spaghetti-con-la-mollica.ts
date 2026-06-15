@@ -66,4 +66,11 @@ export const spaghettiConLaMollica: Recipe = {
   modernMove:
     "Emulsifying the oil-garlic-anchovy with pasta water turns a slick of oil into a real sauce; the lemon-parsley crumb adds crunch and brightness on top.",
   tags: ["pangrattato", "anchovy", "garlic", "breadcrumbs", "one-pot"],
+  sources: [
+    {
+      title: "Pasta mollicata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_mollicata",
+      note: "Southern Italian 'poor dish' of pasta with toasted breadcrumbs in place of cheese",
+    },
+  ],
 };

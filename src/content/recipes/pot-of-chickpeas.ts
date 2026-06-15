@@ -26,4 +26,11 @@ export const potOfChickpeas: Recipe = {
   modernMove:
     "Low and slow gives creamy interiors instead of split skins. Never pour the brodo away — blend a ladle of beans into it and it emulsifies sauces like cream, for free.",
   tags: ["base", "legumes", "chickpeas", "make-ahead"],
+  sources: [
+    {
+      title: "Chickpea — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Chickpea",
+      note: "Dried chickpeas soaked and simmered creamy; their starchy brodo as a base",
+    },
+  ],
 };

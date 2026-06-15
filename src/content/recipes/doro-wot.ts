@@ -31,4 +31,8 @@ export const doroWot: Recipe = {
   notes:
     "The classic break-the-fast feast, traditionally served when the Orthodox fasting season ends. One chicken and six eggs feed a whole table over a platter of injera.",
   tags: ["doro-wot", "chicken", "feast", "berbere", "dinner"],
+  sources: [
+    { title: "Doro Wat — Wikipedia", url: "https://en.wikipedia.org/wiki/Doro_wat", note: "The national chicken-and-egg stew built on berbere and niter kibbeh, served when the Orthodox fast ends." },
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/doro-wat-spicy-ethiopian-chicken-stew/", note: "Authentic recipe with the long dry onion sweat and bloomed berbere." },
+  ],
 };

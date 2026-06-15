@@ -63,4 +63,11 @@ export const gajiNamul: Recipe = {
   notes:
     "A staple summer banchan when eggplant is cheap and abundant. Keeps a couple of days and the flavor deepens overnight.",
   tags: ["eggplant", "namul", "banchan", "steamed", "side"],
+  sources: [
+    {
+      title: "Maangchi — Eggplant side dish (Gaji-namul)",
+      url: "https://www.maangchi.com/recipe/gaji-namul",
+      note: "Steaming the eggplant then tearing and dressing it with garlic, soy, and sesame",
+    },
+  ],
 };

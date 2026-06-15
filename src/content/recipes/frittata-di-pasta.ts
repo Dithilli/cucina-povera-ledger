@@ -53,4 +53,11 @@ export const frittataDiPasta: Recipe = {
     "Cook it low and slow to a custardy French set rather than a dry one, and aim for clean edges so a humble scrap dish plates like a tasting course.",
   zeroWasteHero: true,
   tags: ["eggs", "pasta", "zero-waste", "leftovers", "one-pan"],
+  sources: [
+    {
+      title: "Frittata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Frittata",
+      note: "Egg-based Italian dish bound with leftovers such as pasta",
+    },
+  ],
 };

@@ -30,4 +30,16 @@ export const schmaltzOnRye: Recipe = {
     "Schmaltz and gribenes make this firmly fleishig — no dairy at the table. Both are the saved-back gold from rendering chicken skin and fat for richer dishes; nothing about the bird is thrown away. The radish and onion aren't garnish, they're the digestive counterweight to the fat.",
   zeroWasteHero: true,
   tags: ["schmaltz", "rye", "gribenes", "fleishig"],
+  sources: [
+    {
+      title: "Wikipedia — Schmaltz",
+      url: "https://en.wikipedia.org/wiki/Schmaltz",
+      note: "Schmaltz spread on bread, a frugal Ashkenazi staple finished with gribenes.",
+    },
+    {
+      title: "Wikipedia — Gribenes",
+      url: "https://en.wikipedia.org/wiki/Gribenes",
+      note: "Cracklings scattered over schmaltz-spread rye.",
+    },
+  ],
 };

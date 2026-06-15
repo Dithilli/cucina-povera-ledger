@@ -51,4 +51,11 @@ export const peperonata: Recipe = {
     "Cook it long and low until the peppers melt and the oil separates out glossy — peperonata rushed is a stir-fry; peperonata stewed is a confit.",
   notes: "Keeps several days and improves; great cold on fettunta or with a frittata.",
   tags: ["garden", "peppers", "stew", "vegetable", "make-ahead", "side"],
+  sources: [
+    {
+      title: "Peperonata — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Peperonata",
+      note: "Italian stew of bell peppers, tomato, and onion served hot or cold",
+    },
+  ],
 };

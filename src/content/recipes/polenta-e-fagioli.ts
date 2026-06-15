@@ -49,4 +49,11 @@ export const polentaEFagioli: Recipe = {
   modernMove:
     "Keep the polenta loose and pourable rather than stiff so the bean liquid marbles into it — the two textures meet instead of sitting in layers.",
   tags: ["polenta", "legumes", "beans", "one-bowl", "protein-forward"],
+  sources: [
+    {
+      title: "Polenta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Polenta",
+      note: "Northern Italian cornmeal staple, here pooled under brothy beans",
+    },
+  ],
 };

@@ -30,4 +30,15 @@ export const schmaltzHerring: Recipe = {
   notes:
     "Pareve — cured fish and oil, no meat or dairy — so it opens a meat or a dairy Shabbos meal equally. 'Schmaltz herring' is the fattiest grade of herring; it has nothing to do with rendered chicken schmaltz.",
   tags: ["herring", "fish", "pareve", "cured"],
+  sources: [
+    {
+      title: "Wikipedia — Pickled herring",
+      url: "https://en.wikipedia.org/wiki/Pickled_herring",
+      note: "Salt-curing and brining of herring; schmaltz herring as the fattiest grade.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Soaked schmaltz herring layered with onion in oil, served with potatoes and rye.",
+    },
+  ],
 };

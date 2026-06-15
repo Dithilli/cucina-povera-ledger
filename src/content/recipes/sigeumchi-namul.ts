@@ -59,4 +59,11 @@ export const sigeumchiNamul: Recipe = {
   notes:
     "The green namul in a bibimbap bowl. Works with chard or other tender greens; tougher greens just need a slightly longer blanch.",
   tags: ["spinach", "namul", "banchan", "sesame", "side"],
+  sources: [
+    {
+      title: "Maangchi — Spinach side dish (Sigeumchi-namul)",
+      url: "https://www.maangchi.com/recipe/sigumchi-namul",
+      note: "Quick-blanching and squeezing the spinach, then dressing with garlic, soy, and sesame",
+    },
+  ],
 };

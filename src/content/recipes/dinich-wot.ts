@@ -30,4 +30,7 @@ export const dinichWot: Recipe = {
   notes:
     "Among the cheapest dishes in the repertoire — potatoes, an onion, and pantry spice. A reliable filler that keeps the platter's cost down and calories up.",
   tags: ["potato", "wot", "dinich", "cheap", "fasting"],
+  sources: [
+    { title: "Eden Hagos — Flavour Network", url: "https://www.flavournetwork.ca/recipe/healthy-ethiopian-vegan-potato-stew/", note: "Dinich wot: potatoes simmered in an onion-berbere base and served on injera." },
+  ],
 };

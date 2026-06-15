@@ -30,4 +30,11 @@ export const alooMethi: Recipe = {
   modernMove:
     "Salting and wringing the fenugreek before it hits the pan tames its bitterness and keeps the dish dry, so the methi roasts and concentrates instead of stewing into a wet, acrid mush.",
   tags: ["vegetables", "potato", "fenugreek", "methi", "dry-sabzi"],
+  sources: [
+    {
+      title: "Swasthi Shreekanth — Swasthi's Recipes",
+      url: "https://www.indianhealthyrecipes.com/aloo-methi-recipe-dry-aloo-methi/",
+      note: "Dry aloo methi method — handling the fenugreek so the dish stays dry, not acrid",
+    },
+  ],
 };

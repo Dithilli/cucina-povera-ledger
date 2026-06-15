@@ -38,4 +38,16 @@ export const warakEnab: Recipe = {
   notes:
     "If using fresh vine leaves, blanch 1 minute in boiling water first. The rice is deliberately undercooked going in — it finishes by drinking the lemony braise.",
   tags: ["vine-leaves", "rice", "herbs", "lemon", "vegan", "make-ahead"],
+  sources: [
+    {
+      title: "Plant Based Folk — plantbasedfolk.com",
+      url: "https://plantbasedfolk.com/warak-enab-lebanese-grape-leaves/",
+      note: "Meatless 'bi-zeit' warak enab — leaves rolled around herbed rice and braised in a lemony broth.",
+    },
+    {
+      title: "The Matbakh — thematbakh.com",
+      url: "https://thematbakh.com/stuffed-grape-leaves-warak-enab/",
+      note: "Rolling technique and lining the pot to prevent scorching.",
+    },
+  ],
 };

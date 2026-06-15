@@ -48,4 +48,16 @@ export const gigantesPlaki: Recipe = {
   notes:
     "Traditionally vegan and eaten at room temperature, which makes it ideal cook-ahead food; the flavor deepens overnight.",
   tags: ["legumes", "giant-beans", "baked", "gigantes", "tomato", "vegan"],
+  sources: [
+    {
+      title: "My Greek Dish — Gigantes Plaki (Greek Baked Giant Beans)",
+      url: "https://www.mygreekdish.com/recipe/gigantes-plaki-greek-baked-giant-beans/",
+      note: "Confirms giant beans simmered then baked in a herby tomato-and-olive-oil sauce.",
+    },
+    {
+      title: "Wikipedia — Gigantes plaki",
+      url: "https://en.wikipedia.org/wiki/Gigantes_plaki",
+      note: "Background on the dish: large white beans baked in tomato sauce.",
+    },
+  ],
 };

@@ -30,4 +30,15 @@ export const kashaVarnishkes: Recipe = {
   notes:
     "Pareve as written with oil, so it can sit beside a dairy or a meat meal. Frying the onions in rendered chicken schmaltz instead makes it fleishig and richer — a classic side to brisket or roast chicken; just never both schmaltz and any dairy.",
   tags: ["kasha", "buckwheat", "noodles", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Kasha varnishkes",
+      url: "https://en.wikipedia.org/wiki/Kasha_varnishkes",
+      note: "Buckwheat groats with bow-tie noodles and onions fried in poultry fat.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Kasha (buckwheat) in the shtetl kitchen and the egg-coating toasting technique.",
+    },
+  ],
 };

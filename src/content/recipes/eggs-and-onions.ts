@@ -29,4 +29,15 @@ export const eggsAndOnions: Recipe = {
   notes:
     "Schmaltz makes this fleishig — serve it with no dairy at the table. It keeps a few days covered in the icebox and only deepens. A spoonful with bread clears a good chunk of the day's protein with nothing but eggs and an onion.",
   tags: ["egg", "onion", "schmaltz", "fleishig"],
+  sources: [
+    {
+      title: "Jewish Food Society — Eyerlekh Mit Tzvible (Eggs With Onion)",
+      url: "https://www.jewishfoodsociety.org/recipes/eyerlekh-mit-tzvible-eggs-with-onion",
+      note: "The Ashkenazi egg-and-onion dish (eier mit tsibeles) built on schmaltz-cooked onions.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Chopped eggs and onions (eier mit tsibeles) as a frugal schmaltz-bound spread.",
+    },
+  ],
 };

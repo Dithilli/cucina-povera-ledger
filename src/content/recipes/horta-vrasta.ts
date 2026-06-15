@@ -37,4 +37,11 @@ export const hortaVrasta: Recipe = {
     "Use whatever bitter or mild greens are cheapest and freshest; this is foraging food, endlessly variable. The pot liquor is traditionally sipped, not poured away.",
   zeroWasteHero: true,
   tags: ["greens", "horta", "lemon", "side", "lenten"],
+  sources: [
+    {
+      title: "Diane Kochilas — How to Boil Horta (Longevity Greens)",
+      url: "https://www.dianekochilas.com/how-to-boil-horta/",
+      note: "Confirms boiling wild greens until tender and dressing with olive oil and lemon.",
+    },
+  ],
 };

@@ -65,4 +65,11 @@ export const pepperSoup: Recipe = {
   notes:
     "The classic restorative — eaten when sick or cold. Keep it thin; thickening it misses the point.",
   tags: ["pepper-soup", "broth", "fish", "spice", "zero-waste", "one-pot"],
+  sources: [
+    {
+      title: "Flo Madubike — All Nigerian Recipes",
+      url: "https://www.allnigerianrecipes.com/soups/pepper-soup/",
+      note: "Confirms the light spicy broth built on pepper-soup spice (ground ehu / calabash nutmeg) and the thin, never-thickened consistency.",
+    },
+  ],
 };

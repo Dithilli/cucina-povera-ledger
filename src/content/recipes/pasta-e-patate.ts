@@ -40,4 +40,11 @@ export const pastaEPatate: Recipe = {
   modernMove:
     "A long soffritto plus the rind builds umami depth; cooking the pasta in the starchy potato brodo makes it cling without any dairy.",
   tags: ["pasta", "potato", "one-pot", "soffritto", "neapolitan"],
+  sources: [
+    {
+      title: "Pasta e patate — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_e_patate",
+      note: "One-pot pasta and potatoes cooked starchy and creamy, not drained",
+    },
+  ],
 };

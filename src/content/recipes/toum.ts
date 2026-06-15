@@ -29,4 +29,11 @@ export const toum: Recipe = {
   notes:
     "Egg-free and vegan, which is why it keeps for weeks. Serve with grilled chicken, roasted potatoes, or anything off the grill — a little goes a very long way.",
   tags: ["side", "garlic", "sauce", "emulsion", "vegan", "make-ahead"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/toum-lebanese-garlic-sauce/",
+      note: "Egg-free toum emulsion — garlic, oil, and lemon built slowly into a fluffy white sauce.",
+    },
+  ],
 };

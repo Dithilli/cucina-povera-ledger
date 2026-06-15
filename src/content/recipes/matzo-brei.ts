@@ -29,4 +29,15 @@ export const matzoBrei: Recipe = {
     "Pareve as written (oil), so it can sit beside a meat or dairy meal either way. Go savory with salt, pepper, and fried onion, or sweet with cinnamon-sugar and a dab of jam. For a dairy breakfast, soak in hot milk and fry in butter — but then keep it off the meat table.",
   zeroWasteHero: true,
   tags: ["matzo", "egg", "passover", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Matzah brei",
+      url: "https://en.wikipedia.org/wiki/Matzah_brei",
+      note: "Matzah fried with eggs; an Ashkenazi Passover breakfast in savory and sweet versions.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Soak-and-drain method for tender vs. crisp matzo brei.",
+    },
+  ],
 };

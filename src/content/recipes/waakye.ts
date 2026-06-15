@@ -30,4 +30,11 @@ export const waakye: Recipe = {
   notes:
     "Street waakye comes loaded — boiled egg, fried plantain, gari sprinkle, spaghetti. Even plain with pepper sauce it's a complete, protein-decent dinner for pennies.",
   tags: ["dinner", "lunch", "rice", "beans", "waakye", "one-pot", "legumes"],
+  sources: [
+    {
+      title: "Waakye — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Waakye",
+      note: "Confirms waakye is Ghanaian rice and beans cooked with dried sorghum leaves and kaun (limestone alkali) that dye the pot red, the leaves removed before eating.",
+    },
+  ],
 };

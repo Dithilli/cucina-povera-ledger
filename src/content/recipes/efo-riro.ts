@@ -33,4 +33,11 @@ export const efoRiro: Recipe = {
   notes:
     "Efo means greens; riro means stirred. Endlessly forgiving of whatever leaf is cheap that week, and the smoked fish does the work of far more meat.",
   tags: ["greens", "spinach", "pepper-stew", "palm-oil", "smoked-fish", "iru"],
+  sources: [
+    {
+      title: "All Nigerian Recipes — Efo Riro: A Yoruba Delicacy",
+      url: "https://www.allnigerianrecipes.com/soups/efo-riro/",
+      note: "Yoruba greens stew built on a fried pepper base with palm oil, iru, crayfish, and smoked fish.",
+    },
+  ],
 };

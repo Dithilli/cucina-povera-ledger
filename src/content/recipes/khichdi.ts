@@ -44,4 +44,11 @@ export const khichdi: Recipe = {
   modernMove:
     "Khichdi is the kitchen's clearing-out dish — built to absorb whatever vegetables and stems are on their way out — and the double tempering (start and finish) layers the same spice raw and bloomed for depth from almost nothing.",
   tags: ["rice", "lentils", "moong-dal", "one-pot", "comfort", "zero-waste"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/moong-dal-khichdi-recipe/",
+      note: "One-pot rice and moong dal cooked soft with a cumin-ghee tempering",
+    },
+  ],
 };

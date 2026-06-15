@@ -30,4 +30,8 @@ export const azifa: Recipe = {
   notes:
     "A fasting-day favorite that needs no cooked sauce: cheap lentils plus pantry mustard and a lemon turn into something fresh and bracing.",
   tags: ["lentils", "salad", "azifa", "cold", "fasting"],
+  sources: [
+    { title: "Urban Farmie — Azifa (Ethiopian Lentil Salad)", url: "https://urbanfarmie.com/azifa-ethiopian-lentil-salad/", note: "Cold green-lentil salad dressed with senafich mustard, lemon, onion, and chile — a fasting-day favorite." },
+    { title: "Fetlework Tefferi (Brundo Spice Co.) — Azifa", url: "https://www.brundo.com/blogs/recipes/azifa-ethiopian-lentil-salad", note: "Ethiopian chef's mustard-and-lemon lentil salad." },
+  ],
 };

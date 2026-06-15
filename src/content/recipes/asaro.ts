@@ -34,4 +34,11 @@ export const asaro: Recipe = {
     "A true zero-waste hero — built to use up yam offcuts, the last of a smoked fish, and whatever greens are wilting, all melted into one comforting pot. Endlessly forgiving of quantities.",
   zeroWasteHero: true,
   tags: ["yam", "porridge", "pottage", "pepper-stew", "palm-oil", "smoked-fish", "one-pot"],
+  sources: [
+    {
+      title: "Sisi Jemimah — Asaro (Yam Pottage) Recipe",
+      url: "https://sisijemimah.com/2015/08/21/asaro-yam-pottage-recipe/",
+      note: "Yoruba yam pottage simmered in a fried pepper base until partly mashed and thick.",
+    },
+  ],
 };

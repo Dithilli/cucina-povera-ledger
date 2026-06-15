@@ -44,4 +44,16 @@ export const fasoliaYakhni: Recipe = {
     "Cook a big pot of dried beans once and this is the cheapest dinner of the week; the bean liquid is the stock, so nothing is wasted.",
   zeroWasteHero: true,
   tags: ["white-beans", "legumes", "tomato", "yakhni", "rice", "vegan"],
+  sources: [
+    {
+      title: "Simply Lebanese — Fasolia wa Roz",
+      url: "https://www.simplyleb.com/recipe/fasolia-wa-roz/",
+      note: "Confirms the white-bean-in-tomato yakhni served over rice — the canonical fasolia structure.",
+    },
+    {
+      title: "Plant Based Folk — Lebanese Fasolia (vegan bean stew)",
+      url: "https://plantbasedfolk.com/kidney-bean-stew-lebanese-fasolia/",
+      note: "Supports the meatless version — the bean stew built without beef, simmered in tomato.",
+    },
+  ],
 };

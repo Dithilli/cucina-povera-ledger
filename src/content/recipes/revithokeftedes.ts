@@ -38,4 +38,11 @@ export const revithokeftedes: Recipe = {
     "A great use for the bottom of a pot of cooked chickpeas. Mint is the signature Greek herb here; don't skip it.",
   zeroWasteHero: true,
   tags: ["legumes", "chickpeas", "fritters", "meze", "revithokeftedes"],
+  sources: [
+    {
+      title: "My Greek Dish — Chickpea Fritters (Revithokeftedes)",
+      url: "https://www.mygreekdish.com/recipe/chickpea-fritters-revithokeftedes/",
+      note: "Confirms soaked, ground chickpeas with onion and herbs, fried — a Sifnos meze.",
+    },
+  ],
 };

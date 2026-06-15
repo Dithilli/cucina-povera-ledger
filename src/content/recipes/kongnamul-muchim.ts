@@ -59,4 +59,11 @@ export const kongnamulMuchim: Recipe = {
   notes:
     "Doubles as the seasoned-sprout component in bibimbap and the topping in many gukbap bowls. Keeps a few days refrigerated.",
   tags: ["soybean-sprouts", "namul", "banchan", "sesame", "side"],
+  sources: [
+    {
+      title: "Maangchi — Soybean sprout side dish (Kongnamul-muchim)",
+      url: "https://www.maangchi.com/recipe/kongnamul-muchim",
+      note: "Parboiling the sprouts and dressing with garlic, scallion, and sesame",
+    },
+  ],
 };

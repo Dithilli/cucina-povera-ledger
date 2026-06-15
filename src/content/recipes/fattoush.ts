@@ -49,4 +49,11 @@ export const fattoush: Recipe = {
     "Frying the stale pita in olive oil instead of plain toasting turns yesterday's bread into shatteringly crisp croutons that carry the sumac — waste bread becomes the best part of the plate.",
   zeroWasteHero: true,
   tags: ["pita", "bread", "sumac", "salad", "zero-waste", "summer"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/lebanese-fattoush-salad/",
+      note: "Authentic Lebanese fattoush — crisped pita, vegetables, and a sumac-lemon dressing dressed just before serving.",
+    },
+  ],
 };

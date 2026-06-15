@@ -33,4 +33,15 @@ export const cholent: Recipe = {
   notes:
     "Schmaltz and beef make this resolutely fleishig. Cholent exists because Jewish law forbids kindling a flame on the Sabbath — so the pot is set going before dusk on Friday and feeds the family at Saturday's midday meal with no cooking done on the holy day. Every region had its own: Hungarian sólet, Sephardic dafina. One cheap brisket-end and a bag of beans feed eight.",
   tags: ["stew", "beans", "barley", "shabbos", "fleishig", "slow"],
+  sources: [
+    {
+      title: "Wikipedia — Cholent",
+      url: "https://en.wikipedia.org/wiki/Cholent",
+      note: "Slow-simmered Sabbath stew; origin in the prohibition on kindling fire on Shabbat, and regional variants (sólet, dafina).",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "History of cholent and the beans/barley/meat composition of the Ashkenazi version.",
+    },
+  ],
 };

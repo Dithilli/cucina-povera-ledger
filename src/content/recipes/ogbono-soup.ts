@@ -62,4 +62,11 @@ export const ogbonoSoup: Recipe = {
   modernMove:
     "Blooming the ogbono in warm (not boiling) oil off the heat before it ever meets water hydrates the seed evenly, so it draws into clean elastic strands instead of seizing into gritty lumps.",
   tags: ["ogbono", "wild-mango-seed", "draw-soup", "palm-oil", "swallow", "one-pot"],
+  sources: [
+    {
+      title: "Flo Madubike — All Nigerian Recipes",
+      url: "https://www.allnigerianrecipes.com/soups/ogbono-soup-recipe/",
+      note: "Confirms ogbono is ground wild-mango seed and the draw technique — frying/blooming the seed in palm oil to make it draw into elastic strands.",
+    },
+  ],
 };

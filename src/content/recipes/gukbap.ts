@@ -58,4 +58,16 @@ export const gukbap: Recipe = {
   notes:
     "Traditionally the rice is served separately ('따로국밥') so it stays firm, or dropped straight in for a softer, faster bowl — both are correct. Any leftover broth becomes tomorrow's base.",
   tags: ["soup", "rice", "broth", "pork", "one-bowl"],
+  sources: [
+    {
+      title: "Wikipedia — Gukbap",
+      url: "https://en.wikipedia.org/wiki/Gukbap",
+      note: "Background on the soup-rice dish, the ttukbaegi serving, and serving rice in or alongside the broth",
+    },
+    {
+      title: "Maangchi — Soybean sprout soup with rice (Kongnamul-gukbap)",
+      url: "https://www.maangchi.com/recipe/kongnamul-gukbap",
+      note: "The gukbap format: hot broth with soybean sprouts ladled over rice, seasoned bowl by bowl",
+    },
+  ],
 };

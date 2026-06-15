@@ -29,4 +29,8 @@ export const kikWot: Recipe = {
   notes:
     "Pairing kik wot (fire) and kik alicha (gentle) shows how one cheap bag of split peas makes two completely different dishes.",
   tags: ["wot", "split-peas", "kik", "berbere", "dinner"],
+  sources: [
+    { title: "Kittee Berns — Teff Love: Adventures in Vegan Ethiopian Cooking", note: "Cookbook covering the berbere-based yellow split pea wot, the fiery counterpart to kik alicha." },
+    { title: "Berbere — Wikipedia", url: "https://en.wikipedia.org/wiki/Berbere", note: "The chile blend that turns the gentle yellow-pea alicha into a brick-red wot." },
+  ],
 };

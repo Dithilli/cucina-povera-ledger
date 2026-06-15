@@ -53,4 +53,11 @@ export const groundnutSoup: Recipe = {
   modernMove:
     "Slackening the peanut butter with hot stock before it hits the pot, then a long gentle simmer until the oil splits out, breaks the emulsion the right way — glossy and deep instead of pasty and dull.",
   tags: ["peanut", "groundnut", "soup", "tomato", "swallow", "one-pot"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — Groundnut Soup",
+      url: "https://www.allnigerianrecipes.com/soups/groundnut-soup/",
+      note: "Loosening the peanut paste with stock and simmering until the oil rises clear on top.",
+    },
+  ],
 };

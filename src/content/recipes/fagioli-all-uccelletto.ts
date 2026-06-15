@@ -44,4 +44,11 @@ export const fagioliAllUccelletto: Recipe = {
   modernMove:
     "Bloom the sage and garlic in the oil first so the fat itself is perfumed — the beans then carry that aroma all the way through.",
   tags: ["legumes", "beans", "sage", "tomato", "side"],
+  sources: [
+    {
+      title: "Fagioli all'uccelletto — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Fagioli_all%27uccelletto",
+      note: "Tuscan cannellini stewed with sage, garlic, tomato; the 'little bird' name",
+    },
+  ],
 };

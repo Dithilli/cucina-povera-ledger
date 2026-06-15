@@ -30,4 +30,7 @@ export const fasolia: Recipe = {
   notes:
     "A common fasting-day vegetable that keeps the beyaynetu platter colorful and varied; mild enough to balance the berbere-heavy dishes.",
   tags: ["vegetable", "green-beans", "fasolia", "side", "fasting"],
+  sources: [
+    { title: "Eleni Woldeyes — Eleni's Kitchen", url: "https://www.eleniskitchen.com/blog/2020/7/31/fossolia-recipe-ethiopian-green-beans", note: "Fossolia/fasolia: green beans and carrots with onion, garlic, and ginger." },
+  ],
 };

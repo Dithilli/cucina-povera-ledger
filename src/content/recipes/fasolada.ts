@@ -45,4 +45,16 @@ export const fasolada: Recipe = {
   notes:
     "Greece's everyday winter pot — cheap, vegan, and built entirely from the pantry. It only gets better the next day as the broth thickens.",
   tags: ["legumes", "white-beans", "soup", "fasolada", "one-pot", "vegan"],
+  sources: [
+    {
+      title: "Akis Petretzikis — Fasolada (Greek White Bean Soup)",
+      url: "https://akispetretzikis.com/en/recipe/3098/fasolada",
+      note: "Confirms white beans simmered with carrot, celery, onion, olive oil, and tomato.",
+    },
+    {
+      title: "Wikipedia — Fasolada",
+      url: "https://en.wikipedia.org/wiki/Fasolada",
+      note: "Background: the traditional Greek white-bean soup, often called a national dish.",
+    },
+  ],
 };

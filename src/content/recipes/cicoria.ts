@@ -45,4 +45,11 @@ export const cicoria: Recipe = {
     "Blanch first, then hit the greens with bloomed garlic-chili oil — you keep the pleasant bitterness while losing the aggressive edge, the trick to making bitter greens crave-able.",
   notes: "Blanching water doubles as a base for greens-and-bean soup.",
   tags: ["garden", "greens", "bitter", "garlic", "side", "vegetable"],
+  sources: [
+    {
+      title: "Chicory — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Chicory",
+      note: "Bitter chicory greens as the everyday Italian sautéed green",
+    },
+  ],
 };

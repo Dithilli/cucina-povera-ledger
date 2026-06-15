@@ -34,4 +34,11 @@ export const obeAta: Recipe = {
     "Scales and freezes beautifully — portion the fried base into tubs and a stew is fifteen minutes away on any weeknight. The foundation that every other West African pot leans on.",
   zeroWasteHero: true,
   tags: ["base", "pepper-stew", "obe-ata", "palm-oil", "scotch-bonnet", "batch"],
+  sources: [
+    {
+      title: "Sisi Jemimah (Jemimah Adebiyi) — Nigerian Fried Pepper Stew: Ata Dindin",
+      url: "https://sisijemimah.com/2019/08/29/nigerian-fried-pepper-stew-ata-dindin/",
+      note: "Confirms the blended tomato–pepper–onion base fried hard in oil — the foundational obe ata dindin method.",
+    },
+  ],
 };

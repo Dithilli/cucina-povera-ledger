@@ -33,4 +33,11 @@ export const hummus: Recipe = {
     "Overcooking the chickpeas with baking soda dissolves the skins, and blending the purée warm for several minutes whips air in — that's the difference between gritty dip and airy restaurant hummus.",
   notes: "Mounding a spoonful of whole warm chickpeas and cumin on top turns it toward msabbaha — a heartier dinner.",
   tags: ["legumes", "chickpeas", "tahini", "lemon", "no-cook-finish"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/best-homemade-hummus-recipe/",
+      note: "Authentic Lebanese hummus — skinning overcooked chickpeas and blending warm with tahini and lemon for a silky texture.",
+    },
+  ],
 };

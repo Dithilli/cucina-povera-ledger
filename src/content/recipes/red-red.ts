@@ -43,4 +43,11 @@ export const redRed: Recipe = {
   modernMove:
     "Letting the tomato base fry past 'cooked' until the palm oil splits back out builds the toasty, deep flavour that distinguishes a real red red from a pale bean stew.",
   tags: ["legumes", "black-eyed-peas", "palm-oil", "plantain", "stew", "ghanaian"],
+  sources: [
+    {
+      title: "Red red — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Red_red",
+      note: "Confirms red red is a Ghanaian black-eyed pea stew cooked in red palm oil and served with fried plantain, named for the red colour from oil and plantain.",
+    },
+  ],
 };

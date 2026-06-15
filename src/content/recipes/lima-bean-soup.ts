@@ -32,4 +32,14 @@ export const limaBeanSoup: Recipe = {
   notes:
     "Pareve — oil and beans only — so it sits at any meal, dairy or meat. Salt late: early salt keeps the bean skins tough and you'll wait twice as long for that creamy collapse.",
   tags: ["beans", "lima", "soup", "pareve"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Bean soups (including lima/butter beans) among the cheap, sustaining Ashkenazi pottages.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Dried-bean soups thickened by the beans' own starch as everyday frugal fare.",
+    },
+  ],
 };

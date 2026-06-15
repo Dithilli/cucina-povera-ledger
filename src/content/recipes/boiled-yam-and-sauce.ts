@@ -33,4 +33,11 @@ export const boiledYamAndSauce: Recipe = {
   notes:
     "Boiled yam is the blank canvas of West African home cooking; the sauce changes nightly with whatever's cheap. Garden eggs are traditional, but any aubergine works.",
   tags: ["yam", "garden-egg", "aubergine", "tomato-sauce", "fish", "quick"],
+  sources: [
+    {
+      title: "My Active Kitchen — Yam and Egg Sauce",
+      url: "https://www.myactivekitchen.com/yam-and-egg-sauce/",
+      note: "Boiled yam under a quick fried tomato-pepper sauce — the pared-back Nigerian yam-and-sauce dinner.",
+    },
+  ],
 };

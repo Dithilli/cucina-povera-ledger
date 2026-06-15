@@ -35,4 +35,15 @@ export const holishkes: Recipe = {
   notes:
     "For a pareve (or meatless) table, swap the beef for chopped sautéed mushrooms bound with extra rice and a little cooked barley — the sweet-sour sauce carries it. As fleishig, holishkes use schmaltz, never butter: keep dairy off this plate entirely.",
   tags: ["cabbage", "stuffed", "sweet-sour", "fleishig"],
+  sources: [
+    {
+      title: "Wikipedia — Holishkes",
+      url: "https://en.wikipedia.org/wiki/Holishkes",
+      note: "Cabbage rolls of Eastern European Jewish cuisine, simmered in sweet-sour tomato sauce.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Stuffed cabbage and the sour-salt (citric acid) sweet-and-sour balance.",
+    },
+  ],
 };

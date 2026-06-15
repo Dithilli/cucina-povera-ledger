@@ -44,4 +44,11 @@ export const softPolentaEgg: Recipe = {
   modernMove:
     "Treat the runny yolk as the sauce: keep the polenta a touch under-seasoned and looser than feels right, so the yolk and cheese finish it at the table.",
   tags: ["polenta", "eggs", "quick", "protein-forward", "comfort"],
+  sources: [
+    {
+      title: "Polenta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Polenta",
+      note: "Soft buttered polenta as a base, topped here with a runny egg",
+    },
+  ],
 };

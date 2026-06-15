@@ -30,4 +30,14 @@ export const potatoOnionSoup: Recipe = {
   notes:
     "Strictly fleishig — the schmaltz keeps this off the dairy table, so no butter, no sour cream, no grated cheese. Rye on the side turns a thin soup into a full supper for next to nothing.",
   tags: ["potato", "soup", "schmaltz", "fleishig"],
+  sources: [
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Potato soups among the plain weeknight pottages of the Eastern European Jewish kitchen.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Schmaltz used in place of meat to enrich a thin potato-and-onion soup.",
+    },
+  ],
 };

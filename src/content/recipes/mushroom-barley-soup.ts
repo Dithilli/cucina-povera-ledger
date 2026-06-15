@@ -34,4 +34,15 @@ export const mushroomBarleySoup: Recipe = {
   notes:
     "Pareve as written, so it works on a dairy night or before a meat meal. For a fleishig krupnik, simmer a beef marrow or flanken bone in the pot from the start and skip nothing else — the barley drinks up the richness; just keep it away from any dairy.",
   tags: ["barley", "mushroom", "soup", "pareve"],
+  sources: [
+    {
+      title: "Jewish Women's Archive — Eating Jewish: Krupnik (Polish Barley Soup)",
+      url: "https://jwa.org/blog/eating-jewish-krupnik",
+      note: "Krupnik, the Ashkenazi mushroom-and-barley soup, and its shtetl origins.",
+    },
+    {
+      title: "Gil Marks — Encyclopedia of Jewish Food",
+      note: "Krupnik named for barley; dried forest mushrooms as a frugal flavor source.",
+    },
+  ],
 };

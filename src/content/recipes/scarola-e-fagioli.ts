@@ -49,4 +49,11 @@ export const scarolaEFagioli: Recipe = {
   modernMove:
     "Melt an anchovy into the garlic oil first — it disappears entirely but underwrites the whole pot with a savory depth that reads as long-simmered.",
   tags: ["garden", "greens", "legumes", "beans", "soup", "one-pot"],
+  sources: [
+    {
+      title: "Endive (escarole) — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Endive",
+      note: "Escarole (scarola) smothered Southern-Italian style, paired here with beans",
+    },
+  ],
 };

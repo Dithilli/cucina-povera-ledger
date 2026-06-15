@@ -30,4 +30,15 @@ export const potatoLatkes: Recipe = {
   notes:
     "Pareve as fried, so the table chooses: applesauce keeps it pareve, sour cream makes it dairy — but never both schmaltz and sour cream on the same plate. Use only oil here, never butter, to keep the recipe itself flexible.",
   tags: ["potato", "fried", "pareve", "hanukkah"],
+  sources: [
+    {
+      title: "Wikipedia — Latke",
+      url: "https://en.wikipedia.org/wiki/Latke",
+      note: "Shredded-potato pancake fried in oil; the Hanukkah oil symbolism.",
+    },
+    {
+      title: "Joan Nathan — Jewish Cooking in America",
+      note: "Classic potato latke method and the reclaimed-starch binder.",
+    },
+  ],
 };

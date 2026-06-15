@@ -30,4 +30,8 @@ export const misirWot: Recipe = {
   notes:
     "Eaten with injera and a spoon of shiro, a plate of misir wot clears a big chunk of the day's protein floor with no meat at all.",
   tags: ["wot", "lentils", "berbere", "dinner", "fasting"],
+  sources: [
+    { title: "Kimberly Killebrew — The Daring Gourmet", url: "https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/", note: "Red lentils cooked down in niter kibbeh with bloomed berbere — the canonical spicy red-lentil wot." },
+    { title: "Urban Farmie — Misir Wot (Ethiopian Red Lentil Stew)", url: "https://urbanfarmie.com/misir-wot/", note: "Berbere-based red lentil stew, the heart of the fasting platter." },
+  ],
 };

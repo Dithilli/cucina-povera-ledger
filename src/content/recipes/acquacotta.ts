@@ -45,4 +45,11 @@ export const acquacotta: Recipe = {
   modernMove:
     "Cook the onions down patiently until jammy before the water goes in — that slow base is what turns 'cooked water' into something with real depth.",
   tags: ["bread", "eggs", "greens", "soup", "protein-forward"],
+  sources: [
+    {
+      title: "Acquacotta — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Acquacotta",
+      note: "Maremma peasant bread soup invented to soften stale bread",
+    },
+  ],
 };

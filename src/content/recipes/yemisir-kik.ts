@@ -30,4 +30,8 @@ export const yemisirKik: Recipe = {
   notes:
     "Pooling two legumes is a classic frugal move: more protein per plate, more body, and it stretches whichever bag is running low.",
   tags: ["legumes", "lentils", "split-peas", "dinner", "protein"],
+  sources: [
+    { title: "196 flavors — Kik Alicha", url: "https://www.196flavors.com/kik-alicha/", note: "The yellow split pea component cooked soft with turmeric." },
+    { title: "Kimberly Killebrew — The Daring Gourmet (Misir Wat)", url: "https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/", note: "The red-lentil component pooled with the split peas in this combined pot." },
+  ],
 };

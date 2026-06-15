@@ -35,4 +35,11 @@ export const soupaAvgolemono: Recipe = {
   notes:
     "The classic 'sick-day' soup: one piece of chicken and a handful of rice feeds four because the egg-lemon does the enriching.",
   tags: ["soup", "chicken", "rice", "avgolemono", "egg-lemon", "one-pot"],
+  sources: [
+    {
+      title: "My Greek Dish — Greek Lemon Chicken Soup (Kotosoupa Avgolemono)",
+      url: "https://www.mygreekdish.com/recipe/greek-lemon-chicken-soup-kotosoupa-avgolemono/",
+      note: "Confirms chicken and rice in broth finished with a whisked egg-lemon sauce.",
+    },
+  ],
 };

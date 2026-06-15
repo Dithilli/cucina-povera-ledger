@@ -31,4 +31,11 @@ export const pastaAlPomodoroETonno: Recipe = {
   modernMove:
     "Stir the tuna in off the heat so it stays in soft flakes, and let the sugo's own gloss carry the dish — no cheese needed here.",
   tags: ["pasta", "tomato", "tuna", "pantry", "protein"],
+  sources: [
+    {
+      title: "Pasta al pomodoro — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Pasta_al_pomodoro",
+      note: "Quick tomato pasta base; the southern pantry version lifts it with canned tuna",
+    },
+  ],
 };

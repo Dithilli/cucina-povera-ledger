@@ -35,4 +35,15 @@ export const borscht: Recipe = {
   notes:
     "As written this is pareve — good alongside any meal. The classic finish is a cold dollop of sour cream swirled into the hot soup, but that makes it milchig: stir it in only at a dairy meal, never one with meat on the table.",
   tags: ["beet", "soup", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Borscht",
+      url: "https://en.wikipedia.org/wiki/Borscht",
+      note: "Beet-based Eastern European sour soup; ingredients, color, and acid balance.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Ashkenazi borscht traditions, including the pareve and sour-cream finishes.",
+    },
+  ],
 };

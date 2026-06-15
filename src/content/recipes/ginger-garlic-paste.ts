@@ -28,4 +28,11 @@ export const gingerGarlicPaste: Recipe = {
     "Use the leftover ginger peels and garlic skins to infuse a quick stock, or compost them. The 50/50 ratio is the standard North Indian default; lean gingerier for fish, garlickier for meat.",
   zeroWasteHero: true,
   tags: ["base", "ginger-garlic-paste", "aromatics", "pantry", "make-ahead"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/ginger-garlic-paste-recipe/",
+      note: "Blending equal ginger and garlic with salt and oil to keep it from spoiling",
+    },
+  ],
 };

@@ -28,4 +28,11 @@ export const dodo: Recipe = {
   notes:
     "Dodo with a fried egg (dodo and eggs) is a beloved cheap supper; beside jollof or beans it's the universal side. Buy plantains green and let them blacken on the counter.",
   tags: ["plantain", "fried", "side", "sweet-savoury", "quick"],
+  sources: [
+    {
+      title: "Flo Madubike — All Nigerian Recipes",
+      url: "https://www.allnigerianrecipes.com/plantain/fried-plantain/",
+      note: "Dodo from ripe-but-firm plantains, sliced on the diagonal and salted, with frying technique.",
+    },
+  ],
 };

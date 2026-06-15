@@ -49,4 +49,11 @@ export const vegPulao: Recipe = {
   modernMove:
     "Toasting whole spices in fat and then the soaked rice itself — rather than reaching for garam masala powder — gives a clean, aromatic pulao where you taste each spice, the technique that separates pulao from a muddy fried rice.",
   tags: ["rice", "basmati", "pilaf", "whole-spices", "vegetables"],
+  sources: [
+    {
+      title: "Dassana Amit — Dassana's Veg Recipes",
+      url: "https://www.vegrecipesofindia.com/vegetable-pulao-recipe-veg-pulao/",
+      note: "Basmati toasted in whole spices and steamed with mixed vegetables, no ground masala",
+    },
+  ],
 };

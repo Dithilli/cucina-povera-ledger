@@ -27,4 +27,11 @@ export const boiledRice: Recipe = {
   notes:
     "Leftovers, dried out overnight in the fridge, fry up into a fast jollof-style fried rice — never let cooked rice go to waste.",
   tags: ["base", "side", "rice", "parboiled", "quick"],
+  sources: [
+    {
+      title: "All Nigerian Recipes (Flo Madubike) — How to Parboil Rice for Jollof and White Rice",
+      url: "https://www.allnigerianrecipes.com/howto/parboil-jollof-white-rice/",
+      note: "Parboiled rice as the West African default and the rinse-then-steam method for separate grains.",
+    },
+  ],
 };

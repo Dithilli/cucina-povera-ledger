@@ -39,4 +39,11 @@ export const sheikhElMahshi: Recipe = {
   notes:
     "Traditionally meat-stuffed; here the pine nuts and toasted spices carry the richness so it stays cheap and vegetarian without tasting like a compromise.",
   tags: ["eggplant", "stuffed", "rice", "pine-nuts", "vegetarian", "braised"],
+  sources: [
+    {
+      title: "Maureen Abood — maureenabood.com",
+      url: "https://maureenabood.com/lebanese-eggplant-boats-another-sheik-al-mehsheh/",
+      note: "Sheikh el Mahshi method — broiling the eggplant, the spiced filling with pine nuts, and braising in tomato.",
+    },
+  ],
 };

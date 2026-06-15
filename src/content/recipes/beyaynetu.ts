@@ -31,4 +31,8 @@ export const beyaynetu: Recipe = {
   notes:
     "'Beyaynetu' means roughly 'a little of each.' It's the everyday fasting meal AND the celebratory spread — proof, as the arc's thesis goes, that fasting and feasting are the same table.",
   tags: ["beyaynetu", "platter", "feast", "fasting", "dinner", "communal"],
+  sources: [
+    { title: "Beyaynetu — Wikipedia", url: "https://en.wikipedia.org/wiki/Beyaynetu", note: "The combination platter of assorted wots, vegetables, and salads on injera, in both fasting (vegan) and meat versions." },
+    { title: "Yetsom Beyaynetu (Ethiopian Vegan Platter) — Wikibooks Cookbook", url: "https://en.wikibooks.org/wiki/Cookbook:Yetsom_Beyaynetu_(Ethiopian_Vegan_Platter)", note: "Assorted lentil and vegetable dishes arranged together on injera for the fasting platter." },
+  ],
 };

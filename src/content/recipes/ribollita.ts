@@ -51,4 +51,11 @@ export const ribollita: Recipe = {
     "The overnight rest and reboil is the whole point: the bread and beans collapse into a single glossy body, no cream needed.",
   zeroWasteHero: true,
   tags: ["bread", "legumes", "greens", "soup", "zero-waste"],
+  sources: [
+    {
+      title: "Ribollita — Wikipedia",
+      url: "https://en.wikipedia.org/wiki/Ribollita",
+      note: "Tuscan 'reboiled' bread-and-bean soup with cavolo nero, better the next day",
+    },
+  ],
 };

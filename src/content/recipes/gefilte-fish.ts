@@ -33,4 +33,15 @@ export const gefilteFish: Recipe = {
     "Fish is pareve, so gefilte fish opens the Shabbos meal before the meat courses without breaking kosher law. The whole logic is thrift: expensive fish stretched with onion and matzo meal to feed a full table, and not a head, bone, or scrap of skin discarded — even the cooking liquid becomes the aspic. The pinch of sugar marks the Polish style; Litvak cooks left it out and leaned peppery.",
   zeroWasteHero: true,
   tags: ["fish", "gefilte", "shabbos", "pareve"],
+  sources: [
+    {
+      title: "Wikipedia — Gefilte fish",
+      url: "https://en.wikipedia.org/wiki/Gefilte_fish",
+      note: "Poached ground-fish dish served as a Shabbat appetizer; Polish (sweet) vs. Litvak (peppery) styles.",
+    },
+    {
+      title: "Claudia Roden — The Book of Jewish Food",
+      note: "Ashkenazi gefilte fish method, the bones-and-heads poaching stock, and the aspic.",
+    },
+  ],
 };
