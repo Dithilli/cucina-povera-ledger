@@ -841,6 +841,36 @@ export * from "./recipes/steamed-rice-base-si";
 export * from "./recipes/coconut-chutney-si";
 export * from "./recipes/tadka-base";
 
+// ── sri-lankan ──
+export * from "./recipes/parippu-dhal-sl";
+export * from "./recipes/beetroot-curry-sl";
+export * from "./recipes/pumpkin-curry-sl";
+export * from "./recipes/egg-hoppers";
+export * from "./recipes/plain-hoppers";
+export * from "./recipes/string-hoppers-sl";
+export * from "./recipes/potato-curry-sl";
+export * from "./recipes/pol-sambol";
+export * from "./recipes/gotu-kola-mallung";
+export * from "./recipes/seeni-sambol";
+export * from "./recipes/ambul-thiyal";
+export * from "./recipes/fish-curry-sl";
+export * from "./recipes/fish-cutlets-sl";
+export * from "./recipes/dried-sprats-sambol";
+export * from "./recipes/kottu-roti";
+export * from "./recipes/pol-roti";
+export * from "./recipes/godamba-roti";
+export * from "./recipes/kiri-hodi";
+export * from "./recipes/cashew-curry-sl";
+export * from "./recipes/ash-plantain-curry";
+export * from "./recipes/dhal-with-spinach-sl";
+export * from "./recipes/yellow-rice-sl";
+export * from "./recipes/lamprais";
+export * from "./recipes/chicken-curry-sl";
+export * from "./recipes/milk-rice-kiribath";
+export * from "./recipes/roasted-curry-powder-sl";
+export * from "./recipes/lunu-miris";
+export * from "./recipes/coconut-milk-base-sl";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -873,6 +903,7 @@ export * from "./docs/culture-irish";
 export * from "./docs/culture-appalachian";
 export * from "./docs/culture-cantonese";
 export * from "./docs/culture-south-indian";
+export * from "./docs/culture-sri-lankan";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -904,6 +935,7 @@ export * from "./weeks/irish-weeks";
 export * from "./weeks/appalachian-weeks";
 export * from "./weeks/cantonese-weeks";
 export * from "./weeks/south-indian-weeks";
+export * from "./weeks/sri-lankan-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1430,6 +1462,7 @@ import { cultureIrish } from "./docs/culture-irish";
 import { cultureAppalachian } from "./docs/culture-appalachian";
 import { cultureCantonese } from "./docs/culture-cantonese";
 import { cultureSouthIndian } from "./docs/culture-south-indian";
+import { cultureSriLankan } from "./docs/culture-sri-lankan";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1466,6 +1499,7 @@ import { irishWeeks } from "./weeks/irish-weeks";
 import { appalachianWeeks } from "./weeks/appalachian-weeks";
 import { cantoneseWeeks } from "./weeks/cantonese-weeks";
 import { southIndianWeeks } from "./weeks/south-indian-weeks";
+import { sriLankanWeeks } from "./weeks/sri-lankan-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1785,6 +1819,35 @@ import { ravaDosa } from "./recipes/rava-dosa";
 import { steamedRiceBaseSi } from "./recipes/steamed-rice-base-si";
 import { coconutChutneySi } from "./recipes/coconut-chutney-si";
 import { tadkaBase } from "./recipes/tadka-base";
+
+import { parippuDhalSl } from "./recipes/parippu-dhal-sl";
+import { beetrootCurrySl } from "./recipes/beetroot-curry-sl";
+import { pumpkinCurrySl } from "./recipes/pumpkin-curry-sl";
+import { eggHoppers } from "./recipes/egg-hoppers";
+import { plainHoppers } from "./recipes/plain-hoppers";
+import { stringHoppersSl } from "./recipes/string-hoppers-sl";
+import { potatoCurrySl } from "./recipes/potato-curry-sl";
+import { polSambol } from "./recipes/pol-sambol";
+import { gotuKolaMallung } from "./recipes/gotu-kola-mallung";
+import { seeniSambol } from "./recipes/seeni-sambol";
+import { ambulThiyal } from "./recipes/ambul-thiyal";
+import { fishCurrySl } from "./recipes/fish-curry-sl";
+import { fishCutletsSl } from "./recipes/fish-cutlets-sl";
+import { driedSpratsSambol } from "./recipes/dried-sprats-sambol";
+import { kottuRoti } from "./recipes/kottu-roti";
+import { polRoti } from "./recipes/pol-roti";
+import { godambaRoti } from "./recipes/godamba-roti";
+import { kiriHodi } from "./recipes/kiri-hodi";
+import { cashewCurrySl } from "./recipes/cashew-curry-sl";
+import { ashPlantainCurry } from "./recipes/ash-plantain-curry";
+import { dhalWithSpinachSl } from "./recipes/dhal-with-spinach-sl";
+import { yellowRiceSl } from "./recipes/yellow-rice-sl";
+import { lamprais } from "./recipes/lamprais";
+import { chickenCurrySl } from "./recipes/chicken-curry-sl";
+import { milkRiceKiribath } from "./recipes/milk-rice-kiribath";
+import { roastedCurryPowderSl } from "./recipes/roasted-curry-powder-sl";
+import { lunuMiris } from "./recipes/lunu-miris";
+import { coconutMilkBaseSl } from "./recipes/coconut-milk-base-sl";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2587,6 +2650,35 @@ export const recipes: Recipe[] = [
   steamedRiceBaseSi,
   coconutChutneySi,
   tadkaBase,
+  // sri-lankan
+  parippuDhalSl,
+  beetrootCurrySl,
+  pumpkinCurrySl,
+  eggHoppers,
+  plainHoppers,
+  stringHoppersSl,
+  potatoCurrySl,
+  polSambol,
+  gotuKolaMallung,
+  seeniSambol,
+  ambulThiyal,
+  fishCurrySl,
+  fishCutletsSl,
+  driedSpratsSambol,
+  kottuRoti,
+  polRoti,
+  godambaRoti,
+  kiriHodi,
+  cashewCurrySl,
+  ashPlantainCurry,
+  dhalWithSpinachSl,
+  yellowRiceSl,
+  lamprais,
+  chickenCurrySl,
+  milkRiceKiribath,
+  roastedCurryPowderSl,
+  lunuMiris,
+  coconutMilkBaseSl,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2629,6 +2721,7 @@ export const docs: ContentDoc[] = [
   cultureAppalachian,
   cultureCantonese,
   cultureSouthIndian,
+  cultureSriLankan,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2693,6 +2786,8 @@ export const weekThemes: WeekTheme[] = [
   ...cantoneseWeeks,
   // south-indian
   ...southIndianWeeks,
+  // sri-lankan
+  ...sriLankanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2730,4 +2825,5 @@ export const weeks: WeekPlan[] = [
   ...appalachianWeeks,
   ...cantoneseWeeks,
   ...southIndianWeeks,
+  ...sriLankanWeeks,
 ];
