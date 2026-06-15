@@ -45,9 +45,9 @@ export const ashWeek1Potato: WeekPlan = {
     { day: "Mon", dinner: "potato-latkes", estCalories: 480, estProtein: 12 },
     { day: "Tue", dinner: "knish", estCalories: 450, estProtein: 12 },
     { day: "Wed", dinner: "potato-kugel", estCalories: 430, estProtein: 11 },
-    { day: "Thu", dinner: "draniki (thin potato pancakes) with a fried egg and scallion", estCalories: 500, estProtein: 18 },
+    { day: "Thu", dinner: "thin potato-latkes (draniki-style) with a fried egg and scallion", estCalories: 500, estProtein: 18 },
     { day: "Fri", dinner: "potato-latkes", estCalories: 480, estProtein: 12 },
-    { day: "Sat", dinner: "potato kugel reheated crisp, with sweet-and-sour cabbage", estCalories: 470, estProtein: 14 },
+    { day: "Sat", dinner: "potato-kugel reheated crisp, with sweet-and-sour cabbage", estCalories: 470, estProtein: 14 },
   ],
   shopping: [
     { item: "Potatoes (russet/Yukon)", qty: "~8 lb", cost: 5.0 },
@@ -91,7 +91,7 @@ export const ashWeek2Herring: WeekPlan = {
     { day: "Mon", dinner: "chopped-herring", estCalories: 430, estProtein: 20 },
     { day: "Tue", dinner: "schmaltz-herring", estCalories: 450, estProtein: 22 },
     { day: "Wed", dinner: "herring-in-sour-cream", estCalories: 470, estProtein: 22 },
-    { day: "Thu", dinner: "chopped herring and a hard egg on rye, with pickles", estCalories: 440, estProtein: 22 },
+    { day: "Thu", dinner: "chopped-herring and a hard egg on rye, with pickles", estCalories: 440, estProtein: 22 },
     { day: "Fri", dinner: "schmaltz-herring", estCalories: 450, estProtein: 22 },
     { day: "Sat", dinner: "vinegret with white beans and the last of the rye", estCalories: 410, estProtein: 16 },
   ],
@@ -185,7 +185,7 @@ export const ashWeek4Cabbage: WeekPlan = {
     { day: "Wed", dinner: "tzimmes", estCalories: 400, estProtein: 9 },
     { day: "Thu", dinner: "holishkes", estCalories: 480, estProtein: 22 },
     { day: "Fri", dinner: "borscht with a boiled potato and a hard egg", estCalories: 380, estProtein: 16 },
-    { day: "Sat", dinner: "sweet-and-sour cabbage over kasha with white beans", estCalories: 430, estProtein: 16 },
+    { day: "Sat", dinner: "sweet-and-sour-cabbage over kasha with white beans", estCalories: 430, estProtein: 16 },
   ],
   shopping: [
     { item: "Green cabbage", qty: "2 heads", cost: 3.0 },
@@ -278,7 +278,7 @@ export const ashWeek6Eggs: WeekPlan = {
     { day: "Wed", dinner: "schmaltz-on-rye", estCalories: 380, estProtein: 11 },
     { day: "Thu", dinner: "eggs-and-onions", estCalories: 420, estProtein: 20 },
     { day: "Fri", dinner: "baked-eggs-with-onions", estCalories: 380, estProtein: 18 },
-    { day: "Sat", dinner: "matzo brei, savory, with the last of the gribenes", estCalories: 500, estProtein: 21 },
+    { day: "Sat", dinner: "matzo-brei, savory, with the last of the gribenes", estCalories: 500, estProtein: 21 },
   ],
   shopping: [
     { item: "Eggs", qty: "2 dozen", cost: 9.0, spansWeeks: true },

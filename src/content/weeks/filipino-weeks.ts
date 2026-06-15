@@ -44,7 +44,7 @@ export const phWeek1Adobo: WeekPlan = {
     { day: "Mon", dinner: "adobong-baboy over rice", estCalories: 700, estProtein: 26 },
     { day: "Tue", dinner: "adobong-manok, deepened on day two, with sinangag", estCalories: 670, estProtein: 27 },
     { day: "Wed", dinner: "adobong-sitaw — long beans in the same braise, over rice", estCalories: 560, estProtein: 17 },
-    { day: "Thu", dinner: "adobo flakes (shredded, crisped) over garlic rice with a fried egg", estCalories: 640, estProtein: 24 },
+    { day: "Thu", dinner: "adobo-flakes — leftover adobo shredded and crisped over sinangag with a fried egg", estCalories: 640, estProtein: 24 },
     { day: "Fri", dinner: "adobong-baboy, the pot reduced sticky, over rice", estCalories: 690, estProtein: 25 },
     { day: "Sat", dinner: "the last of the adobo and adobong-sitaw — zero waste, every scrap into sinangag", estCalories: 580, estProtein: 19 },
   ],

@@ -238,7 +238,7 @@ export const ethWeek3Shiro: WeekPlan = {
     },
     {
       day: "Tue",
-      dinner: "bozena shiro — shiro studded with a little seared meat",
+      dinner: "bozena-shiro — shiro studded with a little seared meat",
       estCalories: 760,
       estProtein: 33,
     },
@@ -262,7 +262,7 @@ export const ethWeek3Shiro: WeekPlan = {
     },
     {
       day: "Sat",
-      dinner: "bozena shiro again — the feast-day shiro to close the week",
+      dinner: "bozena-shiro again — the feast-day shiro to close the week",
       estCalories: 770,
       estProtein: 34,
     },

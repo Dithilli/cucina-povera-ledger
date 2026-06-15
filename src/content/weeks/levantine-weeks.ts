@@ -247,7 +247,7 @@ export const levWeek3Burghul: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "freekeh with yogurt, toasted almonds, and a slick of oil",
+      dinner: "freekeh-bil-laban — smoky freekeh under garlicky yogurt, toasted almonds, and a slick of oil",
       estCalories: 630,
       estProtein: 21,
     },

@@ -153,7 +153,7 @@ export const jpWeek3Nimono: WeekPlan = {
     { day: "Tue", dinner: "hijiki-no-nimono with aburaage, rice, and misoshiru", estCalories: 580, estProtein: 18 },
     { day: "Wed", dinner: "kiriboshi-daikon simmer with rice and a grilled fish scrap", estCalories: 600, estProtein: 20 },
     { day: "Thu", dinner: "nikujaga again, deepened overnight, with rice", estCalories: 690, estProtein: 24 },
-    { day: "Fri", dinner: "a nimono tray — kabocha, hijiki, kiriboshi together over rice", estCalories: 620, estProtein: 19 },
+    { day: "Fri", dinner: "a nimono tray — kabocha-no-nimono, hijiki-no-nimono, and kiriboshi-daikon together over rice", estCalories: 620, estProtein: 19 },
     { day: "Sat", dinner: "zero-waste: zosui — the week's leftover simmer liquids and cold rice into a savory rice soup with egg", estCalories: 560, estProtein: 18 },
   ],
   shopping: [

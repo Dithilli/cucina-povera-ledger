@@ -64,7 +64,7 @@ export const idWeek1Tempe: WeekPlan = {
     },
     {
       day: "Wed",
-      dinner: "tempe goreng with tumis kangkung over rice",
+      dinner: "tempe goreng with tumis-kangkung over rice",
       estCalories: 620,
       estProtein: 20,
     },
@@ -155,7 +155,7 @@ export const idWeek2Tahu: WeekPlan = {
     },
     {
       day: "Wed",
-      dinner: "tahu isi (stuffed, fried) with rice and sambal",
+      dinner: "tahu-isi (stuffed, fried) with rice and sambal",
       estCalories: 660,
       estProtein: 19,
     },
@@ -252,7 +252,7 @@ export const idWeek3Sayur: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "sayur bayam (spinach + corn soup) with telur and tempe over rice",
+      dinner: "sayur-bayam (spinach + corn soup) with telur and tempe over rice",
       estCalories: 650,
       estProtein: 23,
     },
@@ -337,7 +337,7 @@ export const idWeek4Sambal: WeekPlan = {
     },
     {
       day: "Wed",
-      dinner: "tempe balado — fried tempe in the chile sauce — over rice",
+      dinner: "tempe-balado — fried tempe in the chile sauce — over rice",
       estCalories: 670,
       estProtein: 25,
     },
@@ -349,7 +349,7 @@ export const idWeek4Sambal: WeekPlan = {
     },
     {
       day: "Fri",
-      dinner: "tahu balado with rice and sambal",
+      dinner: "tahu-balado with rice and sambal",
       estCalories: 630,
       estProtein: 20,
     },
@@ -428,7 +428,7 @@ export const idWeek5Pecel: WeekPlan = {
     },
     {
       day: "Wed",
-      dinner: "lotek with tempe-goreng and rice",
+      dinner: "lotek with tempe goreng and rice",
       estCalories: 670,
       estProtein: 24,
     },
@@ -446,7 +446,7 @@ export const idWeek5Pecel: WeekPlan = {
     },
     {
       day: "Sat",
-      dinner: "zero-waste finale: every blanched and raw vegetable left in the basket under the last of the peanut sauce, with tempe and egg over rice",
+      dinner: "zero-waste finale: every blanched and raw vegetable left in the basket under the last of the peanut-sauce, with tempe and egg over rice",
       estCalories: 680,
       estProtein: 24,
     },
@@ -524,7 +524,7 @@ export const idWeek6Nasi: WeekPlan = {
     },
     {
       day: "Thu",
-      dinner: "nasi kuning (turmeric coconut rice) with tahu and balado",
+      dinner: "nasi kuning (turmeric coconut-rice) with tahu and balado",
       estCalories: 710,
       estProtein: 23,
     },
@@ -536,7 +536,7 @@ export const idWeek6Nasi: WeekPlan = {
     },
     {
       day: "Sat",
-      dinner: "zero-waste finale: nasi goreng from every grain of day-old rice in the pot, fried with the last tempe, egg, and sambal",
+      dinner: "zero-waste finale: nasi-goreng from every grain of day-old rice in the pot, fried with the last tempe, egg, and sambal",
       estCalories: 700,
       estProtein: 25,
     },

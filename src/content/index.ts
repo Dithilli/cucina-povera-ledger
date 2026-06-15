@@ -51,6 +51,7 @@ export * from "./recipes/tomato-sugo";
 export * from "./recipes/lemon-pangrattato";
 export * from "./recipes/pot-of-chickpeas";
 export * from "./recipes/pot-of-cannellini";
+export * from "./recipes/spaghetti-aglio-olio";
 
 // ── Challenge #2 — Mexico (La Cocina del Maíz) ──
 export * from "./recipes/corn-tortillas";
@@ -72,6 +73,19 @@ export * from "./recipes/rajas-con-crema";
 export * from "./recipes/tinga-de-pollo";
 export * from "./recipes/picadillo";
 export * from "./recipes/frijoles-puercos";
+export * from "./recipes/sopes";
+export * from "./recipes/tlacoyos";
+export * from "./recipes/huaraches";
+export * from "./recipes/gorditas";
+export * from "./recipes/tacos-dorados";
+export * from "./recipes/enchiladas-rojas";
+export * from "./recipes/enfrijoladas";
+export * from "./recipes/huevos-en-salsa-verde";
+export * from "./recipes/huevos-en-salsa-roja";
+export * from "./recipes/migas";
+export * from "./recipes/sopa-de-guias";
+export * from "./recipes/mole";
+export * from "./recipes/chiles-rellenos";
 
 // ── Challenge #3 — Ethiopia & Eritrea (Beyaynetu) ──
 export * from "./recipes/teff-injera";
@@ -103,6 +117,7 @@ export * from "./recipes/hilbet";
 export * from "./recipes/kategna";
 export * from "./recipes/fasolia";
 export * from "./recipes/telba-fitfit";
+export * from "./recipes/misir-fitfit";
 
 // ── Challenge #4 — Greece (Greek cucina povera) ──
 export * from "./recipes/fasolada";
@@ -486,6 +501,16 @@ export * from "./recipes/gefilte-fish";
 export * from "./recipes/roast-chicken-with-schmaltz";
 export * from "./recipes/kreplach";
 
+// ── Gap-fill recipes: dishes named in week menus that had no recipe ──
+export * from "./recipes/crawfish-etouffee";
+export * from "./recipes/adobo-flakes";
+export * from "./recipes/freekeh-bil-laban";
+export * from "./recipes/tahu-isi";
+export * from "./recipes/sayur-bayam";
+export * from "./recipes/tempe-balado";
+export * from "./recipes/tahu-balado";
+export * from "./recipes/lotek";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -573,6 +598,7 @@ import { tomatoSugo } from "./recipes/tomato-sugo";
 import { lemonPangrattato } from "./recipes/lemon-pangrattato";
 import { potOfChickpeas } from "./recipes/pot-of-chickpeas";
 import { potOfCannellini } from "./recipes/pot-of-cannellini";
+import { spaghettiAglioOlio } from "./recipes/spaghetti-aglio-olio";
 
 // Challenge #2 — Mexico
 import { cornTortillas } from "./recipes/corn-tortillas";
@@ -594,6 +620,19 @@ import { rajasConCrema } from "./recipes/rajas-con-crema";
 import { tingaDePollo } from "./recipes/tinga-de-pollo";
 import { picadillo } from "./recipes/picadillo";
 import { frijolesPuercos } from "./recipes/frijoles-puercos";
+import { sopes } from "./recipes/sopes";
+import { tlacoyos } from "./recipes/tlacoyos";
+import { huaraches } from "./recipes/huaraches";
+import { gorditas } from "./recipes/gorditas";
+import { tacosDorados } from "./recipes/tacos-dorados";
+import { enchiladasRojas } from "./recipes/enchiladas-rojas";
+import { enfrijoladas } from "./recipes/enfrijoladas";
+import { huevosEnSalsaVerde } from "./recipes/huevos-en-salsa-verde";
+import { huevosEnSalsaRoja } from "./recipes/huevos-en-salsa-roja";
+import { migas } from "./recipes/migas";
+import { sopaDeGuias } from "./recipes/sopa-de-guias";
+import { mole } from "./recipes/mole";
+import { chilesRellenos } from "./recipes/chiles-rellenos";
 
 // Challenge #3 — Ethiopia & Eritrea
 import { teffInjera } from "./recipes/teff-injera";
@@ -625,6 +664,7 @@ import { hilbet } from "./recipes/hilbet";
 import { kategna } from "./recipes/kategna";
 import { fasolia } from "./recipes/fasolia";
 import { telbaFitfit } from "./recipes/telba-fitfit";
+import { misirFitfit } from "./recipes/misir-fitfit";
 
 // Challenge #4 — Greece
 import { fasolada } from "./recipes/fasolada";
@@ -998,6 +1038,16 @@ import { gefilteFish } from "./recipes/gefilte-fish";
 import { roastChickenWithSchmaltz } from "./recipes/roast-chicken-with-schmaltz";
 import { kreplach } from "./recipes/kreplach";
 
+// Gap-fill recipes (dishes named in week menus that had no recipe)
+import { crawfishEtouffee } from "./recipes/crawfish-etouffee";
+import { adoboFlakes } from "./recipes/adobo-flakes";
+import { freekehBilLaban } from "./recipes/freekeh-bil-laban";
+import { tahuIsi } from "./recipes/tahu-isi";
+import { sayurBayam } from "./recipes/sayur-bayam";
+import { tempeBalado } from "./recipes/tempe-balado";
+import { tahuBalado } from "./recipes/tahu-balado";
+import { lotek } from "./recipes/lotek";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
@@ -1091,6 +1141,7 @@ export const recipes: Recipe[] = [
   lemonPangrattato,
   potOfChickpeas,
   potOfCannellini,
+  spaghettiAglioOlio,
   // Challenge #2 — Mexico (La Cocina del Maíz)
   cornTortillas,
   chilaquilesRojos,
@@ -1111,6 +1162,19 @@ export const recipes: Recipe[] = [
   tingaDePollo,
   picadillo,
   frijolesPuercos,
+  sopes,
+  tlacoyos,
+  huaraches,
+  gorditas,
+  tacosDorados,
+  enchiladasRojas,
+  enfrijoladas,
+  huevosEnSalsaVerde,
+  huevosEnSalsaRoja,
+  migas,
+  sopaDeGuias,
+  mole,
+  chilesRellenos,
   // Challenge #3 — Ethiopia & Eritrea (Beyaynetu)
   teffInjera,
   berbere,
@@ -1141,6 +1205,7 @@ export const recipes: Recipe[] = [
   kategna,
   fasolia,
   telbaFitfit,
+  misirFitfit,
   // Challenge #4 — Greece
   fasolada,
   gigantesPlaki,
@@ -1510,6 +1575,15 @@ export const recipes: Recipe[] = [
   gefilteFish,
   roastChickenWithSchmaltz,
   kreplach,
+  // Gap-fill recipes (dishes named in week menus that had no recipe)
+  crawfishEtouffee,
+  adoboFlakes,
+  freekehBilLaban,
+  tahuIsi,
+  sayurBayam,
+  tempeBalado,
+  tahuBalado,
+  lotek,
 ];
 
 export const docs: ContentDoc[] = [
