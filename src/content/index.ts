@@ -781,6 +781,36 @@ export * from "./recipes/cathead-biscuits";
 export * from "./recipes/chow-chow";
 export * from "./recipes/apple-butter";
 
+// ── cantonese ──
+export * from "./recipes/gai-lan-oyster-sauce";
+export * from "./recipes/tomato-egg-ct";
+export * from "./recipes/beef-greens-ct";
+export * from "./recipes/steamed-fish-ct";
+export * from "./recipes/steamed-pork-patty";
+export * from "./recipes/steamed-egg-ct";
+export * from "./recipes/steamed-spare-ribs";
+export * from "./recipes/congee-ct";
+export * from "./recipes/century-egg-congee";
+export * from "./recipes/wonton-noodle-ct";
+export * from "./recipes/soy-sauce-chow-mein";
+export * from "./recipes/beef-ho-fun";
+export * from "./recipes/cheung-fun";
+export * from "./recipes/lo-mein-ct";
+export * from "./recipes/claypot-rice";
+export * from "./recipes/soy-sauce-chicken-ct";
+export * from "./recipes/lo-soi-braised-pork";
+export * from "./recipes/braised-pork-belly-ct";
+export * from "./recipes/winter-melon-soup";
+export * from "./recipes/abc-soup";
+export * from "./recipes/watercress-pork-soup";
+export * from "./recipes/braised-tofu-ct";
+export * from "./recipes/stuffed-tofu";
+export * from "./recipes/eggplant-claypot";
+export * from "./recipes/siu-mai-ct";
+export * from "./recipes/steamed-rice-base";
+export * from "./recipes/ginger-scallion-oil";
+export * from "./recipes/superior-stock";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -811,6 +841,7 @@ export * from "./docs/culture-moroccan";
 export * from "./docs/culture-polish";
 export * from "./docs/culture-irish";
 export * from "./docs/culture-appalachian";
+export * from "./docs/culture-cantonese";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -840,6 +871,7 @@ export * from "./weeks/moroccan-weeks";
 export * from "./weeks/polish-weeks";
 export * from "./weeks/irish-weeks";
 export * from "./weeks/appalachian-weeks";
+export * from "./weeks/cantonese-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1364,6 +1396,7 @@ import { cultureMoroccan } from "./docs/culture-moroccan";
 import { culturePolish } from "./docs/culture-polish";
 import { cultureIrish } from "./docs/culture-irish";
 import { cultureAppalachian } from "./docs/culture-appalachian";
+import { cultureCantonese } from "./docs/culture-cantonese";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1398,6 +1431,7 @@ import { moroccanWeeks } from "./weeks/moroccan-weeks";
 import { polishWeeks } from "./weeks/polish-weeks";
 import { irishWeeks } from "./weeks/irish-weeks";
 import { appalachianWeeks } from "./weeks/appalachian-weeks";
+import { cantoneseWeeks } from "./weeks/cantonese-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1659,6 +1693,35 @@ import { appleStackCake } from "./recipes/apple-stack-cake";
 import { catheadBiscuits } from "./recipes/cathead-biscuits";
 import { chowChow } from "./recipes/chow-chow";
 import { appleButter } from "./recipes/apple-butter";
+
+import { gaiLanOysterSauce } from "./recipes/gai-lan-oyster-sauce";
+import { tomatoEggCt } from "./recipes/tomato-egg-ct";
+import { beefGreensCt } from "./recipes/beef-greens-ct";
+import { steamedFishCt } from "./recipes/steamed-fish-ct";
+import { steamedPorkPatty } from "./recipes/steamed-pork-patty";
+import { steamedEggCt } from "./recipes/steamed-egg-ct";
+import { steamedSpareRibs } from "./recipes/steamed-spare-ribs";
+import { congeeCt } from "./recipes/congee-ct";
+import { centuryEggCongee } from "./recipes/century-egg-congee";
+import { wontonNoodleCt } from "./recipes/wonton-noodle-ct";
+import { soySauceChowMein } from "./recipes/soy-sauce-chow-mein";
+import { beefHoFun } from "./recipes/beef-ho-fun";
+import { cheungFun } from "./recipes/cheung-fun";
+import { loMeinCt } from "./recipes/lo-mein-ct";
+import { claypotRice } from "./recipes/claypot-rice";
+import { soySauceChickenCt } from "./recipes/soy-sauce-chicken-ct";
+import { loSoiBraisedPork } from "./recipes/lo-soi-braised-pork";
+import { braisedPorkBellyCt } from "./recipes/braised-pork-belly-ct";
+import { winterMelonSoup } from "./recipes/winter-melon-soup";
+import { abcSoup } from "./recipes/abc-soup";
+import { watercressPorkSoup } from "./recipes/watercress-pork-soup";
+import { braisedTofuCt } from "./recipes/braised-tofu-ct";
+import { stuffedTofu } from "./recipes/stuffed-tofu";
+import { eggplantClaypot } from "./recipes/eggplant-claypot";
+import { siuMaiCt } from "./recipes/siu-mai-ct";
+import { steamedRiceBase } from "./recipes/steamed-rice-base";
+import { gingerScallionOil } from "./recipes/ginger-scallion-oil";
+import { superiorStock } from "./recipes/superior-stock";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2403,6 +2466,35 @@ export const recipes: Recipe[] = [
   catheadBiscuits,
   chowChow,
   appleButter,
+  // cantonese
+  gaiLanOysterSauce,
+  tomatoEggCt,
+  beefGreensCt,
+  steamedFishCt,
+  steamedPorkPatty,
+  steamedEggCt,
+  steamedSpareRibs,
+  congeeCt,
+  centuryEggCongee,
+  wontonNoodleCt,
+  soySauceChowMein,
+  beefHoFun,
+  cheungFun,
+  loMeinCt,
+  claypotRice,
+  soySauceChickenCt,
+  loSoiBraisedPork,
+  braisedPorkBellyCt,
+  winterMelonSoup,
+  abcSoup,
+  watercressPorkSoup,
+  braisedTofuCt,
+  stuffedTofu,
+  eggplantClaypot,
+  siuMaiCt,
+  steamedRiceBase,
+  gingerScallionOil,
+  superiorStock,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2443,6 +2535,7 @@ export const docs: ContentDoc[] = [
   culturePolish,
   cultureIrish,
   cultureAppalachian,
+  cultureCantonese,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2503,6 +2596,8 @@ export const weekThemes: WeekTheme[] = [
   ...irishWeeks,
   // appalachian
   ...appalachianWeeks,
+  // cantonese
+  ...cantoneseWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2538,4 +2633,5 @@ export const weeks: WeekPlan[] = [
   ...polishWeeks,
   ...irishWeeks,
   ...appalachianWeeks,
+  ...cantoneseWeeks,
 ];
