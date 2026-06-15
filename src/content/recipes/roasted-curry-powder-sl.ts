@@ -7,7 +7,7 @@ export const roastedCurryPowderSl: Recipe = {
   blurb:
     "Coriander, cumin and fennel dry-roasted to a fragrant near-black with peppercorns, cardamom, cloves and cinnamon, then ground fine — the smoky dark blend behind every Sri Lankan meat and fish curry.",
   servings: 24,
-  perServing: { calories: 18, protein: 0.7 },
+  perServing: { calories: 18, protein: 1 },
   estCostPerServing: 0.05,
   roles: ["base"],
   ingredients: [
