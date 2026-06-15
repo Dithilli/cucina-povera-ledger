@@ -126,6 +126,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Bread, olive oil, salt cod, and beans — the faithful friend with 365 preparations, nothing wasted.",
   },
+  "korean": {
+    slug: "bapsang",
+    name: "Bapsang",
+    tagline:
+      "Rice, the jang trinity, and kimchi — a rotating cast of banchan from one fermented brick, nothing wasted.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */

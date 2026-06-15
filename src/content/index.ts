@@ -392,6 +392,35 @@ export * from "./recipes/refogado";
 export * from "./recipes/sardinhas-assadas";
 export * from "./recipes/sopa-de-feijao";
 
+// ── korean ──
+export * from "./recipes/anchovy-kelp-stock";
+export * from "./recipes/bap";
+export * from "./recipes/bibim-guksu";
+export * from "./recipes/bibimbap";
+export * from "./recipes/doenjang-jjigae";
+export * from "./recipes/dubu-jorim";
+export * from "./recipes/gaji-namul";
+export * from "./recipes/gamja-jorim";
+export * from "./recipes/gukbap";
+export * from "./recipes/gyeran-jjim";
+export * from "./recipes/gyeran-mari";
+export * from "./recipes/jeyuk-bokkeum";
+export * from "./recipes/kimchi-bokkeumbap";
+export * from "./recipes/kimchi-jeon";
+export * from "./recipes/kimchi-jjigae";
+export * from "./recipes/kimchi";
+export * from "./recipes/kongnamul-bap";
+export * from "./recipes/kongnamul-guk";
+export * from "./recipes/kongnamul-muchim";
+export * from "./recipes/miyeokguk";
+export * from "./recipes/myeolchi-bokkeum";
+export * from "./recipes/nurungji";
+export * from "./recipes/pajeon";
+export * from "./recipes/sigeumchi-namul";
+export * from "./recipes/ssamjang";
+export * from "./recipes/sundubu-jjigae";
+export * from "./recipes/tteokguk";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -410,6 +439,7 @@ export * from "./docs/culture-filipino";
 export * from "./docs/culture-vietnamese";
 export * from "./docs/culture-persian";
 export * from "./docs/culture-portuguese";
+export * from "./docs/culture-korean";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -427,6 +457,7 @@ export * from "./weeks/filipino-weeks";
 export * from "./weeks/vietnamese-weeks";
 export * from "./weeks/persian-weeks";
 export * from "./weeks/portuguese-weeks";
+export * from "./weeks/korean-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -805,6 +836,34 @@ import { piriPiri } from "./recipes/piri-piri";
 import { refogado } from "./recipes/refogado";
 import { sardinhasAssadas } from "./recipes/sardinhas-assadas";
 import { sopaDeFeijao } from "./recipes/sopa-de-feijao";
+// korean
+import { anchovyKelpStock } from "./recipes/anchovy-kelp-stock";
+import { bap } from "./recipes/bap";
+import { bibimGuksu } from "./recipes/bibim-guksu";
+import { bibimbap } from "./recipes/bibimbap";
+import { doenjangJjigae } from "./recipes/doenjang-jjigae";
+import { dubuJorim } from "./recipes/dubu-jorim";
+import { gajiNamul } from "./recipes/gaji-namul";
+import { gamjaJorim } from "./recipes/gamja-jorim";
+import { gukbap } from "./recipes/gukbap";
+import { gyeranJjim } from "./recipes/gyeran-jjim";
+import { gyeranMari } from "./recipes/gyeran-mari";
+import { jeyukBokkeum } from "./recipes/jeyuk-bokkeum";
+import { kimchiBokkeumbap } from "./recipes/kimchi-bokkeumbap";
+import { kimchiJeon } from "./recipes/kimchi-jeon";
+import { kimchiJjigae } from "./recipes/kimchi-jjigae";
+import { kimchi } from "./recipes/kimchi";
+import { kongnamulBap } from "./recipes/kongnamul-bap";
+import { kongnamulGuk } from "./recipes/kongnamul-guk";
+import { kongnamulMuchim } from "./recipes/kongnamul-muchim";
+import { miyeokguk } from "./recipes/miyeokguk";
+import { myeolchiBokkeum } from "./recipes/myeolchi-bokkeum";
+import { nurungji } from "./recipes/nurungji";
+import { pajeon } from "./recipes/pajeon";
+import { sigeumchiNamul } from "./recipes/sigeumchi-namul";
+import { ssamjang } from "./recipes/ssamjang";
+import { sundubuJjigae } from "./recipes/sundubu-jjigae";
+import { tteokguk } from "./recipes/tteokguk";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -822,6 +881,7 @@ import { cultureFilipino } from "./docs/culture-filipino";
 import { cultureVietnamese } from "./docs/culture-vietnamese";
 import { culturePersian } from "./docs/culture-persian";
 import { culturePortuguese } from "./docs/culture-portuguese";
+import { cultureKorean } from "./docs/culture-korean";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -844,6 +904,7 @@ import { filipinoWeeks } from "./weeks/filipino-weeks";
 import { vietnameseWeeks } from "./weeks/vietnamese-weeks";
 import { persianWeeks } from "./weeks/persian-weeks";
 import { portugueseWeeks } from "./weeks/portuguese-weeks";
+import { koreanWeeks } from "./weeks/korean-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1221,6 +1282,34 @@ export const recipes: Recipe[] = [
   refogado,
   sardinhasAssadas,
   sopaDeFeijao,
+  // korean
+  anchovyKelpStock,
+  bap,
+  bibimGuksu,
+  bibimbap,
+  doenjangJjigae,
+  dubuJorim,
+  gajiNamul,
+  gamjaJorim,
+  gukbap,
+  gyeranJjim,
+  gyeranMari,
+  jeyukBokkeum,
+  kimchiBokkeumbap,
+  kimchiJeon,
+  kimchiJjigae,
+  kimchi,
+  kongnamulBap,
+  kongnamulGuk,
+  kongnamulMuchim,
+  miyeokguk,
+  myeolchiBokkeum,
+  nurungji,
+  pajeon,
+  sigeumchiNamul,
+  ssamjang,
+  sundubuJjigae,
+  tteokguk,
 ];
 
 export const docs: ContentDoc[] = [
@@ -1240,6 +1329,7 @@ export const docs: ContentDoc[] = [
   cultureVietnamese,
   culturePersian,
   culturePortuguese,
+  cultureKorean,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1276,6 +1366,8 @@ export const weekThemes: WeekTheme[] = [
   ...persianWeeks,
   // portuguese
   ...portugueseWeeks,
+  // korean
+  ...koreanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1299,4 +1391,5 @@ export const weeks: WeekPlan[] = [
   ...vietnameseWeeks,
   ...persianWeeks,
   ...portugueseWeeks,
+  ...koreanWeeks,
 ];
