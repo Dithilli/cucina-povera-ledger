@@ -450,6 +450,42 @@ export * from "./recipes/unohana";
 export * from "./recipes/yosenabe";
 export * from "./recipes/zosui";
 
+// ── Challenge — Ashkenazi (Schmaltz & Onions) ──
+export * from "./recipes/schmaltz-and-gribenes";
+export * from "./recipes/caramelized-onions";
+export * from "./recipes/pot-of-white-beans";
+export * from "./recipes/challah";
+export * from "./recipes/potato-latkes";
+export * from "./recipes/potato-kugel";
+export * from "./recipes/knish";
+export * from "./recipes/potato-onion-soup";
+export * from "./recipes/chopped-herring";
+export * from "./recipes/herring-in-sour-cream";
+export * from "./recipes/schmaltz-herring";
+export * from "./recipes/vinegret";
+export * from "./recipes/kasha-varnishkes";
+export * from "./recipes/mushroom-barley-soup";
+export * from "./recipes/kasha-with-mushroom-gravy";
+export * from "./recipes/lima-bean-soup";
+export * from "./recipes/holishkes";
+export * from "./recipes/borscht";
+export * from "./recipes/sweet-and-sour-cabbage";
+export * from "./recipes/tzimmes";
+export * from "./recipes/cheese-blintzes";
+export * from "./recipes/lokshen-kugel";
+export * from "./recipes/farmer-cheese-and-noodles";
+export * from "./recipes/cold-beet-borscht";
+export * from "./recipes/schav";
+export * from "./recipes/eggs-and-onions";
+export * from "./recipes/matzo-brei";
+export * from "./recipes/schmaltz-on-rye";
+export * from "./recipes/baked-eggs-with-onions";
+export * from "./recipes/cholent";
+export * from "./recipes/chicken-soup-with-kneydlach";
+export * from "./recipes/gefilte-fish";
+export * from "./recipes/roast-chicken-with-schmaltz";
+export * from "./recipes/kreplach";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -470,6 +506,7 @@ export * from "./docs/culture-persian";
 export * from "./docs/culture-portuguese";
 export * from "./docs/culture-korean";
 export * from "./docs/culture-japanese";
+export * from "./docs/culture-ashkenazi";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -489,6 +526,7 @@ export * from "./weeks/persian-weeks";
 export * from "./weeks/portuguese-weeks";
 export * from "./weeks/korean-weeks";
 export * from "./weeks/japanese-weeks";
+export * from "./weeks/ashkenazi-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -924,6 +962,42 @@ import { unohana } from "./recipes/unohana";
 import { yosenabe } from "./recipes/yosenabe";
 import { zosui } from "./recipes/zosui";
 
+// Ashkenazi (Schmaltz & Onions)
+import { schmaltzAndGribenes } from "./recipes/schmaltz-and-gribenes";
+import { caramelizedOnions } from "./recipes/caramelized-onions";
+import { potOfWhiteBeans } from "./recipes/pot-of-white-beans";
+import { challah } from "./recipes/challah";
+import { potatoLatkes } from "./recipes/potato-latkes";
+import { potatoKugel } from "./recipes/potato-kugel";
+import { knish } from "./recipes/knish";
+import { potatoOnionSoup } from "./recipes/potato-onion-soup";
+import { choppedHerring } from "./recipes/chopped-herring";
+import { herringInSourCream } from "./recipes/herring-in-sour-cream";
+import { schmaltzHerring } from "./recipes/schmaltz-herring";
+import { vinegret } from "./recipes/vinegret";
+import { kashaVarnishkes } from "./recipes/kasha-varnishkes";
+import { mushroomBarleySoup } from "./recipes/mushroom-barley-soup";
+import { kashaWithMushroomGravy } from "./recipes/kasha-with-mushroom-gravy";
+import { limaBeanSoup } from "./recipes/lima-bean-soup";
+import { holishkes } from "./recipes/holishkes";
+import { borscht } from "./recipes/borscht";
+import { sweetAndSourCabbage } from "./recipes/sweet-and-sour-cabbage";
+import { tzimmes } from "./recipes/tzimmes";
+import { cheeseBlintzes } from "./recipes/cheese-blintzes";
+import { lokshenKugel } from "./recipes/lokshen-kugel";
+import { farmerCheeseAndNoodles } from "./recipes/farmer-cheese-and-noodles";
+import { coldBeetBorscht } from "./recipes/cold-beet-borscht";
+import { schav } from "./recipes/schav";
+import { eggsAndOnions } from "./recipes/eggs-and-onions";
+import { matzoBrei } from "./recipes/matzo-brei";
+import { schmaltzOnRye } from "./recipes/schmaltz-on-rye";
+import { bakedEggsWithOnions } from "./recipes/baked-eggs-with-onions";
+import { cholent } from "./recipes/cholent";
+import { chickenSoupWithKneydlach } from "./recipes/chicken-soup-with-kneydlach";
+import { gefilteFish } from "./recipes/gefilte-fish";
+import { roastChickenWithSchmaltz } from "./recipes/roast-chicken-with-schmaltz";
+import { kreplach } from "./recipes/kreplach";
+
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
 import { manifesto } from "./docs/manifesto";
@@ -942,6 +1016,7 @@ import { culturePersian } from "./docs/culture-persian";
 import { culturePortuguese } from "./docs/culture-portuguese";
 import { cultureKorean } from "./docs/culture-korean";
 import { cultureJapanese } from "./docs/culture-japanese";
+import { cultureAshkenazi } from "./docs/culture-ashkenazi";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -966,6 +1041,7 @@ import { persianWeeks } from "./weeks/persian-weeks";
 import { portugueseWeeks } from "./weeks/portuguese-weeks";
 import { koreanWeeks } from "./weeks/korean-weeks";
 import { japaneseWeeks } from "./weeks/japanese-weeks";
+import { ashkenaziWeeks } from "./weeks/ashkenazi-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -1399,6 +1475,41 @@ export const recipes: Recipe[] = [
   unohana,
   yosenabe,
   zosui,
+  // Ashkenazi (Schmaltz & Onions)
+  schmaltzAndGribenes,
+  caramelizedOnions,
+  potOfWhiteBeans,
+  challah,
+  potatoLatkes,
+  potatoKugel,
+  knish,
+  potatoOnionSoup,
+  choppedHerring,
+  herringInSourCream,
+  schmaltzHerring,
+  vinegret,
+  kashaVarnishkes,
+  mushroomBarleySoup,
+  kashaWithMushroomGravy,
+  limaBeanSoup,
+  holishkes,
+  borscht,
+  sweetAndSourCabbage,
+  tzimmes,
+  cheeseBlintzes,
+  lokshenKugel,
+  farmerCheeseAndNoodles,
+  coldBeetBorscht,
+  schav,
+  eggsAndOnions,
+  matzoBrei,
+  schmaltzOnRye,
+  bakedEggsWithOnions,
+  cholent,
+  chickenSoupWithKneydlach,
+  gefilteFish,
+  roastChickenWithSchmaltz,
+  kreplach,
 ];
 
 export const docs: ContentDoc[] = [
@@ -1420,6 +1531,7 @@ export const docs: ContentDoc[] = [
   culturePortuguese,
   cultureKorean,
   cultureJapanese,
+  cultureAshkenazi,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -1460,6 +1572,8 @@ export const weekThemes: WeekTheme[] = [
   ...koreanWeeks,
   // japanese
   ...japaneseWeeks,
+  // Ashkenazi (Schmaltz & Onions)
+  ...ashkenaziWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -1485,4 +1599,5 @@ export const weeks: WeekPlan[] = [
   ...portugueseWeeks,
   ...koreanWeeks,
   ...japaneseWeeks,
+  ...ashkenaziWeeks,
 ];
