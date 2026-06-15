@@ -661,6 +661,36 @@ export * from "./recipes/ugali-base";
 export * from "./recipes/kachumbari";
 export * from "./recipes/pilau-masala";
 
+// ── moroccan ──
+export * from "./recipes/tagine-djaj-mqualli";
+export * from "./recipes/tagine-lham-barkok";
+export * from "./recipes/tagine-kefta-baid";
+export * from "./recipes/tagine-khodra";
+export * from "./recipes/couscous-ma";
+export * from "./recipes/couscous-tfaya";
+export * from "./recipes/seffa-medfouna";
+export * from "./recipes/harira-ma";
+export * from "./recipes/bissara";
+export * from "./recipes/chorba-ma";
+export * from "./recipes/msemen-ma";
+export * from "./recipes/khobz-bayldi";
+export * from "./recipes/batbout-mahshi";
+export * from "./recipes/rfissa";
+export * from "./recipes/kefta-mkawra";
+export * from "./recipes/brochettes-kefta";
+export * from "./recipes/merguez-batata";
+export * from "./recipes/sardines-mhamer";
+export * from "./recipes/hoot-chermoula";
+export * from "./recipes/maakouda";
+export * from "./recipes/chermoula-ma";
+export * from "./recipes/briouats";
+export * from "./recipes/bastilla-djaj";
+export * from "./recipes/zaalouk";
+export * from "./recipes/taktouka";
+export * from "./recipes/khobz-base";
+export * from "./recipes/ras-el-hanout";
+export * from "./recipes/hamd-markad";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -687,6 +717,7 @@ export * from "./docs/culture-brazilian";
 export * from "./docs/culture-puerto-rican";
 export * from "./docs/culture-senegalese";
 export * from "./docs/culture-east-african";
+export * from "./docs/culture-moroccan";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -712,6 +743,7 @@ export * from "./weeks/brazilian-weeks";
 export * from "./weeks/puerto-rican-weeks";
 export * from "./weeks/senegalese-weeks";
 export * from "./weeks/east-african-weeks";
+export * from "./weeks/moroccan-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -1232,6 +1264,7 @@ import { cultureBrazilian } from "./docs/culture-brazilian";
 import { culturePuertoRican } from "./docs/culture-puerto-rican";
 import { cultureSenegalese } from "./docs/culture-senegalese";
 import { cultureEastAfrican } from "./docs/culture-east-african";
+import { cultureMoroccan } from "./docs/culture-moroccan";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -1262,6 +1295,7 @@ import { brazilianWeeks } from "./weeks/brazilian-weeks";
 import { puertoRicanWeeks } from "./weeks/puerto-rican-weeks";
 import { senegaleseWeeks } from "./weeks/senegalese-weeks";
 import { eastAfricanWeeks } from "./weeks/east-african-weeks";
+import { moroccanWeeks } from "./weeks/moroccan-weeks";
 
 import { chupeDeQuinua } from "./recipes/chupe-de-quinua";
 import { sopaDeMani } from "./recipes/sopa-de-mani";
@@ -1407,6 +1441,35 @@ import { vitumbua } from "./recipes/vitumbua";
 import { ugaliBase } from "./recipes/ugali-base";
 import { kachumbari } from "./recipes/kachumbari";
 import { pilauMasala } from "./recipes/pilau-masala";
+
+import { tagineDjajMqualli } from "./recipes/tagine-djaj-mqualli";
+import { tagineLhamBarkok } from "./recipes/tagine-lham-barkok";
+import { tagineKeftaBaid } from "./recipes/tagine-kefta-baid";
+import { tagineKhodra } from "./recipes/tagine-khodra";
+import { couscousMa } from "./recipes/couscous-ma";
+import { couscousTfaya } from "./recipes/couscous-tfaya";
+import { seffaMedfouna } from "./recipes/seffa-medfouna";
+import { hariraMa } from "./recipes/harira-ma";
+import { bissara } from "./recipes/bissara";
+import { chorbaMa } from "./recipes/chorba-ma";
+import { msemenMa } from "./recipes/msemen-ma";
+import { khobzBayldi } from "./recipes/khobz-bayldi";
+import { batboutMahshi } from "./recipes/batbout-mahshi";
+import { rfissa } from "./recipes/rfissa";
+import { keftaMkawra } from "./recipes/kefta-mkawra";
+import { brochettesKefta } from "./recipes/brochettes-kefta";
+import { merguezBatata } from "./recipes/merguez-batata";
+import { sardinesMhamer } from "./recipes/sardines-mhamer";
+import { hootChermoula } from "./recipes/hoot-chermoula";
+import { maakouda } from "./recipes/maakouda";
+import { chermoulaMa } from "./recipes/chermoula-ma";
+import { briouats } from "./recipes/briouats";
+import { bastillaDjaj } from "./recipes/bastilla-djaj";
+import { zaalouk } from "./recipes/zaalouk";
+import { taktouka } from "./recipes/taktouka";
+import { khobzBase } from "./recipes/khobz-base";
+import { rasElHanout } from "./recipes/ras-el-hanout";
+import { hamdMarkad } from "./recipes/hamd-markad";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -2035,6 +2098,35 @@ export const recipes: Recipe[] = [
   ugaliBase,
   kachumbari,
   pilauMasala,
+  // moroccan
+  tagineDjajMqualli,
+  tagineLhamBarkok,
+  tagineKeftaBaid,
+  tagineKhodra,
+  couscousMa,
+  couscousTfaya,
+  seffaMedfouna,
+  hariraMa,
+  bissara,
+  chorbaMa,
+  msemenMa,
+  khobzBayldi,
+  batboutMahshi,
+  rfissa,
+  keftaMkawra,
+  brochettesKefta,
+  merguezBatata,
+  sardinesMhamer,
+  hootChermoula,
+  maakouda,
+  chermoulaMa,
+  briouats,
+  bastillaDjaj,
+  zaalouk,
+  taktouka,
+  khobzBase,
+  rasElHanout,
+  hamdMarkad,
   // Gap-fill recipes (dishes named in week menus that had no recipe)
   crawfishEtouffee,
   adoboFlakes,
@@ -2071,6 +2163,7 @@ export const docs: ContentDoc[] = [
   culturePuertoRican,
   cultureSenegalese,
   cultureEastAfrican,
+  cultureMoroccan,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -2123,6 +2216,8 @@ export const weekThemes: WeekTheme[] = [
   ...senegaleseWeeks,
   // east-african
   ...eastAfricanWeeks,
+  // moroccan
+  ...moroccanWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -2154,4 +2249,5 @@ export const weeks: WeekPlan[] = [
   ...puertoRicanWeeks,
   ...senegaleseWeeks,
   ...eastAfricanWeeks,
+  ...moroccanWeeks,
 ];

@@ -162,6 +162,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Maize pap, a pan of greens, a coconut-deep stew, and the Swahili spice trade — bara thrift meets pwani coast, wasting nothing.",
   },
+  "moroccan": {
+    slug: "khobz-w-tajine",
+    name: "Khobz w Tajine",
+    tagline:
+      "A round of bread, a slow clay pot, preserved lemon and ras el hanout — a little meat stretched by vegetables under one shared tagine, wasting nothing.",
+  },
   "japanese": {
     slug: "ichiju-sansai",
     name: "Ichijū Sansai",
