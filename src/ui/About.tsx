@@ -95,7 +95,7 @@ export function About({
       <section className="ch-block about-final">
         <p className="about-prose">
           Everything here is challenge-agnostic — the weeks, recipes, and targets
-          come from the database, not the code. Cucina povera is just the first.
+          come from the database, not the code. Italian is just the first.
         </p>
         <button className="btn solid" onClick={onStartLedger}>
           Start the ledger →
