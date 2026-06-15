@@ -9,6 +9,7 @@ import {
   type Challenge as ChallengeMeta,
 } from "../data/content";
 import { money } from "./format";
+import { renderMarkdown } from "./markdown";
 import { Close } from "./icons";
 
 /**
@@ -319,7 +320,12 @@ function DocItem({ doc }: { doc: ContentDoc }) {
         <span className="doc-title">{doc.title}</span>
         <span className="doc-kind">{doc.kind}</span>
       </button>
-      {open && <div className="doc-body">{doc.body}</div>}
+      {open && (
+        <div
+          className="doc-body markdown"
+          dangerouslySetInnerHTML={{ __html: renderMarkdown(doc.body) }}
+        />
+      )}
     </article>
   );
 }

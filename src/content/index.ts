@@ -15,6 +15,37 @@ export * from "./recipes/pasta-e-fagioli";
 export * from "./recipes/pasta-e-patate";
 export * from "./recipes/spaghetti-con-la-mollica";
 export * from "./recipes/uova-in-purgatorio";
+// Week 2 — Bread
+export * from "./recipes/ribollita";
+export * from "./recipes/pappa-al-pomodoro";
+export * from "./recipes/panzanella";
+export * from "./recipes/acquacotta";
+export * from "./recipes/fettunta";
+// Week 3 — Eggs
+export * from "./recipes/frittata-di-patate";
+export * from "./recipes/herb-frittata";
+export * from "./recipes/stracciatella";
+export * from "./recipes/eggs-baked-over-greens";
+// Week 4 — Legumes
+export * from "./recipes/fagioli-all-uccelletto";
+export * from "./recipes/lenticchie-in-umido";
+export * from "./recipes/zuppa-di-legumi";
+export * from "./recipes/cannellini-su-fettunta";
+// Week 5 — Polenta
+export * from "./recipes/polenta-e-fagioli";
+export * from "./recipes/polenta-concia";
+export * from "./recipes/polenta-mushroom-ragu";
+export * from "./recipes/soft-polenta-egg";
+export * from "./recipes/grilled-polenta-greens";
+// Bonus — Sicilian
+export * from "./recipes/pasta-con-le-sarde";
+export * from "./recipes/caponata";
+export * from "./recipes/sarde-a-beccafico";
+// Bonus — Garden
+export * from "./recipes/cicoria";
+export * from "./recipes/minestrone";
+export * from "./recipes/scarola-e-fagioli";
+export * from "./recipes/peperonata";
 
 // Docs
 export * from "./docs/budget";
@@ -34,6 +65,37 @@ import { pastaEFagioli } from "./recipes/pasta-e-fagioli";
 import { pastaEPatate } from "./recipes/pasta-e-patate";
 import { spaghettiConLaMollica } from "./recipes/spaghetti-con-la-mollica";
 import { uovaInPurgatorio } from "./recipes/uova-in-purgatorio";
+
+import { ribollita } from "./recipes/ribollita";
+import { pappaAlPomodoro } from "./recipes/pappa-al-pomodoro";
+import { panzanella } from "./recipes/panzanella";
+import { acquacotta } from "./recipes/acquacotta";
+import { fettunta } from "./recipes/fettunta";
+
+import { frittataDiPatate } from "./recipes/frittata-di-patate";
+import { herbFrittata } from "./recipes/herb-frittata";
+import { stracciatella } from "./recipes/stracciatella";
+import { eggsBakedOverGreens } from "./recipes/eggs-baked-over-greens";
+
+import { fagioliAllUccelletto } from "./recipes/fagioli-all-uccelletto";
+import { lenticchieInUmido } from "./recipes/lenticchie-in-umido";
+import { zuppaDiLegumi } from "./recipes/zuppa-di-legumi";
+import { cannelliniSuFettunta } from "./recipes/cannellini-su-fettunta";
+
+import { polentaEFagioli } from "./recipes/polenta-e-fagioli";
+import { polentaConcia } from "./recipes/polenta-concia";
+import { polentaMushroomRagu } from "./recipes/polenta-mushroom-ragu";
+import { softPolentaEgg } from "./recipes/soft-polenta-egg";
+import { grilledPolentaGreens } from "./recipes/grilled-polenta-greens";
+
+import { pastaConLeSarde } from "./recipes/pasta-con-le-sarde";
+import { caponata } from "./recipes/caponata";
+import { sardeABeccafico } from "./recipes/sarde-a-beccafico";
+
+import { cicoria } from "./recipes/cicoria";
+import { minestrone } from "./recipes/minestrone";
+import { scarolaEFagioli } from "./recipes/scarola-e-fagioli";
+import { peperonata } from "./recipes/peperonata";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -61,6 +123,37 @@ export const recipes: Recipe[] = [
   pastaEPatate,
   spaghettiConLaMollica,
   uovaInPurgatorio,
+  // Week 2 — Bread
+  ribollita,
+  pappaAlPomodoro,
+  panzanella,
+  acquacotta,
+  fettunta,
+  // Week 3 — Eggs
+  frittataDiPatate,
+  herbFrittata,
+  stracciatella,
+  eggsBakedOverGreens,
+  // Week 4 — Legumes
+  fagioliAllUccelletto,
+  lenticchieInUmido,
+  zuppaDiLegumi,
+  cannelliniSuFettunta,
+  // Week 5 — Polenta
+  polentaEFagioli,
+  polentaConcia,
+  polentaMushroomRagu,
+  softPolentaEgg,
+  grilledPolentaGreens,
+  // Bonus — Sicilian
+  pastaConLeSarde,
+  caponata,
+  sardeABeccafico,
+  // Bonus — Garden
+  cicoria,
+  minestrone,
+  scarolaEFagioli,
+  peperonata,
 ];
 
 export const docs: ContentDoc[] = [

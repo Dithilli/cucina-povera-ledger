@@ -24,6 +24,10 @@ import type { WeekTheme } from "../content/types";
 import { money, moneyOrDash, formatDate, todayISO } from "./format";
 import { WeekChart } from "./components/WeekChart";
 import { Challenge } from "./Challenge";
+import * as cloud from "../storage/supabaseStore";
+import { useSession } from "./useSession";
+import { supabase } from "../lib/supabase";
+import type { User } from "@supabase/supabase-js";
 import { Gear, Check, Trash, Pencil, Flame, Plus, Close } from "./icons";
 
 // The active challenge. The app is generic over challenges; for now it serves
@@ -51,23 +55,37 @@ export default function App() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState(blankForm());
   const [localCopy, setLocalCopy] = useState(false);
+  const { user } = useSession();
 
+  // Week options come from the DB, not a hardcoded preset list.
   useEffect(() => {
-    loadLedger().then((l) => {
-      setLedger(l);
-      setLocalCopy(hasWorkingCopy());
-      setLoaded(true);
-    });
-    // Week options come from the DB, not a hardcoded preset list.
     listWeeks(CHALLENGE_SLUG)
       .then(setWeeks)
       .catch(() => setWeeks([]));
   }, []);
 
+  // The ledger loads (and reloads) for the current identity: from the cloud when
+  // signed in, from the local working copy when anonymous.
+  useEffect(() => {
+    setLoaded(false);
+    const load = user ? cloud.loadLedger(user.id) : loadLedger();
+    load
+      .then((l) => {
+        setLedger(l);
+        setLocalCopy(user ? false : hasWorkingCopy());
+        setLoaded(true);
+      })
+      .catch(() => setLoaded(true));
+  }, [user]);
+
   const commit = (next: Ledger) => {
     setLedger(next);
-    saveWorkingCopy(next);
-    setLocalCopy(true);
+    if (user) {
+      void cloud.saveLedger(user.id, next).catch((e) => console.error(e));
+    } else {
+      saveWorkingCopy(next);
+      setLocalCopy(true);
+    }
   };
 
   const { settings } = ledger;
@@ -152,6 +170,7 @@ export default function App() {
             <h1>Cucina Povera Challenge</h1>
           </div>
           <div className="toolbtns">
+            <AuthBar user={user} />
             {view === "ledger" && (
               <button
                 className="iconbtn"
@@ -429,6 +448,56 @@ export default function App() {
 
         <footer className="foot">Constraint is the recipe.</footer>
       </div>
+    </div>
+  );
+}
+
+function AuthBar({ user }: { user: User | null }) {
+  const [email, setEmail] = useState("");
+  const [sent, setSent] = useState(false);
+
+  if (user) {
+    return (
+      <div className="authbar">
+        <span className="auth-email">{user.email}</span>
+        <button className="linkbtn" onClick={() => supabase.auth.signOut()}>
+          Sign out
+        </button>
+      </div>
+    );
+  }
+
+  if (sent) {
+    return (
+      <div className="authbar">
+        <span className="auth-email">Check your email ✦</span>
+      </div>
+    );
+  }
+
+  const sendLink = () => {
+    if (!email) return;
+    supabase.auth
+      .signInWithOtp({ email, options: { emailRedirectTo: window.location.href } })
+      .then(({ error }) => {
+        if (error) console.error(error);
+        else setSent(true);
+      });
+  };
+
+  return (
+    <div className="authbar">
+      <input
+        className="auth-input"
+        type="email"
+        placeholder="you@email.com"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && sendLink()}
+      />
+      <button className="linkbtn" disabled={!email} onClick={sendLink}>
+        Save to account
+      </button>
     </div>
   );
 }
