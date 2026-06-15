@@ -2,6 +2,7 @@ import type { ContentDoc } from "../types";
 
 export const manifesto: ContentDoc = {
   slug: "manifesto",
+  cuisine: "italian",
   title: "The Manifesto — Modern Cucina Povera",
   kind: "manifesto",
   body: `# The Manifesto — Modern Cucina Povera

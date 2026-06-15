@@ -2,6 +2,7 @@ import type { ContentDoc } from "../types";
 
 export const challenge: ContentDoc = {
   slug: "challenge",
+  cuisine: "italian",
   title: "The Cucina Povera Challenge",
   kind: "challenge",
   body: `# The Cucina Povera Challenge

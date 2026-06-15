@@ -6,6 +6,7 @@ import type { ContentDoc } from "../types";
 
 export const cultureMexico: ContentDoc = {
   slug: "culture-mexico",
+  cuisine: "mexican",
   title: "Sin maíz no hay país",
   kind: "essay",
   body: `# Sin maíz no hay país — "without corn, there is no country"

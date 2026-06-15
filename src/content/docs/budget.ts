@@ -2,6 +2,7 @@ import type { ContentDoc } from "../types";
 
 export const budget: ContentDoc = {
   slug: "budget",
+  cuisine: "italian",
   title: "Budget Notes — Eating Well for Almost Nothing",
   kind: "reference",
   body: `# Budget Notes — Eating Well for Almost Nothing

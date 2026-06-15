@@ -130,6 +130,8 @@ export interface ContentDoc {
   slug: string;
   title: string;
   kind: "essay" | "manifesto" | "challenge" | "reference";
+  /** Which cuisine/challenge this doc belongs to (routes it to that challenge). */
+  cuisine?: Cuisine;
   /** Markdown body. */
   body: string;
 }

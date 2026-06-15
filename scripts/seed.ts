@@ -41,7 +41,29 @@ if (!url || !serviceKey) {
 
 const db = createClient(url, serviceKey, { auth: { persistSession: false } });
 
-const CHALLENGE_SLUG = "cucina-povera";
+interface ChallengeMeta {
+  slug: string;
+  name: string;
+  tagline: string;
+}
+
+// One challenge per cuisine. Each Recipe/WeekTheme/ContentDoc is routed to its
+// cuisine's challenge by its `cuisine` field — so cuisines never mix.
+const CHALLENGES: Record<string, ChallengeMeta> = {
+  italian: {
+    slug: "cucina-povera",
+    name: "Cucina Povera Challenge",
+    tagline: "Eat beautifully inside hard limits, wasting nothing.",
+  },
+  mexican: {
+    slug: "cocina-del-maiz",
+    name: "La Cocina del Maíz",
+    tagline: "Magnificence from corn, beans, and chiles — nothing wasted.",
+  },
+};
+
+/** A doc's cuisine, defaulting to italian for legacy untagged docs. */
+const docCuisine = (d: ContentDoc) => d.cuisine ?? "italian";
 
 function recipeRow(challengeId: string, r: Recipe) {
   return {
@@ -98,45 +120,71 @@ function docRow(challengeId: string, d: ContentDoc) {
 }
 
 async function main() {
-  // 1. Upsert the challenge and get its id.
-  const { data: challenge, error: cErr } = await db
-    .from("challenges")
-    .upsert(
-      {
-        slug: CHALLENGE_SLUG,
-        name: "Cucina Povera Challenge",
-        tagline: "Eat beautifully inside hard limits, wasting nothing.",
-        default_calorie_target: DEFAULT_SETTINGS.calorieTarget,
-        default_protein_floor: DEFAULT_SETTINGS.proteinFloor,
-        default_weekly_budget: DEFAULT_SETTINGS.weeklyBudget,
-      },
-      { onConflict: "slug" },
-    )
-    .select("id")
-    .single();
-  if (cErr || !challenge) throw cErr ?? new Error("no challenge id");
-  const id = challenge.id as string;
+  // Content is fully derived from the fixtures, so wipe-and-reinsert keeps the DB
+  // exactly in sync — and clears any rows seeded under the wrong challenge before
+  // content was cuisine-scoped. (No FKs between these tables; entries reference a
+  // text challenge_slug, not these rows, so they're untouched.)
+  for (const table of ["content_docs", "week_themes", "recipes"] as const) {
+    const { error } = await db.from(table).delete().not("id", "is", null);
+    if (error) throw error;
+  }
 
-  // 2. Upsert the child content.
-  const r = await db
-    .from("recipes")
-    .upsert(recipes.map((x) => recipeRow(id, x)), { onConflict: "challenge_id,slug" });
-  if (r.error) throw r.error;
+  const cuisines = [
+    ...new Set([
+      ...recipes.map((r) => r.cuisine),
+      ...weekThemes.map((w) => w.cuisine),
+      ...docs.map(docCuisine),
+    ]),
+  ];
 
-  const w = await db
-    .from("week_themes")
-    .upsert(weekThemes.map((x) => weekRow(id, x)), { onConflict: "challenge_id,slug" });
-  if (w.error) throw w.error;
+  const summary: string[] = [];
 
-  const d = await db
-    .from("content_docs")
-    .upsert(docs.map((x) => docRow(id, x)), { onConflict: "challenge_id,slug" });
-  if (d.error) throw d.error;
+  for (const cuisine of cuisines) {
+    const meta = CHALLENGES[cuisine];
+    if (!meta) {
+      console.warn(`No challenge defined for cuisine "${cuisine}" — skipping its content.`);
+      continue;
+    }
 
-  console.log(
-    `Seeded "${CHALLENGE_SLUG}": ${recipes.length} recipes, ` +
-      `${weekThemes.length} week themes, ${docs.length} docs.`,
-  );
+    const { data: challenge, error: cErr } = await db
+      .from("challenges")
+      .upsert(
+        {
+          slug: meta.slug,
+          name: meta.name,
+          tagline: meta.tagline,
+          default_calorie_target: DEFAULT_SETTINGS.calorieTarget,
+          default_protein_floor: DEFAULT_SETTINGS.proteinFloor,
+          default_weekly_budget: DEFAULT_SETTINGS.weeklyBudget,
+        },
+        { onConflict: "slug" },
+      )
+      .select("id")
+      .single();
+    if (cErr || !challenge) throw cErr ?? new Error(`no challenge id for ${cuisine}`);
+    const id = challenge.id as string;
+
+    const rs = recipes.filter((r) => r.cuisine === cuisine);
+    const ws = weekThemes.filter((w) => w.cuisine === cuisine);
+    const ds = docs.filter((d) => docCuisine(d) === cuisine);
+
+    if (rs.length) {
+      const r = await db.from("recipes").insert(rs.map((x) => recipeRow(id, x)));
+      if (r.error) throw r.error;
+    }
+    if (ws.length) {
+      const w = await db.from("week_themes").insert(ws.map((x) => weekRow(id, x)));
+      if (w.error) throw w.error;
+    }
+    if (ds.length) {
+      const dd = await db.from("content_docs").insert(ds.map((x) => docRow(id, x)));
+      if (dd.error) throw dd.error;
+    }
+
+    summary.push(`${meta.slug}: ${rs.length} recipes, ${ws.length} weeks, ${ds.length} docs`);
+  }
+
+  console.log("Seeded —\n  " + summary.join("\n  "));
 }
 
 main().catch((e) => {
