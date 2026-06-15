@@ -24,6 +24,7 @@ Run it standalone: `npm run mcp`.
 | `generate_week` | Assemble a passing 7-day week, certified by the engine. `ai=true` has Claude pick the tastiest/most-varied one + write blurbs | anon (`ai=true` also needs the Edge Function's `ANTHROPIC_API_KEY`) |
 | `get_stats` | The user's streak, this-week-vs-budget, efficiency stats | service + user |
 | `log_day` | Log a day; returns whether it's **kept** (under cal, over protein, zero waste) | service + user |
+| `remove_entry` | Remove a logged day by its entry id | service + user |
 | `set_targets` | Update calorie target / protein floor / weekly budget / active week | service + user |
 
 The read tools (`list_*`, `get_*`, `generate_week`) only need the public anon key.

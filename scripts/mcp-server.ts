@@ -424,6 +424,19 @@ server.tool(
   }),
 );
 
+server.tool(
+  "remove_entry",
+  "Remove a logged day from the user's ledger by its entry id (returned by log_day).",
+  { id: z.string() },
+  guard(async ({ id }) => {
+    const db = requireAdmin();
+    const uid = await userId();
+    const { error } = await db.from("entries").delete().eq("user_id", uid).eq("id", id);
+    if (error) throw error;
+    return json({ removed: id });
+  }),
+);
+
 const transport = new StdioServerTransport();
 await server.connect(transport);
 console.error("cucina-povera MCP server ready (stdio).");
