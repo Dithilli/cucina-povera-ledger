@@ -156,7 +156,6 @@ import {
   bonusSicilian,
   bonusGarden,
 } from "./weeks/themes";
-import { mxWeek1Masa } from "./weeks/mx-week-1-masa";
 import { mexicanWeeks } from "./weeks/mexican-themes";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
@@ -248,5 +247,5 @@ export const weekThemes: WeekTheme[] = [
 // Weeks that are fully built out into executable plans (engine + days + shopping).
 export const weeks: WeekPlan[] = [
   week1Pasta,
-  mxWeek1Masa,
+  ...mexicanWeeks,
 ];
