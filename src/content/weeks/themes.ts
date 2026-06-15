@@ -1,10 +1,11 @@
-import type { WeekTheme } from "../types";
+import type { WeekPlan } from "../types";
 
-// The first seven weeks of the challenge — each a different register of Italian
-// cucina povera. Week 1 (Pasta) is built out into a full WeekPlan in
-// ./week-1-pasta.ts; the rest are themes the generator fills in.
+// The Italian challenge's weeks 2–7, each built out into a full WeekPlan
+// (engine + 7 days + costed shopping list). Week 1 (Pasta) lives in
+// ./week-1-pasta.ts. These are the curated, pregenerated defaults; the AI menu
+// generator composes user variations on top of the same recipe pool.
 
-export const week2Bread: WeekTheme = {
+export const week2Bread: WeekPlan = {
   slug: "week-2-bread",
   number: 2,
   cuisine: "italian",
@@ -22,10 +23,97 @@ export const week2Bread: WeekTheme = {
     "Fettunta — grilled bread rubbed with garlic and oil",
   ],
   proteinNote: "Eggs on top, beans within, pecorino.",
+  bonus: false,
   preciousThread: "A great new-harvest finishing oil.",
+  engine: [
+    "A big pot of cannellini in their broth",
+    "A deep ribollita base (cavolo nero, beans, soffritto)",
+    "A pappa-al-pomodoro tomato base",
+    "A tray of oven-dried bread cubes for soups and panzanella",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "ribollita",
+      estCalories: 720,
+      estProtein: 26,
+    },
+    {
+      day: "Mon",
+      dinner: "pappa-al-pomodoro with a poached egg + pecorino",
+      estCalories: 690,
+      estProtein: 24,
+    },
+    {
+      day: "Tue",
+      dinner: "acquacotta",
+      estCalories: 660,
+      estProtein: 22,
+    },
+    {
+      day: "Wed",
+      dinner: "pasta-e-fagioli (beans + bread crumbs over the top)",
+      estCalories: 730,
+      estProtein: 25,
+    },
+    {
+      day: "Thu",
+      dinner: "eggs-baked-over-greens with fettunta",
+      estCalories: 680,
+      estProtein: 24,
+    },
+    {
+      day: "Fri",
+      dinner: "acquacotta with a double egg",
+      estCalories: 700,
+      estProtein: 27,
+    },
+    {
+      day: "Sat",
+      dinner: "ribollita, the last of the loaf reborn",
+      estCalories: 730,
+      estProtein: 26,
+    },
+  ],
+  shopping: [
+    { item: "Day-old country bread", qty: "~2 loaves", cost: 7.0 },
+    { item: "Dried cannellini", qty: "1 lb", cost: 2.5 },
+    { item: "Canned tomatoes", qty: "3 × 28 oz", cost: 7.5 },
+    {
+      item: "Eggs",
+      qty: "2 dozen",
+      cost: 9.0,
+      note: "the protein on top of every bowl",
+    },
+    { item: "Cavolo nero (lacinato kale)", qty: "2 bunches", cost: 5.0 },
+    { item: "Ricotta", qty: "1 tub", cost: 5.0 },
+    {
+      item: "Pecorino/Parmesan",
+      qty: "~½ lb",
+      cost: 7.0,
+      spansWeeks: true,
+    },
+    { item: "Anchovies", qty: "1 tin", cost: 4.0, spansWeeks: true },
+    {
+      item: "Olive oil, Spanish",
+      qty: "1 L",
+      cost: 13.0,
+      spansWeeks: true,
+      note: "and a little good finishing oil",
+    },
+    { item: "Onions", qty: "~3 lb", cost: 3.0 },
+    { item: "Garlic", qty: "2 heads", cost: 2.0, spansWeeks: true },
+    { item: "Carrots + celery (soffritto)", qty: "", cost: 3.5 },
+    { item: "Cucumbers + ripe tomatoes (panzanella)", qty: "", cost: 4.0 },
+    { item: "Red onion + basil", qty: "", cost: 2.5 },
+    { item: "Potatoes", qty: "~2 lb", cost: 2.5 },
+  ],
+  firstShopTotal: 34,
+  steadyStateWeekly: 20,
 };
 
-export const week3Eggs: WeekTheme = {
+export const week3Eggs: WeekPlan = {
   slug: "week-3-eggs",
   number: 3,
   cuisine: "italian",
@@ -43,10 +131,96 @@ export const week3Eggs: WeekTheme = {
     "Cacio e uova",
   ],
   proteinNote: "Eggs — the floor is trivially met this week.",
+  bonus: false,
   preciousThread: "Aged pecorino.",
+  engine: [
+    "Three dozen eggs (your whole protein backbone)",
+    "A pot of brodo (vegetable/parmesan-rind broth for stracciatella)",
+    "A deep tomato sugo (for uova in purgatorio)",
+    "Roasted potatoes + wilted greens (frittata and bake fillings)",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "frittata-di-patate",
+      estCalories: 700,
+      estProtein: 30,
+    },
+    {
+      day: "Mon",
+      dinner: "uova-in-purgatorio",
+      estCalories: 680,
+      estProtein: 28,
+    },
+    {
+      day: "Tue",
+      dinner: "eggs-baked-over-greens",
+      estCalories: 650,
+      estProtein: 27,
+    },
+    {
+      day: "Wed",
+      dinner: "herb-frittata",
+      estCalories: 640,
+      estProtein: 26,
+    },
+    {
+      day: "Thu",
+      dinner: "eggs-baked-over-greens with white beans",
+      estCalories: 700,
+      estProtein: 30,
+    },
+    {
+      day: "Fri",
+      dinner: "frittata-di-patate with onions",
+      estCalories: 690,
+      estProtein: 29,
+    },
+    {
+      day: "Sat",
+      dinner: "frittata-di-pasta",
+      estCalories: 750,
+      estProtein: 32,
+    },
+  ],
+  shopping: [
+    {
+      item: "Eggs",
+      qty: "3 dozen",
+      cost: 13.5,
+      note: "your protein backbone — 2–3 dozen carries the whole week",
+    },
+    { item: "Potatoes", qty: "~4 lb", cost: 4.0 },
+    { item: "Canned tomatoes", qty: "3 × 28 oz", cost: 7.5 },
+    { item: "Ricotta", qty: "1 tub", cost: 5.0 },
+    {
+      item: "Pecorino/Parmesan (+ rinds for brodo)",
+      qty: "~½ lb",
+      cost: 7.0,
+      spansWeeks: true,
+    },
+    { item: "Spinach/chard/greens", qty: "~2 lb", cost: 5.0 },
+    { item: "Dried cannellini", qty: "1 lb", cost: 2.5 },
+    { item: "Dried pasta", qty: "1 lb", cost: 2.0 },
+    { item: "Day-old bread", qty: "~1 loaf", cost: 4.0 },
+    { item: "Onions", qty: "~3 lb", cost: 3.0 },
+    {
+      item: "Olive oil, Spanish",
+      qty: "1 L",
+      cost: 13.0,
+      spansWeeks: true,
+    },
+    { item: "Garlic", qty: "2 heads", cost: 2.0, spansWeeks: true },
+    { item: "Parsley, basil, herbs", qty: "", cost: 3.0 },
+    { item: "Lemons", qty: "3", cost: 1.5 },
+    { item: "Tomatoes (for panzanella)", qty: "~1 lb", cost: 2.5 },
+  ],
+  firstShopTotal: 30,
+  steadyStateWeekly: 19,
 };
 
-export const week4Legumes: WeekTheme = {
+export const week4Legumes: WeekPlan = {
   slug: "week-4-legumes",
   number: 4,
   cuisine: "italian",
@@ -64,10 +238,97 @@ export const week4Legumes: WeekTheme = {
     "Cannellini on fettunta with a fried egg",
   ],
   proteinNote: "The easiest and cheapest week — legumes carry it.",
+  bonus: false,
   preciousThread: "Confit garlic or a thread of the good oil.",
+  engine: [
+    "A big pot of cannellini (and their broth)",
+    "A pot of chickpeas",
+    "A pot of braised brown lentils",
+    "A pan of fagioli all'uccelletto",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "fagioli-all-uccelletto",
+      estCalories: 690,
+      estProtein: 25,
+    },
+    {
+      day: "Mon",
+      dinner: "pasta-e-ceci",
+      estCalories: 720,
+      estProtein: 24,
+    },
+    {
+      day: "Tue",
+      dinner: "pasta-e-fagioli",
+      estCalories: 710,
+      estProtein: 24,
+    },
+    {
+      day: "Wed",
+      dinner: "zuppa-di-legumi with pecorino + fettunta",
+      estCalories: 680,
+      estProtein: 26,
+    },
+    {
+      day: "Thu",
+      dinner: "fagioli-all-uccelletto over polenta-style soft bread",
+      estCalories: 730,
+      estProtein: 23,
+    },
+    {
+      day: "Fri",
+      dinner: "lenticchie-in-umido with a poached egg",
+      estCalories: 690,
+      estProtein: 28,
+    },
+    {
+      day: "Sat",
+      dinner: "zuppa-di-legumi — everything left, one pot, zero waste",
+      estCalories: 700,
+      estProtein: 27,
+    },
+  ],
+  shopping: [
+    { item: "Dried cannellini", qty: "1.5 lb", cost: 3.5, spansWeeks: true },
+    { item: "Dried chickpeas", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    { item: "Brown/green lentils", qty: "1 lb", cost: 2.0, spansWeeks: true },
+    { item: "Borlotti/cranberry beans", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    { item: "Canned tomatoes", qty: "2 × 28 oz", cost: 5.0 },
+    {
+      item: "Eggs",
+      qty: "1.5 dozen",
+      cost: 6.5,
+      note: "the only animal protein you need this week",
+    },
+    { item: "Dried pasta (for e ceci / e fagioli)", qty: "1 lb", cost: 2.0 },
+    {
+      item: "Pecorino",
+      qty: "~¼ lb",
+      cost: 5.0,
+      spansWeeks: true,
+    },
+    { item: "Day-old bread", qty: "~1 loaf", cost: 4.0 },
+    { item: "Onions", qty: "~3 lb", cost: 3.0 },
+    { item: "Garlic", qty: "2 heads", cost: 2.0, spansWeeks: true },
+    { item: "Carrots + celery (soffritto)", qty: "", cost: 3.0 },
+    { item: "Sage + rosemary", qty: "", cost: 2.5, spansWeeks: true },
+    {
+      item: "Olive oil, Spanish",
+      qty: "(carried over)",
+      cost: 0,
+      spansWeeks: true,
+      note: "the precious thread — finish every bowl",
+    },
+    { item: "Parsley + a lemon", qty: "", cost: 2.0 },
+  ],
+  firstShopTotal: 26,
+  steadyStateWeekly: 16,
 };
 
-export const week5Polenta: WeekTheme = {
+export const week5Polenta: WeekPlan = {
   slug: "week-5-polenta",
   number: 5,
   cuisine: "italian",
@@ -87,9 +348,91 @@ export const week5Polenta: WeekTheme = {
   proteinNote: "Beans, eggs, a little cheese.",
   preciousThread:
     "A knob of good butter — the Northern luxury — or an aged alpine cheese.",
+  bonus: false,
+  engine: [
+    "A big pot of soft polenta (half poured into a sheet pan to set and grill later)",
+    "A pot of cranberry/borlotti beans",
+    "A slow mushroom-and-onion ragù",
+    "A wedge of Taleggio + grated parmesan for folding in (polenta concia)",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "polenta-e-fagioli",
+      estCalories: 700,
+      estProtein: 22,
+    },
+    {
+      day: "Mon",
+      dinner: "polenta-mushroom-ragu",
+      estCalories: 660,
+      estProtein: 19,
+    },
+    {
+      day: "Tue",
+      dinner: "fagioli-all-uccelletto with grilled polenta",
+      estCalories: 710,
+      estProtein: 23,
+    },
+    {
+      day: "Wed",
+      dinner: "polenta-e-fagioli",
+      estCalories: 680,
+      estProtein: 21,
+    },
+    {
+      day: "Thu",
+      dinner: "soft-polenta-egg, two eggs + parmesan + beans on the side",
+      estCalories: 720,
+      estProtein: 28,
+    },
+    {
+      day: "Fri",
+      dinner: "polenta-mushroom-ragu with a poached egg",
+      estCalories: 690,
+      estProtein: 24,
+    },
+    {
+      day: "Sat",
+      dinner: "grilled-polenta-greens (the set polenta finished off, beans + cheese)",
+      estCalories: 700,
+      estProtein: 23,
+    },
+  ],
+  shopping: [
+    {
+      item: "Polenta / coarse cornmeal",
+      qty: "~3 lb",
+      cost: 4.5,
+      spansWeeks: true,
+      note: "soft this week, the rest set and grilled",
+    },
+    { item: "Dried borlotti/cranberry beans", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    { item: "Dried cannellini", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    {
+      item: "Eggs",
+      qty: "2 dozen",
+      cost: 9.0,
+      note: "the daily protein anchor alongside the corn",
+    },
+    { item: "Taleggio", qty: "~½ lb", cost: 6.5, note: "for polenta concia" },
+    { item: "Fontina", qty: "~½ lb", cost: 6.0 },
+    { item: "Parmesan", qty: "~½ lb", cost: 7.0, spansWeeks: true },
+    { item: "Cremini/button mushrooms", qty: "~1.5 lb", cost: 5.0 },
+    { item: "Dried porcini", qty: "1 small pack", cost: 3.0, note: "depth for the ragù" },
+    { item: "Bitter greens (cavolo nero/chicory)", qty: "1–2 bunches", cost: 3.5 },
+    { item: "Canned tomatoes", qty: "1 × 28 oz", cost: 2.5 },
+    { item: "Onions", qty: "~3 lb", cost: 3.0 },
+    { item: "Garlic", qty: "2 heads", cost: 2.0, spansWeeks: true },
+    { item: "Olive oil, Spanish", qty: "topping up", cost: 4.0, spansWeeks: true },
+    { item: "Day-old bread", qty: "~1 loaf", cost: 3.5 },
+  ],
+  firstShopTotal: 30,
+  steadyStateWeekly: 20,
 };
 
-export const bonusSicilian: WeekTheme = {
+export const bonusSicilian: WeekPlan = {
   slug: "bonus-sicilian",
   number: 6,
   cuisine: "italian",
@@ -110,9 +453,109 @@ export const bonusSicilian: WeekTheme = {
   preciousThread:
     "A tin of good sardines, or a few shavings of bottarga if you're splurging.",
   bonus: true,
+  engine: [
+    "A deep tray of caponata (agrodolce eggplant, better on day two)",
+    "A pot of cooked chickpeas with their broth",
+    "A jar of toasted pangrattato with fennel seed and orange zest",
+    "A bowl of soaked raisins + toasted pine nuts (the sarde mix)",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "pasta-con-le-sarde",
+      estCalories: 740,
+      estProtein: 30,
+    },
+    {
+      day: "Mon",
+      dinner: "sarde-a-beccafico with a chickpea side",
+      estCalories: 700,
+      estProtein: 29,
+    },
+    {
+      day: "Tue",
+      dinner: "pasta-al-pomodoro-e-tonno",
+      estCalories: 720,
+      estProtein: 30,
+    },
+    {
+      day: "Wed",
+      dinner: "pasta-alla-norma",
+      estCalories: 680,
+      estProtein: 20,
+    },
+    {
+      day: "Thu",
+      dinner: "spaghetti aglio e olio with anchovy, capers, pangrattato",
+      estCalories: 670,
+      estProtein: 19,
+    },
+    {
+      day: "Fri",
+      dinner: "spaghetti-con-la-mollica with sardine + raisins",
+      estCalories: 730,
+      estProtein: 26,
+    },
+    {
+      day: "Sat",
+      dinner: "frittata-di-pasta (every leftover noodle, sardine, caponata scrap)",
+      estCalories: 750,
+      estProtein: 31,
+    },
+  ],
+  shopping: [
+    { item: "Dried pasta, mixed shapes", qty: "~3 lb", cost: 6.0 },
+    {
+      item: "Fresh sardines",
+      qty: "~2 lb",
+      cost: 6.0,
+      note: "for pasta con le sarde + beccafico",
+    },
+    { item: "Canned sardines", qty: "2 tins", cost: 4.0 },
+    { item: "Canned tuna", qty: "2 tins", cost: 5.0 },
+    { item: "Anchovies", qty: "1 tin", cost: 4.0, spansWeeks: true },
+    { item: "Dried chickpeas", qty: "1 lb", cost: 2.5 },
+    {
+      item: "Eggs",
+      qty: "2 dozen",
+      cost: 9.0,
+      note: "your protein backbone this week",
+    },
+    { item: "Ricotta", qty: "1 tub", cost: 5.0 },
+    {
+      item: "Pecorino",
+      qty: "~½ lb",
+      cost: 7.0,
+      spansWeeks: true,
+    },
+    {
+      item: "Olive oil",
+      qty: "1 L",
+      cost: 13.0,
+      spansWeeks: true,
+    },
+    {
+      item: "Raisins + pine nuts",
+      qty: "small bags",
+      cost: 4.0,
+      spansWeeks: true,
+    },
+    { item: "Eggplant", qty: "~3 lb", cost: 5.0 },
+    { item: "Fennel (bulb/wild) + celery", qty: "", cost: 4.0 },
+    { item: "Canned tomatoes", qty: "2 × 28 oz", cost: 5.0 },
+    { item: "Capers + olives", qty: "small jars", cost: 4.0 },
+    { item: "Day-old bread", qty: "~1 loaf", cost: 4.0 },
+    { item: "Onions", qty: "~3 lb", cost: 3.0 },
+    { item: "Garlic", qty: "2 heads", cost: 2.0, spansWeeks: true },
+    { item: "Lemons + oranges", qty: "4", cost: 2.0 },
+    { item: "Parsley", qty: "", cost: 2.5 },
+  ],
+  firstShopTotal: 36,
+  steadyStateWeekly: 22,
 };
 
-export const bonusGarden: WeekTheme = {
+export const bonusGarden: WeekPlan = {
   slug: "bonus-garden",
   number: 7,
   cuisine: "italian",
@@ -132,4 +575,79 @@ export const bonusGarden: WeekTheme = {
   proteinNote: "Beans and eggs woven through, plus pecorino.",
   preciousThread: "The Parmesan rind, or a good aged cheese to grate.",
   bonus: true,
+  engine: [
+    "A big pot of cannellini in their broth",
+    "A vat of minestrone base (soffritto, tomato, whatever's ripe)",
+    "A jar of slow peperonata",
+    "Cleaned, blanched cicoria and scarola ready to dress",
+  ],
+  days: [
+    {
+      day: "Sun",
+      isCookDay: true,
+      dinner: "scarola-e-fagioli",
+      estCalories: 680,
+      estProtein: 24,
+    },
+    {
+      day: "Mon",
+      dinner: "cicoria with garlic and chili, egg on top",
+      estCalories: 640,
+      estProtein: 22,
+    },
+    {
+      day: "Tue",
+      dinner: "fagioli-all-uccelletto",
+      estCalories: 690,
+      estProtein: 23,
+    },
+    {
+      day: "Wed",
+      dinner: "eggs-baked-over-greens",
+      estCalories: 650,
+      estProtein: 27,
+    },
+    {
+      day: "Thu",
+      dinner: "zuppa-di-legumi with greens and grated pecorino",
+      estCalories: 700,
+      estProtein: 26,
+    },
+    {
+      day: "Fri",
+      dinner: "peperonata with eggs and pecorino",
+      estCalories: 660,
+      estProtein: 25,
+    },
+    {
+      day: "Sat",
+      dinner: "minestrone (the zero-waste finale — every odd vegetable in the pot)",
+      estCalories: 690,
+      estProtein: 24,
+    },
+  ],
+  shopping: [
+    { item: "Cicoria (chicory)", qty: "2 bunches", cost: 4.0 },
+    { item: "Scarola (escarole)", qty: "2 heads", cost: 4.0 },
+    { item: "Broccoli rabe", qty: "1 bunch", cost: 3.5 },
+    { item: "Bell peppers (peperonata)", qty: "~2 lb", cost: 5.0 },
+    { item: "Seasonal vegetables (zucchini, chard, beans)", qty: "~3 lb", cost: 6.0 },
+    { item: "Dried cannellini", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    { item: "Dried borlotti/lentils", qty: "1 lb", cost: 2.5, spansWeeks: true },
+    {
+      item: "Eggs",
+      qty: "2 dozen",
+      cost: 9.0,
+      note: "carries the protein where greens can't",
+    },
+    { item: "Ricotta", qty: "1 tub", cost: 5.0 },
+    { item: "Pecorino + Parmesan rind", qty: "~½ lb", cost: 7.0, spansWeeks: true },
+    { item: "Canned tomatoes", qty: "2 × 28 oz", cost: 5.0 },
+    { item: "Olive oil", qty: "1 L", cost: 13.0, spansWeeks: true },
+    { item: "Day-old bread", qty: "~1 loaf", cost: 4.0 },
+    { item: "Onions, carrots, celery (soffritto)", qty: "", cost: 3.5 },
+    { item: "Garlic, chili, herbs", qty: "2 heads + bunch", cost: 3.0, spansWeeks: true },
+  ],
+  firstShopTotal: 28,
+  steadyStateWeekly: 18,
 };
