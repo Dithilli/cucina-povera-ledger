@@ -280,6 +280,34 @@ export * from "./recipes/pepper-soup";
 export * from "./recipes/red-red";
 export * from "./recipes/waakye";
 
+// ── filipino ──
+export * from "./recipes/adobong-baboy";
+export * from "./recipes/adobong-manok";
+export * from "./recipes/adobong-sitaw";
+export * from "./recipes/arroz-caldo";
+export * from "./recipes/binagoongan";
+export * from "./recipes/chopsuey";
+export * from "./recipes/daing-na-bangus";
+export * from "./recipes/dinuguan";
+export * from "./recipes/garlic-rice-sinangag";
+export * from "./recipes/ginisa-base";
+export * from "./recipes/ginisang-gulay";
+export * from "./recipes/ginisang-munggo";
+export * from "./recipes/ginisang-sardinas";
+export * from "./recipes/kanin";
+export * from "./recipes/kare-kare";
+export * from "./recipes/laing";
+export * from "./recipes/nilaga";
+export * from "./recipes/pinakbet";
+export * from "./recipes/pritong-galunggong";
+export * from "./recipes/sawsawan";
+export * from "./recipes/sinigang-na-baboy";
+export * from "./recipes/sinigang-na-hipon";
+export * from "./recipes/sinigang-na-isda";
+export * from "./recipes/tinola";
+export * from "./recipes/tortang-giniling";
+export * from "./recipes/tortang-talong";
+
 // Docs
 export * from "./docs/budget";
 export * from "./docs/challenge";
@@ -294,6 +322,7 @@ export * from "./docs/culture-north-indian";
 export * from "./docs/culture-american-south";
 export * from "./docs/culture-indonesian";
 export * from "./docs/culture-west-african";
+export * from "./docs/culture-filipino";
 
 // Weeks
 export * from "./weeks/week-1-pasta";
@@ -307,6 +336,7 @@ export * from "./weeks/north-indian-weeks";
 export * from "./weeks/american-south-weeks";
 export * from "./weeks/indonesian-weeks";
 export * from "./weeks/west-african-weeks";
+export * from "./weeks/filipino-weeks";
 
 import { frittataDiPasta } from "./recipes/frittata-di-pasta";
 import { pastaAlPomodoroETonno } from "./recipes/pasta-al-pomodoro-e-tonno";
@@ -577,6 +607,33 @@ import { pepperSauce } from "./recipes/pepper-sauce";
 import { pepperSoup } from "./recipes/pepper-soup";
 import { redRed } from "./recipes/red-red";
 import { waakye } from "./recipes/waakye";
+// filipino
+import { adobongBaboy } from "./recipes/adobong-baboy";
+import { adobongManok } from "./recipes/adobong-manok";
+import { adobongSitaw } from "./recipes/adobong-sitaw";
+import { arrozCaldo } from "./recipes/arroz-caldo";
+import { binagoongan } from "./recipes/binagoongan";
+import { chopsuey } from "./recipes/chopsuey";
+import { daingNaBangus } from "./recipes/daing-na-bangus";
+import { dinuguan } from "./recipes/dinuguan";
+import { garlicRiceSinangag } from "./recipes/garlic-rice-sinangag";
+import { ginisaBase } from "./recipes/ginisa-base";
+import { ginisangGulay } from "./recipes/ginisang-gulay";
+import { ginisangMunggo } from "./recipes/ginisang-munggo";
+import { ginisangSardinas } from "./recipes/ginisang-sardinas";
+import { kanin } from "./recipes/kanin";
+import { kareKare } from "./recipes/kare-kare";
+import { laing } from "./recipes/laing";
+import { nilaga } from "./recipes/nilaga";
+import { pinakbet } from "./recipes/pinakbet";
+import { pritongGalunggong } from "./recipes/pritong-galunggong";
+import { sawsawan } from "./recipes/sawsawan";
+import { sinigangNaBaboy } from "./recipes/sinigang-na-baboy";
+import { sinigangNaHipon } from "./recipes/sinigang-na-hipon";
+import { sinigangNaIsda } from "./recipes/sinigang-na-isda";
+import { tinola } from "./recipes/tinola";
+import { tortangGiniling } from "./recipes/tortang-giniling";
+import { tortangTalong } from "./recipes/tortang-talong";
 
 import { budget } from "./docs/budget";
 import { challenge } from "./docs/challenge";
@@ -590,6 +647,7 @@ import { cultureNorthIndian } from "./docs/culture-north-indian";
 import { cultureAmericanSouth } from "./docs/culture-american-south";
 import { cultureIndonesian } from "./docs/culture-indonesian";
 import { cultureWestAfrican } from "./docs/culture-west-african";
+import { cultureFilipino } from "./docs/culture-filipino";
 
 import { week1Pasta } from "./weeks/week-1-pasta";
 import {
@@ -608,6 +666,7 @@ import { northIndianWeeks } from "./weeks/north-indian-weeks";
 import { americanSouthWeeks } from "./weeks/american-south-weeks";
 import { indonesianWeeks } from "./weeks/indonesian-weeks";
 import { westAfricanWeeks } from "./weeks/west-african-weeks";
+import { filipinoWeeks } from "./weeks/filipino-weeks";
 
 // The challenge recipe pool — dishes the menu generator may draw from, tagged
 // by cuisine (Italian cucina povera + Mexican cocina del maíz).
@@ -877,6 +936,33 @@ export const recipes: Recipe[] = [
   pepperSoup,
   redRed,
   waakye,
+  // filipino
+  adobongBaboy,
+  adobongManok,
+  adobongSitaw,
+  arrozCaldo,
+  binagoongan,
+  chopsuey,
+  daingNaBangus,
+  dinuguan,
+  garlicRiceSinangag,
+  ginisaBase,
+  ginisangGulay,
+  ginisangMunggo,
+  ginisangSardinas,
+  kanin,
+  kareKare,
+  laing,
+  nilaga,
+  pinakbet,
+  pritongGalunggong,
+  sawsawan,
+  sinigangNaBaboy,
+  sinigangNaHipon,
+  sinigangNaIsda,
+  tinola,
+  tortangGiniling,
+  tortangTalong,
 ];
 
 export const docs: ContentDoc[] = [
@@ -892,6 +978,7 @@ export const docs: ContentDoc[] = [
   cultureAmericanSouth,
   cultureIndonesian,
   cultureWestAfrican,
+  cultureFilipino,
 ];
 
 // The themed arc — all seven Italian weeks. Week 1 is fully built out (it is
@@ -920,6 +1007,8 @@ export const weekThemes: WeekTheme[] = [
   ...indonesianWeeks,
   // west-african
   ...westAfricanWeeks,
+  // filipino
+  ...filipinoWeeks,
 ];
 
 // Weeks that are fully built out into executable plans (engine + days + shopping).
@@ -939,4 +1028,5 @@ export const weeks: WeekPlan[] = [
   ...americanSouthWeeks,
   ...indonesianWeeks,
   ...westAfricanWeeks,
+  ...filipinoWeeks,
 ];

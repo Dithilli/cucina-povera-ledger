@@ -102,6 +102,12 @@ const CHALLENGES: Record<string, ChallengeMeta> = {
     tagline:
       "Rice, beans, egusi, and palm oil — a communal pot and a fistful of crayfish, nothing wasted.",
   },
+  "filipino": {
+    slug: "lutong-bahay",
+    name: "Lutong Bahay",
+    tagline:
+      "Rice, vinegar, and a little fish — home cooking that turned no refrigeration into flavor, wasting nothing.",
+  },
 };
 
 /** A doc's cuisine, defaulting to italian for legacy untagged docs. */
