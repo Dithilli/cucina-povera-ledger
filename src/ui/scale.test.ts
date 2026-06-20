@@ -43,4 +43,18 @@ describe("scaleQty", () => {
   it("preserves a leading approximation marker", () => {
     expect(scaleQty("~3 lb", 2)).toBe("~6 lb");
   });
+
+  it("does not scale fixed package sizes inside parentheses", () => {
+    expect(scaleQty("1 (28 oz) can", 2)).toBe("2 (28 oz) can");
+    expect(scaleQty("1 block (14 oz)", 2)).toBe("2 block (14 oz)");
+    expect(scaleQty("1 (400g)", 2)).toBe("2 (400g)");
+    expect(scaleQty("1 (3 1/2–4 lb)", 2)).toBe("2 (3 1/2–4 lb)");
+  });
+
+  it("never renders raw long-decimal floats", () => {
+    // 0.5 / 6 = 0.08333… used to print "0.08333333333333333 cup".
+    expect(scaleQty("1/2 cup", 1 / 6)).not.toMatch(/\.\d{3,}/);
+    expect(scaleQty("3 cloves", 1 / 7)).not.toMatch(/\.\d{3,}/);
+    expect(scaleQty("2 eggs", 1 / 7)).not.toMatch(/\.\d{3,}/);
+  });
 });

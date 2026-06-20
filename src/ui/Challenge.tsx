@@ -503,15 +503,26 @@ function WeekCard({
               </div>
               <div className="plan-days">
                 <h4>The week · dinners</h4>
-                {plan.days.map((d) => (
-                  <div className="plan-day" key={d.day}>
-                    <span className="pd-day">{d.day}</span>
-                    <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
-                    <span className="pd-num">
-                      {d.estCalories} kcal · {d.estProtein}g
-                    </span>
-                  </div>
-                ))}
+                {plan.days.map((d) => {
+                  // Show the same macros "Cook this week" logs: a slug-backed
+                  // dinner resolves to its recipe's perServing, otherwise the
+                  // day's authored estimate. Keeps the week table and the ledger
+                  // from disagreeing (e.g. Italian bare-slug days).
+                  const m = toPlannedDinner(
+                    d.dinner,
+                    { calories: d.estCalories, protein: d.estProtein, cost: 0 },
+                    recipesBySlug
+                  );
+                  return (
+                    <div className="plan-day" key={d.day}>
+                      <span className="pd-day">{d.day}</span>
+                      <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
+                      <span className="pd-num">
+                        {m.calories} kcal · {m.protein}g
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
               <div className="plan-cost">
                 {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
