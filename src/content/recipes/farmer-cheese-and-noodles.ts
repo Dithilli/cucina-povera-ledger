@@ -8,7 +8,7 @@ export const farmerCheeseAndNoodles: Recipe = {
     "Hot egg noodles tossed with cool, crumbly farmer cheese, a knob of sweet butter, salt, and a great deal of black pepper — five minutes, five ingredients, and the most beloved milchig supper there is. The dish a whole generation grew up on.",
   servings: 4,
   perServing: { calories: 520, protein: 26 },
-  estCostPerServing: 0.85,
+  estCostPerServing: 1.13,
   roles: ["dinner"],
   ingredients: [
     { item: "wide or medium egg noodles", qty: "12 oz", cost: 1.5 },

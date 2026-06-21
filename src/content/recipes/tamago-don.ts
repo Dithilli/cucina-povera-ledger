@@ -8,7 +8,7 @@ export const tamagoDon: Recipe = {
     "The cheapest donburi there is — onion softened in sweet dashi-soy, then eggs poured in and pulled off half-set over rice. No meat at all, and it still eats like a real dinner.",
   servings: 2,
   perServing: { calories: 480, protein: 18 },
-  estCostPerServing: 0.75,
+  estCostPerServing: 0.95,
   roles: ["dinner"],
   ingredients: [
     { item: "eggs, beaten just to break them up", qty: "4", cost: 1.0 },

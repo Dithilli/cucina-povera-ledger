@@ -8,7 +8,7 @@ export const ovosMexidosComGrelos: Recipe = {
     "Soft scrambled eggs folded through garlicky blanched greens — turnip tops or kale wilted in olive oil, then bound creamy with egg. A five-minute supper from the cheapest things in the house.",
   servings: 2,
   perServing: { calories: 470, protein: 22 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.1,
   roles: ["dinner"],
   ingredients: [
     {

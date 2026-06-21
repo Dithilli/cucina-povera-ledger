@@ -8,7 +8,7 @@ export const omurice: Recipe = {
     "Ketchup-seasoned fried rice wrapped in a soft omelette and crowned with a zigzag of ketchup — the diner-counter comfort dish built to use up cold rice and fridge scraps.",
   servings: 2,
   perServing: { calories: 620, protein: 22 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.53,
   roles: ["dinner"],
   zeroWasteHero: true,
   ingredients: [

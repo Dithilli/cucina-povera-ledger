@@ -8,7 +8,7 @@ export const banhXeo: Recipe = {
     "The sizzling crepe — a thin, lacy turmeric rice-flour batter folded over bean sprouts and a little pork and shrimp, torn into lettuce with herbs and dipped in nước chấm. A pantry-flour dinner that eats like a feast.",
   servings: 4,
   perServing: { calories: 600, protein: 20 },
-  estCostPerServing: 1.25,
+  estCostPerServing: 1.45,
   roles: ["dinner"],
   ingredients: [
     { item: "rice flour", qty: "1 1/2 cups", cost: 0.7, spansWeeks: true },

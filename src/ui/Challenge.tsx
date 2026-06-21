@@ -271,7 +271,9 @@ function GenerateWeek({
       .finally(() => setAiLoading(false));
   };
 
-  const aiTotal = ai ? ai.days.reduce((a, d) => a + d.cost, 0) : 0;
+  // Round the accumulated total to cents, matching planner.totalCost — bare
+  // float summation can drift a fraction of a cent before money() formats it.
+  const aiTotal = ai ? Math.round(ai.days.reduce((a, d) => a + d.cost, 0) * 100) / 100 : 0;
 
   return (
     <section className="ch-block">
@@ -532,18 +534,25 @@ function WeekCard({
                 {onUseWeek && (
                   <button
                     className="btn solid use-week"
-                    onClick={() =>
+                    onClick={() => {
+                      // Free-text dinners have no recipe to price, so fall back to
+                      // an even share of the week's steady-state spend instead of $0
+                      // — otherwise the logged cost is zero for ~93% of weeks.
+                      const fallbackCost =
+                        plan.steadyStateWeekly != null
+                          ? Math.round((plan.steadyStateWeekly / plan.days.length) * 100) / 100
+                          : 0;
                       onUseWeek({
                         label: week.title,
                         dinners: plan.days.map((d) =>
                           toPlannedDinner(
                             d.dinner,
-                            { calories: d.estCalories, protein: d.estProtein, cost: 0 },
+                            { calories: d.estCalories, protein: d.estProtein, cost: fallbackCost },
                             recipesBySlug
                           )
                         ),
-                      })
-                    }
+                      });
+                    }}
                   >
                     Cook this week →
                   </button>

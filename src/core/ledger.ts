@@ -28,10 +28,10 @@ export function validateEntry(e: Partial<Entry>): ValidationResult {
   const errors: string[] = [];
   if (!e.date || !DATE_RE.test(e.date)) errors.push("date must be YYYY-MM-DD");
   if (!e.week || !e.week.trim()) errors.push("week is required");
-  if (e.calories == null || e.calories < 0 || !Number.isFinite(e.calories))
-    errors.push("calories must be a number >= 0");
-  if (e.protein == null || e.protein < 0 || !Number.isFinite(e.protein))
-    errors.push("protein must be a number >= 0");
+  if (e.calories == null || e.calories < 0 || !Number.isInteger(e.calories))
+    errors.push("calories must be a whole number >= 0");
+  if (e.protein == null || e.protein < 0 || !Number.isInteger(e.protein))
+    errors.push("protein must be a whole number >= 0");
   if (e.cost == null || e.cost < 0 || !Number.isFinite(e.cost))
     errors.push("cost must be a number >= 0");
   if (typeof e.zeroWaste !== "boolean") errors.push("zeroWaste must be true/false");

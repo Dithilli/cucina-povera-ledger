@@ -8,7 +8,7 @@ export const spanakorizo: Recipe = {
     "Spinach cooked down with rice, dill, and olive oil until soft and almost creamy, then woken up with a hard squeeze of lemon — a whole green dinner in one pot.",
   servings: 4,
   perServing: { calories: 480, protein: 11 },
-  estCostPerServing: 1.05,
+  estCostPerServing: 1.35,
   roles: ["dinner"],
   ingredients: [
     { item: "spinach, chopped", qty: "1 1/2 lb", cost: 2.4 },

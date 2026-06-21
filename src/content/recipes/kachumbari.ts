@@ -8,7 +8,7 @@ export const kachumbari: Recipe = {
     "The fresh tomato-onion relish that sits on every East African table — bright with lime, lifted by dhania and chili, the cool foil to fried and grilled food.",
   servings: 4,
   perServing: { calories: 45, protein: 1 },
-  estCostPerServing: 0.35,
+  estCostPerServing: 0.41,
   roles: ["base"],
   ingredients: [
     { item: "ripe tomatoes, diced", qty: "3", cost: 0.8 },

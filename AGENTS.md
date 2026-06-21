@@ -123,7 +123,7 @@ npm run ledger -- add \
   --date 2026-06-14 \
   --week "Week 1 — Pasta" \
   --dish "pasta e ceci, pangrattato" \
-  --calories 1950 --protein 105 --cost 7.50 --waste
+  --calories 700 --protein 18 --cost 1.50 --waste
 # omit --waste (or pass --no-waste) if the day wasted food
 ```
 

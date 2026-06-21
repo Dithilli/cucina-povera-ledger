@@ -8,7 +8,7 @@ export const huevosALaMexicana: Recipe = {
     "Eggs scrambled with the three colors of the flag — white onion, green chile, red tomato. The fastest, cheapest way to clear the protein floor before the day starts.",
   servings: 2,
   perServing: { calories: 290, protein: 18 },
-  estCostPerServing: 0.7,
+  estCostPerServing: 0.87,
   roles: ["breakfast"],
   ingredients: [
     { item: "eggs", qty: "4", cost: 1.0 },

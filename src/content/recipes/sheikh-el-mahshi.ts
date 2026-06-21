@@ -8,7 +8,7 @@ export const sheikhElMahshi: Recipe = {
     "'The king of stuffed' — baby eggplant split and packed with spiced rice and pine nuts, then braised in tomato until collapsing; a frugal meatless take on the feast dish.",
   servings: 4,
   perServing: { calories: 540, protein: 11 },
-  estCostPerServing: 1.15,
+  estCostPerServing: 1.33,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "baby eggplants", qty: "8", cost: 2.4 },

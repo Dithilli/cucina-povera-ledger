@@ -8,7 +8,7 @@ export const spanakopita: Recipe = {
     "Spinach, herbs, and salty feta folded into shatter-crisp phyllo brushed with olive oil — the green pie that eats as dinner, lunch, or anytime in between.",
   servings: 6,
   perServing: { calories: 460, protein: 16 },
-  estCostPerServing: 1.45,
+  estCostPerServing: 1.72,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "spinach (or spinach + chard), chopped", qty: "2 lb", cost: 3.0 },

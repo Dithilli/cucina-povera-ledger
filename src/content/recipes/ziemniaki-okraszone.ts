@@ -8,7 +8,7 @@ export const ziemniakiOkraszone: Recipe = {
     "Boiled potatoes dressed in okrasa — sizzling cracklings and golden onion fried out of a little lard or bacon — then tossed with a fistful of dill. The plainest plate in the Polish repertoire and, with a bowl of soured milk or kiszona kapusta alongside, a whole frugal dinner.",
   servings: 4,
   perServing: { calories: 430, protein: 9 },
-  estCostPerServing: 0.7,
+  estCostPerServing: 0.77,
   roles: ["dinner"],
   ingredients: [
     { item: "potatoes", qty: "2 lb", cost: 1.4 },

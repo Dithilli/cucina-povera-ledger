@@ -8,7 +8,7 @@ export const arakasLatheros: Recipe = {
     "Peas and potatoes braised slow in olive oil with a heap of fresh dill and spring onion — a sweet, green, springtime ladero you eat as dinner with feta and bread.",
   servings: 4,
   perServing: { calories: 340, protein: 12 },
-  estCostPerServing: 1.0,
+  estCostPerServing: 1.15,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "peas, fresh or frozen", qty: "1 lb", cost: 1.6 },

@@ -8,7 +8,7 @@ export const goiCuon: Recipe = {
     "Fresh summer rolls — rice paper wrapped around vermicelli, a forest of herbs, and a little poached shrimp and pork, served with a peanut-hoisin dip. A dinner engineered to make a few ounces of protein feed a table.",
   servings: 4,
   perServing: { calories: 520, protein: 24 },
-  estCostPerServing: 1.55,
+  estCostPerServing: 1.8,
   roles: ["dinner"],
   ingredients: [
     { item: "small shrimp, peeled", qty: "8 oz", cost: 3.0 },

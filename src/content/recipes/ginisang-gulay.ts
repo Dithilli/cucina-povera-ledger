@@ -8,7 +8,7 @@ export const ginisangGulay: Recipe = {
     "Everyday sautéed mixed vegetables — whatever's cheap that week (sayote, beans, cabbage, carrot) cooked over a garlic-onion-tomato ginisa and a little fish, the lutong-bahay way to make produce into dinner.",
   servings: 4,
   perServing: { calories: 480, protein: 16 },
-  estCostPerServing: 0.85,
+  estCostPerServing: 1.12,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "sayote (chayote), peeled and sliced", qty: "1", cost: 0.6 },

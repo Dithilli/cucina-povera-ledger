@@ -8,7 +8,7 @@ export const bakedEggsWithOnions: Recipe = {
     "Eggs baked nestled into a deep bed of slow, jammy onions until the whites just set and the yolks stay loose and orange — and bread to wipe the dish clean.",
   servings: 4,
   perServing: { calories: 380, protein: 18 },
-  estCostPerServing: 0.55,
+  estCostPerServing: 0.75,
   roles: ["dinner"],
   ingredients: [
     { item: "yellow onions, thinly sliced", qty: "4 large", cost: 1.2 },

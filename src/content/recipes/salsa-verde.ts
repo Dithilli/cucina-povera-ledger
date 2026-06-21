@@ -8,7 +8,7 @@ export const salsaVerde: Recipe = {
     "Tomatillos and green chile, raw-blended for brightness or boiled for mellow depth — the tart, herbaceous counterweight to everything else on the table.",
   servings: 8,
   perServing: { calories: 25, protein: 1 },
-  estCostPerServing: 0.2,
+  estCostPerServing: 0.23,
   roles: ["side"],
   ingredients: [
     { item: "tomatillos, husked and rinsed", qty: "8", cost: 1.2 },

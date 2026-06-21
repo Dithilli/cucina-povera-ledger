@@ -8,7 +8,7 @@ export const nopalesConHuevo: Recipe = {
     "Cactus paddles — nearly free, full of fiber — griddled and folded into eggs with onion and chile. The milpa's most frugal green meets the everyday protein.",
   servings: 2,
   perServing: { calories: 240, protein: 15 },
-  estCostPerServing: 0.7,
+  estCostPerServing: 1.08,
   roles: ["breakfast", "lunch"],
   ingredients: [
     { item: "nopales (cactus paddles), cleaned and diced", qty: "2 cups", cost: 0.8 },

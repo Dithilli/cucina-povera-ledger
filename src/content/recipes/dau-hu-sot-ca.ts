@@ -8,7 +8,7 @@ export const dauHuSotCa: Recipe = {
     "Fried tofu in a tomato-scallion sauce — a meatless everyday dinner that leans on cheap tofu and a few tomatoes to make something silky over rice.",
   servings: 4,
   perServing: { calories: 460, protein: 22 },
-  estCostPerServing: 0.75,
+  estCostPerServing: 0.84,
   roles: ["dinner"],
   ingredients: [
     { item: "firm tofu, cubed", qty: "1 lb", cost: 1.2 },

@@ -8,7 +8,7 @@ export const fasolakiaLadera: Recipe = {
     "Green beans braised soft and sweet in olive oil and tomato until they slump — the everyday summer ladero you eat as dinner with bread and a slab of feta.",
   servings: 4,
   perServing: { calories: 320, protein: 8 },
-  estCostPerServing: 1.15,
+  estCostPerServing: 1.27,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "green beans, trimmed", qty: "1 1/2 lb", cost: 2.7 },

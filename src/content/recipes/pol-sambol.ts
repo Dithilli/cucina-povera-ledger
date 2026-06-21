@@ -9,7 +9,7 @@ export const polSambol: Recipe = {
   servings: 4,
   perServing: { calories: 190, protein: 5 },
   estCostPerServing: 0.55,
-  roles: ["dinner"],
+  roles: ["base", "side"],
   ingredients: [
     { item: "freshly scraped coconut (or moistened desiccated)", qty: "2 cups", cost: 1.2 },
     { item: "dried red chilies or chili flakes", qty: "1–2 tbsp", cost: 0.2, spansWeeks: true },

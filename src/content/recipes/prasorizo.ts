@@ -8,7 +8,7 @@ export const prasorizo: Recipe = {
     "Leeks melted slow in olive oil until sweet, then folded through rice and brightened with lemon — the winter cousin of spanakorizo, made from the cheapest thing in the garden.",
   servings: 4,
   perServing: { calories: 470, protein: 9 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.17,
   roles: ["dinner"],
   ingredients: [
     { item: "leeks, halved and sliced", qty: "4 large", cost: 2.4 },

@@ -8,7 +8,7 @@ export const smotheredOkra: Recipe = {
     "Okra cooked down slow with onion and tomato until its slip turns into body — the acid of the tomato tames the slime and thickens the pot.",
   servings: 4,
   perServing: { calories: 440, protein: 11 },
-  estCostPerServing: 1.0,
+  estCostPerServing: 1.18,
   roles: ["dinner", "side"],
   ingredients: [
     { item: "fresh okra, sliced (or frozen)", qty: "1 lb", cost: 2.2 },
