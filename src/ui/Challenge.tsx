@@ -316,7 +316,7 @@ function GenerateWeek({
           </div>
           <div className="plan-cost">
             <span>
-              Week total {money(result.totalCost)} · budget {money(meta.defaultWeeklyBudget)}
+              7 dinners {money(result.totalCost)} · one serving each · target {money(meta.defaultWeeklyBudget)}/wk
             </span>
             {onUseWeek && (
               <button
@@ -363,7 +363,7 @@ function GenerateWeek({
           </div>
           <div className="plan-cost">
             <span>
-              Week total {money(aiTotal)} · budget {money(meta.defaultWeeklyBudget)} · composed by Claude
+              7 dinners {money(aiTotal)} · one serving each · target {money(meta.defaultWeeklyBudget)}/wk · composed by Claude
             </span>
             {onUseWeek && (
               <button
@@ -410,6 +410,16 @@ function WeekCard({
   const [open, setOpen] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [planLoaded, setPlanLoaded] = useState(false);
+
+  // The honest "first shop" cost is the sum of the curated shopping list's own
+  // lines (incl. pantry), so the cost badge can't drift from the list below it.
+  // Fall back to the authored firstShopTotal only when there's no line-item list.
+  const authoredShop = useMemo(
+    () =>
+      plan?.shopping && plan.shopping.length > 0 ? shoppingListFromAuthored(plan.shopping) : null,
+    [plan]
+  );
+  const firstShopCost = authoredShop?.totalCost ?? plan?.firstShopTotal ?? null;
 
   const toggle = () => {
     const next = !open;
@@ -527,9 +537,11 @@ function WeekCard({
                 })}
               </div>
               <div className="plan-cost">
-                {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
+                {firstShopCost != null && (
+                  <span>First shop {money(firstShopCost)} · incl. pantry staples</span>
+                )}
                 {plan.steadyStateWeekly != null && (
-                  <span>Steady state {money(plan.steadyStateWeekly)}/wk</span>
+                  <span>then ~{money(plan.steadyStateWeekly)}/wk once stocked</span>
                 )}
                 {onUseWeek && (
                   <button
