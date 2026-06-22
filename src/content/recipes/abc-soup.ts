@@ -8,7 +8,7 @@ export const abcSoup: Recipe = {
     "The everyday family soup named for the vitamins it carries — A, B, C from carrot, potato, and tomato — pork bones simmered with sweet root vegetables into a gentle, slightly tangy broth that anchors a weeknight table over rice.",
   servings: 6,
   perServing: { calories: 280, protein: 15 },
-  estCostPerServing: 1.0,
+  estCostPerServing: 1.13,
   roles: ["dinner"],
   ingredients: [
     { item: "pork ribs or neck bones", qty: "1 1/4 lb", cost: 3.5 },

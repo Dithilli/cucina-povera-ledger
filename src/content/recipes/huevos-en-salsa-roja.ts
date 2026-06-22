@@ -8,7 +8,7 @@ export const huevosEnSalsaRoja: Recipe = {
     'Huevos ahogados — eggs "drowned" in a roasted tomato-and-chile salsa roja and poached until the whites set and the yolks stay loose. Coziest breakfast there is, and dinner just as easily.',
   servings: 2,
   perServing: { calories: 330, protein: 16 },
-  estCostPerServing: 0.85,
+  estCostPerServing: 1.02,
   roles: ["breakfast", "dinner"],
   ingredients: [
     { item: "eggs", qty: "4", cost: 1.0 },

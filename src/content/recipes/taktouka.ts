@@ -8,7 +8,7 @@ export const taktouka: Recipe = {
     "Blistered green peppers and tomatoes stewed soft with garlic, paprika, and olive oil into a velvety salad-stew — humble, sweet-smoky, and made to be mopped up with bread.",
   servings: 4,
   perServing: { calories: 420, protein: 7 },
-  estCostPerServing: 0.8,
+  estCostPerServing: 0.9,
   roles: ["dinner"],
   ingredients: [
     { item: "green bell peppers", qty: "4", cost: 1.6 },

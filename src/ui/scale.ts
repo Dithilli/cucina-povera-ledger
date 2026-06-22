@@ -19,13 +19,32 @@ const NUMERIC_TOKEN = new RegExp(
  * Scale every numeric quantity in a free-text `qty` string by `factor`,
  * re-rendering each as a kitchen fraction. Non-numeric prose is returned
  * verbatim. `scaleQty("1 1/2 cups", 0.25)` -> `"3/8 cups"`.
+ *
+ * Numbers inside parentheses are treated as fixed package/can sizes and are
+ * NOT scaled — doubling servings means two 28-oz cans, not one 56-oz can.
+ * `scaleQty("1 (28 oz) can", 2)` -> `"2 (28 oz) can"`.
  */
 export function scaleQty(qty: string, factor: number): string {
   if (factor === 1 || !qty) return qty;
-  return qty.replace(NUMERIC_TOKEN, (token) => {
+  // Split into parenthetical groups (left untouched) and the prose around them.
+  return qty.replace(/\([^)]*\)|[^()]+/g, (segment) =>
+    segment.startsWith("(") ? segment : scaleSegment(segment, factor)
+  );
+}
+
+function scaleSegment(segment: string, factor: number): string {
+  return segment.replace(NUMERIC_TOKEN, (token) => {
     const n = numericQuantity(token);
     if (Number.isNaN(n)) return token;
     const scaled = n * factor;
-    return formatQuantity(scaled) ?? String(Math.round(scaled * 1000) / 1000);
+    const formatted = formatQuantity(scaled);
+    // format-quantity returns a raw decimal STRING (not null) when it can't snap
+    // the value to a kitchen fraction, so the old `?? round` fallback was dead
+    // code that never fired. Catch an ugly long-decimal result and round it to a
+    // sane precision instead of printing "0.08333333333333333".
+    if (formatted == null || /\.\d{3,}/.test(formatted)) {
+      return String(Math.round(scaled * 100) / 100);
+    }
+    return formatted;
   });
 }

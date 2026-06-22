@@ -7,7 +7,7 @@ export const tomatoSugo: Recipe = {
   blurb: "The deep tomato base that dresses pasta, poaches eggs, and sauces half the week.",
   servings: 6,
   perServing: { calories: 90, protein: 2 },
-  estCostPerServing: 0.6,
+  estCostPerServing: 0.88,
   roles: ["base"],
   ingredients: [
     { item: "olive oil", qty: "3 tbsp", cost: 0.5, spansWeeks: true },

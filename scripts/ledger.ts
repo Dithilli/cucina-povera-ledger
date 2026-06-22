@@ -16,7 +16,7 @@
  *
  * Examples:
  *   npm run ledger -- add --date 2026-06-14 --week "Week 1 — Pasta" \
- *       --dish "pasta e ceci" --calories 1950 --protein 105 --cost 7.50 --waste
+ *       --dish "pasta e ceci" --calories 700 --protein 18 --cost 1.50 --waste
  *   npm run ledger -- stats --week "Week 1 — Pasta"
  *   npm run ledger -- list
  *
@@ -203,6 +203,6 @@ switch (cmd) {
     console.log(
       "Commands: add | remove | list | stats | set | validate\n" +
         'Example: npm run ledger -- add --date 2026-06-14 --dish "pasta e ceci" ' +
-        "--calories 1950 --protein 105 --cost 7.50 --waste"
+        "--calories 700 --protein 18 --cost 1.50 --waste"
     );
 }

@@ -8,7 +8,7 @@ export const potatoOnionSoup: Recipe = {
     "Potatoes and onion simmered soft and made rich with a spoonful of schmaltz, a heel of rye on the side — the plainest weeknight supper in the shtetl repertoire, where a little rendered chicken fat does the work that meat couldn't afford to.",
   servings: 4,
   perServing: { calories: 420, protein: 13 },
-  estCostPerServing: 0.45,
+  estCostPerServing: 0.61,
   roles: ["dinner"],
   ingredients: [
     { item: "russet potatoes, diced", qty: "1 1/2 lb", cost: 1.05 },

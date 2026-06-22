@@ -8,7 +8,7 @@ export const redBeansAndRice: Recipe = {
     "New Orleans' Monday supper: a pot of creamy smoked red beans ladled over fluffy white rice — built around wash-day leftovers and the Sunday ham bone.",
   servings: 4,
   perServing: { calories: 560, protein: 24 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.29,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "creamy cooked red beans, with their pot-liquor (see Pot of Red Beans)", qty: "4 cups", cost: 2.2 },

@@ -8,7 +8,7 @@ export const mahshiKoosa: Recipe = {
     "Small zucchini hollowed out and stuffed with herbed rice, then braised standing in a light tomato broth until meltingly soft — and the scooped flesh never goes to waste.",
   servings: 4,
   perServing: { calories: 500, protein: 11 },
-  estCostPerServing: 0.9,
+  estCostPerServing: 1.16,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "small/medium zucchini (koosa)", qty: "8", cost: 2.4 },

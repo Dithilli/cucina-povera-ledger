@@ -7,7 +7,7 @@ export const lemonPangrattato: Recipe = {
   blurb: "Toasted seasoned breadcrumbs — the \"poor man's parmesan,\" crunch for the whole week.",
   servings: 8,
   perServing: { calories: 70, protein: 2 },
-  estCostPerServing: 0.2,
+  estCostPerServing: 0.23,
   roles: ["base"],
   ingredients: [
     { item: "stale bread, blitzed to coarse crumbs", qty: "~1 1/2 cups", cost: 1.0 },

@@ -8,7 +8,7 @@ export const warakEnab: Recipe = {
     "Vine leaves rolled tight around lemony herbed rice and braised until silky — the patient, meatless 'sayyami' version eaten cold or warm with extra lemon.",
   servings: 4,
   perServing: { calories: 520, protein: 10 },
-  estCostPerServing: 1.1,
+  estCostPerServing: 1.31,
   roles: ["dinner", "lunch"],
   ingredients: [
     { item: "grape/vine leaves (jarred in brine), rinsed", qty: "1 jar (~60 leaves)", cost: 2.0 },

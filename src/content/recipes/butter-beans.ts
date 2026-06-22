@@ -8,7 +8,7 @@ export const butterBeans: Recipe = {
     "Big creamy lima — butter — beans stewed low and slow with smoked pork until the pot-liquor goes silky, a soul-food side that eats like a meal over rice or cornbread.",
   servings: 4,
   perServing: { calories: 470, protein: 22 },
-  estCostPerServing: 0.7,
+  estCostPerServing: 0.85,
   roles: ["dinner", "lunch", "side"],
   ingredients: [
     { item: "dried large lima (butter) beans, soaked overnight", qty: "1 lb (about 2 1/2 cups)", cost: 1.7 },

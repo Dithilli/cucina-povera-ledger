@@ -8,7 +8,7 @@ export const sotoAyam: Recipe = {
     "Turmeric-gold chicken soup over rice and vermicelli — one small bird and its bones stretched to feed the table, the broth doing the heavy lifting.",
   servings: 6,
   perServing: { calories: 520, protein: 32 },
-  estCostPerServing: 1.05,
+  estCostPerServing: 1.23,
   roles: ["dinner", "lunch"],
   ingredients: [
     {

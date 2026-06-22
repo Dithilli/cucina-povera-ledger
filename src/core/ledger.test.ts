@@ -36,6 +36,12 @@ describe("validateEntry", () => {
   it("rejects negative numbers", () => {
     expect(validateEntry(entry({ cost: -1 })).ok).toBe(false);
   });
+  it("rejects non-integer calories/protein (DB columns are integer)", () => {
+    expect(validateEntry(entry({ calories: 1950.5 })).ok).toBe(false);
+    expect(validateEntry(entry({ protein: 105.7 })).ok).toBe(false);
+    // cost stays a 2-decimal numeric — fractional cost is fine.
+    expect(validateEntry(entry({ cost: 7.5 })).ok).toBe(true);
+  });
 });
 
 describe("upsertEntry / removeEntry", () => {

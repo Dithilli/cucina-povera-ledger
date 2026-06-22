@@ -8,7 +8,7 @@ export const coldBeetBorscht: Recipe = {
     "A chilled, tart-sweet beet broth stirred with sour cream until it blooms a shocking electric pink, ladled cold over a hot boiled potato with chopped hard egg and cucumber — the great refreshing dairy supper of a Pale-of-Settlement summer.",
   servings: 4,
   perServing: { calories: 360, protein: 16 },
-  estCostPerServing: 0.6,
+  estCostPerServing: 1.4,
   roles: ["dinner"],
   ingredients: [
     { item: "beets, peeled and grated or julienned", qty: "1 1/2 lb", cost: 1.5 },

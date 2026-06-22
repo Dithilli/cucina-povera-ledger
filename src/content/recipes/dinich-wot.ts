@@ -8,7 +8,7 @@ export const dinichWot: Recipe = {
     "Potatoes simmered soft in a turmeric-or-berbere onion base — the cheapest, most filling dish on the table, a fasting-day stew that stretches a few cents of tubers into a meal.",
   servings: 4,
   perServing: { calories: 240, protein: 6 },
-  estCostPerServing: 0.4,
+  estCostPerServing: 0.45,
   roles: ["dinner", "lunch", "side"],
   ingredients: [
     { item: "potatoes, in chunks", qty: "4 medium", cost: 1.2 },

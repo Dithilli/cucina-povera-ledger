@@ -8,7 +8,7 @@ export const migas: Recipe = {
     'Day-old tortillas torn up, crisped in a little fat, and scrambled into eggs — the name means "crumbs," and the whole dish is a rescue of yesterday\'s tortillas before they hit the bin.',
   servings: 2,
   perServing: { calories: 380, protein: 18 },
-  estCostPerServing: 0.7,
+  estCostPerServing: 1.03,
   roles: ["breakfast", "dinner"],
   ingredients: [
     { item: "eggs", qty: "4", cost: 1.0 },

@@ -8,7 +8,7 @@ export const frangoEnsopado: Recipe = {
     "The most everyday of Brazilian dinners: chicken pieces stewed gently in a tomato-and-onion refogado with chunks of potato and carrot until the broth is golden and the potatoes half-dissolve to thicken it — weeknight comfort poured over rice.",
   servings: 2,
   perServing: { calories: 520, protein: 27 },
-  estCostPerServing: 1.45,
+  estCostPerServing: 1.6,
   roles: ["dinner"],
   ingredients: [
     { item: "bone-in chicken pieces", qty: "3/4 lb", cost: 1.6 },

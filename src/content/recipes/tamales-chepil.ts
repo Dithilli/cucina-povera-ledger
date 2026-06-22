@@ -8,7 +8,7 @@ export const tamalesChepil: Recipe = {
     "Pale-green masa flecked with wild chepil — the bitter, anise-scented rainy-season herb — steamed in banana leaf with nothing but a little quesillo and a few drops of tomato salsa.",
   servings: 6,
   perServing: { calories: 430, protein: 11 },
-  estCostPerServing: 0.9,
+  estCostPerServing: 1.08,
   roles: ["dinner"],
   ingredients: [
     { item: "fresh nixtamal masa (or masa harina reconstituted)", qty: "2 lb", cost: 3.0 },

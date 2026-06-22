@@ -8,7 +8,7 @@ export const fattoush: Recipe = {
     "The bread salad of the Levant — crisped day-old pita shards, crunchy vegetables, and herbs under a tart sumac-and-lemon dressing.",
   servings: 4,
   perServing: { calories: 320, protein: 7 },
-  estCostPerServing: 1.1,
+  estCostPerServing: 1.25,
   roles: ["dinner", "side"],
   ingredients: [
     {

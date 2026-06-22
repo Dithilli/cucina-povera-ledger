@@ -8,7 +8,7 @@ export const fasolia: Recipe = {
     "Green beans and carrots stewed gently with onion, garlic, and a little turmeric — the bright, mild vegetable dish that adds color and crunch to the platter.",
   servings: 4,
   perServing: { calories: 160, protein: 5 },
-  estCostPerServing: 0.6,
+  estCostPerServing: 0.73,
   roles: ["side", "lunch"],
   ingredients: [
     { item: "green beans, trimmed and halved", qty: "1 lb", cost: 1.8 },

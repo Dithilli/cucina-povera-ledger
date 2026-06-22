@@ -8,7 +8,7 @@ export const holishkes: Recipe = {
     "Blanched cabbage leaves rolled snug around seasoned beef and rice, braised low and long in a sweet-and-sour tomato sauce sharpened with sour salt and softened with raisins — the leaves going meltingly tender, the sauce thick and burnished.",
   servings: 6,
   perServing: { calories: 480, protein: 22 },
-  estCostPerServing: 1.1,
+  estCostPerServing: 1.33,
   roles: ["dinner"],
   ingredients: [
     { item: "green cabbage, large head", qty: "1 (about 3 lb)", cost: 1.5 },

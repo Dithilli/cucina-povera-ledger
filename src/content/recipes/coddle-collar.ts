@@ -8,7 +8,7 @@ export const coddleCollar: Recipe = {
     "Monday's redemption of Sunday's dinner — leftover boiled collar and cabbage chopped down and fried hard in a single pan with potato until the edges crisp and catch.",
   servings: 4,
   perServing: { calories: 520, protein: 24 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.08,
   roles: ["dinner"],
   ingredients: [
     { item: "cooked bacon collar, chopped (leftover)", qty: "8 oz", cost: 1.8 },

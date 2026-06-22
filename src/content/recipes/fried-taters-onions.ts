@@ -8,7 +8,7 @@ export const friedTatersOnions: Recipe = {
     "Sliced potatoes and onion left to crust up undisturbed in a cast-iron skillet of bacon grease — the daily hill-country side that, with a wedge of cornbread, becomes the whole supper.",
   servings: 4,
   perServing: { calories: 440, protein: 14 },
-  estCostPerServing: 0.75,
+  estCostPerServing: 0.88,
   roles: ["dinner"],
   ingredients: [
     { item: "potatoes", qty: "2 lb, sliced", cost: 1.2 },

@@ -53,6 +53,7 @@ A rotating palette of dinners, so it never gets stale:
 - **Week 2 — Bread** (pappa al pomodoro, ribollita, panzanella, acquacotta)
 - **Week 3 — Eggs** (frittate, uova in purgatorio, egg-enriched soups)
 - **Week 4 — Legumes** (the Tuscan "bean-eater" week: fagioli, ceci, lenticchie)
+- **Week 5 — Polenta** (the northern cornmeal week: polenta concia, e fagioli, with mushroom ragù)
 - **Bonus — Sicilian** (sardines, anchovy, caponata)
 - **Bonus — Garden** (cicoria, broccoli rabe, peperonata, minestrone)
 

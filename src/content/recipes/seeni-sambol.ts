@@ -9,7 +9,7 @@ export const seeniSambol: Recipe = {
   servings: 6,
   perServing: { calories: 175, protein: 4 },
   estCostPerServing: 0.6,
-  roles: ["dinner"],
+  roles: ["base", "side"],
   ingredients: [
     { item: "red onions, thinly sliced", qty: "5 large (about 2 lb)", cost: 1.6 },
     { item: "Maldive fish flakes", qty: "2 tbsp", cost: 0.3, spansWeeks: true },

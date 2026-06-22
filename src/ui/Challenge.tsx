@@ -271,7 +271,9 @@ function GenerateWeek({
       .finally(() => setAiLoading(false));
   };
 
-  const aiTotal = ai ? ai.days.reduce((a, d) => a + d.cost, 0) : 0;
+  // Round the accumulated total to cents, matching planner.totalCost — bare
+  // float summation can drift a fraction of a cent before money() formats it.
+  const aiTotal = ai ? Math.round(ai.days.reduce((a, d) => a + d.cost, 0) * 100) / 100 : 0;
 
   return (
     <section className="ch-block">
@@ -314,7 +316,7 @@ function GenerateWeek({
           </div>
           <div className="plan-cost">
             <span>
-              Week total {money(result.totalCost)} · budget {money(meta.defaultWeeklyBudget)}
+              7 dinners {money(result.totalCost)} · one serving each · target {money(meta.defaultWeeklyBudget)}/wk
             </span>
             {onUseWeek && (
               <button
@@ -361,7 +363,7 @@ function GenerateWeek({
           </div>
           <div className="plan-cost">
             <span>
-              Week total {money(aiTotal)} · budget {money(meta.defaultWeeklyBudget)} · composed by Claude
+              7 dinners {money(aiTotal)} · one serving each · target {money(meta.defaultWeeklyBudget)}/wk · composed by Claude
             </span>
             {onUseWeek && (
               <button
@@ -408,6 +410,16 @@ function WeekCard({
   const [open, setOpen] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [planLoaded, setPlanLoaded] = useState(false);
+
+  // The honest "first shop" cost is the sum of the curated shopping list's own
+  // lines (incl. pantry), so the cost badge can't drift from the list below it.
+  // Fall back to the authored firstShopTotal only when there's no line-item list.
+  const authoredShop = useMemo(
+    () =>
+      plan?.shopping && plan.shopping.length > 0 ? shoppingListFromAuthored(plan.shopping) : null,
+    [plan]
+  );
+  const firstShopCost = authoredShop?.totalCost ?? plan?.firstShopTotal ?? null;
 
   const toggle = () => {
     const next = !open;
@@ -503,36 +515,56 @@ function WeekCard({
               </div>
               <div className="plan-days">
                 <h4>The week · dinners</h4>
-                {plan.days.map((d) => (
-                  <div className="plan-day" key={d.day}>
-                    <span className="pd-day">{d.day}</span>
-                    <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
-                    <span className="pd-num">
-                      {d.estCalories} kcal · {d.estProtein}g
-                    </span>
-                  </div>
-                ))}
+                {plan.days.map((d) => {
+                  // Show the same macros "Cook this week" logs: a slug-backed
+                  // dinner resolves to its recipe's perServing, otherwise the
+                  // day's authored estimate. Keeps the week table and the ledger
+                  // from disagreeing (e.g. Italian bare-slug days).
+                  const m = toPlannedDinner(
+                    d.dinner,
+                    { calories: d.estCalories, protein: d.estProtein, cost: 0 },
+                    recipesBySlug
+                  );
+                  return (
+                    <div className="plan-day" key={d.day}>
+                      <span className="pd-day">{d.day}</span>
+                      <DinnerCell dinner={d.dinner} recipesBySlug={recipesBySlug} onOpen={onOpenRecipe} />
+                      <span className="pd-num">
+                        {m.calories} kcal · {m.protein}g
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
               <div className="plan-cost">
-                {plan.firstShopTotal != null && <span>First shop {money(plan.firstShopTotal)}</span>}
+                {firstShopCost != null && (
+                  <span>First shop {money(firstShopCost)} · incl. pantry staples</span>
+                )}
                 {plan.steadyStateWeekly != null && (
-                  <span>Steady state {money(plan.steadyStateWeekly)}/wk</span>
+                  <span>then ~{money(plan.steadyStateWeekly)}/wk once stocked</span>
                 )}
                 {onUseWeek && (
                   <button
                     className="btn solid use-week"
-                    onClick={() =>
+                    onClick={() => {
+                      // Free-text dinners have no recipe to price, so fall back to
+                      // an even share of the week's steady-state spend instead of $0
+                      // — otherwise the logged cost is zero for ~93% of weeks.
+                      const fallbackCost =
+                        plan.steadyStateWeekly != null
+                          ? Math.round((plan.steadyStateWeekly / plan.days.length) * 100) / 100
+                          : 0;
                       onUseWeek({
                         label: week.title,
                         dinners: plan.days.map((d) =>
                           toPlannedDinner(
                             d.dinner,
-                            { calories: d.estCalories, protein: d.estProtein, cost: 0 },
+                            { calories: d.estCalories, protein: d.estProtein, cost: fallbackCost },
                             recipesBySlug
                           )
                         ),
-                      })
-                    }
+                      });
+                    }}
                   >
                     Cook this week →
                   </button>

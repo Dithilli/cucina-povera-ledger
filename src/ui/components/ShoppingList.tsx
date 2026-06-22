@@ -51,14 +51,14 @@ export function ShoppingList({ list, title }: { list: ShoppingListData; title: s
     <div className="shopping-list">
       <div className="shop-head">
         <span className="shop-totals">
-          <b>{money(list.totalCost)}</b>
+          <b>{money(list.totalCost)}</b>{" "}
           {list.dishCount > 0 ? (
             <>
-              {" "}
-              · fresh {money(list.freshCost)} · pantry {money(list.pantryCost)}
+              for {list.dishCount} dinners · fresh {money(list.freshCost)} · pantry{" "}
+              {money(list.pantryCost)}
             </>
           ) : (
-            <> shop total</>
+            <>first shop · fresh {money(list.freshCost)} · pantry {money(list.pantryCost)}</>
           )}
         </span>
         <span className="shop-actions">

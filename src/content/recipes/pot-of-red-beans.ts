@@ -8,7 +8,7 @@ export const potOfRedBeans: Recipe = {
     "Dried red kidney beans simmered low and slow with the trinity and a piece of smoked pork until the pot-liquor turns thick and creamy — the New Orleans Monday workhorse.",
   servings: 6,
   perServing: { calories: 270, protein: 16 },
-  estCostPerServing: 0.55,
+  estCostPerServing: 0.63,
   roles: ["base"],
   ingredients: [
     { item: "dried red kidney beans, soaked overnight", qty: "1 lb (about 2 1/2 cups)", cost: 1.6 },

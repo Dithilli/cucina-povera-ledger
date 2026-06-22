@@ -8,7 +8,7 @@ export const dolmadakia: Recipe = {
     "Vine leaves rolled tight around lemony, herb-flecked rice and braised in olive oil — the patient little parcels eaten cold with a squeeze of lemon.",
   servings: 4,
   perServing: { calories: 430, protein: 7 },
-  estCostPerServing: 1.1,
+  estCostPerServing: 1.3,
   roles: ["dinner", "side"],
   ingredients: [
     { item: "vine leaves (jarred in brine, rinsed)", qty: "40-45", cost: 2.5 },

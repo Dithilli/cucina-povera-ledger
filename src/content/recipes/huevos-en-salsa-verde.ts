@@ -8,7 +8,7 @@ export const huevosEnSalsaVerde: Recipe = {
     "Eggs slipped into a simmering tomatillo-and-serrano salsa until just set — the tang of the tomatillos drinking into the yolks. A whole comforting plate built from a handful of green things and a few eggs.",
   servings: 2,
   perServing: { calories: 320, protein: 16 },
-  estCostPerServing: 0.8,
+  estCostPerServing: 1.1,
   roles: ["breakfast", "dinner"],
   ingredients: [
     { item: "eggs", qty: "4", cost: 1.0 },

@@ -8,7 +8,7 @@ export const chaoGa: Recipe = {
     "Chicken rice porridge built from a handful of leftover rice and one bird — the Vietnamese cure-all that turns scraps and bones into a silky, restorative bowl.",
   servings: 4,
   perServing: { calories: 480, protein: 32 },
-  estCostPerServing: 1.05,
+  estCostPerServing: 1.75,
   roles: ["dinner", "lunch"],
   ingredients: [
     {

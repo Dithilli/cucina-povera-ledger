@@ -8,7 +8,7 @@ export const boiledYamAndSauce: Recipe = {
     "Plain boiled yam — fluffy, faintly sweet — under a quick fried sauce of garden eggs and tomato, lifted with a little fish. The most pared-back West African dinner: one tuber, a fast pan sauce, and you're fed.",
   servings: 4,
   perServing: { calories: 520, protein: 16 },
-  estCostPerServing: 1.25,
+  estCostPerServing: 1.58,
   roles: ["dinner"],
   ingredients: [
     { item: "white yam, peeled and cut in rounds", qty: "1 1/2 lb", cost: 2.2 },

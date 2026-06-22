@@ -8,7 +8,7 @@ export const schav: Recipe = {
     "Cold, lemon-sharp sorrel soup, its natural tartness tempered with sour cream and tempered egg yolk into something pale green and silky, served with a boiled potato and chopped egg — 'green borscht,' the bright sour taste of spring after a long cellar winter.",
   servings: 4,
   perServing: { calories: 320, protein: 15 },
-  estCostPerServing: 0.55,
+  estCostPerServing: 1.4,
   roles: ["dinner"],
   ingredients: [
     { item: "fresh sorrel, stems stripped", qty: "1 lb", cost: 2.0 },

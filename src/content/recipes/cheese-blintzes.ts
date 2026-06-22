@@ -8,7 +8,7 @@ export const cheeseBlintzes: Recipe = {
     "Thin, tender egg crepes wrapped around a pillow of sweetened farmer cheese, folded into neat parcels and pan-fried in butter until the seams turn lacy and golden — served with cool sour cream and a spoon of jam. The dairy table's gentle showpiece.",
   servings: 4,
   perServing: { calories: 520, protein: 24 },
-  estCostPerServing: 0.95,
+  estCostPerServing: 1.19,
   roles: ["dinner"],
   ingredients: [
     { item: "farmer cheese", qty: "1 lb", cost: 3.0 },
